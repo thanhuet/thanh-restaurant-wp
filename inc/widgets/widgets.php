@@ -5,6 +5,10 @@ if ( ! class_exists( 'SiteOrigin_Widget' ) ) {
 }
 
 include_once( THIM_DIR . '/inc/widgets/posts/posts.php' );
+include_once( THIM_DIR . '/inc/widgets/logo_header/logo.php' );
+include_once( THIM_DIR . '/inc/widgets/header_left_right/header_lr.php' );
+
+
 
 /**
  * Extra class to widget

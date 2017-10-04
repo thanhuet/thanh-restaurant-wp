@@ -23,7 +23,7 @@ if ( isset( $_GET['column'] ) ) {
 			if ( $column === '1' ) {
 				do_action( 'thim_entry_top', 'full' );
 			} else {
-				thim_feature_image( 420, 420, 'full' );
+				thim_feature_image( 560, 360, 'full' );
 			}
 			?>
 		</div><!-- .entry-top -->

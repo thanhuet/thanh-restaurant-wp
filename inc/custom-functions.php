@@ -635,13 +635,13 @@ if ( ! class_exists( 'Aq_Resize' ) ) {
  *
  * @return string
  */
-function thim_feature_image( $width = 1024, $height = 768, $link = true ) {
+function thim_feature_image( $width = 560, $height = 360, $link = true ) {
 	global $post;
 	if ( has_post_thumbnail() ) {
 		if ( $link != true && $link != false ) {
 			the_post_thumbnail( $post->ID, $link );
 		} else {
-			$get_thumbnail = simplexml_load_string( get_the_post_thumbnail( $post->ID, 'full' ) );
+			$get_thumbnail = simplexml_load_string( get_the_post_thumbnail( $post->ID, 'medium' ) );
 			if ( $get_thumbnail ) {
 				$thumbnail_src = $get_thumbnail->attributes()->src;
 				$img_url       = $thumbnail_src;

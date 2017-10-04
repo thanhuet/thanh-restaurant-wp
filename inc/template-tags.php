@@ -44,7 +44,7 @@ function thim_entry_meta_date() {
  * @return string
  */
 function thim_get_entry_meta_date() {
-	$html = '<span class="entry-date">' . get_the_date( 'j F Y' ) . '</span>';
+	$html = '<span class="entry-date">' . get_the_date( 'F j, Y' ) . '</span>';
 
 	return $html;
 }

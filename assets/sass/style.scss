@@ -102,3 +102,24 @@ Domain Path: /languages/
 13.0 - general
 ----------------------------------------------------------------*/
 @import "general-style/general-style";
+//---------------------------
+@import "inc/widgets/logo_header/assets/sass/logo_header";
+// import style menu ---------------------
+@import "header/menu/menu";
+
+#thim-header-topbar{
+    background: none !important;
+}
+#masthead{
+  display: none;
+}
+.header_left_right{
+  .head_header{
+    .logo_header{
+      .title_logo{
+        font-family:GreatVibes-Regular !important;
+
+      }
+    }
+  }
+}
