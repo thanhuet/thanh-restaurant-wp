@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 gulp.task('watch', function () {
     gulp.watch(['assets/sass/**/*.scss'], ['scss']);
 });
-
+//yolo
 gulp.task('scss', function () {
     gulp.src('assets/sass/style.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest(''))
 });
