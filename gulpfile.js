@@ -1,11 +1,17 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-gulp.task('scss', function () {
-    gulp.src('assets/sass/style.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest(''))
-});
+var livereload = require('gulp-livereload');
+
 gulp.task('watch', function () {
-    gulp.watch(['assets/sass/*.scss',
-        'inc/widgets/**/assets/sass/*.scss',
-    'assets/sass/header/menu/*.scss'], ['scss']);
+    livereload.listen();
+    gulp.watch(['assets/sass/**/*.scss'], ['scss']);
+});
+//yolotest
+gulp.task('scss', function () {
+    gulp.src('assets/sass/style.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(''))
+        .pipe(livereload());
 });
 gulp.task('default', ['scss', 'watch']);
+//hehe
