@@ -70,6 +70,7 @@ Domain Path: /languages/
 @import "header/header";
 @import "header/main-menu";
 @import "header/mega-menu";
+@import "header/primary-menu";
 /*!--------------------------------------------------------------
 7.0 - breadcrumb
 ----------------------------------------------------------------*/
@@ -102,3 +103,9 @@ Domain Path: /languages/
 13.0 - general
 ----------------------------------------------------------------*/
 @import "general-style/general-style";
+
+#menu-item-24 {
+  a{
+    color: red!important;
+  }
+}

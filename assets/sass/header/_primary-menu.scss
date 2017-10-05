@@ -1,0 +1,26 @@
+.menu-primary-container {
+  .menu {
+    margin: 30px 330px;
+    list-style: none;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    li {
+      margin: auto;
+      &.current-menu-item {
+        a {
+          color: #e6ae69 !important;
+        }
+      }
+      a {
+        color: #212121;
+        font-weight: bolder;
+        &:hover {
+          color: #e6ae69;
+          transition: all 0.3s linear;
+        }
+      }
+    }
+  }
+}
+
