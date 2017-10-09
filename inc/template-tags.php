@@ -44,7 +44,7 @@ function thim_entry_meta_date() {
  * @return string
  */
 function thim_get_entry_meta_date() {
-	$html = '<span class="entry-date">' . get_the_date( 'F j, Y' ) . '</span>';
+	$html = '<span class="entry-date" style="font-weight: bold">' . get_the_date( 'F j, Y' ) . '</span>';
 
 	return $html;
 }
@@ -109,7 +109,7 @@ function thim_get_entry_meta_tags() {
  */
 function thim_entry_meta_comment_number() {
 	if ( comments_open() ) { ?>
-		<span class="comment-total"><i class="fa fa-comment-o"></i>
+		<span class="comment-total">
 			<?php comments_popup_link( '0 Comment', '1 Comment', '% Comments', 'comments-link', 'Comments are off for this post' ); ?>
 		</span>
 		<?php
@@ -125,13 +125,15 @@ if ( ! function_exists( 'thim_entry_meta' ) ) :
 	function thim_entry_meta() {
 		echo '<div class="entry-meta">';
 
+        if ( get_theme_mod( 'show_date_meta_tags', true ) ) :
+            echo thim_get_entry_meta_date();
+        endif;
+
 		if ( get_theme_mod( 'show_author_meta_tags', true ) ) :
 			echo thim_get_entry_meta_author();
 		endif;
 
-		if ( get_theme_mod( 'show_date_meta_tags', true ) ) :
-			echo thim_get_entry_meta_date();
-		endif;
+
 
 		if ( get_theme_mod( 'show_category_meta_tags', true ) ) :
 			echo thim_get_entry_meta_category();

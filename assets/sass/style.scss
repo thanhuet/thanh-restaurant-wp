@@ -106,6 +106,8 @@ Domain Path: /languages/
 @import "inc/widgets/logo_header/assets/sass/logo_header";
 // import style menu ---------------------
 @import "header/menu/menu";
+//----------
+@import "inc/widgets/posts/assets/sass/posts";
 
 #thim-header-topbar{
     background: none !important;
@@ -118,8 +120,41 @@ Domain Path: /languages/
     .logo_header{
       .title_logo{
         font-family:GreatVibes-Regular !important;
-
       }
     }
   }
 }
+// full width main
+#main{
+  flex-basis:100%;
+  max-width:100%;
+}
+// size thumbnail
+article{
+  .entry-meta{
+    .author {
+      margin-right:0px !important;
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}
+article:nth-child(2n) {
+  .content-inner {
+    .entry-top {
+      float: left;
+      margin-right: 50px;
+    }
+  }
+}
+article:nth-child(2n+1) {
+  .content-inner {
+    .entry-top {
+      float: right;
+      margin-left: 50px;
+    }
+  }
+}
+
+

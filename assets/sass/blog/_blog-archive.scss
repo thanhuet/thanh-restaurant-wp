@@ -20,7 +20,7 @@
 				display: inline-block;
 				margin-right: 5px;
 				a {
-					font-weight: bold;
+					//font-weight: bold;
 					text-transform: capitalize;
 					font-style: italic;
 				}
@@ -47,7 +47,7 @@
 
 .entry-meta > span {
 	&:after {
-		content: ",";
+		content: " - ";
 		width: auto;
 	}
 	&:last-child,
@@ -70,14 +70,18 @@
 		@extend .clear-after;
 	}
 	article {
-		margin-bottom: 60px;
+		margin-bottom: 37px;
+		padding-bottom:50px;
+		position: relative;
+		overflow: auto;
 		.content-inner {
 			.thumbnail,
 			.post-image {
 				position: relative;
 				overflow: hidden;
 				img {
-					width: 100%;
+					width: 560px;
+					height:360px;
 					@include transition(all 1s);
 				}
 			}
@@ -88,7 +92,7 @@
 				padding: 15px 0px 40px;
 				.entry-meta {
 					.comment-total {
-						display: none;
+						//display: block;
 					}
 				}
 			}
@@ -96,10 +100,15 @@
 			.readmore {
 				margin-top: 20px;
 				a {
-					position: relative;
+					//position: relative;
+					position: absolute;
+					bottom: 49px;
 					font-weight: 700;
 					font-size: $font-size-small;
 					text-transform: uppercase;
+					background: #FFFFFF;
+					border: 1px solid #CCCCCC;
+					padding:20px 48px;
 					&:before, &:after {
 						content: '';
 						position: absolute;
@@ -133,10 +142,21 @@
 			}
 		}
 	}
+	article:after{
+		width:500px;
+		height:2px;
+		background: #CCCCCC;
+		position: absolute;
+		bottom:0;
+		content: '';
+		left:50%;
+		margin-left:-250px;
+	}
 }
 
 // Panagation
 .loop-pagination {
+	text-align: center;
 	margin: 0;
 	li {
 		display: inline-block;
