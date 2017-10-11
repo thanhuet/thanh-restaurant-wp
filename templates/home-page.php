@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-	<div id="home-main-content" class="home-content home-page container" role="main">
+	<div id="home-main-content" class="home-content home-page" role="main">
 		<?php
 		while ( have_posts() ) : the_post();
 			the_content();
