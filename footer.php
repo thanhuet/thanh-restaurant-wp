@@ -12,14 +12,17 @@
 
 </div><!-- #main-content -->
 <footer id="colophon" class="site-footer">
+    <div class="container bottom-bar row">
+		<?php dynamic_sidebar( 'bottom_bar' ) ?>
+    </div>
 	<?php thim_footer_layout(); ?>
 </footer><!-- #colophon -->
 </div><!-- content-pusher -->
 </div><!-- wrapper-container -->
-
+<!--
 <?php wp_footer(); ?>
 
-<?php do_action( 'thim_space_body' ); ?>
+<?php /*do_action( 'thim_space_body' ); */?>
 
 </body>
 </html>
