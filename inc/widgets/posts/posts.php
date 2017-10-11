@@ -49,12 +49,6 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 				),
 
-				'thumbnail_size' => array(
-					"type"    => "text",
-					"label"   => esc_attr__( "Thumbnail size", 'mag-wp' ),
-					'default' => '440x285',
-					'desc'    => esc_attr__( 'Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height).', 'mag-wp' ),
-				),
 
 			)
 		);
