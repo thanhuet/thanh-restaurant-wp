@@ -133,11 +133,9 @@ if ( ! function_exists( 'thim_entry_meta' ) ) :
 			echo thim_get_entry_meta_author();
 		endif;
 
-
-
-		if ( get_theme_mod( 'show_category_meta_tags', true ) ) :
-			echo thim_get_entry_meta_category();
-		endif;
+//		if ( get_theme_mod( 'show_category_meta_tags', true ) ) :
+//			echo thim_get_entry_meta_category();
+//		endif;
 
 		if ( get_theme_mod( 'show_comment_meta_tags', true ) ) :
 			thim_entry_meta_comment_number();

@@ -25,11 +25,11 @@
 					margin-bottom: 35px;
 					span.comment-total {
 						margin-right: 0;
-						margin-left: 20px;
+						//margin-left: 20px;
 					}
 					.entry-date {
 						&:after {
-							content: ",";
+							content: " - ";
 							width: auto;
 						}
 					}

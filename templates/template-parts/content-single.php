@@ -18,6 +18,7 @@
 		<div class="entry-content">
 			<header class="entry-header">
 				<?php
+//                dynamic_sidebar('sidebar');
 				if ( is_single() ) {
 					the_title( '<h1 class="entry-title">', '</h1>' );
 				} else {

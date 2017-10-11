@@ -131,6 +131,14 @@ Domain Path: /languages/
 }
 // size thumbnail
 article{
+  .content-inner{
+    .entry-top{
+      width:48%;
+    }
+    .entry-content{
+      width:48%;
+    }
+  }
   .entry-meta{
     .author {
       margin-right:0px !important;
@@ -140,19 +148,20 @@ article{
     }
   }
 }
-article:nth-child(2n) {
-  .content-inner {
-    .entry-top {
-      float: left;
-      margin-right: 50px;
-    }
-  }
-}
 article:nth-child(2n+1) {
   .content-inner {
     .entry-top {
+      float: left;
+    }
+    .entry-content{
       float: right;
-      margin-left: 50px;
+    }
+  }
+}
+article:nth-child(2n) {
+  .content-inner {
+    .entry-top {
+      float: right;
     }
   }
 }

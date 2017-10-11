@@ -80,7 +80,7 @@
 				position: relative;
 				overflow: hidden;
 				img {
-					width: 560px;
+					width: 100%;
 					height:360px;
 					@include transition(all 1s);
 				}
