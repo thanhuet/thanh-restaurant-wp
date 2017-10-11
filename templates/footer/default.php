@@ -6,18 +6,20 @@
  */
 ?>
 
-<div class="footer">
+<!--<div class="footer">
 	<div class="container">
-		<?php thim_footer_widgets(); ?>
+		<?php /*thim_footer_widgets(); */?>
 	</div>
-</div>
+</div>-->
 
 <div class="copyright-area">
 	<div class="container">
 		<div class="copyright-content">
 			<div class="row">
 				<div class="col-sm-6">
-					<?php thim_copyright_bar(); ?>
+                    <div class="copyright-text">
+						<?php echo 'Powered by <a class="powered-by-link" href="https://wordpress.org/">WordPress</a>. Designed by <a class="designed-by-link" href="https://thimpress.com">ThimPress</a>' ?>
+                    </div>
 				</div>
 
 				<div class="col-sm-6 text-right">
