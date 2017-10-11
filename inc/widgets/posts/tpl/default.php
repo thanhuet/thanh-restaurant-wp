@@ -47,7 +47,7 @@ $posts = new WP_Query( $news_args );
                             <header class="entry-header">
 								<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
                             </header>
-                            <div class="entry-meta">
+                            <div class="meta-entry">
 								<?php thim_posted_on(); ?>
 								<?php if ( comments_open() ) {
 									echo '<span class="related-post-reply">';
@@ -79,7 +79,7 @@ $posts = new WP_Query( $news_args );
 	/*	$blog_link = get_post_type_archive_link( 'post' );
 		*/ ?>
     <div class="readmore">
-        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'thim-starter-theme' ); ?></a>
+        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'View More', 'thim-starter-theme' ); ?></a>
     </div><!-- .read-more -->
     <!--	<div class="text-center botton-category">
 		<a class="btn btn-primary" href="<?php /*echo esc_url( $blog_link ); */ ?>">
