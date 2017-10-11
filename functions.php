@@ -51,6 +51,7 @@ if ( ! function_exists( 'thim_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary Menu', 'thim-starter-theme' ),
+			'footer_menu'=>esc_html__('Footer Menu', 'thim-starter-theme'),
 		) );
 
 		if ( get_theme_mod( 'copyright_menu', true ) ) {
@@ -149,7 +150,24 @@ function thim_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
-
+	register_sidebar( array(
+		'name'          => esc_html__( 'Thim: Bottombar', 'thim-starter-theme' ),
+		'id'            => 'bottom_bar',
+		'description'   => esc_html__( 'Site links.', 'thim-starter-theme' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s col col-6 col-sm-3">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Thim: Topbar Center', 'thim-starter-theme' ),
+		'id'            => 'topbar_center',
+		'description'   => esc_html__( 'Display in topbar center.', 'thim-starter-theme' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s col-xl-4">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 	if ( isset( $thim_options['footer_columns'] ) ) {
 		$footer_columns = (int) $thim_options['footer_columns'];
 		for ( $i = 1; $i <= $footer_columns; $i ++ ) {
@@ -306,7 +324,7 @@ if ( file_exists( THIM_DIR . 'shortcodes/thim-startertheme.php' ) && ( ! class_e
  * Custom widgets
  * @todo: remove comment if you want to use siteorigin
  */
-//require THIM_DIR . 'inc/widgets/widgets.php';
+require THIM_DIR . 'inc/widgets/widgets.php';
 
 //pannel Widget Group
 //function thim_widget_group( $tabs ) {
