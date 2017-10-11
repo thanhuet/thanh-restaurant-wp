@@ -19,8 +19,9 @@ if ( is_page_template( 'templates/home-page.php' ) ) {
 
 		do_action( 'thim_wrapper_loop_start' );
 		include $file;
-
-		do_action( 'thim_wrapper_loop_end' );
+        if(is_single()) {
+            do_action('thim_wrapper_loop_end');
+        }
 		?>
 	</section>
 	<?php

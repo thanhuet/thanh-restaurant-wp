@@ -125,45 +125,68 @@ Domain Path: /languages/
   }
 }
 // full width main
-#main{
-  flex-basis:100%;
-  max-width:100%;
-}
-// size thumbnail
-article{
-  .content-inner{
-    .entry-top{
-      width:48%;
+.blog {
+  #main {
+    flex-basis: 100%;
+    max-width: 100%;
+    article{
+      .content-inner{
+        .entry-top{
+          width:48%;
+        }
+        .entry-content{
+          width:48%;
+        }
+      }
+      .entry-meta{
+        .author {
+          margin-right:0px !important;
+          a {
+            font-weight: bold;
+          }
+        }
+      }
     }
-    .entry-content{
-      width:48%;
+    article:nth-child(2n+1) {
+      .content-inner {
+        .entry-top {
+          float: left;
+        }
+        .entry-content{
+          float: right;
+        }
+      }
     }
-  }
-  .entry-meta{
-    .author {
-      margin-right:0px !important;
-      a {
-        font-weight: bold;
+    article:nth-child(2n) {
+      .content-inner {
+        .entry-top {
+          float: right;
+        }
       }
     }
   }
+
 }
-article:nth-child(2n+1) {
-  .content-inner {
-    .entry-top {
-      float: left;
-    }
-    .entry-content{
-      float: right;
+.single-post{
+  #main{
+    max-width:70%;
+    article{
+      overflow: auto;
+      .entry-meta{
+        .author {
+          margin-right:0px !important;
+          a {
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
-}
-article:nth-child(2n) {
-  .content-inner {
-    .entry-top {
-      float: right;
-    }
+  .secondary{
   }
 }
+// size thumbnail
+
+
 
 

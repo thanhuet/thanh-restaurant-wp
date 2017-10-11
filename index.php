@@ -13,6 +13,7 @@
 ?>
 
 <?php
+
 if ( have_posts() ) :?>
 	<div class="blog-content blog-list archive_switch">
 		<?php
