@@ -52,7 +52,6 @@
 				<?php endif; ?>
 				<?php do_action( 'thim_social_share' ); ?>
 			</div>
-
 		</div><!-- .entry-content -->
 
 	</div><!-- .content-inner -->
