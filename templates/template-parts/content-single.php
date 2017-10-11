@@ -51,6 +51,7 @@
 					<?php thim_entry_meta_tags(); ?>
 				<?php endif; ?>
 				<?php do_action( 'thim_social_share' ); ?>
+
 			</div>
 		</div><!-- .entry-content -->
 
