@@ -344,9 +344,9 @@ if ( ! function_exists( 'thim_new_comment_fields' ) ) {
 		$aria_req  = ( $req ? 'aria-required=true' : '' );
 
 		$fields = array(
-			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'thim-starter-theme' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'thim-starter-theme' )  . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'thim-starter-theme' )  . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
+//			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'thim-starter-theme' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 		);
 
 		return $fields;
