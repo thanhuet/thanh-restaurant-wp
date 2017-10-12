@@ -7537,6 +7537,8 @@ a:active {
     -o-transform: translate(0%, -50%); }
     .main-top .content h1,
     .main-top .content h2 {
+      text-transform: uppercase;
+      font-weight: bolder;
       margin-top: 0;
       text-align: inherit; }
     .main-top .content .banner-description {
@@ -7546,7 +7548,7 @@ a:active {
 #breadcrumbs {
   padding: 13px 0;
   margin: 0;
-  border-bottom: 1px solid #eee; }
+  border-bottom: none; }
   #breadcrumbs li {
     line-height: 25px;
     display: inline-block;
