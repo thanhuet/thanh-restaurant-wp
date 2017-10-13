@@ -122,7 +122,6 @@ $parallax    = get_theme_mod( 'enable_parallax_page_title', true ) ? ' data-stel
 ?>
 <div class="page-title">
 	<?php if ( $hide_title != '1' ) : ?>
-        <?php echo var_dump($style_breadcrumb)?>
         <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
             <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
 			<?php if ( $hide_title != '1' ) : ?>
