@@ -9333,6 +9333,30 @@ input[type="submit"],
 .error-404 .search-form {
   max-width: 50%; }
 
+.wpcf7-form .content-contact-form {
+  max-width: 570px; }
+  .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
+    color: white;
+    height: 45px;
+    padding: 14px 0 15px 20px;
+    background: none;
+    border: 1px solid #fff;
+    width: 100%;
+    font-size: 14px; }
+    .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea::placeholder {
+      color: white; }
+  .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
+    margin-top: 30px;
+    height: auto; }
+  .wpcf7-form .content-contact-form .contact-submit {
+    margin-top: 30px; }
+    .wpcf7-form .content-contact-form .contact-submit .wpcf7-submit {
+      font-size: 14px;
+      padding: 15px 30px;
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      color: #616161; }
+
 /*!--------------------------------------------------------------
 14.0 - widget
 ----------------------------------------------------------------*/

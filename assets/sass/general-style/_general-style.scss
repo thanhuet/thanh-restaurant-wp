@@ -81,3 +81,44 @@
   max-width: 50%;
 }
 
+// Style Contact Form Resta
+.wpcf7-form {
+  .content-contact-form {
+    max-width: 570px;
+    .wpcf7-form-control-wrap {
+      .wpcf7-text {
+        color: white;
+        height: 45px;
+        padding: 14px 0 15px 20px;
+        background: none;
+        border: 1px solid #fff;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder{
+          color: white;
+        }
+      }
+      .wpcf7-emai {
+        @extend .wpcf7-text;
+
+      }
+      .wpcf7-textarea {
+        margin-top: 30px;
+        @extend .wpcf7-text;
+        height: auto;
+      }
+    }
+
+    .contact-submit {
+      margin-top: 30px;
+      .wpcf7-submit {
+        font-size: 14px;
+        padding: 15px 30px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #616161;
+
+      }
+    }
+  }
+}
