@@ -9333,6 +9333,21 @@ input[type="submit"],
 .error-404 .search-form {
   max-width: 50%; }
 
+.error-404 {
+  padding: 100px 14%; }
+  .error-404 .content-error-404 {
+    margin-top: 90px; }
+    .error-404 .content-error-404 .page-header .page-title {
+      font-family: "Great Vibes", sans-serif;
+      font-size: 40px; }
+    .error-404 .content-error-404 .page-content {
+      margin-top: -25px;
+      font-size: 40px;
+      font-weight: bolder; }
+    .error-404 .content-error-404 .page-404-detail {
+      font-size: 16px;
+      margin-top: 60px; }
+
 .wpcf7-form .content-contact-form {
   max-width: 570px; }
   .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {

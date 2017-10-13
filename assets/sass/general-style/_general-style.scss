@@ -81,6 +81,28 @@
   max-width: 50%;
 }
 
+.error-404 {
+  padding: 100px 14%;
+  .content-error-404 {
+    margin-top: 90px;
+    .page-header {
+      .page-title {
+        font-family: "Great Vibes", sans-serif;
+        font-size: 40px;
+      }
+    }
+    .page-content {
+      margin-top: -25px;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    .page-404-detail {
+      font-size: 16px;
+      margin-top: 60px;
+    }
+  }
+}
+
 // Style Contact Form Resta
 .wpcf7-form {
   .content-contact-form {
@@ -94,7 +116,7 @@
         border: 1px solid #fff;
         width: 100%;
         font-size: 14px;
-        &::placeholder{
+        &::placeholder {
           color: white;
         }
       }
