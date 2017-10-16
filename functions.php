@@ -280,6 +280,7 @@ require THIM_DIR . 'inc/custom-functions.php';
  */
 require THIM_DIR . 'inc/customizer.php';
 
+
 if ( is_admin() && current_user_can( 'manage_options' ) ) {
 	require THIM_DIR . 'inc/admin/require-thim-core.php';
 	require THIM_DIR . 'inc/data/plugins-require.php';
