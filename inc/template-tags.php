@@ -380,19 +380,20 @@ if ( ! function_exists( 'thim_comment' ) ) {
 		<div class="content-comment">
 			<div class="author">
 				<?php printf( '<span class="author-name">%s</span>', get_comment_author_link() ) ?>
-				<span class="comment-extra-info">
-					<?php
-					printf( get_comment_date() );
-					echo esc_html__( ' at ', 'thim-starter-theme' );
-					printf( get_comment_time() ) ?>
-				</span>
+<!--				<span class="comment-extra-info">-->
+<!--					--><?php
+//					printf( get_comment_date() );
+//					echo esc_html__( ' at ', 'thim-starter-theme' );
+//					printf( get_comment_time() ) ?>
+<!--				</span>-->
 				<span>
 					<?php comment_reply_link( array_merge( $args, array(
 						'add_below' => $add_below,
 						'depth'     => $depth,
-						'max_depth' => $args['max_depth']
+						'max_depth' => $args['max_depth'],
+                        'reply_text' => 'REPLY'
 					) ) ) ?>
-					<?php edit_comment_link( esc_html__( 'Edit', 'thim-starter-theme' ), '', '' ); ?>
+					<?php edit_comment_link( esc_html__( 'EDIT', 'thim-starter-theme' ), '', '' ); ?>
 				</span>
 			</div>
 			<?php if ( $comment->comment_approved == '0' ) : ?>

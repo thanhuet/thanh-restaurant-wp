@@ -57,6 +57,7 @@ if ( post_password_required() ) {
 
 		<div class="form-comment">
 			<?php comment_form( array(
+                'label_submit' => 'SUBMIT',
 				'comment_field' => '<p class="comment-form-comment"><textarea placeholder="' . esc_attr__( 'Message...', 'thim-starter-theme' ) . '" id="comment" name="comment" cols="45" rows="8" aria-required="true">' . '</textarea></p>'
 			) ); ?>
 		</div>
