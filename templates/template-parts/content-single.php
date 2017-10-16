@@ -56,7 +56,7 @@
 
 	</div><!-- .content-inner -->
 
-	<?php do_action( 'thim_about_author' ); ?>
+<!--	--><?php //do_action( 'thim_about_author' ); ?>
 
 	<?php if ( get_theme_mod( 'blog_single_related_post', true ) ) :
 		get_template_part( 'templates/template-parts/related-posts' );

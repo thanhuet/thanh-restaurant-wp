@@ -44,7 +44,7 @@ function thim_entry_meta_date() {
  * @return string
  */
 function thim_get_entry_meta_date() {
-	$html = '<span class="entry-date">' . get_the_date( 'j F Y' ) . '</span>';
+    $html = '<span class="entry-date" style="font-weight: bold">' . get_the_date( 'F j, Y' ) . '</span>';
 
 	return $html;
 }
@@ -109,7 +109,7 @@ function thim_get_entry_meta_tags() {
  */
 function thim_entry_meta_comment_number() {
 	if ( comments_open() ) { ?>
-		<span class="comment-total"><i class="fa fa-comment-o"></i>
+        <span class="comment-total">
 			<?php comments_popup_link( '0 Comment', '1 Comment', '% Comments', 'comments-link', 'Comments are off for this post' ); ?>
 		</span>
 		<?php
@@ -125,17 +125,19 @@ if ( ! function_exists( 'thim_entry_meta' ) ) :
 	function thim_entry_meta() {
 		echo '<div class="entry-meta">';
 
+        if ( get_theme_mod( 'show_date_meta_tags', true ) ) :
+            echo thim_get_entry_meta_date();
+        endif;
+
 		if ( get_theme_mod( 'show_author_meta_tags', true ) ) :
 			echo thim_get_entry_meta_author();
 		endif;
 
-		if ( get_theme_mod( 'show_date_meta_tags', true ) ) :
-			echo thim_get_entry_meta_date();
-		endif;
 
-		if ( get_theme_mod( 'show_category_meta_tags', true ) ) :
-			echo thim_get_entry_meta_category();
-		endif;
+
+//		if ( get_theme_mod( 'show_category_meta_tags', true ) ) :
+//			echo thim_get_entry_meta_category();
+//		endif;
 
 		if ( get_theme_mod( 'show_comment_meta_tags', true ) ) :
 			thim_entry_meta_comment_number();
@@ -344,8 +346,8 @@ if ( ! function_exists( 'thim_new_comment_fields' ) ) {
 		$aria_req  = ( $req ? 'aria-required=true' : '' );
 
 		$fields = array(
-			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
 			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'thim-starter-theme' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 		);
 
@@ -380,17 +382,18 @@ if ( ! function_exists( 'thim_comment' ) ) {
 		<div class="content-comment">
 			<div class="author">
 				<?php printf( '<span class="author-name">%s</span>', get_comment_author_link() ) ?>
-				<span class="comment-extra-info">
-					<?php
-					printf( get_comment_date() );
-					echo esc_html__( ' at ', 'thim-starter-theme' );
-					printf( get_comment_time() ) ?>
-				</span>
+<!--				<span class="comment-extra-info">-->
+<!--					--><?php
+//					printf( get_comment_date() );
+//					echo esc_html__( ' at ', 'thim-starter-theme' );
+//					printf( get_comment_time() ) ?>
+<!--				</span>-->
 				<span>
 					<?php comment_reply_link( array_merge( $args, array(
 						'add_below' => $add_below,
 						'depth'     => $depth,
-						'max_depth' => $args['max_depth']
+						'max_depth' => $args['max_depth'],
+                        'reply_text' => 'REPLY'
 					) ) ) ?>
 					<?php edit_comment_link( esc_html__( 'Edit', 'thim-starter-theme' ), '', '' ); ?>
 				</span>
