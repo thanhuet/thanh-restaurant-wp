@@ -1,0 +1,254 @@
+/*foot-card-widget*/
+.inverted-outer {
+  overflow: hidden;
+  .inverted-inner {
+    border: 1px solid #212121;
+    i {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #212121;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    .inverted-top {
+      margin-top: -10px;
+    }
+    .inverted-bottom {
+      margin-top: -15px;
+      margin-bottom: -10px;
+    }
+    .inverted-left {
+      float: left;
+      margin-left: -10px;
+    }
+    .inverted-right {
+      float: right;
+      margin-right: -10px;
+    }
+    .inverted-content {
+      padding: 40px 10%;
+      text-align: center;
+      .food-card-img {
+        height: 210px;
+
+      }
+      .food-card-name {
+        font-family: 'Great Vibes',sans-serif;
+        font-size: 40px;
+        color: #212121;
+        margin-top: 40px;
+      }
+      .food-card-des{
+        font-size: 16px;
+      }
+    }
+  }
+}
+/*foot-card-widget*/
+
+/*foot-list-widget*/
+.widget_food-list {
+  text-align: center;
+  letter-spacing: 0px;
+  .content-food-list-widget {
+    position: relative;
+    .main-food-list {
+      padding-top: 50px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .title-food-list {
+        font-family: "Great Vibes", sans-serif;
+        font-size: 40px;
+      }
+      .desc-food-list {
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: bolder;
+        margin-bottom: 45px;
+      }
+      .detail-food-list {
+        line-height: 45px;
+        margin-bottom: 50px;
+      }
+      .btn-food-list {
+        height: 60px;
+        padding: 20px 50px;
+        font-size: 16px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/*foot-list-widget*/
+
+/*home-image-content-widget*/
+#banner-page-image{
+  .home-image-content {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+/*home-image-content-widget*/
+
+/*introduce-site-widget*/
+.intro-site-container{
+  margin-left: 0;
+  margin-top: 90px;
+  .intro-title{
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+  }
+  .intro-info{
+    margin-top: 20px;
+    display:flex;
+    font-size:40px;
+    font-weight: bolder;
+  }
+  .intro-detail{
+    margin-top: 32px;
+    font-size: 16px;
+  }
+}
+/*introduce-site-widget*/
+
+/*post-widget*/
+.thim-sc-posts {
+  margin-bottom: 130px;
+  .thim-sc-heading {
+    margin-bottom: 70px;
+    text-align: center;
+    .title {
+      font-size: 40px;
+      font-family: 'Great Vibes', sans-serif;
+/*      margin-bottom: -20px;*/
+    }
+    .description {
+
+      font-size: 40px;
+      font-weight: bolder;
+    }
+  }
+  .content-inner {
+    .entry-content {
+
+      .meta-entry {
+        margin-bottom: 25px;
+        margin-top: 23px;
+        .posted-on {
+          a {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 25px;
+          }
+          &:after {
+            content: " -";
+            width: auto;
+          }
+        }
+        .byline {
+          .author {
+            a {
+              text-transform: capitalize;
+              font-weight: bolder;
+              font-size: 14px;
+              letter-spacing: 0;
+              line-height: 25px;
+            }
+            &:after {
+              content: " -";
+              width: auto;
+            }
+          }
+        }
+        .related-post-reply {
+          a {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 25px;
+          }
+        }
+      }
+      .entry-header {
+        .entry-title {
+          a {
+            font-size: 26px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+  .readmore {
+    text-align: center;
+    margin-top: 50px;
+    a {
+      background: #FFFFFF;
+      border: 1px solid #CCCCCC;
+      padding: 20px 50px;
+      font-weight: bolder;
+      font-size: 16px;
+    }
+
+  }
+}
+/*post-widget*/
+
+/*rating-demo-widget*/
+.so-widget-rate-demo {
+  position: relative;
+  .overlay-top-rate {
+    position: absolute;
+    top: 0;
+    background: black;
+    opacity: 0.8;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .customer-rate-demo {
+    padding: 100px 14% 100px 14%;
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    .image-profile {
+
+      img{
+      }
+    }
+    .info-rate {
+      .customer-feedback {
+        .special-word {
+          font-size: 33px;
+        }
+        .customer-comment {
+          margin-top: -15px;
+          margin-left: 50px;
+          font-size: 20px;
+        }
+      }
+      .customer-rate-star {
+        margin-left: 50px;
+        margin-top: 30px;
+        .dashicons-star-filled {
+          color: #e6ae48;
+        }
+      }
+      .customer-name {
+        margin-top: 40px;
+        font-size: 34px;
+        font-family: "Great Vibes", sans-serif;
+      }
+    }
+  }
+}
+/*rating-demo-widget*/

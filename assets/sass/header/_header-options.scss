@@ -119,5 +119,21 @@ header#masthead {
 		}
 	}
 }
+.menu-primary-container {
+	.menu {
+		li {
+			&.current-menu-item {
+				a {
+					color: $thim_body_primary_color;
+				}
+			}
+			a {
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+		}
+	}
+}
 
 

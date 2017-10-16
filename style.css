@@ -7498,13 +7498,10 @@ a:active {
   font-size: 14px; }
   .menu-primary-container .menu li {
     margin: auto; }
-    .menu-primary-container .menu li.current-menu-item a {
-      color: #e6ae69 !important; }
     .menu-primary-container .menu li a {
       color: #212121;
       font-weight: bolder; }
       .menu-primary-container .menu li a:hover {
-        color: #e6ae69;
         transition: all 0.3s linear; }
 
 /*!--------------------------------------------------------------
@@ -8100,14 +8097,12 @@ footer#colophon .copyright-content {
     margin-top: 60px;
     font-size: 16px;
     letter-spacing: 0px;
-    line-height: 25px;
-    color: #616161; }
+    line-height: 25px; }
   .bottom-bar .widget_info-footer {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 0; }
     .bottom-bar .widget_info-footer .title-info-footer {
-      color: #212121;
       font-weight: bolder;
       margin-bottom: 53px; }
       .bottom-bar .widget_info-footer .title-info-footer::after {
@@ -8122,8 +8117,7 @@ footer#colophon .copyright-content {
       font-weight: bolder;
       line-height: 32px !important; }
     .bottom-bar .widget_info-footer .info-content-footer {
-      line-height: 32px !important;
-      color: #616161; }
+      line-height: 32px !important; }
   .bottom-bar .widget_nav_menu .widget-title {
     font-family: 'Roboto', sans-serif !important;
     font-size: 16px;
@@ -8143,7 +8137,6 @@ footer#colophon .copyright-content {
     margin: 0; }
     .bottom-bar .widget_nav_menu .menu-menu-footer-container .menu li a {
       line-height: 32px;
-      color: #616161;
       font-size: 16px; }
 
 /*!--------------------------------------------------------------
@@ -9375,6 +9368,7 @@ input[type="submit"],
 /*!--------------------------------------------------------------
 14.0 - widget
 ----------------------------------------------------------------*/
+/*foot-card-widget*/
 .inverted-outer {
   overflow: hidden; }
   .inverted-outer .inverted-inner {
@@ -9409,25 +9403,8 @@ input[type="submit"],
       .inverted-outer .inverted-inner .inverted-content .food-card-des {
         font-size: 16px; }
 
-.intro-site-container {
-  margin-left: 0;
-  margin-top: 90px; }
-  .intro-site-container .intro-title {
-    font-family: 'Great Vibes', sans-serif;
-    font-size: 40px; }
-  .intro-site-container .intro-info {
-    margin-top: -20px;
-    display: flex;
-    font-size: 40px;
-    font-weight: bolder; }
-  .intro-site-container .intro-detail {
-    margin-top: 32px;
-    font-size: 16px; }
-
-#banner-page-image .home-image-content img {
-  width: 100%;
-  object-fit: cover; }
-
+/*foot-card-widget*/
+/*foot-list-widget*/
 .widget_food-list {
   text-align: center;
   letter-spacing: 0px; }
@@ -9443,6 +9420,7 @@ input[type="submit"],
         font-family: "Great Vibes", sans-serif;
         font-size: 40px; }
       .widget_food-list .content-food-list-widget .main-food-list .desc-food-list {
+        margin-top: 20px;
         font-size: 40px;
         font-weight: bolder;
         margin-bottom: 45px; }
@@ -9459,39 +9437,31 @@ input[type="submit"],
         border: 1px solid #ccc;
         cursor: pointer; }
 
-.so-widget-rate-demo {
-  position: relative; }
-  .so-widget-rate-demo .overlay-top-rate {
-    position: absolute;
-    top: 0;
-    background: black;
-    opacity: 0.8;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 0; }
-  .so-widget-rate-demo .customer-rate-demo {
-    padding: 100px 14% 100px 14%;
-    color: white;
-    position: relative;
-    z-index: 10;
-    display: flex; }
-    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-feedback .special-word {
-      font-size: 33px; }
-    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-feedback .customer-comment {
-      margin-top: -15px;
-      margin-left: 50px;
-      font-size: 20px; }
-    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-rate-star {
-      margin-left: 50px;
-      margin-top: 30px; }
-      .so-widget-rate-demo .customer-rate-demo .info-rate .customer-rate-star .dashicons-star-filled {
-        color: #e6ae48; }
-    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-name {
-      margin-top: 40px;
-      font-size: 34px;
-      font-family: "Great Vibes", sans-serif; }
+/*foot-list-widget*/
+/*home-image-content-widget*/
+#banner-page-image .home-image-content img {
+  width: 100%;
+  object-fit: cover; }
 
+/*home-image-content-widget*/
+/*introduce-site-widget*/
+.intro-site-container {
+  margin-left: 0;
+  margin-top: 90px; }
+  .intro-site-container .intro-title {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px; }
+  .intro-site-container .intro-info {
+    margin-top: 20px;
+    display: flex;
+    font-size: 40px;
+    font-weight: bolder; }
+  .intro-site-container .intro-detail {
+    margin-top: 32px;
+    font-size: 16px; }
+
+/*introduce-site-widget*/
+/*post-widget*/
 .thim-sc-posts {
   margin-bottom: 130px; }
   .thim-sc-posts .thim-sc-heading {
@@ -9500,7 +9470,7 @@ input[type="submit"],
     .thim-sc-posts .thim-sc-heading .title {
       font-size: 40px;
       font-family: 'Great Vibes', sans-serif;
-      margin-bottom: -20px; }
+      /*      margin-bottom: -20px;*/ }
     .thim-sc-posts .thim-sc-heading .description {
       font-size: 40px;
       font-weight: bolder; }
@@ -9539,3 +9509,40 @@ input[type="submit"],
       padding: 20px 50px;
       font-weight: bolder;
       font-size: 16px; }
+
+/*post-widget*/
+/*rating-demo-widget*/
+.so-widget-rate-demo {
+  position: relative; }
+  .so-widget-rate-demo .overlay-top-rate {
+    position: absolute;
+    top: 0;
+    background: black;
+    opacity: 0.8;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0; }
+  .so-widget-rate-demo .customer-rate-demo {
+    padding: 100px 14% 100px 14%;
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex; }
+    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-feedback .special-word {
+      font-size: 33px; }
+    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-feedback .customer-comment {
+      margin-top: -15px;
+      margin-left: 50px;
+      font-size: 20px; }
+    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-rate-star {
+      margin-left: 50px;
+      margin-top: 30px; }
+      .so-widget-rate-demo .customer-rate-demo .info-rate .customer-rate-star .dashicons-star-filled {
+        color: #e6ae48; }
+    .so-widget-rate-demo .customer-rate-demo .info-rate .customer-name {
+      margin-top: 40px;
+      font-size: 34px;
+      font-family: "Great Vibes", sans-serif; }
+
+/*rating-demo-widget*/
