@@ -163,7 +163,9 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			if ( get_post_type() == "product" ) {
 				get_sidebar( 'shop' );
 			} else {
-				get_sidebar();
+			    if(is_single()) {
+                    get_sidebar();
+                }
 			}
 		}
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
