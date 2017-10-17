@@ -13,13 +13,13 @@
 
 (function ($) {
 	"use strict";
-
 	$(document).ready(function () {
 		thim_startertheme.ready();
 	});
 
 	$(window).load(function () {
 		thim_startertheme.load();
+
 	});
 
 	var thim_startertheme = {
@@ -44,6 +44,7 @@
 			this.header_menu_mobile();
 			this.parallax();
 			this.thim_post_gallery();
+            this.thim_slider_testimonial();
 		},
 
 		// CUSTOM FUNCTION IN BELOW
@@ -299,6 +300,24 @@
 		},
 
 
+        thim_slider_testimonial: function() {
+            $('.slider-testimonial').each(function(){
+                var test = $(this).thimContentSlider({
+                    itemMaxWidth     : 600,
+                    itemMinWidth     : 600,
+					items : 3,
+                    itemsVisible     : 1,
+                    itemPadding      : 0,
+                    activeItemRatio  : 1,
+                    activeItemPadding: 0,
+                    mouseWheel       : true,
+                    autoPlay         : true,
+                    pauseTime        : 3000,
+                    pauseOnHover     : true,
+                    imageSelector    : '.item-link',
+                    // contentSelector  : '.info-rate'
+                });
+            });
+        }
 	};
-
 })(jQuery);
