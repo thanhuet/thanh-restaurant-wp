@@ -177,7 +177,15 @@ Domain Path: /languages/
       }
     }
   }
-  .secondary{
+  #secondary{
+    h3:before{
+      position: absolute;
+      background: #E6AE69;
+      width:50px;
+      height:2px;
+      content: '';
+      top:40px;
+    }
   }
 }
 // size thumbnail

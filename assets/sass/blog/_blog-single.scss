@@ -40,6 +40,11 @@
 					margin-bottom: 92px;
 				}
 				.entry-tag-share {
+					display: flex;
+					flex-direction:column;
+					span{
+						margin-bottom:12px;
+					}
 					&:after {
 						@extend .clear-after;
 					}

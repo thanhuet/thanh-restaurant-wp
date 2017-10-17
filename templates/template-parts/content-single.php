@@ -46,6 +46,7 @@
 			</div>
 
 			<div class="entry-tag-share">
+                <span>Share this:</span>
 				<?php if ( get_theme_mod( 'show_tags_meta_tags', true ) ) : ?>
 					<?php thim_entry_meta_tags(); ?>
 				<?php endif; ?>

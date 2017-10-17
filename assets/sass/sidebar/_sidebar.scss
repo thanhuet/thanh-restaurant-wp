@@ -68,7 +68,7 @@
   &.widget_recent_entries,
   &.widget_nav_menu {
     ul li {
-      border-bottom: 1px solid $border-color;
+      //border-bottom: 1px solid $border-color;
       .children,
       .sub-menu {
         padding-left: 15px;
@@ -79,7 +79,9 @@
       }
       a {
         &:before {
-          content: "\f105";
+          color: #E6AE69;
+          content: "\f111";
+          font-size:8px;
           font-family: FontAwesome;
           margin-right: 10px;
           @include opacity(.5);
