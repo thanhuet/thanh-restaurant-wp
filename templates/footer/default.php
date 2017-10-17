@@ -11,14 +11,16 @@
 		<?php /*thim_footer_widgets(); */?>
 	</div>
 </div>-->
-
+<?php
+$copy_right_text = get_theme_mod( 'copyright_text' );
+?>
 <div class="copyright-area">
 	<div class="container">
 		<div class="copyright-content">
 			<div class="row">
 				<div class="col-sm-6">
                     <div class="copyright-text">
-						<?php echo 'Powered by <a class="powered-by-link" href="https://wordpress.org/">WordPress</a>. Designed by <a class="designed-by-link" href="https://thimpress.com">ThimPress</a>' ?>
+	                    <?php echo $copy_right_text; ?>
                     </div>
 				</div>
 
