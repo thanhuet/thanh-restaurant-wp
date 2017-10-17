@@ -14,4 +14,3 @@ gulp.task('scss', function () {
         .pipe(livereload());
 });
 gulp.task('default', ['scss', 'watch']);
-//hehe
