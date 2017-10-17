@@ -7703,7 +7703,9 @@ a:active {
     .blog-content article .content-inner .entry-title {
       font-size: 30px; }
     .blog-content article .content-inner .entry-content {
-      padding: 15px 0px 40px; }
+      padding: 15px 0px 40px;
+      margin-top: -17px !important;
+      padding-top: 0px; }
     .blog-content article .content-inner .readmore {
       margin-top: 20px; }
       .blog-content article .content-inner .readmore a {

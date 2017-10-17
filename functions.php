@@ -274,7 +274,7 @@ require THIM_DIR . 'inc/wrapper-layout.php';
  * Custom functions
  */
 require THIM_DIR . 'inc/custom-functions.php';
-//adsfadsfs
+
 /**
  * Customizer additions.
  */

@@ -78,7 +78,11 @@ class Thim_Customize_Options {
 		require_once $customize_path . 'sidebars.php';
 		require_once $customize_path . 'nav-menus.php';
 		require_once $customize_path . 'widgets.php';
-	}
+        require_once $customize_path . 'thanh_customizer.php';
+        require_once $customize_path . 'thanh_customizer-background.php';
+
+
+    }
 }
 
 $thim_customize = new Thim_Customize_Options();
