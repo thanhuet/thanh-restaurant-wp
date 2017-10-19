@@ -8078,13 +8078,19 @@ footer#colophon .footer-sidebars .col-md-20 {
   width: 20%; }
 
 footer#colophon .copyright-content {
-  padding: 30px 0;
+  text-align: center;
+  padding: 17.5px 0;
   border-top: 1px solid transparent; }
   footer#colophon .copyright-content ul {
     margin: 0;
     list-style: none; }
     footer#colophon .copyright-content ul li {
       display: inline-block; }
+
+footer#colophon .copyright-text {
+  font-size: 12px; }
+  footer#colophon .copyright-text .powered-by-smth, footer#colophon .copyright-text a {
+    font-weight: bolder; }
 
 .bottom-bar {
   border-top: 1px solid #999999;
@@ -9401,10 +9407,7 @@ input[type="submit"],
       .inverted-outer .inverted-inner .inverted-content .food-card-name {
         font-family: 'Great Vibes', sans-serif;
         font-size: 40px;
-        color: #212121;
         margin-top: 40px; }
-      .inverted-outer .inverted-inner .inverted-content .food-card-des {
-        font-size: 16px; }
 
 /*foot-card-widget*/
 /*foot-list-widget*/
@@ -9433,7 +9436,6 @@ input[type="submit"],
       .widget_food-list .content-food-list-widget .main-food-list .btn-food-list {
         height: 60px;
         padding: 20px 50px;
-        font-size: 16px;
         font-weight: bolder;
         letter-spacing: -1px;
         background-color: #fff;
@@ -9460,8 +9462,7 @@ input[type="submit"],
     font-size: 40px;
     font-weight: bolder; }
   .intro-site-container .intro-detail {
-    margin-top: 32px;
-    font-size: 16px; }
+    margin-top: 32px; }
 
 /*introduce-site-widget*/
 .intro-site-widget-contact-form .intro-title, .intro-site-widget-contact-form .intro-info, .intro-site-widget-about-us .intro-title, .intro-site-widget-about-us .intro-info {
@@ -9520,8 +9521,7 @@ input[type="submit"],
       cursor: pointer;
       border: 1px solid #CCCCCC;
       padding: 20px 50px;
-      font-weight: bolder;
-      font-size: 16px; }
+      font-weight: bolder; }
 
 /*post-widget*/
 /*rating-demo-widget*/

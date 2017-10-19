@@ -26,7 +26,8 @@ footer#colophon {
   }
 
   .copyright-content {
-    padding: 30px 0;
+    text-align: center;
+    padding: 17.5px 0;
     border-top: 1px solid transparent;
     ul {
       margin: 0;
@@ -34,6 +35,12 @@ footer#colophon {
       li {
         display: inline-block;
       }
+    }
+  }
+  .copyright-text {
+    font-size: 12px;
+    .powered-by-smth , a {
+      font-weight: bolder;
     }
   }
 }

@@ -18,14 +18,10 @@ $copy_right_text = get_theme_mod( 'copyright_text' );
 	<div class="container">
 		<div class="copyright-content">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-12">
                     <div class="copyright-text">
 	                    <?php echo $copy_right_text; ?>
                     </div>
-				</div>
-
-				<div class="col-sm-6 text-right">
-					<?php thim_copyright_menu(); ?>
 				</div>
 			</div>
 		</div>
