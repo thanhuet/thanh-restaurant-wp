@@ -79,7 +79,7 @@ $posts = new WP_Query( $news_args );
 	/*	$blog_link = get_post_type_archive_link( 'post' );
 		*/ ?>
     <div class="readmore">
-        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'View More', 'thim-starter-theme' ); ?></a>
+        <a class="btn-food-list">VIEW MORE</a>
     </div><!-- .read-more -->
     <!--	<div class="text-center botton-category">
 		<a class="btn btn-primary" href="<?php /*echo esc_url( $blog_link ); */ ?>">

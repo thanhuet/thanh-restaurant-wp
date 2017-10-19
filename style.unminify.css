@@ -9365,6 +9365,9 @@ input[type="submit"],
       border: 1px solid #FFFFFF;
       color: #616161; }
 
+.content-error-404 .page-content {
+  padding-top: 20px; }
+
 /*!--------------------------------------------------------------
 14.0 - widget
 ----------------------------------------------------------------*/
@@ -9396,7 +9399,7 @@ input[type="submit"],
       .inverted-outer .inverted-inner .inverted-content .food-card-img {
         height: 210px; }
       .inverted-outer .inverted-inner .inverted-content .food-card-name {
-        font-family: 'Great Vibes',sans-serif;
+        font-family: 'Great Vibes', sans-serif;
         font-size: 40px;
         color: #212121;
         margin-top: 40px; }
@@ -9461,6 +9464,9 @@ input[type="submit"],
     font-size: 16px; }
 
 /*introduce-site-widget*/
+.intro-site-widget-contact-form .intro-title, .intro-site-widget-contact-form .intro-info, .intro-site-widget-about-us .intro-title, .intro-site-widget-about-us .intro-info {
+  color: white !important; }
+
 /*post-widget*/
 .thim-sc-posts {
   margin-bottom: 130px; }
@@ -9474,37 +9480,44 @@ input[type="submit"],
     .thim-sc-posts .thim-sc-heading .description {
       font-size: 40px;
       font-weight: bolder; }
-  .thim-sc-posts .content-inner .entry-content .meta-entry {
-    margin-bottom: 25px;
-    margin-top: 23px; }
-    .thim-sc-posts .content-inner .entry-content .meta-entry .posted-on a {
-      font-size: 14px;
-      letter-spacing: 0;
-      line-height: 25px; }
-    .thim-sc-posts .content-inner .entry-content .meta-entry .posted-on:after {
-      content: " -";
-      width: auto; }
-    .thim-sc-posts .content-inner .entry-content .meta-entry .byline .author a {
-      text-transform: capitalize;
-      font-weight: bolder;
-      font-size: 14px;
-      letter-spacing: 0;
-      line-height: 25px; }
-    .thim-sc-posts .content-inner .entry-content .meta-entry .byline .author:after {
-      content: " -";
-      width: auto; }
-    .thim-sc-posts .content-inner .entry-content .meta-entry .related-post-reply a {
-      font-size: 14px;
-      letter-spacing: 0;
-      line-height: 25px; }
-  .thim-sc-posts .content-inner .entry-content .entry-header .entry-title a {
-    font-size: 26px;
-    font-weight: bolder; }
+  .thim-sc-posts .row .content-inner .entry-content {
+    padding-top: 0;
+    padding-left: 35px;
+    padding-right: 0; }
+    .thim-sc-posts .row .content-inner .entry-content .meta-entry {
+      margin-bottom: 25px;
+      margin-top: 23px; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on a {
+        color: #999;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 25px; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on:after {
+        content: " -";
+        width: auto; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author a {
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 25px; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author:after {
+        content: " -";
+        width: auto; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .related-post-reply a {
+        color: #999;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 25px; }
+    .thim-sc-posts .row .content-inner .entry-content .entry-header .entry-title a {
+      font-size: 26px;
+      font-weight: bolder; }
   .thim-sc-posts .readmore {
     text-align: center;
     margin-top: 50px; }
     .thim-sc-posts .readmore a {
       background: #FFFFFF;
+      cursor: pointer;
       border: 1px solid #CCCCCC;
       padding: 20px 50px;
       font-weight: bolder;

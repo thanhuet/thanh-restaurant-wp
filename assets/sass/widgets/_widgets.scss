@@ -33,17 +33,18 @@
 
       }
       .food-card-name {
-        font-family: 'Great Vibes',sans-serif;
+        font-family: 'Great Vibes', sans-serif;
         font-size: 40px;
         color: #212121;
         margin-top: 40px;
       }
-      .food-card-des{
+      .food-card-des {
         font-size: 16px;
       }
     }
   }
 }
+
 /*foot-card-widget*/
 
 /*foot-list-widget*/
@@ -85,10 +86,11 @@
     }
   }
 }
+
 /*foot-list-widget*/
 
 /*home-image-content-widget*/
-#banner-page-image{
+#banner-page-image {
   .home-image-content {
     img {
       width: 100%;
@@ -96,28 +98,35 @@
     }
   }
 }
+
 /*home-image-content-widget*/
 
 /*introduce-site-widget*/
-.intro-site-container{
+.intro-site-container {
   margin-left: 0;
   margin-top: 90px;
-  .intro-title{
+  .intro-title {
     font-family: 'Great Vibes', sans-serif;
     font-size: 40px;
   }
-  .intro-info{
+  .intro-info {
     margin-top: 20px;
-    display:flex;
-    font-size:40px;
+    display: flex;
+    font-size: 40px;
     font-weight: bolder;
   }
-  .intro-detail{
+  .intro-detail {
     margin-top: 32px;
     font-size: 16px;
   }
 }
+
 /*introduce-site-widget*/
+.intro-site-widget-contact-form, .intro-site-widget-about-us {
+  .intro-title, .intro-info {
+    color: white !important;
+  }
+}
 
 /*post-widget*/
 .thim-sc-posts {
@@ -128,7 +137,7 @@
     .title {
       font-size: 40px;
       font-family: 'Great Vibes', sans-serif;
-/*      margin-bottom: -20px;*/
+      /*      margin-bottom: -20px;*/
     }
     .description {
 
@@ -136,28 +145,18 @@
       font-weight: bolder;
     }
   }
-  .content-inner {
-    .entry-content {
-
-      .meta-entry {
-        margin-bottom: 25px;
-        margin-top: 23px;
-        .posted-on {
-          a {
-            font-size: 14px;
-            letter-spacing: 0;
-            line-height: 25px;
-          }
-          &:after {
-            content: " -";
-            width: auto;
-          }
-        }
-        .byline {
-          .author {
+  .row {
+    .content-inner {
+      .entry-content {
+        padding-top: 0;
+        padding-left: 35px;
+        padding-right: 0;
+        .meta-entry {
+          margin-bottom: 25px;
+          margin-top: 23px;
+          .posted-on {
             a {
-              text-transform: capitalize;
-              font-weight: bolder;
+              color: #999;
               font-size: 14px;
               letter-spacing: 0;
               line-height: 25px;
@@ -167,20 +166,36 @@
               width: auto;
             }
           }
-        }
-        .related-post-reply {
-          a {
-            font-size: 14px;
-            letter-spacing: 0;
-            line-height: 25px;
+          .byline {
+            .author {
+              a {
+                text-transform: capitalize;
+                font-weight: bolder;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 25px;
+              }
+              &:after {
+                content: " -";
+                width: auto;
+              }
+            }
+          }
+          .related-post-reply {
+            a {
+              color: #999;
+              font-size: 14px;
+              letter-spacing: 0;
+              line-height: 25px;
+            }
           }
         }
-      }
-      .entry-header {
-        .entry-title {
-          a {
-            font-size: 26px;
-            font-weight: bolder;
+        .entry-header {
+          .entry-title {
+            a {
+              font-size: 26px;
+              font-weight: bolder;
+            }
           }
         }
       }
@@ -191,14 +206,15 @@
     margin-top: 50px;
     a {
       background: #FFFFFF;
+      cursor: pointer;
       border: 1px solid #CCCCCC;
       padding: 20px 50px;
       font-weight: bolder;
       font-size: 16px;
     }
-
   }
 }
+
 /*post-widget*/
 
 /*rating-demo-widget*/
@@ -222,7 +238,7 @@
     display: flex;
     .image-profile {
 
-      img{
+      img {
       }
     }
     .info-rate {
@@ -251,4 +267,5 @@
     }
   }
 }
+
 /*rating-demo-widget*/

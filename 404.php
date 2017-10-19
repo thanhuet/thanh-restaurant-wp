@@ -16,7 +16,7 @@
             <h2 class="page-title">404</h2>
         </header><!-- .page-header -->
         <div class="page-content">
-            <p>Page not </span class="important-word">Found</span></p>
+            <p>Page not <span class="important-word">Found</span></p>
         </div><!-- .page-content -->
         <div class="page-404-detail">
             <p>Hehe, Page not Found because Page not Found. We’re so sorry about it.</p>
