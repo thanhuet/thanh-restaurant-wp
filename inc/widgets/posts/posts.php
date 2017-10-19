@@ -10,9 +10,9 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 		parent::__construct(
 			'posts',
-			esc_html__( 'Thim: Posts', 'mabu' ),
+			esc_html__( 'Thim: Posts', 'thim-starter-theme' ),
 			array(
-				'description'   => esc_html__( 'Display posts', 'mabu' ),
+				'description'   => esc_html__( 'Display posts', 'thim-starter-theme' ),
 				'help'          => '',
 				'panels_groups' => array( 'thim_widget_group' )
 			),
@@ -20,24 +20,24 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 			array(
 				'title' => array(
 					'type'    => 'text',
-					'label'   => esc_html__( 'Title', 'thimpress' ),
+					'label'   => esc_html__( 'Title', 'thim-starter-theme' ),
 					'default' => 'Latest Blog'
 				),
 
 				'description' => array(
 					'type'    => 'text',
-					'label'   => esc_html__( 'Description', 'thimpress' ),
+					'label'   => esc_html__( 'Description', 'thim-starter-theme' ),
 					'default' => 'To enrich knowledge, we’re lucky to get certified from several famous institutions in our locality. Here we enlisted my top certifications.'
 				),
 
 				'column' => array(
 					"type"    => "select",
-					"label"   => esc_html__( "Column", 'mabu' ),
+					"label"   => esc_html__( "Column", 'thim-starter-theme' ),
 					"options" => array(
-						"1" => esc_html__( "1", 'mabu' ),
-						"2" => esc_html__( "2", 'mabu' ),
-						"3" => esc_html__( "3", 'mabu' ),
-						"4" => esc_html__( "4", 'mabu' ),
+						"1" => esc_html__( "1", 'thim-starter-theme' ),
+						"2" => esc_html__( "2", 'thim-starter-theme' ),
+						"3" => esc_html__( "3", 'thim-starter-theme' ),
+						"4" => esc_html__( "4", 'thim-starter-theme' ),
 					)
 				),
 
