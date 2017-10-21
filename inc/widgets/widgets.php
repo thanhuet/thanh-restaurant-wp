@@ -6,6 +6,7 @@ if ( ! class_exists( 'SiteOrigin_Widget' ) ) {
 
 include_once( THIM_DIR . '/inc/widgets/posts/posts.php' );
 include_once( THIM_DIR . '/inc/widgets/recent_posts/recent_posts.php' );
+include_once( THIM_DIR . '/inc/widgets/widget_top_blog_detail/top-blog-detail.php' );
 
 
 /**
