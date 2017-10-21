@@ -13,7 +13,7 @@
 		<div class="entry-top">
 			<?php if ( get_theme_mod( 'blog_single_feature_image', true ) ) :
 				do_action( 'thim_entry_top', 'full' );
-			endif; ?>
+            endif; ?>
 		</div><!-- .entry-top -->
 		<div class="entry-content">
 			<header class="entry-header">

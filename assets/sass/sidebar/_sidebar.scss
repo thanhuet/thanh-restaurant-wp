@@ -6,6 +6,8 @@
   position: relative;
   line-height: 42px;
   border: none;
+  background: rgba(255,255,255,0.40);
+  border: 1px solid #263238;
   &:after {
     content: "\f002";
     font: normal normal normal 14px/1 FontAwesome;
@@ -65,7 +67,7 @@
   &.widget_pages,
   &.widget_meta,
   &.widget_recent_comments,
-  &.widget_recent_entries,
+  //&.widget_recent_entries,
   &.widget_nav_menu {
     ul li {
       //border-bottom: 1px solid $border-color;

@@ -307,7 +307,7 @@ if ( file_exists( THIM_DIR . 'shortcodes/thim-startertheme.php' ) && ( ! class_e
  * Custom widgets
  * @todo: remove comment if you want to use siteorigin
  */
-//require THIM_DIR . 'inc/widgets/widgets.php';
+require THIM_DIR . 'inc/widgets/widgets.php';
 
 //pannel Widget Group
 //function thim_widget_group( $tabs ) {

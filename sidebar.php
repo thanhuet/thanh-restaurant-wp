@@ -12,6 +12,5 @@ if ( ! is_active_sidebar( 'sidebar' ) || ( isset( $_GET['layout'] ) && ( $_GET['
 ?>
 
 <aside id="secondary" class="widget-area col-sm-3 sticky-sidebar">
-    <?php do_action( 'thim_about_author' ); ?>
 	<?php dynamic_sidebar( 'sidebar' ); ?>
 </aside><!-- #secondary -->

@@ -5,6 +5,8 @@ if ( ! class_exists( 'SiteOrigin_Widget' ) ) {
 }
 
 include_once( THIM_DIR . '/inc/widgets/posts/posts.php' );
+include_once( THIM_DIR . '/inc/widgets/recent_posts/recent_posts.php' );
+
 
 /**
  * Extra class to widget

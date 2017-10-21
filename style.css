@@ -7528,7 +7528,9 @@ a:active {
 .search-form {
   position: relative;
   line-height: 42px;
-  border: none; }
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #263238; }
   .search-form:after {
     content: "\f002";
     font: normal normal normal 14px/1 FontAwesome;
@@ -7588,8 +7590,7 @@ a:active {
   .widget-area .widget.widget_categories ul li .sub-menu, .widget-area .widget.widget_pages ul li .children,
   .widget-area .widget.widget_pages ul li .sub-menu, .widget-area .widget.widget_meta ul li .children,
   .widget-area .widget.widget_meta ul li .sub-menu, .widget-area .widget.widget_recent_comments ul li .children,
-  .widget-area .widget.widget_recent_comments ul li .sub-menu, .widget-area .widget.widget_recent_entries ul li .children,
-  .widget-area .widget.widget_recent_entries ul li .sub-menu, .widget-area .widget.widget_nav_menu ul li .children,
+  .widget-area .widget.widget_recent_comments ul li .sub-menu, .widget-area .widget.widget_nav_menu ul li .children,
   .widget-area .widget.widget_nav_menu ul li .sub-menu {
     padding-left: 15px; }
     .widget-area .widget.widget_archive ul li .children li,
@@ -7597,12 +7598,11 @@ a:active {
     .widget-area .widget.widget_categories ul li .sub-menu li, .widget-area .widget.widget_pages ul li .children li,
     .widget-area .widget.widget_pages ul li .sub-menu li, .widget-area .widget.widget_meta ul li .children li,
     .widget-area .widget.widget_meta ul li .sub-menu li, .widget-area .widget.widget_recent_comments ul li .children li,
-    .widget-area .widget.widget_recent_comments ul li .sub-menu li, .widget-area .widget.widget_recent_entries ul li .children li,
-    .widget-area .widget.widget_recent_entries ul li .sub-menu li, .widget-area .widget.widget_nav_menu ul li .children li,
+    .widget-area .widget.widget_recent_comments ul li .sub-menu li, .widget-area .widget.widget_nav_menu ul li .children li,
     .widget-area .widget.widget_nav_menu ul li .sub-menu li {
       border: none;
       padding-bottom: 0; }
-  .widget-area .widget.widget_archive ul li a:before, .widget-area .widget.widget_categories ul li a:before, .widget-area .widget.widget_pages ul li a:before, .widget-area .widget.widget_meta ul li a:before, .widget-area .widget.widget_recent_comments ul li a:before, .widget-area .widget.widget_recent_entries ul li a:before, .widget-area .widget.widget_nav_menu ul li a:before {
+  .widget-area .widget.widget_archive ul li a:before, .widget-area .widget.widget_categories ul li a:before, .widget-area .widget.widget_pages ul li a:before, .widget-area .widget.widget_meta ul li a:before, .widget-area .widget.widget_recent_comments ul li a:before, .widget-area .widget.widget_nav_menu ul li a:before {
     color: #E6AE69;
     content: "\f111";
     font-size: 8px;
