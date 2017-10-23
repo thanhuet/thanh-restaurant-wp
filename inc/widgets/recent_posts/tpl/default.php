@@ -17,7 +17,7 @@ $posts = new WP_Query( $news_args );
     </div>
 
     <ul class="row">
-        <ul>
+        <ul class="list-rencent-post">
         <?php
 
         if ( $posts->have_posts() ) :
@@ -25,10 +25,11 @@ $posts = new WP_Query( $news_args );
                 $posts->the_post();
                 ?>
                     <li>
+                        <div class="recent-post-thumbnail">
                         <p><span>
-                        <?php the_post_thumbnail(array('100px','100px')); ?>
-                        </span><?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?></p>
-
+                        <?php the_post_thumbnail(array('100px','100px')); ?></span></p>
+                        </div>
+                        <div class="recent-post-title-thumbnail"><?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?></div>
                     </li>
                 <?php
             endwhile;

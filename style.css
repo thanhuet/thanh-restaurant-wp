@@ -9193,15 +9193,22 @@ input[type="submit"],
   .widget-top-blog-detail img {
     border-radius: 100%;
     margin-bottom: 22px; }
+  .widget-top-blog-detail .widget-title-blog-detail {
+    position: relative; }
   .widget-top-blog-detail .widget-title-blog-detail:after {
     position: absolute;
     background: #E6AE69;
     width: 50px;
     height: 2px;
     content: '';
-    bottom: 88px;
+    bottom: -9px;
     left: 50%;
     margin-left: -25px; }
+  .widget-top-blog-detail .widget-description-blog-detail {
+    margin-top: 20px; }
+
+.list-rencent-post li ul {
+  display: inline-table; }
 
 .site-content {
   padding-top: 100px;

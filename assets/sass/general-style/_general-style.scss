@@ -10,6 +10,7 @@
     margin-bottom:22px;
   }
   .widget-title-blog-detail{
+    position: relative;
   }
   .widget-title-blog-detail:after{
     position: absolute;
@@ -17,12 +18,28 @@
     width:50px;
     height:2px;
     content: '';
-    bottom:88px;
+    bottom:-9px;
     left:50%;
     margin-left: -25px;
   }
+  .widget-description-blog-detail{
+    margin-top:20px;
+  }
 }
 
+// style recent post in blog detail
+.list-rencent-post{
+  li{
+    ul {
+      display: inline-table;
+      .recent-post-thumbnail {
+        //float: left;
+      }
+      .recent-post-title-thumbnail {
+      }
+    }
+  }
+}
 // Site content
 .site-content {
   padding-top: 100px;
