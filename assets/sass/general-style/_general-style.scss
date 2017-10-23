@@ -1,6 +1,27 @@
 /*
  * Include common style for theme */
 
+// style widget top blog detail
+.so-widget-top_blog_detail{
+  text-align: center;
+  img{
+    border-radius: 100%;
+    margin-bottom:22px;
+  }
+  .widget-title-blog-detail{
+  }
+  .widget-title-blog-detail:after{
+    position: absolute;
+    background: #E6AE69;
+    width:50px;
+    height:2px;
+    content: '';
+    bottom:88px;
+    left:50%;
+    margin-left: -25px;
+  }
+}
+
 // Site content
 .site-content {
   padding-top: 100px;

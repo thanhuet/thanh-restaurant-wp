@@ -9187,6 +9187,21 @@ input[type="submit"],
 ----------------------------------------------------------------*/
 /*
  * Include common style for theme */
+.so-widget-top_blog_detail {
+  text-align: center; }
+  .so-widget-top_blog_detail img {
+    border-radius: 100%;
+    margin-bottom: 22px; }
+  .so-widget-top_blog_detail .widget-title-blog-detail:after {
+    position: absolute;
+    background: #E6AE69;
+    width: 50px;
+    height: 2px;
+    content: '';
+    bottom: 88px;
+    left: 50%;
+    margin-left: -25px; }
+
 .site-content {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -9247,6 +9262,24 @@ input[type="submit"],
 
 .error-404 .search-form {
   max-width: 50%; }
+
+.thim-sc-posts {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .thim-sc-posts .thim-sc-heading {
+    margin-bottom: 50px; }
+  .thim-sc-posts .botton-category {
+    margin-top: 66px; }
+  .thim-sc-posts.blog-content article .entry-top {
+    margin-bottom: 25px; }
+  .thim-sc-posts.blog-content article .entry-summary {
+    margin-top: 25px;
+    margin-bottom: 27px; }
+  .thim-sc-posts .readmore {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase; }
 
 #thim-header-topbar {
   background: none !important; }

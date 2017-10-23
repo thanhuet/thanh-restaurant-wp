@@ -102,6 +102,7 @@ Domain Path: /languages/
 13.0 - general
 ----------------------------------------------------------------*/
 @import "general-style/general-style";
+@import "./inc/widgets/posts/assets/sass/posts";
 #thim-header-topbar{
   background: none !important;
 }
