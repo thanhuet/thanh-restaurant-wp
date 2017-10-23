@@ -9187,12 +9187,13 @@ input[type="submit"],
 ----------------------------------------------------------------*/
 /*
  * Include common style for theme */
-.so-widget-top_blog_detail {
+.widget-top-blog-detail {
+  margin-top: 25px;
   text-align: center; }
-  .so-widget-top_blog_detail img {
+  .widget-top-blog-detail img {
     border-radius: 100%;
     margin-bottom: 22px; }
-  .so-widget-top_blog_detail .widget-title-blog-detail:after {
+  .widget-top-blog-detail .widget-title-blog-detail:after {
     position: absolute;
     background: #E6AE69;
     width: 50px;
@@ -9318,7 +9319,7 @@ input[type="submit"],
       .single-post #main article .entry-meta .author a {
         font-weight: bold; }
 
-.single-post #secondary h3:before {
+.single-post #secondary .widget-title:before {
   position: absolute;
   background: #E6AE69;
   width: 50px;
