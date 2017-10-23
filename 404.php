@@ -6,7 +6,7 @@
  *
  */
 ?>
-
+<div class="container">
 <section class="error-404 not-found row">
     <div class="img-error-404 col-6 col-xl-6">
         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/06_404.png' ); ?>">
@@ -23,3 +23,4 @@
         </div><!-- .page-content -->
     </div>
 </section><!-- .error-404 -->
+</div>

@@ -82,7 +82,10 @@
 }
 
 .error-404 {
-  padding: 100px 14%;
+  padding: 100px 0;
+  .img-error-404{
+    text-align: center;
+  }
   .content-error-404 {
     margin-top: 90px;
     .page-header {
@@ -105,6 +108,7 @@
 
 // Style Contact Form Resta
 .wpcf7-form {
+  margin-bottom: 75px;
   .content-contact-form {
     max-width: 570px;
     .wpcf7-form-control-wrap {
