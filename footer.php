@@ -19,7 +19,7 @@
 </footer><!-- #colophon -->
 </div><!-- content-pusher -->
 </div><!-- wrapper-container -->
-<!--
+
 <?php wp_footer(); ?>
 
 <?php /*do_action( 'thim_space_body' ); */?>

@@ -837,9 +837,9 @@ if ( ! function_exists( 'thim_posted_on' ) ) :
 	}
 endif;
 
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999999 );
-if ( ! function_exists( 'thim_custom_excerpt_length' ) ) {
+if(!function_exists('thim_custom_excerpt_length')){
 	function thim_custom_excerpt_length( $length ) {
 		return 49;
 	}
 }
+add_filter( 'excerpt_length', 'thim_custom_excerpt_length', 999999 );

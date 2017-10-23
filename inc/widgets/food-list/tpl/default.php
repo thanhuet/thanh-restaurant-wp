@@ -4,7 +4,6 @@ if ( ! empty( $instance['listFood'] ) ) {
 }
 ?>
 <div class="content-food-list-widget">
-    <img class="img-food-list" src="<?php echo get_template_directory_uri() ?>/assets/images/food-list-img.png">
     <div class="main-food-list">
         <div class="title-food-list">
             <p><?php echo $instance['title']; ?></p>
