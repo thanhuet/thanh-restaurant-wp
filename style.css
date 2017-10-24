@@ -9195,13 +9195,14 @@ input[type="submit"],
     margin-bottom: 22px; }
   .widget-top-blog-detail .widget-title-blog-detail {
     position: relative; }
+    .widget-top-blog-detail .widget-title-blog-detail p {
+      padding-bottom: 15px; }
   .widget-top-blog-detail .widget-title-blog-detail:after {
     position: absolute;
     background: #E6AE69;
     width: 50px;
     height: 2px;
     content: '';
-    bottom: -9px;
     left: 50%;
     margin-left: -25px; }
   .widget-top-blog-detail .widget-description-blog-detail {
@@ -9326,10 +9327,15 @@ input[type="submit"],
       .single-post #main article .entry-meta .author a {
         font-weight: bold; }
 
-.single-post #secondary .widget-title:before {
+.single-post #secondary .widget-title {
+  position: relative;
+  padding-bottom: 13px; }
+
+.single-post #secondary .widget-title:after {
   position: absolute;
   background: #E6AE69;
   width: 50px;
   height: 2px;
   content: '';
-  top: 40px; }
+  bottom: 0;
+  left: 0; }

@@ -179,13 +179,18 @@ Domain Path: /languages/
     }
   }
   #secondary{
-    .widget-title:before{
+    .widget-title{
+      position: relative;
+      padding-bottom:13px;
+    }
+    .widget-title:after{
       position: absolute;
       background: #E6AE69;
       width:50px;
       height:2px;
       content: '';
-      top:40px;
+      bottom:0;
+      left: 0;
     }
   }
 }

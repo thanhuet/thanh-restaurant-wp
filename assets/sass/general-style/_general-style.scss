@@ -11,6 +11,9 @@
   }
   .widget-title-blog-detail{
     position: relative;
+    p{
+      padding-bottom:15px;
+    }
   }
   .widget-title-blog-detail:after{
     position: absolute;
@@ -18,7 +21,6 @@
     width:50px;
     height:2px;
     content: '';
-    bottom:-9px;
     left:50%;
     margin-left: -25px;
   }
