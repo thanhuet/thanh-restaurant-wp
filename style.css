@@ -9208,8 +9208,12 @@ input[type="submit"],
   .widget-top-blog-detail .widget-description-blog-detail {
     margin-top: 20px; }
 
-.list-rencent-post li ul {
+.list-rencent-post li {
+  clear: both;
   display: inline-table; }
+  .list-rencent-post li .recent-post-thumbnail {
+    float: left;
+    margin-right: 10px; }
 
 .banner-ads .banner-image {
   position: relative; }

@@ -32,15 +32,15 @@
 // style recent post in blog detail
 .list-rencent-post{
   li{
-    ul {
-      display: inline-table;
-      .recent-post-thumbnail {
-        //float: left;
-      }
-      .recent-post-title-thumbnail {
-      }
+    clear: both;
+    display: inline-table;
+    .recent-post-thumbnail {
+      float: left;
+      margin-right:10px;
     }
-  }
+    .recent-post-title-thumbnail {
+    }
+    }
 }
 
 //style banner ads
