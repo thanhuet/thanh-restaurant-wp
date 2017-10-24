@@ -9211,6 +9211,24 @@ input[type="submit"],
 .list-rencent-post li ul {
   display: inline-table; }
 
+.banner-ads .banner-image {
+  position: relative; }
+  .banner-ads .banner-image img {
+    width: 93%;
+    height: 200px;
+    margin-left: 3%;
+    position: relative; }
+
+.banner-ads .banner-title {
+  position: absolute;
+  border: solid 1px;
+  padding: 10px 30px;
+  position: absolute;
+  color: red;
+  top: 50%;
+  width: 70%;
+  left: 50%; }
+
 .site-content {
   padding-top: 100px;
   padding-bottom: 100px; }

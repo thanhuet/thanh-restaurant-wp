@@ -32,7 +32,7 @@ thim_customizer()->add_group( array(
                     'priority'    => 10,
                     'default'     => array(
                         'font-family'    => 'Roboto',
-                        'variant'        => '400',
+                        'variant'        => '500',
                         'font-size'      => '15px',
                         'line-height'    => '1.6em',
                         'letter-spacing' => '0',

@@ -28,7 +28,7 @@
     margin-top:20px;
   }
 }
-//asdfasdf
+
 // style recent post in blog detail
 .list-rencent-post{
   li{
@@ -40,6 +40,32 @@
       .recent-post-title-thumbnail {
       }
     }
+  }
+}
+
+//style banner ads
+.banner-ads{
+  .banner-image{
+    position: relative;
+    img{
+      width:93%;
+      height: 200px;
+      margin-left:3%;
+      position: relative;
+    }
+  }
+  .banner-title{
+    position: absolute;
+    border: solid 1px;
+    padding:10px 30px;
+    position: absolute;
+    color: red;
+    top:50%;
+    width:70%;
+    left:50%;
+    //margin-top:;
+    //margin-left:-118px;
+
   }
 }
 // Site content

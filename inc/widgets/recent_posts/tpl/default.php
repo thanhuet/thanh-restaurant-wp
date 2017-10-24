@@ -36,6 +36,4 @@ $posts = new WP_Query( $news_args );
         endif;
         ?>
         </ul>
-    </div>
-
 </div>
