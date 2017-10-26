@@ -881,34 +881,42 @@ if ( ! function_exists( 'thim_load_more_post' ) ) {
 			while ( $query->have_posts() ) : $query->the_post();
 				?>
                 <article id="post-<?php the_ID(); ?>"
-                         class="column-1 col-md-12 post-502 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                         class="column-1 col-md-12 post-<?php the_ID(); ?> post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
                     <div class="content-inner row ">
-                        <div class="entry-top col-6 col-xl-6">
-							<?php
-							thim_thumbnail( get_the_ID(), 'full' );
-							?>
-                        </div><!-- .entry-top -->
-                        <div class="entry-content col-6 col-xl-6">
-                            <header class="entry-header">
-								<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-                            </header>
-                            <div class="meta-entry">
-								<?php thim_posted_on(); ?>
-								<?php if ( comments_open() ) {
-									echo '<span class="related-post-reply">';
-									comments_popup_link(
-										__( 'No comments', 'thim-starter-theme' ),
-										__( '1 comment', 'thim-starter-theme' ),
-										__( '% comments', 'thim-starter-theme' ),
-										__( 'Read all comments', 'thim-starter-theme' )
-									);
-								} ?>
-                            </div>
-                            <!-- .entry-header -->
-                            <div class="entry-summary">
-								<?php the_excerpt(); ?>
-                            </div><!-- .entry-summary -->
-                        </div><!-- .entry-content -->
+						<?php if ( $offset_paged % 2 != 0 ) {
+							echo '<div class="entry-top col-6 col-xl-6" style="order:2; margin-left: 50px">';
+						} else {
+							echo '<div class="entry-top col-6 col-xl-6">';
+						}
+						thim_thumbnail( get_the_ID(), 'full' );
+						?>
+                    </div><!-- .entry-top -->
+	                <?php if ( $offset_paged % 2 != 0 ) {
+		                echo '<div class="entry-content col-6 col-xl-6" style=" margin-left: 0" >';
+	                } else {
+		                echo '<div class="entry-content col-6 col-xl-6" style=" margin-left: 50px">';
+	                }
+	                ?>
+                        <header class="entry-header">
+							<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                        </header>
+                        <div class="meta-entry">
+							<?php thim_posted_on(); ?>
+							<?php if ( comments_open() ) {
+								echo '<span class="related-post-reply">';
+								comments_popup_link(
+									__( 'No comments', 'thim-starter-theme' ),
+									__( '1 comment', 'thim-starter-theme' ),
+									__( '% comments', 'thim-starter-theme' ),
+									__( 'Read all comments', 'thim-starter-theme' )
+								);
+							} ?>
+                        </div>
+                        <!-- .entry-header -->
+                        <div class="entry-summary">
+							<?php the_excerpt(); ?>
+                        </div><!-- .entry-summary -->
+                    </div><!-- .entry-content -->
                     </div> <!-- .content-inner -->
                 </article><!-- #post-## -->
 				<?php

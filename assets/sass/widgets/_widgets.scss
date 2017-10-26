@@ -142,10 +142,23 @@
   }
   .row {
     .content-inner {
+      padding:inherit ;
+
+      .entry-top {
+
+        flex-shrink: 0;
+        max-width: 560px;
+        height: 360px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+      }
       .entry-content {
+        margin-left: 50px;
+        max-width: 560px;
         padding-top: 0;
-        padding-left: 35px;
-        padding-right: 0;
+        padding-right:0px;
+        padding-left: 0px;
         .meta-entry {
           margin-bottom: 25px;
           margin-top: 23px;

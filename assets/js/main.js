@@ -3989,9 +3989,9 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
                     $('#text-loading').hide();
                     $('#thim-post-container').append(response);
                 }, 750);
-
             }
         })
         ;
     });
+    $('#thim-post-container').find("article:odd").find(".entry-top").css("order","2");
 })(jQuery);
