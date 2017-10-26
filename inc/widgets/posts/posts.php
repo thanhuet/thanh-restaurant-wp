@@ -8,6 +8,14 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 	function __construct() {
 
+		$list_cate        = get_categories();
+		$list_cate_option = array(
+			"1" => esc_html__( 'All categories', 'thim-starter-theme' )
+		);
+		foreach ( $list_cate as $item ) {
+			array_push( $list_cate_option, esc_html__( $item->name, 'thim-starter-theme' ) );
+		}
+
 		parent::__construct(
 			'posts',
 			esc_html__( 'Thim: Posts', 'thim-starter-theme' ),
@@ -39,6 +47,12 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 						"3" => esc_html__( "3", 'thim-starter-theme' ),
 						"4" => esc_html__( "4", 'thim-starter-theme' ),
 					)
+				),
+
+				'choose_cate' => array(
+					"type"    => "select",
+					"label"   => esc_html__( "Choose category", 'thim-starter-theme' ),
+					"options" => $list_cate_option
 				),
 
 				'posts_per_page' => array(

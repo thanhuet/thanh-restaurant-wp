@@ -1,17 +1,30 @@
 <?php
+$cateSelect       = $instance['choose_cate'];
+$list_cate        = get_categories( $args );
+$list_cate_option = array(
+	"1" => esc_html__( 'All categories', 'thim-starter-theme' )
+);
+foreach ( $list_cate as $item ) {
+	array_push( $list_cate_option, esc_html__( $item->name, 'thim-starter-theme' ) );
+}
+$cateName = $cateSelect != 1 ? $list_cate_option[ $cateSelect ] : '';
+$cateID   = get_cat_ID( $cateName );
 
-
-$news_args = array(
+$news_args = $instance['choose_cate'] == 1 ? array(
 	'posts_per_page'      => $instance['posts_per_page'],
 	'ignore_sticky_posts' => true,
+) : array(
+	'posts_per_page'      => $instance['posts_per_page'],
+	'ignore_sticky_posts' => true,
+	'cat'                 => $cateID
 );
+
 
 $posts = new WP_Query( $news_args );
 
 ?>
 
 <div class="thim-sc-posts blog-content">
-
     <div class="thim-sc-heading">
         <h3 class="title"><?php echo esc_attr( $instance['title'] ) ?></h3>
         <p class="description"><?php echo $instance['description']; ?></p>
@@ -22,7 +35,7 @@ $posts = new WP_Query( $news_args );
 	$class  = 'column-' . $column . ' col-md-' . ( 12 / $column );
 	?>
 
-    <div class="row">
+    <div id="thim-post-container" class="row ">
 		<?php
 
 		if ( $posts->have_posts() ) :
@@ -38,7 +51,7 @@ $posts = new WP_Query( $news_args );
 							//if ( $column === '1' ) {
 							//do_action( 'thim_entry_top', 'full' );
 							//} else {
-							thim_thumbnail( get_the_ID(),'full');
+							thim_thumbnail( get_the_ID(), 'full' );
 
 							//}
 							?>
@@ -66,7 +79,6 @@ $posts = new WP_Query( $news_args );
                         </div><!-- .entry-content -->
                     </div> <!-- .content-inner -->
                 </article><!-- #post-## -->
-
 				<?php
 
 			endwhile;
@@ -78,8 +90,13 @@ $posts = new WP_Query( $news_args );
     <!--	--><?php
 	/*	$blog_link = get_post_type_archive_link( 'post' );
 		*/ ?>
-    <div class="readmore">
-        <a class="btn-food-list">VIEW MORE</a>
+    <div class="readmore" style="text-align: center">
+        <i id="icon-load-more-post" class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+        <span id="text-loading">Loading...</span>
+        <a id="btn-load-more-post" class="btn-food-list" data-page="1"
+           data-offset-page="<?php echo $instance['posts_per_page']; ?>" data-categoryid="<?php echo $cateID; ?>">
+            <span>VIEW MORE</span>
+        </a>
     </div><!-- .read-more -->
     <!--	<div class="text-center botton-category">
 		<a class="btn btn-primary" href="<?php /*echo esc_url( $blog_link ); */ ?>">

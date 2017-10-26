@@ -44,7 +44,6 @@
             this.header_menu_mobile();
             this.parallax();
             this.thim_post_gallery();
-            this.thim_slider_testimonial();
             this.thim_testimonial_owl();
         },
 
@@ -301,36 +300,52 @@
         },
 
 
-        thim_slider_testimonial: function () {
-            $('.slider-testimonial').each(function () {
-                var test = $(this).thimContentSlider({
-                    itemMaxWidth: 600,
-                    itemMinWidth: 600,
-                    items: 3,
-                    itemsVisible: 1,
-                    itemPadding: 0,
-                    activeItemRatio: 1,
-                    activeItemPadding: 0,
-                    mouseWheel: true,
-                    autoPlay: true,
-                    pauseTime: 3000,
-                    pauseOnHover: true,
-                    imageSelector: '.item-link',
-                    // contentSelector  : '.info-rate'
-                });
-            });
-        },
-
         thim_testimonial_owl: function () {
-            console.log('hehe');
             $('.thim-testimonials').owlCarousel({
                 items: 1,
                 autoPlay: 4000,
                 stopOnHover: true,
                 pagination: true,
                 mousewheel: true,
-                autoHeight : false,
+                autoHeight: false,
             });
         }
     };
+    $('#icon-load-more-post').hide();
+    $('#text-loading').hide();
+    $(document).on('click', '#btn-load-more-post', function () {
+        var that = $(this);
+        var numberPage = that.data('page');
+        var offPage = that.data('offset-page');
+        var catID = that.data('categoryid');
+        var count = offPage + 1;
+        $('#icon-load-more-post').show();
+        $('#text-loading').show();
+        $('#btn-load-more-post').hide();
+        $.ajax({
+            url: ajaxurl,
+            type: 'post',
+            data: {
+                cateID: catID,
+                offset_page: offPage,
+                page: numberPage,
+                action: 'thim_load_more_post'
+            },
+            error: function (response) {
+                console.log(response);
+            }
+            ,
+            success: function (response) {
+                that.data('offset-page', count);
+                setTimeout(function () {
+                    $('#icon-load-more-post').hide();
+                    $('#btn-load-more-post').show();
+                    $('#text-loading').hide();
+                    $('#thim-post-container').append(response);
+                }, 750);
+
+            }
+        })
+        ;
+    });
 })(jQuery);
