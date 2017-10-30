@@ -9218,20 +9218,32 @@ input[type="submit"],
 .banner-ads .banner-image {
   position: relative; }
   .banner-ads .banner-image img {
-    width: 93%;
+    width: 245px;
     height: 200px;
-    margin-left: 3%;
+    margin-left: 5px;
     position: relative; }
 
 .banner-ads .banner-title {
-  position: absolute;
-  border: solid 1px;
-  padding: 10px 30px;
-  position: absolute;
-  color: red;
-  top: 50%;
   width: 70%;
-  left: 50%; }
+  height: 40%;
+  top: 30%;
+  left: 15%;
+  text-align: center;
+  opacity: 0.6;
+  background: #FFFFFF;
+  position: absolute;
+  overflow: auto; }
+  .banner-ads .banner-title .banner-title-detail {
+    padding-top: 12px; }
+    .banner-ads .banner-title .banner-title-detail p {
+      font-family: Andada-Bold;
+      font-size: 24px;
+      font-weight: 600;
+      color: #212121; }
+  .banner-ads .banner-title .banner-title-description p {
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    color: #464646; }
 
 .site-content {
   padding-top: 100px;
