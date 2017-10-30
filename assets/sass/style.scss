@@ -106,10 +106,7 @@ Domain Path: /languages/
 #thim-header-topbar{
   background: none !important;
 }
-#masthead{
-  display: none;
 
-}
 .header_left_right{
   .head_header{
     .logo_header{
@@ -182,6 +179,7 @@ Domain Path: /languages/
     .widget-title{
       position: relative;
       padding-bottom:13px;
+      font-weight:600;
     }
     .widget-title:after{
       position: absolute;

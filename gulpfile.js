@@ -4,7 +4,7 @@ var livereload = require('gulp-livereload');
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch(['assets/sass/**/*.scss'], ['scss']);
+    gulp.watch(['assets/sass/**/*.scss',], ['scss']);
 });
 //yolotest
 gulp.task('scss', function () {

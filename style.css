@@ -8009,7 +8009,8 @@ a:active {
       height: 40px;
       line-height: 40px;
       padding: 0 26px;
-      color: #fff; }
+      color: #616161;
+      border: 1px solid #CCCCCC; }
   #comments .form-comment .comment-form textarea,
   #comments .form-comment .comment-form input[type="email"], #comments .form-comment .comment-form input[type="text"] {
     outline: none;
@@ -9170,7 +9171,7 @@ body.disable-responsive .menu-mobile-effect {
 input[type="submit"],
 .button,
 .submit {
-  color: #fff;
+  color: #616161;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
@@ -9194,7 +9195,8 @@ input[type="submit"],
     border-radius: 100%;
     margin-bottom: 22px; }
   .widget-top-blog-detail .widget-title-blog-detail {
-    position: relative; }
+    position: relative;
+    font-weight: 600; }
     .widget-top-blog-detail .widget-title-blog-detail p {
       padding-bottom: 15px; }
   .widget-top-blog-detail .widget-title-blog-detail:after {
@@ -9307,10 +9309,7 @@ input[type="submit"],
   max-width: 50%; }
 
 .thim-sc-posts {
-  padding-top: 30px;
   padding-bottom: 30px; }
-  .thim-sc-posts .thim-sc-heading {
-    margin-bottom: 50px; }
   .thim-sc-posts .botton-category {
     margin-top: 66px; }
   .thim-sc-posts.blog-content article .entry-top {
@@ -9326,9 +9325,6 @@ input[type="submit"],
 
 #thim-header-topbar {
   background: none !important; }
-
-#masthead {
-  display: none; }
 
 .header_left_right .head_header .logo_header .title_logo {
   font-family: GreatVibes-Regular !important; }
@@ -9363,7 +9359,8 @@ input[type="submit"],
 
 .single-post #secondary .widget-title {
   position: relative;
-  padding-bottom: 13px; }
+  padding-bottom: 13px;
+  font-weight: 600; }
 
 .single-post #secondary .widget-title:after {
   position: absolute;
