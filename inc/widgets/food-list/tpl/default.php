@@ -15,8 +15,10 @@ if ( ! empty( $instance['listFood'] ) ) {
 			<?php
 			foreach ( $repeater_items as $index => $repeater_item ) {
 				?>
-                <div class="content-food-list">
-                    <p><?php echo $repeater_item['repeat_content'] ?></p>
+                <div class="content-food-list ">
+                    <p class="food-name "><?php echo $repeater_item['repeat_content'] ?></p>
+                    <div class="dots-background"></div>
+                    <p class="food-price "><?php echo $repeater_item['repeat_price'] ?></p>
                 </div>
 				<?php
 			}

@@ -46,7 +46,7 @@ $posts = new WP_Query( $news_args );
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class( $class ); ?>>
                     <div class="content-inner row">
-                        <div class="entry-top col-6 col-xl-6">
+                        <div class="entry-top col-sm-12 col-md-6">
 							<?php
 							//if ( $column === '1' ) {
 							//do_action( 'thim_entry_top', 'full' );
@@ -56,7 +56,7 @@ $posts = new WP_Query( $news_args );
 							//}
 							?>
                         </div><!-- .entry-top -->
-                        <div class="entry-content col-6 col-xl-6">
+                        <div class="entry-content col-sm-12 col-md-6">
                             <header class="entry-header">
 								<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
                             </header>

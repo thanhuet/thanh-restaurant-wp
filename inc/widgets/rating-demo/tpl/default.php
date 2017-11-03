@@ -9,10 +9,10 @@ if ( ! empty( $instance['list_rate'] ) ) {
 		$image_url  = $attachment[0];
 		?>
         <div class="customer-rate-demo row">
-            <div class="image-profile col-3 col-xl-3">
+            <div class="image-profile col-12 col-sm-3">
                 <img src="<?php echo $image_url; ?>">
             </div>
-            <div class="info-rate col-9 col-xl-9">
+            <div class="info-rate col-12 col-sm-9">
                 <div class="customer-feedback">
                     <span class="special-word fa fa-quote-left"></span>
                     <p class="customer-comment"><?php echo $repeater_item['comment']; ?></p>

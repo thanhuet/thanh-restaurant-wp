@@ -16,7 +16,7 @@ class Thim_FoodList_Widget extends SiteOrigin_Widget {
 				),
 				'description' => array(
 					'type'  => 'text',
-					'lable' => esc_html__( 'Description', 'thim-starter-theme' ),
+					'label' => esc_html__( 'Description', 'thim-starter-theme' ),
 				),
 				'listFood'    => array(
 					'type'      => 'repeater',
@@ -26,7 +26,12 @@ class Thim_FoodList_Widget extends SiteOrigin_Widget {
 						'repeat_content' => array(
 							'type'  => 'text',
 							'label' => esc_html__( 'Name', 'thim-starter-theme' )
-						)
+						),
+						'repeat_price' => array(
+							'type'  => 'text',
+							'label' => esc_html__( 'Price', 'thim-starter-theme' )
+						),
+
 					)
 				)
 			)

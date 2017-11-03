@@ -26,7 +26,7 @@
       margin-right: -10px;
     }
     .inverted-content {
-      padding: 40px 10%;
+      padding: 40px 11%;
       text-align: center;
       .food-card-img {
         height: 210px;
@@ -67,6 +67,36 @@
       .detail-food-list {
         line-height: 45px;
         margin-bottom: 75px;
+        .content-food-list {
+          white-space: nowrap;
+          max-width: 500px;
+          display: flex;
+          margin: auto;
+          margin-bottom: 0px;
+          .food-name {
+            text-align: left;
+            margin-left: 0;
+
+            &::after {
+              content: ":";
+            }
+          }
+          .food-price {
+            text-align: right;
+            margin-right: 0;
+            font-weight: bolder;
+          }
+          .dots-background {
+
+            background-position: bottom;
+            background-size: 4px 2px;
+            background-repeat: repeat-x;
+            margin-left: 3px;
+            margin-top: 26px;
+            width: calc(100%);
+            height: 2px;
+          }
+        }
       }
       .btn-food-list {
         height: 60px;
@@ -123,6 +153,10 @@
   }
 }
 
+.important-word {
+  line-height: 65px;
+}
+
 /*post-widget*/
 .thim-sc-posts {
   margin-bottom: 130px;
@@ -142,13 +176,10 @@
   }
   .row {
     .content-inner {
-      padding:inherit ;
-
+      padding: inherit;
       .entry-top {
-
         flex-shrink: 0;
         max-width: 560px;
-        height: 360px;
         padding-left: 0px;
         padding-right: 0px;
 
@@ -157,7 +188,7 @@
         margin-left: 50px;
         max-width: 560px;
         padding-top: 0;
-        padding-right:0px;
+        padding-right: 0px;
         padding-left: 0px;
         .meta-entry {
           margin-bottom: 25px;
@@ -167,7 +198,7 @@
               color: #999;
               font-size: 14px;
               letter-spacing: 0;
-              line-height: 25px;
+              //line-height: 25px;
             }
             &:after {
               content: " -";
@@ -181,7 +212,7 @@
                 font-weight: bolder;
                 font-size: 14px;
                 letter-spacing: 0;
-                line-height: 25px;
+                //line-height: 25px;
               }
               &:after {
                 content: " -";
@@ -194,7 +225,7 @@
               color: #999;
               font-size: 14px;
               letter-spacing: 0;
-              line-height: 25px;
+              //line-height: 25px;
             }
           }
         }

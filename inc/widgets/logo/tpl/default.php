@@ -3,7 +3,7 @@ $attachment = wp_get_attachment_image_src( $instance['logo'], 'full' );
 $logo_url   = $attachment[0];
 ?>
 <div class="logo-rest">
-    <img class="img-logo" src="<?php echo $logo_url; ?>">
+    <a href="<?php echo get_home_url();?>"><img class="img-logo" src="<?php echo $logo_url; ?>"></a>
 	<?php
 	if ( $instance['displayDes']) {
 		?>
