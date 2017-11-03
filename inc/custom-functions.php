@@ -884,17 +884,17 @@ if ( ! function_exists( 'thim_load_more_post' ) ) {
                          class="column-1 col-md-12 post-<?php the_ID(); ?> post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
                     <div class="content-inner row ">
 						<?php if ( $offset_paged % 2 != 0 ) {
-							echo '<div class="entry-top col-6 col-xl-6" style="order:2; margin-left: 50px">';
+							echo '<div class="entry-top col-sm-12 col-md-6" style="order:2; margin-left: 50px">';
 						} else {
-							echo '<div class="entry-top col-6 col-xl-6">';
+							echo '<div class="entry-top col-sm-12 col-md-6">';
 						}
 						thim_thumbnail( get_the_ID(), 'full' );
 						?>
                     </div><!-- .entry-top -->
 	                <?php if ( $offset_paged % 2 != 0 ) {
-		                echo '<div class="entry-content col-6 col-xl-6" style=" margin-left: 0" >';
+		                echo '<div class="entry-content col-sm-12 col-md-6" style=" margin-left: 0" >';
 	                } else {
-		                echo '<div class="entry-content col-6 col-xl-6" style=" margin-left: 50px">';
+		                echo '<div class="entry-content col-sm-12 col-md-6" style=" margin-left: 50px">';
 	                }
 	                ?>
                         <header class="entry-header">
