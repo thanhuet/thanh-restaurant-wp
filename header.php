@@ -24,20 +24,21 @@
 
 <div id="wrapper-container" <?php thim_wrapper_container_class(); ?>>
 
-    <!--	<?php /*do_action( 'thim_topbar' ) */ ?>
+    <!--    	--><?php //do_action( 'thim_topbar' ) ?>
 
-	<header id="masthead" class="site-header affix-top<?php /*thim_header_layout_class(); */ ?>">
-		<?php /*get_template_part( 'templates/header/' . get_theme_mod( 'header_style', 'default' ) ); */ ?>
+    <!--	<header id="masthead" class="site-header affix-top<?php /*thim_header_layout_class();  */ ?>">
+		<?php /*get_template_part( 'templates/header/' . get_theme_mod( 'header_style', 'default' ) );  */ ?>
 	</header>--><!-- #masthead -->
 
-    <!--	<nav class="visible-xs mobile-menu-container mobile-effect" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		<?php /*get_template_part( 'templates/header/mobile-menu' ); */ ?>
-	</nav>--><!-- nav.mobile-menu-container -->
+    <nav class="visible-xs mobile-menu-container mobile-effect" itemscope
+         itemtype="http://schema.org/SiteNavigationElement">
+		<?php get_template_part( 'templates/header/mobile-menu' ); ?>
+    </nav><!-- nav.mobile-menu-container -->
     <div class="container topbar-center row">
 		<?php dynamic_sidebar( 'topbar_center' ) ?>
     </div>
-		<?php wp_nav_menu( array(
-			'theme_location' => 'primary',
-			'menu_id'        => 'primary-menu'
-		) ) ?>
+	<?php wp_nav_menu( array(
+		'theme_location' => 'primary',
+		'menu_id'        => 'primary-menu'
+	) ) ?>
     <div id="main-content">

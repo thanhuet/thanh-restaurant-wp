@@ -32,6 +32,7 @@ if ( ! function_exists( 'thim_setup' ) ) :
 		// Add support Woocommerce
 		add_theme_support( 'woocommerce' );
 		add_theme_support( 'thim-core' );
+		add_theme_support( 'thim-core-lite' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -154,7 +155,7 @@ function thim_widgets_init() {
 		'name'          => esc_html__( 'Thim: Bottombar', 'thim-starter-theme' ),
 		'id'            => 'bottom_bar',
 		'description'   => esc_html__( 'Site links.', 'thim-starter-theme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s col col-6 col-sm-3">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s col col-xl-3 col-md-6 col-sm-6 col-12">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
@@ -163,7 +164,7 @@ function thim_widgets_init() {
 		'name'          => esc_html__( 'Thim: Topbar Center', 'thim-starter-theme' ),
 		'id'            => 'topbar_center',
 		'description'   => esc_html__( 'Display in topbar center.', 'thim-starter-theme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s col-xl-4">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s col-4 col-xl-4">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',

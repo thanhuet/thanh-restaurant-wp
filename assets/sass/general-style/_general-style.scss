@@ -112,6 +112,9 @@
   .content-contact-form {
     max-width: 570px;
     .wpcf7-form-control-wrap {
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 100%;
       .wpcf7-text {
         color: white;
         height: 45px;
@@ -129,21 +132,18 @@
 
       }
       .wpcf7-textarea {
-        margin-top: 30px;
         @extend .wpcf7-text;
         height: auto;
       }
     }
 
     .contact-submit {
-      margin-top: 30px;
       .wpcf7-submit {
         font-size: 14px;
         padding: 15px 30px;
         background: #FFFFFF;
         border: 1px solid #FFFFFF;
         color: #616161;
-
       }
     }
   }

@@ -8,10 +8,10 @@
 ?>
 <div class="container">
 <section class="error-404 not-found row">
-    <div class="img-error-404 col-6 col-xl-6">
+    <div class="img-error-404 col-12 col-md-6">
         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/06_404.png' ); ?>">
     </div>
-    <div class="content-error-404 col-6 col-xl-6">
+    <div class="content-error-404 col-12 col-md-6">
         <header class="page-header">
             <h2 class="page-title">404</h2>
         </header><!-- .page-header -->
