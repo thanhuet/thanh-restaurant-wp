@@ -9370,3 +9370,6 @@ input[type="submit"],
   content: '';
   bottom: 0;
   left: 0; }
+
+.widget_text .sb_instagram_header, .widget_text #sbi_load {
+  display: none; }
