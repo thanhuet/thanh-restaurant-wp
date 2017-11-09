@@ -5,7 +5,13 @@
 body {
   overflow-x: hidden;
   &.responsive {
-    @media (max-width: 1200px) {
+
+    @media (max-width: 1200px) and (min-width: 1200px) {
+      #wrapper-container{
+        #masthead{
+          display: none !important;
+        }
+      }
       /**homepage+header+footer**/
       .topbar-center {
         .widget_info-rest {
@@ -250,6 +256,7 @@ body {
     @media (max-width: 769px) {
       /**homepage+header+footer**/
       .topbar-center {
+        display: none;
         padding: 10px 0;
         border: none;
         .widget_info-rest {
@@ -630,7 +637,7 @@ body {
       }
       /**404 Page**/
     }
-    @media (max-width: 480px){
+    @media (max-width: 480px) {
       /**homepage+header+footer**/
       .so-widget-rate-demo {
         .owl-carousel {
@@ -726,7 +733,7 @@ body {
                 position: absolute;
                 content: " ";
                 width: 100%;
-                right:0;
+                right: 0;
                 border-bottom: 2px solid #ccc;
                 margin-top: 25px;
               }
@@ -771,7 +778,7 @@ body {
       }
       /**homepage+header+footer**/
     }
-    @media (min-width: 375px) and (max-width: 413px){
+    @media (min-width: 375px) and (max-width: 413px) {
       /**homepage+header+footer**/
       .bottom-bar {
         .widget_logo-rest {
@@ -810,7 +817,7 @@ body {
       }
       /**homepage+header+footer**/
     }
-    @media (min-width: 320px) and (max-width: 374px){
+    @media (min-width: 320px) and (max-width: 374px) {
       /**homepage+header+footer**/
       .bottom-bar {
         .widget_logo-rest {
@@ -849,7 +856,6 @@ body {
       }
       /**homepage+header+footer**/
     }
-
 
     @media (max-width: 768px) {
       .visible-xs, .visible-sm, .visible-md, .visible-lg {
