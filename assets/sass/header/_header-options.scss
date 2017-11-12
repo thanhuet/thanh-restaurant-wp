@@ -122,11 +122,17 @@ header#masthead {
 
 header {
   &#masthead {
-    .navigation {
+    background-color:$thim_header_background_color ;
+    .header-v1{
+      background-color: $thim_header_background_color;
+    }
+    .menu-main {
+      background-color:$thim_header_background_color ;
       .container {
         .width-navigation {
           .inner-navigation {
             .navbar {
+              background-color:$thim_header_background_color ;
               li {
                 &.current-menu-item {
                   a {

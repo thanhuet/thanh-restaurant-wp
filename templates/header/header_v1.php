@@ -27,7 +27,7 @@
         </div>
     </div>
 </div>
-<div class="navigation">
+<div class="navigation menu-main">
     <div class="container">
         <nav class="width-navigation table-cell table-right main-navigation">
             <div class="inner-navigation">

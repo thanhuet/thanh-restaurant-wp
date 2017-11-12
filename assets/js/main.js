@@ -3810,47 +3810,54 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
             var $header = $('#masthead.sticky-header'),
                 $header_v1 = $('#masthead.sticky-header .header-v1 '),
                 off_Top = ( $('#wrapper-container').length > 0 ) ? $('#wrapper-container').offset().top : 0,
-                $topbar = $('#masthead.sticky-header .navigation'),
+                $topbar = $('#masthead.sticky-header .menu-main'),
+                $primary_menu = $('#masthead.sticky-header .menu-main .container .width-navigation .inner-navigation .navbar'),
                 menuH = $header.outerHeight(),
                 latestScroll = 0,
                 startFixed = 2,
-                header_v1_height = $header_v1.outerHeight;
-
-            console.log(off_Top)
+                header_v1_height = $header_v1.outerHeight();
 
             if ($topbar.length) {
                 if ($topbar.hasClass('style-overlay')) {
                     $header.css({
-                        top: $topbar.outerHeight() + 'px'
+                        // top: $topbar.outerHeight() + 'px'
                     });
                 }
-                startFixed = $topbar.outerHeight();
+                startFixed = $header_v1.outerHeight() + $topbar.outerHeight();
             }
 
             $(window).scroll(function () {
                 var current = $(this).scrollTop();
                 if (current > startFixed) {
-                    $header.removeClass('affix-top').addClass('affix');
-                    $header.css({
-                        top: off_Top,
-                    });
-                    // $header_v1.css({
-                    //     'margin-top': -($header_v1.height()) + 'px'
-                    // })
+                    $header.removeClass('no-transition');
+                    // $header.removeClass('affix-top').addClass('affix');
+                    $header.css({});
                 } else {
-                    $header.removeClass('affix').addClass('affix-top');
+                    $header.addClass('no-transition');
+                    if (current < startFixed + $topbar.outerHeight()) {
+                        $topbar.css({
+                            'position': 'inherit',
+                            top:0
+                        });
+                    }
+                    if (screen.width < 769) {
+                        if (current < $header_v1.outerHeight(true) * 2) {
+                            $header.css({
+                                'position': 'relative',
+                                top:0
+                            });
+                        }
+                    }
+                    // $header.removeClass('affix').addClass('affix-top');
                     if ($topbar.length > 0) {
                         if ($topbar.hasClass('style-overlay')) {
                             $header.css({
-                                top: $topbar.outerHeight() + 'px'
+                                // top: $topbar.outerHeight() + 'px'
                             });
                         } else {
                             $header.css({
                                 top: 0
                             });
-                            // $header_v1.css({
-                            //     'margin-top': $header_v1.height() + 'px'
-                            // });
                         }
                     }
                 }
@@ -3859,20 +3866,40 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
                     if (!$header.hasClass('menu-hidden')) {
                         $header.addClass('menu-hidden');
                         $header.css({
-                            top: off_Top
+                            // top: off_Top
                         });
+                        $topbar.css({
+                            // 'position': 'inherit',
+                            top: -($topbar.outerHeight()) + 'px'
+                        });
+                        if (screen.width < 769) {
+                            $header.css({
+                                top: -($header_v1.outerHeight(true)) + 'px'
+                            });
+                        }
                     }
                 } else {
                     if ($header.hasClass('menu-hidden')) {
                         $header.removeClass('menu-hidden');
                         $header.css({
+                            // top: off_Top
+                        });
+                        $topbar.css({
+                            'position': 'fixed',
                             top: off_Top
                         });
+                        if (screen.width < 769) {
+                            $header.css({
+                                'position': 'fixed',
+                                top: off_Top
+                            });
+                        }
                     }
                 }
 
                 latestScroll = current;
             });
+
         },
         /**
          * Back to top
