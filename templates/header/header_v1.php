@@ -20,7 +20,7 @@
                     <?php do_action( 'thim_header_sticky_logo' ); ?>
                 </div>
 
-                <div class="topbar-center row">
+                <div class="topbar-center row container">
 		            <?php dynamic_sidebar( 'topbar_center' ); ?>
                 </div>
             </div>

@@ -11,8 +11,9 @@ body {
       .topbar-center {
         .widget_info-rest {
           .icon-title-info {
+            padding-left:55px;
             &::after {
-              right: 50px;
+              right: 110px;
             }
           }
           .main-content {
