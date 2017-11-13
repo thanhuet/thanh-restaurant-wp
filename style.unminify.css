@@ -7218,6 +7218,18 @@ header#masthead {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0); }
 
+.visible-xs .menu-mobile-effect {
+  margin-top: 0px !important;
+  top: 50px !important;
+  right: 0 !important; }
+
+.visible-xs .navbar-nav {
+  width: 100%;
+  margin: 0 !important; }
+  .visible-xs .navbar-nav li a {
+    padding: 15px !important;
+    line-height: 20px; }
+
 /*
  * Style Header
  */
