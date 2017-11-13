@@ -8,11 +8,19 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 	function __construct() {
 
+		$list_cate        = get_categories();
+		$list_cate_option = array(
+			"1" => esc_html__( 'All categories', 'thim-starter-theme' )
+		);
+		foreach ( $list_cate as $item ) {
+			array_push( $list_cate_option, esc_html__( $item->name, 'thim-starter-theme' ) );
+		}
+
 		parent::__construct(
 			'posts',
-			esc_html__( 'Thim: Posts', 'mabu' ),
+			esc_html__( 'Thim: Posts', 'thim-starter-theme' ),
 			array(
-				'description'   => esc_html__( 'Display posts', 'mabu' ),
+				'description'   => esc_html__( 'Display posts', 'thim-starter-theme' ),
 				'help'          => '',
 				'panels_groups' => array( 'thim_widget_group' )
 			),
@@ -20,25 +28,31 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 			array(
 				'title' => array(
 					'type'    => 'text',
-					'label'   => esc_html__( 'Title', 'thimpress' ),
+					'label'   => esc_html__( 'Title', 'thim-starter-theme' ),
 					'default' => 'Latest Blog'
 				),
 
 				'description' => array(
 					'type'    => 'text',
-					'label'   => esc_html__( 'Description', 'thimpress' ),
+					'label'   => esc_html__( 'Description', 'thim-starter-theme' ),
 					'default' => 'To enrich knowledge, we’re lucky to get certified from several famous institutions in our locality. Here we enlisted my top certifications.'
 				),
 
 				'column' => array(
 					"type"    => "select",
-					"label"   => esc_html__( "Column", 'mabu' ),
+					"label"   => esc_html__( "Column", 'thim-starter-theme' ),
 					"options" => array(
-						"1" => esc_html__( "1", 'mabu' ),
-						"2" => esc_html__( "2", 'mabu' ),
-						"3" => esc_html__( "3", 'mabu' ),
-						"4" => esc_html__( "4", 'mabu' ),
+						"1" => esc_html__( "1", 'thim-starter-theme' ),
+						"2" => esc_html__( "2", 'thim-starter-theme' ),
+						"3" => esc_html__( "3", 'thim-starter-theme' ),
+						"4" => esc_html__( "4", 'thim-starter-theme' ),
 					)
+				),
+
+				'choose_cate' => array(
+					"type"    => "select",
+					"label"   => esc_html__( "Choose category", 'thim-starter-theme' ),
+					"options" => $list_cate_option
 				),
 
 				'posts_per_page' => array(
@@ -49,12 +63,6 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 				),
 
-				'thumbnail_size' => array(
-					"type"    => "text",
-					"label"   => esc_attr__( "Thumbnail size", 'mag-wp' ),
-					'default' => '440x285',
-					'desc'    => esc_attr__( 'Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height).', 'mag-wp' ),
-				),
 
 			)
 		);

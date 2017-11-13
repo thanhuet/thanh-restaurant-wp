@@ -70,10 +70,12 @@ Domain Path: /languages/
 @import "header/header";
 @import "header/main-menu";
 @import "header/mega-menu";
+@import "header/primary-menu";
 /*!--------------------------------------------------------------
 7.0 - breadcrumb
 ----------------------------------------------------------------*/
 @import "breadcrumb/breadcrumb";
+
 /*!--------------------------------------------------------------
 8.0 - Blog
 ----------------------------------------------------------------*/
@@ -102,63 +104,14 @@ Domain Path: /languages/
 13.0 - general
 ----------------------------------------------------------------*/
 @import "general-style/general-style";
-@import "./inc/widgets/posts/assets/sass/posts";
 
-#thim-header-topbar{
-  background: none !important;
-}
+//@import "/inc/widgets/posts/assets/sass/posts";
 
-.header_left_right{
-  .head_header{
-    .logo_header{
-      .title_logo{
-        font-family:GreatVibes-Regular !important;
-      }
-    }
-  }
-}
-// full width main
-.blog {
-  #main {
-    flex-basis: 100%;
-    max-width: 100%;
-    article{
-      .content-inner{
-        .entry-top{
-          width:48%;
-        }
-        .entry-content{
-          width:48%;
-        }
-      }
-      .entry-meta{
-        .author {
-          margin-right:0px !important;
-          a {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    article:nth-child(2n+1) {
-      .content-inner {
-        .entry-top {
-          float: left;
-        }
-        .entry-content{
-          float: right;
-          margin-top:20px;
-        }
-      }
-    }
-    article:nth-child(2n) {
-      .content-inner {
-        .entry-top {
-          float: right;
-        }
-      }
-    }
-  }
+/*!--------------------------------------------------------------
+14.0 - widget
+----------------------------------------------------------------*/
+@import "widgets/widgets";
+@import "elements/owlcarousel";
 
 }
 .single-post{

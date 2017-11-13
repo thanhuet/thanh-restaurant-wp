@@ -127,7 +127,7 @@ thim_customizer()->add_field(
 // Align Page Title
 thim_customizer()->add_field(
 	array(
-		'id'        => 'font_page_title',
+			'id'        => 'font_page_title',
 		'type'      => 'typography',
 		'label'     => esc_html__( 'Title Styling', 'thim-starter-theme' ),
 		'tooltip'   => esc_html__( 'Allows you can select fonts property for page title. ', 'thim-starter-theme' ),
