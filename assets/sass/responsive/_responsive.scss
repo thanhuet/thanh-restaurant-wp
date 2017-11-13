@@ -12,7 +12,7 @@ body {
       .topbar-center {
         .widget_info-rest {
           .icon-title-info {
-            padding-left:55px;
+            padding-left: 55px;
             &::after {
               right: 110px;
             }
@@ -554,7 +554,7 @@ body {
       header {
         &#masthead {
           //position: fixed !important;
-          top:0 !important;
+          top: 0 !important;
           .header-v1 {
             .navigation {
               .tm-table {
@@ -709,7 +709,7 @@ body {
         &#masthead {
           //position: fixed !important;
           .header-v1 {
-            margin-top:90px;
+            margin-top: 90px;
             .navigation {
               .tm-table {
                 .menu-mobile-effect {
@@ -1015,7 +1015,6 @@ body {
       }
     }
 
-
     @media (max-width: 768px) {
       .visible-xs, .visible-sm, .visible-md, .visible-lg {
         display: block !important;
@@ -1100,7 +1099,7 @@ body {
         }
       }
     }
-<<<<<<< HEAD
+
     @media (max-width: 414px) {
       article:after {
         width: 300px;
@@ -1110,28 +1109,20 @@ body {
         .entry-top {
           float: none !important;
           width: 100% !important;
-          margin-bottom:30px;
+          margin-bottom: 30px;
         }
         .entry-content {
           float: none !important;
           width: 100% !important;
           .entry-header {
             margin-bottom: 10px;
-            .entry-title {
-=======
-
-  }
-
-  &.disable-responsive {
->>>>>>> 041f55699f37f73326f504b23e50d97c349ec781
-
-            }
+            .entry-title {}
           }
           .entry-meta {
             font-size: 14px;
             margin-bottom: 30px;
           }
-          .readmore{
+          .readmore {
             a {
               left: 50%;
               margin-left: -52px;
@@ -1140,20 +1131,20 @@ body {
         }
       }
     }
-    @media (max-width: 320px){
-      .content-inner{
-        .entry-top{
+    @media (max-width: 320px) {
+      .content-inner {
+        .entry-top {
 
         }
-        .entry-content{
-          .entry-header{
-            .entry-title{
-              font-size:24px;
+        .entry-content {
+          .entry-header {
+            .entry-title {
+              font-size: 24px;
             }
           }
-          .entry-meta{
-            font-size:12px;
-            margin-bottom:20px;
+          .entry-meta {
+            font-size: 12px;
+            margin-bottom: 20px;
           }
         }
       }

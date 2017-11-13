@@ -405,16 +405,14 @@
             });
         }
     };
-    $('#icon-load-more-post').hide();
-    $('#text-loading').hide();
+    $('#load-more-content').hide();
     $(document).on('click', '#btn-load-more-post', function () {
         var that = $(this);
         var numberPage = that.data('page');
         var offPage = that.data('offset-page');
         var catID = that.data('categoryid');
         var count = offPage + 1;
-        $('#icon-load-more-post').show();
-        $('#text-loading').show();
+        $('#load-more-content').show();
         $('#btn-load-more-post').hide();
         $.ajax({
             url: ajaxurl,
@@ -432,9 +430,8 @@
             success: function (response) {
                 that.data('offset-page', count);
                 setTimeout(function () {
-                    $('#icon-load-more-post').hide();
+                    $('#load-more-content').hide();
                     $('#btn-load-more-post').show();
-                    $('#text-loading').hide();
                     $('#thim-post-container').append(response);
                 }, 750);
             }
