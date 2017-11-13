@@ -350,11 +350,11 @@ if ( ! class_exists( 'thim_back_to_top' ) ) {
 	function thim_back_to_top() {
 		if ( get_theme_mod( 'feature_backtotop', true ) ) {
 			?>
-			<div id="back-to-top">
+            <div id="back-to-top">
 				<?php
 				get_template_part( 'templates/footer/back-to-top' );
 				?>
-			</div>
+            </div>
 			<?php
 		}
 	}
@@ -382,18 +382,18 @@ if ( ! function_exists( 'thim_footer_layout' ) ) {
 if ( ! function_exists( 'thim_footer_widgets' ) ) {
 	function thim_footer_widgets() {
 		if ( get_theme_mod( 'footer_widgets', true ) ) : ?>
-			<div class="footer-sidebars row">
+            <div class="footer-sidebars row">
 				<?php
 				$col = 12 / get_theme_mod( 'footer_columns', 4 );
 				if ( get_theme_mod( 'footer_columns' ) == 5 ) {
 					$col = '20';
 				}
 				for ( $i = 1; $i <= get_theme_mod( 'footer_columns', 4 ); $i ++ ): ?>
-					<div class="col-xs-12 col-sm-6 col-md-<?php echo esc_attr( $col ); ?>">
+                    <div class="col-xs-12 col-sm-6 col-md-<?php echo esc_attr( $col ); ?>">
 						<?php dynamic_sidebar( 'footer-sidebar-' . $i ); ?>
-					</div>
+                    </div>
 				<?php endfor; ?>
-			</div>
+            </div>
 		<?php endif;
 	}
 }
@@ -408,12 +408,12 @@ if ( ! function_exists( 'thim_footer_widgets' ) ) {
 if ( ! function_exists( 'thim_copyright_bar' ) ) {
 	function thim_copyright_bar() {
 		if ( get_theme_mod( 'copyright_bar', true ) ) : ?>
-			<div class="copyright-text">
+            <div class="copyright-text">
 				<?php
-				$copyright_text = get_theme_mod( 'copyright_text', 'Designed by <a href="https://thimpress.com">ThimPress</a>. Powered by WordPress.' );
+				$copyright_text = get_theme_mod( 'copyright_text', 'Powered by <a class="powered-by-link" href="https://wordpress.org/">WordPress</a>. Designed by <a class="designed-by-link" href="https://thimpress.com">ThimPress</a>. ' );
 				echo ent2ncr( $copyright_text );
 				?>
-			</div>
+            </div>
 		<?php endif;
 	}
 }
@@ -531,12 +531,12 @@ if ( ! function_exists( 'thim_add_opengraph' ) ) {
 				}
 				?>
 
-				<meta property="og:title" content="<?php echo the_title(); ?>" />
-				<meta property="og:description" content="<?php echo esc_attr( $excerpt ); ?>" />
-				<meta property="og:type" content="article" />
-				<meta property="og:url" content="<?php echo the_permalink(); ?>" />
-				<meta property="og:site_name" content="<?php echo get_bloginfo(); ?>" />
-				<meta property="og:image" content="<?php echo esc_attr( $img_src ); ?>" />
+                <meta property="og:title" content="<?php echo the_title(); ?>"/>
+                <meta property="og:description" content="<?php echo esc_attr( $excerpt ); ?>"/>
+                <meta property="og:type" content="article"/>
+                <meta property="og:url" content="<?php echo the_permalink(); ?>"/>
+                <meta property="og:site_name" content="<?php echo get_bloginfo(); ?>"/>
+                <meta property="og:image" content="<?php echo esc_attr( $img_src ); ?>"/>
 
 				<?php
 			} else {
@@ -555,7 +555,8 @@ if ( ! function_exists( 'thim_add_opengraph' ) ) {
 if ( ! function_exists( 'thim_google_theme_color' ) ) {
 	function thim_google_theme_color() {
 		if ( get_theme_mod( 'feature_google_theme', false ) ) { ?>
-			<meta name="theme-color" content="<?php echo esc_attr( get_theme_mod( 'feature_google_theme_color', '#333333' ) ) ?>">
+            <meta name="theme-color"
+                  content="<?php echo esc_attr( get_theme_mod( 'feature_google_theme_color', '#333333' ) ) ?>">
 			<?php
 		}
 	}
@@ -629,8 +630,8 @@ if ( ! class_exists( 'Aq_Resize' ) ) {
 /**
  * Get feature image
  *
- * @param int  $width
- * @param int  $height
+ * @param int $width
+ * @param int $height
  * @param bool $link
  *
  * @return string
@@ -684,9 +685,9 @@ function thim_feature_image( $width = 1024, $height = 768, $link = true ) {
  * @see   wcpt_locate_template()
  *
  * @param string $template_name Template to load.
- * @param array  $args          Args passed for the template file.
- * @param string $string        $template_path    Path to templates.
- * @param string $default_path  Default path to template files.
+ * @param array $args Args passed for the template file.
+ * @param string $string $template_path    Path to templates.
+ * @param string $default_path Default path to template files.
  */
 function thim_get_template( $template_name, $args = array(), $tempate_path = '', $default_path = '' ) {
 	if ( is_array( $args ) && isset( $args ) ) :
@@ -720,8 +721,8 @@ function thim_get_template( $template_name, $args = array(), $tempate_path = '',
  * @since 1.0.0
  *
  * @param    string $template_name Template to load.
- * @param    string $string        $template_path    Path to templates.
- * @param    string $default_path  Default path to template files.
+ * @param    string $string $template_path    Path to templates.
+ * @param    string $default_path Default path to template files.
  *
  * @return    string                            Path to the template file.
  */
@@ -749,3 +750,182 @@ function thim_locate_template( $template_name, $template_path = '', $default_pat
 
 	return apply_filters( 'thim_locate_template', $template, $template_name, $template_path, $default_path );
 }
+
+/**
+ * @param $id
+ * @param $size
+ * @param $type : default is post
+ *
+ * @return string
+ */
+if ( ! function_exists( 'thim_get_thumbnail' ) ) {
+	function thim_get_thumbnail( $id, $size = 'thumbnail', $type = 'post', $link = true, $classes = '' ) {
+		$width         = 0;
+		$height        = 0;
+		$attachment_id = $id;
+		if ( $type === 'post' ) {
+			$attachment_id = get_post_thumbnail_id( $id );
+		}
+		$src = wp_get_attachment_image_src( $attachment_id, 'full' );
+
+		if ( $size != 'full' && ! in_array( $size, get_intermediate_image_sizes() ) ) {
+			//custom size
+			$thumbnail_size = explode( 'x', $size );
+			$width          = $thumbnail_size[0];
+			$height         = $thumbnail_size[1];
+			$img_src        = thim_aq_resize( $src[0], $width, $height, true );
+		} else if ( $size == 'full' ) {
+			$img_src = $src[0];
+			$width   = $src[1];
+			$height  = $src[2];
+		} else {
+			$image_size = wp_get_attachment_image_src( $attachment_id, $size );
+			$width      = $image_size[1];
+			$height     = $image_size[2];
+		}
+
+		if ( empty( $img_src ) ) {
+			$img_src = $src[0];
+		}
+
+		$html = '';
+		$html .= '<img ' . image_hwstring( $width, $height ) . ' src="' . esc_attr( $img_src ) . '" alt="' . get_the_title( $id ) . '" class="' . $classes . '">';
+		if ( $link ) {
+			$html .= '<a href="' . esc_url( get_permalink( $id ) ) . '" class="img-link"></a>';
+		}
+
+		return $html;
+	}
+}
+
+/**
+ * @param      $id
+ * @param      $size
+ */
+if ( ! function_exists( 'thim_thumbnail' ) ) {
+	function thim_thumbnail( $id, $size, $type = 'post', $link = true, $classes = '' ) {
+		echo thim_get_thumbnail( $id, $size, $type, $link, $classes );
+	}
+}
+
+if ( ! function_exists( 'thim_posted_on' ) ) :
+	/**
+	 * Prints HTML with meta information for the current post-date/time and author.
+	 */
+	function thim_posted_on() {
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'M j, Y' ) ),
+			esc_html( get_the_date( 'M j, Y' ) )
+		);
+		$byline      = sprintf(
+		/* translators: %s: post author. */
+			esc_html_x( '%s', 'post author', 'thim-starter-theme' ),
+			'<span class="author vcard"><a class="url fn n" title="Posted by ' . get_the_author() . '" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		);
+
+		$posted_on = sprintf(
+		/* translators: %s: post date. */
+			esc_html_x( '%s', 'post date', 'thim-starter-theme' ),
+			'<a>' . $time_string . '</a>'
+		);
+
+
+		echo '<span class="posted-on">' . $posted_on . '</span> <span class="byline">   by ' . $byline . '</span>'; // WPCS: XSS OK.
+
+	}
+endif;
+
+if ( ! function_exists( 'thim_custom_excerpt_length' ) ) {
+	function thim_custom_excerpt_length( $length ) {
+		return 49;
+	}
+}
+add_filter( 'excerpt_length', 'thim_custom_excerpt_length', 999999 );
+
+/**
+ * Print ajax
+ *
+ * @return string
+ */
+add_action( 'wp_head', 'thim_lazy_ajax', 0, 0 );
+function thim_lazy_ajax() {
+	?>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var ajaxurl = "<?php echo esc_js( admin_url( 'admin-ajax.php' ) ); ?>";
+        /* ]]> */
+    </script>
+	<?php
+}
+
+//Load more post function
+if ( ! function_exists( 'thim_load_more_post' ) ) {
+	function thim_load_more_post() {
+		$paged        = $_POST['page'];
+		$offset_paged = $_POST['offset_page'];
+		$cateID       = $_POST['cateID'];
+		$query        = $cateID == 0 ? new WP_Query( array(
+			'post_type'      => 'post',
+			'posts_per_page' => $paged,
+			'offset'         => $offset_paged,
+		) ) : new WP_Query( array(
+			'cat'            => $cateID,
+			'post_type'      => 'post',
+			'posts_per_page' => $paged,
+			'offset'         => $offset_paged,
+		) );
+
+		if ( $query->have_posts() ) :
+			while ( $query->have_posts() ) : $query->the_post();
+				?>
+                <article id="post-<?php the_ID(); ?>"
+                         class="column-1 col-md-12 post-<?php the_ID(); ?> post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                    <div class="content-inner row ">
+						<?php if ( $offset_paged % 2 != 0 ) {
+							echo '<div class="entry-top col-sm-12 col-md-6" style="order:2; margin-left: 50px">';
+						} else {
+							echo '<div class="entry-top col-sm-12 col-md-6">';
+						}
+						thim_thumbnail( get_the_ID(), 'full' );
+						?>
+                    </div><!-- .entry-top -->
+	                <?php if ( $offset_paged % 2 != 0 ) {
+		                echo '<div class="entry-content col-sm-12 col-md-6" style=" margin-left: 0" >';
+	                } else {
+		                echo '<div class="entry-content col-sm-12 col-md-6" style=" margin-left: 50px">';
+	                }
+	                ?>
+                        <header class="entry-header">
+							<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                        </header>
+                        <div class="meta-entry">
+							<?php thim_posted_on(); ?>
+							<?php if ( comments_open() ) {
+								echo '<span class="related-post-reply">';
+								comments_popup_link(
+									__( 'No comments', 'thim-starter-theme' ),
+									__( '1 comment', 'thim-starter-theme' ),
+									__( '% comments', 'thim-starter-theme' ),
+									__( 'Read all comments', 'thim-starter-theme' )
+								);
+							} ?>
+                        </div>
+                        <!-- .entry-header -->
+                        <div class="entry-summary">
+							<?php the_excerpt(); ?>
+                        </div><!-- .entry-summary -->
+                    </div><!-- .entry-content -->
+                    </div> <!-- .content-inner -->
+                </article><!-- #post-## -->
+				<?php
+			endwhile;
+		endif;
+		wp_reset_postdata();
+		die();
+
+	}
+}
+add_action( 'wp_ajax_thim_load_more_post', 'thim_load_more_post' );
+add_action( 'wp_ajax_nopriv_thim_load_more_post', 'thim_load_more_post' );

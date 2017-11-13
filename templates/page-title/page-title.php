@@ -20,15 +20,21 @@ if ( isset( $cat_obj->term_id ) ) {
 if ( isset( $thim_options['hide_page_title'] ) ) {
 	$hide_title = get_theme_mod( 'hide_page_title', false );
 }
-
+if(isset($thim_options['font_breadcrumb'])){
+    $style_breadcrumb = get_theme_mod('font_breadcrumb');
+}
 if ( isset( $thim_options['disable_breadcrumb'] ) ) {
 	$hide_breadcrumb = get_theme_mod( 'disable_breadcrumb' );
 }
-
+if(isset($thim_options['font_page_title'])){
+    $style_page_title=get_theme_mod('font_page_title');
+}
 if ( isset( $thim_options['page_title_background_color'] ) ) {
 	$bg_color = get_theme_mod( 'page_title_background_color' );
 }
-
+if ( isset( $thim_options['page_title_height'] ) ) {
+	$page_title_height = get_theme_mod( 'page_title_height' );
+}
 if ( isset( $thim_options['page_title_background_opacity'] ) ) {
 	$bg_opacity = (float) get_theme_mod( 'page_title_background_opacity' );
 }
@@ -100,25 +106,26 @@ $hide_breadcrumb = ( $hide_breadcrumb == '1' ) ? '1' : $hide_breadcrumb;
 
 
 // style css
-$c_css_style = $overlay_css_style = $title_css_style = $title_css = '';
+$c_css_style       = $overlay_css_style = $title_css_style = $title_css = '';
 $overlay_css_style .= ( $bg_color != '' ) ? 'background-color: ' . $bg_color . ';' : '';
 $overlay_css_style .= ( $bg_color != '' ) ? 'opacity: ' . $bg_opacity . ';' : '';
-$c_css_style .= ( $thim_heading_top_src != '' ) ? 'background-image:url(' . $thim_heading_top_src . ');' : '';
-
-$title_css_style .= ( $text_color != '' ) ? 'color: ' . $text_color . ';' : '';
-$c_css_sub_color = ( $sub_color != '' ) ? 'style="color:' . $sub_color . '"' : '';
-
-$title_css   = ( $title_css_style != '' ) ? 'style="' . $title_css_style . '"' : '';
+$c_css_style       .= ( $thim_heading_top_src != '' ) ? 'background-image:url(' . $thim_heading_top_src . ');' : '';
+$c_css_style       .= ( $thim_heading_top_src != '' ) ? 'height:' . $page_title_height . ';' : '';
+$c_css_style       .= ( $thim_heading_top_src != '' ) ? 'background-position:center;' : '';
+$title_css_style   .= ( $text_color != '' ) ? 'color: ' . $text_color . ';' : '';
+$c_css_sub_color   = ( $sub_color != '' ) ? 'style="color:' . $sub_color . '"' : '';
+$c_css_breadcrumb = ($style_breadcrumb !='')?'style="color:'.$style_breadcrumb['color'].';font-size:'.$style_breadcrumb['font-size'].';"':'';
+$title_css   = ( $title_css_style != '' ) ? 'style="' . $title_css_style . ';font-size:'.$style_page_title['font-size'].';"' : '';
 $c_css       = ( $c_css_style != '' ) ? 'style="' . $c_css_style . '"' : '';
 $overlay_css = ( $overlay_css_style != '' ) ? 'style="' . $overlay_css_style . '"' : '';
 $parallax    = get_theme_mod( 'enable_parallax_page_title', true ) ? ' data-stellar-background-ratio="0.5"' : '';
 ?>
 <div class="page-title">
 	<?php if ( $hide_title != '1' ) : ?>
-		<div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
-			<span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
+        <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
+            <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
 			<?php if ( $hide_title != '1' ) : ?>
-				<div class="content container">
+                <div class="content container " style="text-align: <?php echo $style_page_title['text-align']?>">
 					<?php
 					if ( is_single() ) {
 						$typography = 'h2 ' . $title_css;
@@ -168,31 +175,32 @@ $parallax    = get_theme_mod( 'enable_parallax_page_title', true ) ? ' data-stel
 						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 					}
 					?>
-				</div>
+					<?php
+					if ( $hide_breadcrumb != '1' ) :?>
+                        <div class="breadcrumb-content" <?php echo $c_css_breadcrumb?>>
+							<?php
+							if ( ! is_front_page() || ! is_home() ) { ?>
+                                <div class="breadcrumbs-wrapper">
+                                    <div class="container">
+										<?php
+										if ( get_post_type() == 'product' ) {
+											woocommerce_breadcrumb();
+										} else {
+											thim_breadcrumbs();
+										}
+										?>
+                                    </div><!-- .container -->
+                                </div><!-- .breadcrumbs-wrapper -->
+							<?php }
+							?>
+                        </div><!-- .breadcrumb-content -->
+						<?php
+					endif;
+					?>
+                </div>
 			<?php endif; ?>
-		</div><!-- .main-top -->
+        </div><!-- .main-top -->
 	<?php endif; ?>
 
-	<?php
-	if ( $hide_breadcrumb != '1' ) :?>
-		<div class="breadcrumb-content">
-			<?php
-			if ( ! is_front_page() || ! is_home() ) { ?>
-				<div class="breadcrumbs-wrapper">
-					<div class="container">
-						<?php
-						if ( get_post_type() == 'product' ) {
-							woocommerce_breadcrumb();
-						} else {
-							thim_breadcrumbs();
-						}
-						?>
-					</div><!-- .container -->
-				</div><!-- .breadcrumbs-wrapper -->
-			<?php }
-			?>
-		</div><!-- .breadcrumb-content -->
-		<?php
-	endif;
-	?>
+
 </div><!-- .page-title -->

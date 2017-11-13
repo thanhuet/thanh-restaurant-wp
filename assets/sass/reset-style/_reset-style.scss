@@ -5,7 +5,13 @@
 .box-shadow .boxed-area {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.23);
 }
-
+@media (min-width: 1200px) {
+    .container{
+      width: 1170px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+}
 .content-pusher{
   &.boxed-area{
     max-width: 1200px;

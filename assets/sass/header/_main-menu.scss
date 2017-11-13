@@ -129,9 +129,6 @@ a:active {
 		z-index: 9999;
 		position: fixed;
 		width: 100%;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		background-color: rgba(10, 10, 10, 0.85);
 		@include transition(all ease-out .3s);
 		.width-logo {
 			.no-sticky-logo {
