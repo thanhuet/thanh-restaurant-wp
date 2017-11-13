@@ -44,7 +44,7 @@ function thim_entry_meta_date() {
  * @return string
  */
 function thim_get_entry_meta_date() {
-    $html = '<span class="entry-date" style="font-weight: bold">' . get_the_date( 'F j, Y' ) . '</span>';
+    $html = '<span class="entry-date">' . get_the_date( 'M j, Y' ) . '</span>';
 
 	return $html;
 }
@@ -421,7 +421,7 @@ function thim_excerpt_length() {
 	if ( isset( $thim_options['excerpt_archive_content'] ) ) {
 		$length = get_theme_mod( 'excerpt_archive_content' );
 	} else {
-		$length = '50';
+		$length = '100';
 	}
 
 	return $length;

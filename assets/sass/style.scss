@@ -177,19 +177,30 @@ Domain Path: /languages/
     }
   }
   #secondary{
-    .widget-title{
+    padding-left:35px;
+    .widget-title {
       position: relative;
-      padding-bottom:13px;
-      font-weight:600;
+      padding-bottom: 13px;
+      font-weight: 600;
+      font-size: 22px;
     }
-    .widget-title:after{
+    .widget-title:after {
       position: absolute;
       background: #E6AE69;
-      width:50px;
-      height:2px;
+      width: 50px;
+      height: 2px;
       content: '';
-      bottom:0;
+      bottom: 0;
       left: 0;
+    }
+    ul{
+      li{
+        a{
+          font-size:18px;
+          font-weight:bold;
+          color: #666666;
+        }
+      }
     }
   }
 }

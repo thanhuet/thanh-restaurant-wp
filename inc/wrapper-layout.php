@@ -15,7 +15,7 @@ if ( ! function_exists( 'thim_wrapper_layout' ) ) :
 		$postid            = get_the_ID();
 		$thim_options      = get_theme_mods();
 		$wrapper_layout    = $using_custom_layout = $cat_ID = '';
-		$wrapper_class_col = 'col-sm-9 flex-first';
+		$wrapper_class_col = 'col-sm-8 flex-first';
 		if ( get_post_type() == "product" ) {
 			$prefix = 'woocommerce_';
 		} elseif ( get_post_type() == "post" ) {
@@ -72,7 +72,7 @@ if ( ! function_exists( 'thim_wrapper_layout' ) ) :
 			$wrapper_class_col = "col-sm-9 flex-last";
 		}
 		if ( $wrapper_layout == 'sidebar-right' ) {
-			$wrapper_class_col = 'col-sm-9 flex-first';
+			$wrapper_class_col = 'col-sm-8 flex-first';
 		}
 		if ( $wrapper_layout == 'full-sidebar' ) {
 			$wrapper_class_col = 'col-sm-6 flex-unordered';
@@ -184,7 +184,7 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			} else {
 				$get_sidebar_right = get_theme_mod( '' . $prefix . 'archive_layout_sidebar_right' );
 			}
-			echo '<aside id="secondary-right" class="widget-area col-sm-3 sticky-sidebar">';
+			echo '<aside id="secondary-right" class="widget-area col-sm-4 sticky-sidebar">';
 			dynamic_sidebar( $get_sidebar_right );
 			echo '</aside>';
 		}
