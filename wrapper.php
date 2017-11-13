@@ -15,13 +15,12 @@ if ( is_page_template( 'templates/home-page.php' ) ) {
 	?>
 	<section class="content-area">
 		<?php
-		get_template_part( 'templates/page-title/page', 'title' );
+		get_template_part( 'templates/page-title/page-title', 'title' );
 
-		do_action( 'thim_wrapper_loop_start' );
+/*		do_action( 'thim_wrapper_loop_start' );*/
 		include $file;
-		if(is_single()) {
-            do_action('thim_wrapper_loop_end');
-        }
+/*		do_action( 'thim_wrapper_loop_end' );*/
+
 		?>
 	</section>
 	<?php

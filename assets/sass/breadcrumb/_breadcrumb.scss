@@ -23,6 +23,8 @@
 		@include translate(0%, -50%);
 		h1,
 		h2 {
+			text-transform: uppercase;
+			font-weight: bolder;
 			margin-top: 0;
 			text-align: inherit;
 		}
@@ -36,7 +38,7 @@
 #breadcrumbs {
 	padding: 13px 0;
 	margin: 0;
-	border-bottom: 1px solid $border-color;
+	border-bottom: none;
 	li {
 		line-height: 25px;
 		display: inline-block;

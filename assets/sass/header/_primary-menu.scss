@@ -1,0 +1,47 @@
+header{
+  &#masthead{
+    padding: 0;
+    .menu-main{
+      width: 100%;
+      .container{
+        .width-navigation{
+          display: flex;
+          float:none;
+          width: 100%;
+          .inner-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .navbar {
+              display: flex;
+              flex-direction: row;
+              margin:0;
+              height: 80px;
+              width: 60%;
+              font-size: 14px;
+              li {
+                margin: auto;
+                &.current-menu-item {
+                  a {
+                    font-weight: bolder;
+                  }
+                }
+                a {
+                  color: #212121;
+                  font-weight: bolder;
+                  &:hover {
+                    transition: all 0.3s linear;
+                    font-weight: bolder;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

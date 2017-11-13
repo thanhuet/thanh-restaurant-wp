@@ -163,3 +163,79 @@
   max-width: 50%;
 }
 
+.error-404 {
+  padding: 100px 0;
+  .img-error-404{
+    text-align: center;
+  }
+  .content-error-404 {
+    margin-top: 90px;
+    .page-header {
+      .page-title {
+        font-family: "Great Vibes", sans-serif;
+        font-size: 40px;
+      }
+    }
+    .page-content {
+      margin-top: -25px;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    .page-404-detail {
+      font-size: 16px;
+      margin-top: 60px;
+    }
+  }
+}
+
+// Style Contact Form Resta
+.wpcf7-form {
+  margin-bottom: 75px;
+  .content-contact-form {
+    max-width: 570px;
+    .wpcf7-form-control-wrap {
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 100%;
+      .wpcf7-text {
+        color: white;
+        height: 45px;
+        padding: 14px 0 15px 20px;
+        background: none;
+        border: 1px solid #fff;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder {
+          color: white;
+        }
+      }
+      .wpcf7-emai {
+        @extend .wpcf7-text;
+
+      }
+      .wpcf7-textarea {
+        @extend .wpcf7-text;
+        height: auto;
+      }
+    }
+
+    .contact-submit {
+      .wpcf7-submit {
+        font-size: 14px;
+        padding: 15px 30px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #616161;
+      }
+    }
+  }
+}
+
+//404
+.content-error-404{
+  .page-content{
+    padding-top: 20px;
+    p{
+    }
+  }
+}

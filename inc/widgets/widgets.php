@@ -5,10 +5,21 @@ if ( ! class_exists( 'SiteOrigin_Widget' ) ) {
 }
 
 include_once( THIM_DIR . '/inc/widgets/posts/posts.php' );
+
 include_once( THIM_DIR . '/inc/widgets/recent_posts/recent_posts.php' );
 include_once( THIM_DIR . '/inc/widgets/widget_top_blog_detail/top-blog-detail.php' );
 include_once( THIM_DIR . '/inc/widgets/widget_banner_ads/widget-banner-ads.php' );
 
+/* Widget for homepage*/
+include_once( THIM_DIR . '/inc/widgets/information/information.php' );
+include_once (THIM_DIR . '/inc/widgets/logo/logo.php');
+include_once (THIM_DIR . '/inc/widgets/information-footer/information-footer.php');
+include_once (THIM_DIR . '/inc/widgets/home-image-content/home-image-content.php');
+include_once (THIM_DIR . '/inc/widgets/food-card/food-card.php');
+include_once  (THIM_DIR . '/inc/widgets/introduce-site/introduce-site.php');
+include_once (THIM_DIR . '/inc/widgets/food-list/food-list.php');
+include_once  (THIM_DIR . '/inc/widgets/rating-demo/rating-demo.php');
+/* Widget for homepage*/
 
 /**
  * Extra class to widget
@@ -49,7 +60,7 @@ class Thim_Widget_Attributes {
 	public static function _input_fields( $widget, $return, $instance ) {
 		$instance = self::_get_attributes( $instance );
 		?>
-		<p>
+        <p>
 			<?php printf(
 				'<label for="%s">%s</label>',
 				esc_attr( $widget->get_field_id( 'widget-class' ) ),
@@ -61,7 +72,7 @@ class Thim_Widget_Attributes {
 				esc_attr( $widget->get_field_name( 'widget-class' ) ),
 				esc_attr( $instance['widget-class'] )
 			) ?>
-		</p>
+        </p>
 		<?php
 		return null;
 	}
@@ -92,10 +103,10 @@ class Thim_Widget_Attributes {
 	 * @since   0.1
 	 * @wp_hook filter widget_update_callback
 	 *
-	 * @param array  $instance     Current widget instance configuration
-	 * @param array  $new_instance New widget instance configuration
-	 * @param array  $old_instance Old Widget instance configuration
-	 * @param object $widget       Widget object
+	 * @param array $instance Current widget instance configuration
+	 * @param array $new_instance New widget instance configuration
+	 * @param array $old_instance Old Widget instance configuration
+	 * @param object $widget Widget object
 	 *
 	 * @return array
 	 */

@@ -6,22 +6,22 @@
  */
 ?>
 
-<div class="footer">
+<!--<div class="footer">
 	<div class="container">
-		<?php thim_footer_widgets(); ?>
+		<?php /*thim_footer_widgets(); */?>
 	</div>
-</div>
-
+</div>-->
+<?php
+$copy_right_text = get_theme_mod( 'copyright_text' );
+?>
 <div class="copyright-area">
 	<div class="container">
 		<div class="copyright-content">
 			<div class="row">
-				<div class="col-sm-6">
-					<?php thim_copyright_bar(); ?>
-				</div>
-
-				<div class="col-sm-6 text-right">
-					<?php thim_copyright_menu(); ?>
+				<div class="col-sm-12">
+                    <div class="copyright-text">
+	                    <?php echo $copy_right_text; ?>
+                    </div>
 				</div>
 			</div>
 		</div>
