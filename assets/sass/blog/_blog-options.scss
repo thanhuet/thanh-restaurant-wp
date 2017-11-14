@@ -102,13 +102,12 @@
 			color: $thim_font_body_color;
 			&:hover,
 			&:focus {
-				border-color: $thim_body_primary_color;
 				color: $thim_body_primary_color;
 			}
 		}
 
 		.page-numbers.current {
-			border-color: $thim_body_primary_color;
+
 			color: $thim_body_primary_color;
 		}
 	}

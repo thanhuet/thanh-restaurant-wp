@@ -93,11 +93,11 @@ $posts = new WP_Query( $news_args );
     <div class="readmore" style="text-align: center">
         <div id="load-more-content">
             <div id="icon-load-more-post" class="loading-pulse"></div>
-            <div id="text-loading">Loading...</div>
+            <div id="text-loading"><?php echo esc_html__('Loading','thim-starter-theme')?>...</div>
         </div>
         <a id="btn-load-more-post" class="btn-food-list" data-page="1"
            data-offset-page="<?php echo $instance['posts_per_page']; ?>" data-categoryid="<?php echo $cateID; ?>">
-            <span>VIEW MORE</span>
+            <span><?php echo esc_html__('VIEW MORE','thim-starter-theme')?></span>
         </a>
     </div><!-- .read-more -->
     <!--	<div class="text-center botton-category">

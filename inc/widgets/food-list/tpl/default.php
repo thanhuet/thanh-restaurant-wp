@@ -24,7 +24,7 @@ if ( ! empty( $instance['listFood'] ) ) {
 			}
 			?>
         </div>
-        <a class="btn-food-list">VIEW MORE</a>
+        <a class="btn-food-list"><?php echo esc_html__('VIEW MORE','thim-starter-theme');?></a>
     </div>
 </div>
 
