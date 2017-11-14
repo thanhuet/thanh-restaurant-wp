@@ -395,9 +395,39 @@ body {
           margin-top: 40px;
         }
       }
+
       /**404 Page**/
 
     }
+    @media(max-width: 736px){
+      .site-main{
+        min-width:100%;
+      }
+      #secondary{
+        min-width:100%;
+        .banner-ads {
+          .banner-image {
+            img {
+              width: 300px;
+              height: 250px;
+              left: 50%;
+              margin-left: -150px;
+            }
+          }
+          .banner-title{
+            top:30%;
+            height:40%;
+            width: 34%;
+            left:32%;
+          }
+        }
+      }
+    }
+    //@media(max-width: 667px){
+    //  .site-content{
+    //    min-width:100%;
+    //  }
+    //}
     @media(min-width: 576px) and (max-width: 767px) {
       header {
         &#masthead {
@@ -735,6 +765,7 @@ body {
             display: none;
           }
         }
+
       }
       /**homepage+header+footer**/
       .so-widget-rate-demo {
@@ -875,6 +906,38 @@ body {
         }
       }
       /**homepage+header+footer**/
+    }
+    @media (max-width: 375px){
+      .banner-ads{
+        .banner-title{
+          width:70% !important;
+          left:15% !important;
+        }
+      }
+    }
+    @media (max-width: 320px){
+      .comments-area{
+        .list-comments{
+          ul{
+            li{
+              .content-comment{
+                .author{
+                  margin-top:10px;
+                  margin-bottom:20px !important;
+                  span{
+                    .comment-reply-link{
+                      margin-top:0px !important;
+                    }
+                  }
+                }
+                .message{
+                  padding-left:0px !important;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     @media (min-width: 375px) and (max-width: 413px) {
       header {
@@ -1090,6 +1153,32 @@ body {
           }
         }
       }
+      .widget_banner_ads{
+        .banner-ads{
+          .banner-image{
+            img {
+              width: 100%;
+              height:100%;
+              left:inherit;
+              margin-left:inherit;
+            }
+          }
+          .banner-title{
+            top:20%;
+            height:60%;
+            .banner-title-detail{
+              p {
+                font-size:18px;
+              }
+            }
+            .banner-title-description{
+              p{
+                font-size:14px;
+              }
+            }
+          }
+        }
+      }
     }
     @media (min-width: 667px){
       .site-content{
@@ -1125,6 +1214,62 @@ body {
       }
     }
     @media (max-width: 480px) {
+      .site-main {
+        .type-post {
+          .entry-content {
+            .entry-tag-share {
+              .share-click {
+                ul {
+                  li {
+                    margin-top: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .comments-area{
+          .list-comments {
+            ul{
+              li{
+                img{
+                  width:50px;
+                }
+                .content-comment{
+                  .message{
+                    padding-left:75px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      #secondary{
+        padding-left:15px;
+        .widget_recent_posts{
+          .thim-sc-posts{
+            margin-bottom:50px;
+          }
+        }
+        .widget_banner_ads{
+          .banner-ads{
+            .banner-title{
+              .banner-title-detail{
+                p{
+                  font-size:24px;
+                }
+              }
+              .banner-title-description{
+                p{
+                  font-size:20px;
+                }
+              }
+            }
+          }
+        }
+
+      }
       .thim-social-share li {
         &:nth-last-child(1), &:nth-last-child(2) {
           display: block;
@@ -1134,6 +1279,9 @@ body {
     }
 
     @media (max-width: 414px) {
+      .site-main{
+        min-width:100%;
+      }
       article:after {
         width: 300px;
         margin-left: -150px;
@@ -1147,6 +1295,7 @@ body {
         .entry-content {
           float: none !important;
           width: 100% !important;
+          padding-top:0px;
           .entry-header {
             margin-bottom: 10px;
             .entry-title {
@@ -1161,6 +1310,22 @@ body {
               left: 50%;
               margin-left: -52px;
             }
+          }
+        }
+      }
+      #secondary{
+        .banner-ads{
+          .banner-image{
+            img{
+              width:300px;
+              height: 250px;
+              left:50%;
+              margin-left:-150px;
+            }
+          }
+          .banner-title{
+            top:30%;
+            height:40%;
           }
         }
       }
