@@ -372,12 +372,12 @@ body {
                 line-height: 35px;
               }
               &::after {
-                position: absolute;
-                content: " ";
-                width: 300px;
-                border-bottom: 2px solid #ccc;
-                right: 63px;
-                margin-top: 25px;
+                //position: absolute;
+                //content: " ";
+                //width: 300px;
+                //border-bottom: 2px solid #ccc;
+                //right: 63px;
+                //margin-top: 25px;
               }
             }
           }
@@ -490,12 +490,12 @@ body {
                 line-height: 35px;
               }
               &::after {
-                position: absolute;
-                content: " ";
-                width: 300px;
-                border-bottom: 2px solid #ccc;
-                right: 102px;
-                margin-top: 25px;
+                //position: absolute;
+                //content: " ";
+                //width: 300px;
+                //border-bottom: 2px solid #ccc;
+                //right: 102px;
+                //margin-top: 25px;
               }
             }
           }
@@ -639,12 +639,12 @@ body {
                 line-height: 35px;
               }
               &::after {
-                position: absolute;
-                content: " ";
-                width: 300px;
-                border-bottom: 2px solid #ccc;
-                right: 122px;
-                margin-top: 25px;
+                //position: absolute;
+                //content: " ";
+                //width: 300px;
+                //border-bottom: 2px solid #ccc;
+                //right: 122px;
+                //margin-top: 25px;
               }
             }
           }
@@ -828,12 +828,12 @@ body {
                 line-height: 35px;
               }
               &::after {
-                position: absolute;
-                content: " ";
-                width: 100%;
-                right: 0;
-                border-bottom: 2px solid #ccc;
-                margin-top: 25px;
+                //position: absolute;
+                //content: " ";
+                //width: 100%;
+                //right: 0;
+                //border-bottom: 2px solid #ccc;
+                //margin-top: 25px;
               }
             }
           }
@@ -1116,7 +1116,8 @@ body {
           width: 100% !important;
           .entry-header {
             margin-bottom: 10px;
-            .entry-title {}
+            .entry-title {
+            }
           }
           .entry-meta {
             font-size: 14px;
