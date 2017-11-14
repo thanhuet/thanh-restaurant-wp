@@ -163,7 +163,9 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			if ( get_post_type() == "product" ) {
 				get_sidebar( 'shop' );
 			} else {
-				get_sidebar();
+				if(is_single()){
+                    get_sidebar();
+                }
 			}
 		}
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
@@ -184,9 +186,9 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			} else {
 				$get_sidebar_right = get_theme_mod( '' . $prefix . 'archive_layout_sidebar_right' );
 			}
-			echo '<aside id="secondary-right" class="widget-area col-sm-4 sticky-sidebar">';
-			dynamic_sidebar( $get_sidebar_right );
-			echo '</aside>';
+                echo '<aside id="secondary-right" class="widget-area col-sm-4 sticky-sidebar">';
+                dynamic_sidebar($get_sidebar_right);
+                echo '</aside>';
 		}
 		echo '</div></div>';
 	}
