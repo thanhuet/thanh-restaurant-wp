@@ -1,0 +1,18 @@
+.thim-sc-posts {
+	&.blog-content {
+		article {
+			.entry-title {
+				color: $thim_font_title_color;
+				&:hover {
+					color: $thim_body_primary_color;
+				}
+			}
+			.readmore a {
+				&:before {
+					border-color: $thim_body_primary_color;
+
+				}
+			}
+		}
+	}
+}
