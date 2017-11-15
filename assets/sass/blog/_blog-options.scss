@@ -3,8 +3,13 @@
 
 .site-content {
 	.blog-content article .content-inner .entry-content .readmore a {
+		color:$thim_font_body_color;
 		&:before {
 			border-color: $thim_body_primary_color;
+
+		}
+		&:hover{
+			color:$thim_body_primary_color;
 		}
 	}
 
@@ -132,15 +137,15 @@
 					}
 					span {
 						.comment-reply-link {
-							color: $thim_body_primary_color;
+							color: #333333;
 							&:hover {
-								color: $thim_font_title_color;
+								color: $thim_body_primary_color;
 							}
 						}
 						.comment-edit-link {
-							color: $thim_body_primary_color;
+							color: #333333;
 							&:hover {
-								color: $thim_font_title_color;
+								color: $thim_body_primary_color;
 							}
 						}
 					}

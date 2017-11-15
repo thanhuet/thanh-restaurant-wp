@@ -93,13 +93,15 @@
 		overflow: auto;
 		.content-inner {
 			.thumbnail,
-			.post-image {
-				position: relative;
-				overflow: hidden;
-				img {
-					width: 100%;
-					//height:360px;
-					@include transition(all 1s);
+			entry-top{
+				.post-image {
+					position: relative;
+					overflow: hidden;
+					img {
+						width: 100%;
+						//height:360px;
+						@include transition(all 1s);
+					}
 				}
 			}
 			.entry-title {
@@ -144,9 +146,6 @@
 					}
 					&:hover:before {
 						@include scale(1, 1);
-					}
-					&:hover{
-						background: #439fdf;
 					}
 				}
 			}
@@ -205,6 +204,19 @@
 			}
 			&.next:before {
 				content: "\f105";
+			}
+		}
+	}
+}
+.page-content{
+	.post{
+		.entry-top{
+			.post-formats-wrapper{
+				.post-image{
+					img{
+						width: 100%;
+					}
+				}
 			}
 		}
 	}

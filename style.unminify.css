@@ -7820,12 +7820,12 @@ header#masthead {
     padding-bottom: 50px;
     position: relative;
     overflow: auto; }
-    .blog-content article .content-inner .thumbnail,
-    .blog-content article .content-inner .post-image {
+    .blog-content article .content-inner .thumbnail .post-image,
+    .blog-content article .content-inner entry-top .post-image {
       position: relative;
       overflow: hidden; }
-      .blog-content article .content-inner .thumbnail img,
-      .blog-content article .content-inner .post-image img {
+      .blog-content article .content-inner .thumbnail .post-image img,
+      .blog-content article .content-inner entry-top .post-image img {
         width: 100%;
         -webkit-transition: all 1s;
         -khtml-transition: all 1s;
@@ -7867,8 +7867,6 @@ header#masthead {
           -moz-transform: scale(1, 1);
           -ms-transform: scale(1, 1);
           -o-transform: scale(1, 1); }
-        .blog-content article .content-inner .readmore a:hover {
-          background: #439fdf; }
     .blog-content article:hover .thumbnail img {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
@@ -7911,6 +7909,9 @@ header#masthead {
         content: "\f104"; }
       .loop-pagination li .page-numbers.next:before {
         content: "\f105"; }
+
+.page-content .post .entry-top .post-formats-wrapper .post-image img {
+  width: 100%; }
 
 /*
  * Style for single post */
@@ -10185,13 +10186,14 @@ input[type="submit"],
 .thim-sc-posts {
   margin-bottom: 50px; }
   .thim-sc-posts .thim-sc-heading {
-    text-align: center;
     margin-bottom: 70px; }
     .thim-sc-posts .thim-sc-heading .title {
+      text-align: center;
       font-size: 40px;
       font-family: 'Great Vibes', sans-serif;
       /*      margin-bottom: -20px;*/ }
     .thim-sc-posts .thim-sc-heading .description {
+      text-align: center;
       font-size: 40px;
       font-weight: bolder; }
   .thim-sc-posts #thim-post-container article {
