@@ -9,13 +9,16 @@
 		margin-bottom: 40px;
 		.entry-title {
 			margin-top: 8px;
-			margin-bottom: 20px;
+			margin-bottom: 28px;
 			line-height: 1.4em;
 		}
 		.entry-meta {
 			color: #999999;
 			font-size: 14px;
-			margin-bottom: 25px;
+			margin-bottom: 32px;
+			span{
+				position: relative;
+			}
 			.entry-date{
 				color: #666666;
 				font-weight: bold;
@@ -32,7 +35,6 @@
 			}
 			> span {
 				display: inline-block;
-				margin-right: 5px;
 				a {
 					//font-weight: bold;
 					text-transform: capitalize;
@@ -61,20 +63,73 @@
 		}
 	}
 }
-
-.entry-meta > span {
-	&:after {
-		content: " - ";
-		width: auto;
-	}
-	&:last-child,
-	&.meta-category {
+.blog-content {
+	.entry-meta > .author {
+		margin-right:21px;
 		&:after {
-			display: none;
+			position: absolute;
+			background:#999999;
+			content: "";
+			width: 7px;
+			height:1px;
+			bottom:12px;
+			margin-left:9px;
+		}
+		&:last-child,
+		&.meta-category {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.entry-meta > .entry-date {
+		margin-right:23px;
+		&:after {
+			position: absolute;
+			background:#999999;
+			content: "";
+			width: 7px;
+			height:1px;
+			bottom:12px;
+			margin-left:8px;
 		}
 	}
 }
 
+.page-content {
+	.entry-meta > .author {
+		margin-right:36px;
+		&:after {
+			position: absolute;
+			background:#999999;
+			content: "";
+			width: 8px;
+			height:1px;
+			bottom:12px;
+			margin-left:18px;
+		}
+		&:last-child,
+		&.meta-category {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.entry-meta > .entry-date {
+		margin-right:31px;
+		&:after {
+			position: absolute;
+			background:#999999;
+			content: "";
+			width: 8px;
+			height:1px;
+			bottom:12px;
+			margin-left:10px;
+		}
+	}
+}
 // Style for archive page
 .blog-content {
 	width: 100% !important;

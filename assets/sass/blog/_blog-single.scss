@@ -12,7 +12,7 @@
 				font-size: 32px;
 			}
 			.entry-content {
-				padding: 30px 0px 70px;
+				padding: 58px 0px 70px;
 				.entry-header {
 					margin-bottom: 0;
 					margin-top:20px;
@@ -45,7 +45,9 @@
 					display: flex;
 					flex-direction:column;
 					span{
-						margin-bottom:12px;
+						font-weight:bold;
+						margin-bottom:16px;
+						color: #666666;
 					}
 					&:after {
 						@extend .clear-after;
@@ -239,7 +241,8 @@
 				img {
 					border-radius: 100%;
 					float: left;
-					margin-right: 25px;
+					margin-right: 10px;
+					width:50px;
 				}
 				.author-name,
 				.author-name a {
@@ -248,6 +251,7 @@
 				}
 				.content-comment {
 					width: auto;
+					margin-top:-8px;
 					.author {
 						font-size: 13px;
 						margin-bottom: 15px;
@@ -256,10 +260,14 @@
 							margin-left: 30px;
 							font-weight: 400;
 						}
+						.author-name{
+
+						}
 						span {
 							.comment-reply-link {
+								color: #333333;
 								float: right;
-								font-size: 13px;
+								font-size: 14px;
 								font-weight: bold;
 								margin-top: 2px;
 								&:hover {
@@ -279,7 +287,7 @@
 					}
 					.message {
 						@media (min-width: 991px) {
-							padding-left: 95px;
+							padding-left: 60px;
 						}
 						img.emoji {
 							float: none;
@@ -413,7 +421,7 @@
 			}
 			.entry-meta{
 				.author {
-					margin-right:0px !important;
+					//margin-right:0px !important;
 					a {
 						font-weight: bold;
 					}
@@ -448,7 +456,7 @@
 			overflow: auto;
 			.entry-meta{
 				.author {
-					margin-right:0px !important;
+					//margin-right:0px !important;
 					a {
 						font-weight: bold;
 					}

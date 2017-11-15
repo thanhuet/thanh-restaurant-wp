@@ -86,7 +86,8 @@
           font-size:8px;
           font-family: FontAwesome;
           margin-right: 10px;
-          @include opacity(.5);
+          //opacity:1;
+          @include opacity(1);
         }
       }
     }
