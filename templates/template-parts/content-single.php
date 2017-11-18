@@ -58,6 +58,13 @@
 
 	</div><!-- .content-inner -->
 
+    <div class="nav-single">
+        <div class="nav-wrapper">
+            <h3 class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . esc_html__('Previous ', 'thim-thanh-viet') . '</span> %title'); ?></h3>
+            <h3 class="nav-next"><?php next_post_link('%link', '<span class="meta-nav">' . esc_html__('Next', 'thim-thanh-viet') . '</span> %title'); ?></h3>
+        </div>
+    </div>
+
 <!--	--><?php //do_action( 'thim_about_author' ); ?>
 
 	<?php if ( get_theme_mod( 'blog_single_related_post', true ) ) :

@@ -4,7 +4,8 @@
 .page-content {
 	article {
 		.content-inner {
-			margin-bottom: 30px;
+			border-bottom: 1px solid #979797;
+			margin-bottom: 26px;
 			.post-formats-wrapper iframe {
 				width: 100%;
 			}
@@ -12,7 +13,7 @@
 				font-size: 32px;
 			}
 			.entry-content {
-				padding: 58px 0px 70px;
+				padding: 58px 0px 45px;
 				.entry-header {
 					margin-bottom: 0;
 					margin-top:20px;
@@ -70,6 +71,32 @@
 					}
 				}
 
+			}
+		}
+		.nav-single{
+			border-bottom: 1px solid #979797;
+			overflow: auto;
+			.nav-wrapper{
+				h3{
+					width:45%;
+					font-size:18px;
+					margin-bottom:22px;
+					a{
+						color: #333333;
+						span{
+							color: #666666;
+							display: block;
+							font-size:16px;
+						}
+					}
+				}
+				.nav-next{
+					float: right;
+					text-align: right;
+				}
+				.nav-previous{
+					float: left;
+				}
 			}
 		}
 		// style author about

@@ -7959,13 +7959,14 @@ header#masthead {
 /*
  * Style for single post */
 .page-content article .content-inner {
-  margin-bottom: 30px; }
+  border-bottom: 1px solid #979797;
+  margin-bottom: 26px; }
   .page-content article .content-inner .post-formats-wrapper iframe {
     width: 100%; }
   .page-content article .content-inner .entry-title {
     font-size: 32px; }
   .page-content article .content-inner .entry-content {
-    padding: 58px 0px 70px; }
+    padding: 58px 0px 45px; }
     .page-content article .content-inner .entry-content .entry-header {
       margin-bottom: 0;
       margin-top: 20px; }
@@ -8003,6 +8004,25 @@ header#masthead {
         float: right; }
         .page-content article .content-inner .entry-content .entry-tag-share .share-click .thim-social-share > li:last-child {
           margin-right: 0; }
+
+.page-content article .nav-single {
+  border-bottom: 1px solid #979797;
+  overflow: auto; }
+  .page-content article .nav-single .nav-wrapper h3 {
+    width: 45%;
+    font-size: 18px;
+    margin-bottom: 22px; }
+    .page-content article .nav-single .nav-wrapper h3 a {
+      color: #333333; }
+      .page-content article .nav-single .nav-wrapper h3 a span {
+        color: #666666;
+        display: block;
+        font-size: 16px; }
+  .page-content article .nav-single .nav-wrapper .nav-next {
+    float: right;
+    text-align: right; }
+  .page-content article .nav-single .nav-wrapper .nav-previous {
+    float: left; }
 
 .page-content article .thim-about-author {
   margin-bottom: 30px;
