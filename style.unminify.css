@@ -8492,7 +8492,7 @@ body {
           body.responsive .thim-sc-posts .row .content-inner .entry-content .entry-summary {
             line-height: 35px; }
       body.responsive .error-404 .content-error-404 {
-        margin-top: 30px; }
+        margin-top: 70px; }
       body.responsive .error-404 .page-404-detail {
         font-size: 16px;
         margin-top: 40px; } }
@@ -8557,7 +8557,8 @@ body {
       body.responsive .bottom-bar .widget_nav_menu .widget-title::after {
         right: 102px; }
       body.responsive .error-404 .content-error-404 {
-        margin-top: 0px; }
+        text-align: center;
+        margin-top: 50px; }
         body.responsive .error-404 .content-error-404 .page-404-detail {
           font-size: 16px;
           margin-top: 20px; } }
@@ -8611,7 +8612,8 @@ body {
       body.responsive .wpcf7-form .content-contact-form {
         text-align: center; }
       body.responsive .error-404 .content-error-404 {
-        margin-top: 0px; }
+        text-align: center;
+        margin-top: 50px; }
         body.responsive .error-404 .content-error-404 .page-404-detail {
           font-size: 16px;
           margin-top: 20px; } }
@@ -8864,7 +8866,9 @@ body {
       font-size: 24px; }
     body.responsive .content-inner .entry-content .entry-meta {
       font-size: 12px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+    body.responsive .error-404 .content-error-404 .page-content {
+      margin-top: -10px; } }
   body.responsive.disable-responsive .container {
     width: 1170px;
     max-width: none !important; }
@@ -10086,22 +10090,21 @@ input[type="submit"],
 .error-404 .search-form {
   max-width: 50%; }
 
-.error-404 {
-  padding: 100px 0; }
-  .error-404 .img-error-404 {
-    text-align: center; }
-  .error-404 .content-error-404 {
-    margin-top: 90px; }
-    .error-404 .content-error-404 .page-header .page-title {
-      font-family: "Great Vibes", sans-serif;
-      font-size: 40px; }
-    .error-404 .content-error-404 .page-content {
-      margin-top: -25px;
-      font-size: 40px;
-      font-weight: bolder; }
-    .error-404 .content-error-404 .page-404-detail {
-      font-size: 16px;
-      margin-top: 60px; }
+.error-404 .img-error-404 {
+  text-align: center; }
+
+.error-404 .content-error-404 {
+  margin-top: 90px; }
+  .error-404 .content-error-404 .page-header .page-title {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 40px; }
+  .error-404 .content-error-404 .page-content {
+    margin-top: -25px;
+    font-size: 40px;
+    font-weight: bolder; }
+  .error-404 .content-error-404 .page-404-detail {
+    font-size: 16px;
+    margin-top: 50px; }
 
 .wpcf7-form {
   margin-bottom: 75px; }
