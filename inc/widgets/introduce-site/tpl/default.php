@@ -1,11 +1,11 @@
 <div class="intro-site-container">
 	<div class="intro-title">
-		<p><?php echo $instance['title']; ?></p>
+		<h1><?php echo $instance['title']; ?></h1>
 	</div>
 	<div class="intro-info">
-		<p>
+		<h1>
 			<?php echo $instance['information'] ; ?>
-		</p>
+		</h1>
 	</div>
 	<div class="intro-detail">
 		<p>

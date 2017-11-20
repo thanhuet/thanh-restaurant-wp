@@ -6,10 +6,10 @@ if ( ! empty( $instance['listFood'] ) ) {
 <div class="content-food-list-widget">
     <div class="main-food-list">
         <div class="title-food-list">
-            <p><?php echo $instance['title']; ?></p>
+            <h1><?php echo $instance['title']; ?></h1>
         </div>
         <div class="desc-food-list">
-            <p><?php echo $instance['description']; ?></p>
+            <h1><?php echo $instance['description']; ?></h1>
         </div>
         <div class="detail-food-list">
 			<?php
