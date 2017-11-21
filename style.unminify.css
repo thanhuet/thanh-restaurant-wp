@@ -10400,6 +10400,7 @@ input[type="submit"],
 /*post-widget*/
 /*rating-demo-widget*/
 .so-widget-rate-demo .owl-carousel .owl-item .customer-rate-demo {
+  cursor: e-resize;
   margin: 100px auto;
   color: white;
   position: relative;
