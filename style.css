@@ -7927,19 +7927,19 @@ header#masthead {
 
 .loop-pagination {
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  font-size: 16px; }
   .loop-pagination li {
     display: inline-block;
     list-style: none; }
     .loop-pagination li .page-numbers {
-      font-weight: bold;
+      font-weight: 900;
       display: inline-block;
       width: 35px;
       text-align: center;
       height: 35px;
       line-height: 35px;
       margin-right: 10px;
-      background: #fff;
       border: 1px solid transparent; }
       .loop-pagination li .page-numbers.next, .loop-pagination li .page-numbers.prev {
         font-size: 0; }
@@ -7951,6 +7951,8 @@ header#masthead {
         content: "\f104"; }
       .loop-pagination li .page-numbers.next:before {
         content: "\f105"; }
+    .loop-pagination li .current {
+      color: #E6AE69 !important; }
 
 .page-content .post .entry-top .post-formats-wrapper .post-image img {
   width: 100%; }
