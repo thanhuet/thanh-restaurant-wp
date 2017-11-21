@@ -197,7 +197,7 @@
                     if (screen.width < 769) {
                         if (current < $header_v1.outerHeight(true) * 2) {
                             $header.css({
-                                'position': 'relative',
+                                'position': 'inherit',
                                 top:0
                             });
                         }
@@ -228,6 +228,7 @@
                         });
                         if (screen.width < 769) {
                             $header.css({
+                                'position':'inherit',
                                 top: -($header_v1.outerHeight(true)) + 'px'
                             });
                         }
