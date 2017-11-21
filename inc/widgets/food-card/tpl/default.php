@@ -8,7 +8,7 @@ $image_url  = $attachment[0];
 		<i class="inverted-top inverted-right"></i>
 		<div class="inverted-content">
 			<img class="food-card-img" src="<?php echo $image_url;?>">
-			<p class="food-card-name"><?php echo $instance['name'];?></p>
+			<h1 class="food-card-name"><?php echo $instance['name'];?></h1>
 			<p class="food-card-des"><?php echo $instance['description'];?></p>
 		</div>
 		<i class="inverted-bottom inverted-right"></i>

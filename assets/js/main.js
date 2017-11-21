@@ -3843,7 +3843,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
                     if (screen.width < 769) {
                         if (current < $header_v1.outerHeight(true) * 2) {
                             $header.css({
-                                'position': 'relative',
+                                'position': 'inherit',
                                 top:0
                             });
                         }
@@ -3874,6 +3874,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
                         });
                         if (screen.width < 769) {
                             $header.css({
+                                'position':'inherit',
                                 top: -($header_v1.outerHeight(true)) + 'px'
                             });
                         }

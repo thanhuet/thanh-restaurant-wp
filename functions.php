@@ -220,7 +220,7 @@ function thim_scripts() {
 		if ( file_exists( THIM_DIR . 'style-' . $current_blog->blog_id . '.css' ) ) {
 			wp_enqueue_style( 'thim-style', get_template_directory_uri() . '/style-' . $current_blog->blog_id . '.css', array() );
 		} else {
-			wp_enqueue_style( 'thim-style', get_stylesheet_uri() );
+			wp_enqueue_style( 'thim-style', get_stylesheet_directory_uri() . '/style.css?', array(), '1.0.2' );
 		}
 	} else {
 		wp_enqueue_style( 'thim-style', get_stylesheet_uri() );

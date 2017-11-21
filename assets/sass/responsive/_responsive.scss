@@ -86,9 +86,13 @@ body {
               }
               .entry-header {
                 .entry-title {
+                  margin-bottom: 0px;
                   a {
                   }
                 }
+              }
+              .entry-summary{
+                margin:0px 0;
               }
             }
           }
@@ -394,7 +398,7 @@ body {
       /**404 Page**/
       .error-404 {
         .content-error-404 {
-          margin-top: 30px;
+          margin-top: 70px;
         }
         .page-404-detail {
           font-size: 16px;
@@ -583,7 +587,8 @@ body {
       /**404 Page**/
       .error-404 {
         .content-error-404 {
-          margin-top: 0px;
+          text-align: center;
+          margin-top: 50px;
           .page-404-detail {
             font-size: 16px;
             margin-top: 20px;
@@ -738,7 +743,8 @@ body {
       /**404 Page**/
       .error-404 {
         .content-error-404 {
-          margin-top: 0px;
+          text-align: center;
+          margin-top: 50px;
           .page-404-detail {
             font-size: 16px;
             margin-top: 20px;
@@ -748,6 +754,17 @@ body {
       /**404 Page**/
     }
     @media (max-width: 480px) {
+      .intro-site-container {
+        margin-left: 0;
+        margin-top: 30px;
+        .intro-title {
+          margin-bottom: 20px;
+        }
+        .intro-info {
+        }
+        .intro-detail {
+        }
+      }
       header {
         &#masthead {
           //position: fixed !important;
@@ -1373,6 +1390,21 @@ body {
           .entry-meta {
             font-size: 12px;
             margin-bottom: 20px;
+          }
+        }
+      }
+      .error-404 {
+        .img-error-404{
+        }
+        .content-error-404 {
+          .page-header {
+            .page-title {
+            }
+          }
+          .page-content {
+            margin-top: -10px;
+          }
+          .page-404-detail {
           }
         }
       }

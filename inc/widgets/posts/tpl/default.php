@@ -26,8 +26,8 @@ $posts = new WP_Query( $news_args );
 
 <div class="thim-sc-posts blog-content">
     <div class="thim-sc-heading">
-        <h3 class="title"><?php echo esc_attr( $instance['title'] ) ?></h3>
-        <p class="description"><?php echo $instance['description']; ?></p>
+        <h1 class="title"><?php echo esc_attr( $instance['title'] ) ?></h1>
+        <h1 class="description"><?php echo $instance['description']; ?></h1>
     </div>
 
 	<?php

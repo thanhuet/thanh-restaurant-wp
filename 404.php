@@ -13,10 +13,10 @@
     </div>
     <div class="content-error-404 col-12 col-md-6">
         <header class="page-header">
-            <h2 class="page-title">404</h2>
+            <h1 class="page-title">404</h1>
         </header><!-- .page-header -->
         <div class="page-content">
-            <p>Page not <span class="important-word">Found</span></p>
+            <h1>Page not <span class="important-word">Found</span></h1>
         </div><!-- .page-content -->
         <div class="page-404-detail">
             <p>Hehe, Page not Found because Page not Found. We’re so sorry about it.</p>
