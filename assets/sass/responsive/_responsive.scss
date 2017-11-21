@@ -133,6 +133,12 @@ body {
       }
       /**homepage+header+footer**/
     }
+    @media (max-width: 1024px){
+      .entry-meta{
+        margin-top:-20px;
+        margin-bottom:10px;
+      }
+    }
     @media (max-width: 992px) {
       /**homepage+header+footer**/
       .topbar-center {
@@ -419,6 +425,13 @@ body {
             height:40%;
             width: 34%;
             left:32%;
+          }
+        }
+        .widget_recent_posts{
+          .list-rencent-post{
+            .recent-post-title-thumbnail{
+              clear: none;
+            }
           }
         }
       }
@@ -1141,7 +1154,9 @@ body {
           }
           .entry-meta {
             font-size: 13px;
+            margin-top:0px;
             margin-bottom: 10px;
+
           }
           .entry-summary {
             font-size: 14px;
@@ -1176,6 +1191,16 @@ body {
                 font-size:14px;
               }
             }
+          }
+        }
+      }
+      .widget_recent_posts{
+        .list-rencent-post{
+          .recent-post-thumbnail{
+            margin-bottom:5px;
+          }
+          .recent-post-title-thumbnail{
+            clear: left;
           }
         }
       }
