@@ -12,14 +12,14 @@ include_once( THIM_DIR . '/inc/widgets/widget_banner_ads/widget-banner-ads.php' 
 
 /* Widget for homepage*/
 include_once( THIM_DIR . '/inc/widgets/information/information.php' );
-include_once (THIM_DIR . '/inc/widgets/logo/logo.php');
-include_once (THIM_DIR . '/inc/widgets/information-footer/information-footer.php');
-include_once (THIM_DIR . '/inc/widgets/home-image-content/home-image-content.php');
-include_once (THIM_DIR . '/inc/widgets/food-card/food-card.php');
-include_once  (THIM_DIR . '/inc/widgets/introduce-site/introduce-site.php');
-include_once (THIM_DIR . '/inc/widgets/food-list/food-list.php');
-include_once  (THIM_DIR . '/inc/widgets/rating-demo/rating-demo.php');
-include_once (THIM_DIR . '/inc/widgets/opening-hours-detail/opening-hours-detail.php');
+include_once( THIM_DIR . '/inc/widgets/logo/logo.php' );
+include_once( THIM_DIR . '/inc/widgets/information-footer/information-footer.php' );
+include_once( THIM_DIR . '/inc/widgets/home-image-content/home-image-content.php' );
+include_once( THIM_DIR . '/inc/widgets/food-card/food-card.php' );
+include_once( THIM_DIR . '/inc/widgets/introduce-site/introduce-site.php' );
+include_once( THIM_DIR . '/inc/widgets/food-list/food-list.php' );
+include_once( THIM_DIR . '/inc/widgets/rating-demo/rating-demo.php' );
+include_once( THIM_DIR . '/inc/widgets/opening-hours-detail/opening-hours-detail.php' );
 /* Widget for homepage*/
 
 /**
@@ -65,7 +65,7 @@ class Thim_Widget_Attributes {
 			<?php printf(
 				'<label for="%s">%s</label>',
 				esc_attr( $widget->get_field_id( 'widget-class' ) ),
-				esc_html__( 'Extra Class', 'university-wp' )
+				esc_html__( 'Extra Class', 'thim-starter-theme' )
 			) ?>
 			<?php printf(
 				'<input type="text" class="widefat" id="%s" name="%s" value="%s" />',

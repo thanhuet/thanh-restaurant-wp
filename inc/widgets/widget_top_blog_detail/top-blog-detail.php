@@ -10,9 +10,9 @@ class Thim_Top_Blog_Detail_Widget extends SiteOrigin_Widget {
 
         parent::__construct(
             'top_blog_detail',
-            esc_html__( 'Top blog detail', 'mabu' ),
+            esc_html__( 'Top blog detail', 'thim-starter-theme' ),
             array(
-                'description'   => esc_html__( 'Ad info person', 'mabu' ),
+                'description'   => esc_html__( 'Ad info person', 'thim-starter-theme' ),
             ),
             array(),
             array(

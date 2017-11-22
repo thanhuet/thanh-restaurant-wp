@@ -9,7 +9,7 @@ thim_customizer()->add_panel(
 	array(
 		'id'       => 'widgets',
 		'priority' => 100,
-		'title'    => esc_html__( 'Widgets', 'mag-wp' ),
+		'title'    => esc_html__( 'Widgets', 'thim-starter-theme' ),
 		'icon'     => 'dashicons-welcome-widgets-menus'
 	)
 );

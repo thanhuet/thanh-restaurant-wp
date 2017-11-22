@@ -13,25 +13,25 @@ thim_customizer()->add_group( array(
 	'groups'   => array(
 		array(
 			'id'     => 'boxed_background_group',
-			'label'  => esc_html__( 'Boxed Background', 'hairsalon' ),
+			'label'  => esc_html__( 'Boxed Background', ' thim-starter-theme' ),
 			'fields' => array(
 				array(
 					'type'     => 'radio-buttonset',
 					'id'       => 'background_boxed_type',
-					'label'    => esc_html__( 'Select Background Type', 'hairsalon' ),
-					'tooltip'  => esc_html__( 'Allows you to select a background for body content when you selected box layout in General Layouts', 'hairsalon' ),
+					'label'    => esc_html__( 'Select Background Type', ' thim-starter-theme' ),
+					'tooltip'  => esc_html__( 'Allows you to select a background for body content when you selected box layout in General Layouts', ' thim-starter-theme' ),
 					'default'  => 'color',
 					'priority' => 10,
 					'choices'  => array(
-						'color'   => esc_html__( 'Color', 'hairsalon' ),
-						'image'   => esc_html__( 'Image', 'hairsalon' ),
-						'pattern' => esc_html__( 'Pattern', 'hairsalon' ),
+						'color'   => esc_html__( 'Color', ' thim-starter-theme' ),
+						'image'   => esc_html__( 'Image', ' thim-starter-theme' ),
+						'pattern' => esc_html__( 'Pattern', ' thim-starter-theme' ),
 					),
 				),
 				array(
 					'type'            => 'color',
 					'id'              => 'background_boxed_color',
-					'label'           => esc_html__( 'Background Color', 'hairsalon' ),
+					'label'           => esc_html__( 'Background Color', ' thim-starter-theme' ),
 					'default'         => '#FFFFFF',
 					'priority'        => 15,
 					'alpha'           => true,
@@ -54,7 +54,7 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'kirki-image',
 					'id'              => 'background_boxed_image',
-					'label'           => esc_html__( 'Background image', 'hairsalon' ),
+					'label'           => esc_html__( 'Background image', ' thim-starter-theme' ),
 					'priority'        => 30,
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -75,14 +75,14 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_repeat',
-					'label'           => esc_html__( 'Background Repeat', 'hairsalon' ),
+					'label'           => esc_html__( 'Background Repeat', ' thim-starter-theme' ),
 					'default'         => 'no-repeat',
 					'priority'        => 40,
 					'choices'         => array(
-						'repeat'    => esc_html__( 'Tile', 'hairsalon' ),
-						'repeat-x'  => esc_html__( 'Tile Horizontally', 'hairsalon' ),
-						'repeat-y'  => esc_html__( 'Tile Vertically', 'hairsalon' ),
-						'no-repeat' => esc_html__( 'No Repeat', 'hairsalon' ),
+						'repeat'    => esc_html__( 'Tile', ' thim-starter-theme' ),
+						'repeat-x'  => esc_html__( 'Tile Horizontally', ' thim-starter-theme' ),
+						'repeat-y'  => esc_html__( 'Tile Vertically', ' thim-starter-theme' ),
+						'no-repeat' => esc_html__( 'No Repeat', ' thim-starter-theme' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -103,13 +103,13 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_position',
-					'label'           => esc_html__( 'Background Position', 'hairsalon' ),
+					'label'           => esc_html__( 'Background Position', ' thim-starter-theme' ),
 					'default'         => 'center',
 					'priority'        => 50,
 					'choices'         => array(
-						'left'   => esc_html__( 'Left', 'hairsalon' ),
-						'center' => esc_html__( 'Center', 'hairsalon' ),
-						'right'  => esc_html__( 'Right', 'hairsalon' ),
+						'left'   => esc_html__( 'Left', ' thim-starter-theme' ),
+						'center' => esc_html__( 'Center', ' thim-starter-theme' ),
+						'right'  => esc_html__( 'Right', ' thim-starter-theme' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -130,12 +130,12 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_attachment',
-					'label'           => esc_html__( 'Background Attachment', 'hairsalon' ),
+					'label'           => esc_html__( 'Background Attachment', ' thim-starter-theme' ),
 					'default'         => 'fixed',
 					'priority'        => 60,
 					'choices'         => array(
-						'scroll' => esc_html__( 'Scroll', 'hairsalon' ),
-						'fixed'  => esc_html__( 'Fixed', 'hairsalon' ),
+						'scroll' => esc_html__( 'Scroll', ' thim-starter-theme' ),
+						'fixed'  => esc_html__( 'Fixed', ' thim-starter-theme' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -156,7 +156,7 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'radio-image',
 					'id'              => 'background_boxed_pattern_image',
-					'label'           => esc_html__( 'Select a Background Pattern', 'hairsalon' ),
+					'label'           => esc_html__( 'Select a Background Pattern', ' thim-starter-theme' ),
 					'section'         => 'background',
 					'default'         => THIM_URI . 'assets/images/patterns/pattern1.png',
 					'priority'        => 70,
@@ -202,13 +202,13 @@ thim_customizer()->add_group( array(
 				array(
 					'id'          => 'enable_box_shadow',
 					'type'        => 'switch',
-					'label'       => esc_html__( 'Boxed Layouts Box Shadow', 'hairsalon' ),
-					'tooltip'     => esc_html__( 'Allows you to enable or disable box shadow at body tag when you selected boxed layout. ', 'hairsalon' ),
+					'label'       => esc_html__( 'Boxed Layouts Box Shadow', ' thim-starter-theme' ),
+					'tooltip'     => esc_html__( 'Allows you to enable or disable box shadow at body tag when you selected boxed layout. ', ' thim-starter-theme' ),
 					'default'     => true,
 					'priority'    => 80,
 					'choices'     => array(
-						true  	  => esc_html__( 'On', 'hairsalon' ),
-						false	  => esc_html__( 'Off', 'hairsalon' ),
+						true  	  => esc_html__( 'On', ' thim-starter-theme' ),
+						false	  => esc_html__( 'Off', ' thim-starter-theme' ),
 					),
 				)
 			),

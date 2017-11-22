@@ -10,9 +10,9 @@ class Thim_Recent_Posts_Widget extends SiteOrigin_Widget {
 
         parent::__construct(
             'recent_posts',
-            esc_html__( 'Recent Posts Image', 'mabu' ),
+            esc_html__( 'Recent Posts Image', 'thim-starter-theme' ),
             array(
-                'description'   => esc_html__( 'Display recent posts', 'mabu' ),
+                'description'   => esc_html__( 'Display recent posts', 'thim-starter-theme' ),
             ),
             array(),
             array(
@@ -30,17 +30,17 @@ class Thim_Recent_Posts_Widget extends SiteOrigin_Widget {
 
                 'posts_per_page' => array(
                     "type"    => "number",
-                    "label"   => esc_attr__( "Posts Per Page", 'mag-wp' ),
+                    "label"   => esc_attr__( "Posts Per Page", 'thim-starter-theme' ),
                     'default' => 3,
-                    'desc'    => esc_attr__( 'Set max limit for items or enter -1 to display all (limited to 1000).', 'mag-wp' ),
+                    'desc'    => esc_attr__( 'Set max limit for items or enter -1 to display all (limited to 1000).', 'thim-starter-theme' ),
 
                 ),
 
                 'thumbnail_size' => array(
                     "type"    => "text",
-                    "label"   => esc_attr__( "Thumbnail size", 'mag-wp' ),
+                    "label"   => esc_attr__( "Thumbnail size", 'thim-starter-theme' ),
                     'default' => '440x285',
-                    'desc'    => esc_attr__( 'Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height).', 'mag-wp' ),
+                    'desc'    => esc_attr__( 'Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height).', 'thim-starter-theme' ),
                 ),
 
             )

@@ -7927,19 +7927,19 @@ header#masthead {
 
 .loop-pagination {
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  font-size: 16px; }
   .loop-pagination li {
     display: inline-block;
     list-style: none; }
     .loop-pagination li .page-numbers {
-      font-weight: bold;
+      font-weight: 900;
       display: inline-block;
       width: 35px;
       text-align: center;
       height: 35px;
       line-height: 35px;
       margin-right: 10px;
-      background: #fff;
       border: 1px solid transparent; }
       .loop-pagination li .page-numbers.next, .loop-pagination li .page-numbers.prev {
         font-size: 0; }
@@ -7951,6 +7951,8 @@ header#masthead {
         content: "\f104"; }
       .loop-pagination li .page-numbers.next:before {
         content: "\f105"; }
+    .loop-pagination li .current {
+      color: #E6AE69 !important; }
 
 .page-content .post .entry-top .post-formats-wrapper .post-image img {
   width: 100%; }
@@ -8440,6 +8442,10 @@ body {
           right: 207px; }
         body.responsive .bottom-bar .widget_nav_menu .widget-title::after {
           right: 207px; } }
+  @media (max-width: 1024px) {
+    body.responsive .entry-meta {
+      margin-top: -20px;
+      margin-bottom: 10px; } }
   @media (max-width: 992px) {
     body.responsive {
       /**homepage+header+footer**/
@@ -8540,7 +8546,9 @@ body {
         top: 30%;
         height: 40%;
         width: 34%;
-        left: 32%; } }
+        left: 32%; }
+      body.responsive #secondary .widget_recent_posts .list-rencent-post .recent-post-title-thumbnail {
+        clear: none; } }
   @media (min-width: 576px) and (max-width: 767px) {
     body.responsive {
       /**homepage+header+footer**/
@@ -8820,6 +8828,7 @@ body {
       margin-bottom: 8px; }
     body.responsive .content-inner .entry-content .entry-meta {
       font-size: 13px;
+      margin-top: 0px;
       margin-bottom: 10px; }
     body.responsive .content-inner .entry-content .entry-summary {
       font-size: 14px; }
@@ -8836,7 +8845,11 @@ body {
       body.responsive .widget_banner_ads .banner-ads .banner-title .banner-title-detail p {
         font-size: 18px; }
       body.responsive .widget_banner_ads .banner-ads .banner-title .banner-title-description p {
-        font-size: 14px; } }
+        font-size: 14px; }
+    body.responsive .widget_recent_posts .list-rencent-post .recent-post-thumbnail {
+      margin-bottom: 5px; }
+    body.responsive .widget_recent_posts .list-rencent-post .recent-post-title-thumbnail {
+      clear: left; } }
   @media (min-width: 667px) {
     body.responsive .site-content {
       width: 670px; }

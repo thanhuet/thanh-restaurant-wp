@@ -57,9 +57,9 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 				'posts_per_page' => array(
 					"type"    => "number",
-					"label"   => esc_attr__( "Posts Per Page", 'mag-wp' ),
+					"label"   => esc_attr__( "Posts Per Page", 'thim-starter-theme' ),
 					'default' => 3,
-					'desc'    => esc_attr__( 'Set max limit for items or enter -1 to display all (limited to 1000).', 'mag-wp' ),
+					'desc'    => esc_attr__( 'Set max limit for items or enter -1 to display all (limited to 1000).', 'thim-starter-theme' ),
 
 				),
 

@@ -10,9 +10,9 @@ class Thim_Banner_Ads_Widget extends SiteOrigin_Widget {
 
         parent::__construct(
             'banner_ads',
-            esc_html__( 'Display Banner Ads', 'mabu' ),
+            esc_html__( 'Display Banner Ads', 'thim-starter-theme' ),
             array(
-                'description'   => esc_html__( 'Display banner ads', 'mabu' ),
+                'description'   => esc_html__( 'Display banner ads', 'thim-starter-theme' ),
             ),
             array(),
             array(

@@ -16,7 +16,7 @@ class Thim_Logo_Widget extends SiteOrigin_Widget {
 				'description'=>array(
 					'type'=>'text',
 					'label'=>esc_html__('Description','thim-starter-theme'),
-					'default'=>esc_html__('The Restara theme used to be greater than simply an area to get a hairstyle or cut; it was a center','mabu')
+					'default'=>esc_html__('The Restara theme used to be greater than simply an area to get a hairstyle or cut; it was a center','thim-starter-theme')
 				),
 				'displayDes'=>array(
 					'type'=>'checkbox',
