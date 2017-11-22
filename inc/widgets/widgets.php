@@ -19,6 +19,7 @@ include_once (THIM_DIR . '/inc/widgets/food-card/food-card.php');
 include_once  (THIM_DIR . '/inc/widgets/introduce-site/introduce-site.php');
 include_once (THIM_DIR . '/inc/widgets/food-list/food-list.php');
 include_once  (THIM_DIR . '/inc/widgets/rating-demo/rating-demo.php');
+include_once (THIM_DIR . '/inc/widgets/opening-hours-detail/opening-hours-detail.php');
 /* Widget for homepage*/
 
 /**

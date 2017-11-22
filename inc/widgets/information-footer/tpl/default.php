@@ -16,8 +16,8 @@ foreach ( $repeater_items as $index => $repeater_item ) {
 		<?php
 	}
 	?>
-    <div class="info-content-footer">
-        <p><?php echo $repeater_item['repeat_content']?></p>
+    <div itemscope itemtype="http://schema.org/Restaurant" class="info-content-footer">
+        <p itemprop="telephone address email"><?php echo $repeater_item['repeat_content']?></p>
     </div>
 	<?php
 }

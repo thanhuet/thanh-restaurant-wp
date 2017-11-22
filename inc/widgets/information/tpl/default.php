@@ -9,11 +9,11 @@ $icon_url   = $attachment[0];
     </div>
 </div>
 <!--<hr>-->
-<div class="main-content">
-    <div class="content-info">
+<div itemscope itemtype="http://schema.org/Restaurant" class="main-content">
+    <div itemprop="openingHours address" class="content-info">
 		<?php echo $instance['info']; ?>
     </div>
-    <div class="detail-info">
+    <div itemprop="description" class="detail-info">
 		<?php echo $instance['detail']; ?>
     </div>
 </div>

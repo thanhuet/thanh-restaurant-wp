@@ -18,7 +18,7 @@ body {
             }
           }
           .main-content {
-            padding-right: 0px;
+            padding-right: 0;
           }
         }
       }
@@ -86,13 +86,13 @@ body {
               }
               .entry-header {
                 .entry-title {
-                  margin-bottom: 0px;
+                  margin-bottom: 0;
                   a {
                   }
                 }
               }
               .entry-summary{
-                margin:0px 0;
+                margin:0 0;
               }
             }
           }
@@ -102,6 +102,13 @@ body {
       .bottom-bar {
         margin: auto;
         clear: both;
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 207px;
+            }
+          }
+          }
         .widget_logo-rest {
           margin-bottom: 40px;
           .description-logo {
@@ -155,6 +162,13 @@ body {
       .bottom-bar {
         margin: auto;
         clear: both;
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 148px;
+            }
+          }
+        }
         .widget_logo-rest {
           margin-bottom: 40px;
           .description-logo {
@@ -292,6 +306,13 @@ body {
           padding: 0;
           .description-logo {
             padding: 0 50px;
+          }
+        }
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 148px;
+            }
           }
         }
         .widget_info-footer {
@@ -536,6 +557,13 @@ body {
         }
       }
       .bottom-bar {
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 102px;
+            }
+          }
+        }
         .widget_logo-rest {
           padding: 0;
           .description-logo {
@@ -686,6 +714,13 @@ body {
         }
       }
       .bottom-bar {
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 244px;
+            }
+          }
+        }
         .widget_logo-rest {
           padding: 0;
           .description-logo {
@@ -888,6 +923,13 @@ body {
         }
       }
       .bottom-bar {
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 168px;
+            }
+          }
+        }
         .widget_logo-rest {
           padding: 0;
           .description-logo {
@@ -989,6 +1031,13 @@ body {
       }
       /**homepage+header+footer**/
       .bottom-bar {
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 148px;
+            }
+          }
+        }
         .widget_logo-rest {
           padding: 0;
           .description-logo {
@@ -1028,6 +1077,13 @@ body {
     @media (min-width: 320px) and (max-width: 374px) {
       /**homepage+header+footer**/
       .bottom-bar {
+        .widget_opening-hours-footer{
+          .title-info-footer{
+            &::after {
+              right: 120px;
+            }
+          }
+        }
         .widget_logo-rest {
           padding: 0;
           .description-logo {

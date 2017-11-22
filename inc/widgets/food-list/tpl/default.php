@@ -11,14 +11,15 @@ if ( ! empty( $instance['listFood'] ) ) {
         <div class="desc-food-list">
             <h1><?php echo $instance['description']; ?></h1>
         </div>
-        <div class="detail-food-list">
+        <div itemscope itemtype="http://schema.org/Restaurant" class="detail-food-list">
 			<?php
 			foreach ( $repeater_items as $index => $repeater_item ) {
 				?>
-                <div class="content-food-list ">
-                    <p class="food-name "><?php echo $repeater_item['repeat_content'] ?></p>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="content-food-list ">
+                    <p itemprop="name" class="food-name "><?php echo $repeater_item['repeat_content'] ?></p>
                     <div class="dots-background"></div>
-                    <p class="food-price "><?php echo $repeater_item['repeat_price'] ?></p>
+                    <p itemprop="price" class="food-price "><?php echo $repeater_item['repeat_price'] ?></p>
+                    <meta itemprop="priceCurrency"/>
                 </div>
 				<?php
 			}
