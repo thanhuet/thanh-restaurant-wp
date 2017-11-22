@@ -259,7 +259,6 @@ if ( ! function_exists( 'thim_paging_nav' ) ) :
 
 		$pagenum_link = esc_url( remove_query_arg( array_keys( $query_args ), $pagenum_link ) );
 		$pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
-
 		$format = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
 		$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( 'page/%#%', 'paged' ) : '?paged=%#%';
 		// Set up paginated links.
