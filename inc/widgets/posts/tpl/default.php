@@ -63,7 +63,7 @@ $posts = new WP_Query( $news_args );
                             <div class="meta-entry">
 								<?php thim_posted_on(); ?>
 								<?php if ( comments_open() ) {
-									echo '<span class="related-post-reply">';
+									echo '<span class="related-post-reply"></span>';
 									comments_popup_link(
 										__( 'No comments', 'thim-starter-theme' ),
 										__( '1 comment', 'thim-starter-theme' ),

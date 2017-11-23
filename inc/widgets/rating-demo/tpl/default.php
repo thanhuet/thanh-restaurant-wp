@@ -10,7 +10,7 @@ if ( ! empty( $instance['list_rate'] ) ) {
 		?>
         <div class="customer-rate-demo row">
             <div itemprop="customer" itemscope itemtype="http://schema.org/Person" class="image-profile col-12 col-sm-3">
-                <img itemprop="image" src="<?php echo $image_url; ?>">
+                <img itemprop="image" src="<?php echo $image_url; ?>" alt="">
             </div>
             <div itemprop="review" itemscope itemtype="http://schema.org/Review" class="info-rate col-12 col-sm-9">
                 <div itemprop="description" class="customer-feedback">

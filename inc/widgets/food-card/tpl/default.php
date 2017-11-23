@@ -7,7 +7,7 @@ $image_url  = $attachment[0];
 		<i class="inverted-top inverted-left"></i>
 		<i class="inverted-top inverted-right"></i>
 		<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="inverted-content">
-			<img itemprop="image" class="food-card-img" src="<?php echo $image_url;?>">
+			<img itemprop="image" class="food-card-img" src="<?php echo $image_url;?>" >
 			<h1 itemprop="name" class="food-card-name"><?php echo $instance['name'];?></h1>
 			<p itemprop="description" class="food-card-des"><?php echo $instance['description'];?></p>
 		</div>

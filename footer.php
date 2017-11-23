@@ -18,7 +18,7 @@
 	<?php thim_footer_layout(); ?>
 </footer><!-- #colophon -->
 </div><!-- content-pusher -->
-</div><!-- wrapper-container -->
+
 
 <?php wp_footer(); ?>
 
