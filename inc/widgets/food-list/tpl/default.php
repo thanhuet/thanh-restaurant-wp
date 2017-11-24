@@ -19,7 +19,7 @@ if ( ! empty( $instance['listFood'] ) ) {
                     <p itemprop="name" class="food-name "><?php echo $repeater_item['repeat_content'] ?></p>
                     <div class="dots-background"></div>
                     <p itemprop="price" class="food-price "><?php echo $repeater_item['repeat_price'] ?></p>
-                    <meta itemprop="priceCurrency"/>
+                    <meta itemprop="priceCurrency" content="USD"/>
                 </div>
 				<?php
 			}
