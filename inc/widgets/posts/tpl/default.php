@@ -5,7 +5,7 @@ $list_cate_option = array(
 	"1" => esc_html__( 'All categories', 'restaurant-wp' )
 );
 foreach ( $list_cate as $item ) {
-	array_push( $list_cate_option, esc_html__( $item->name, 'restaurant-wp' ) );
+	array_push( $list_cate_option, esc_html( $item->name) );
 }
 $cateName = $cateSelect != 1 ? $list_cate_option[ $cateSelect ] : '';
 $cateID   = get_cat_ID( $cateName );
@@ -63,13 +63,14 @@ $posts = new WP_Query( $news_args );
                             <div class="meta-entry">
 								<?php thim_posted_on(); ?>
 								<?php if ( comments_open() ) {
-									echo '<span class="related-post-reply"></span>';
+									echo '<span class="related-post-reply">';
 									comments_popup_link(
 										__( 'No comments', 'restaurant-wp' ),
 										__( '1 comment', 'restaurant-wp' ),
 										__( '% comments', 'restaurant-wp' ),
 										__( 'Read all comments', 'restaurant-wp' )
 									);
+									echo '</span>';
 								} ?>
                             </div>
                             <!-- .entry-header -->

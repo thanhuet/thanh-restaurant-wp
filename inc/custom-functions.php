@@ -813,9 +813,10 @@ if ( ! function_exists( 'thim_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
 	function thim_posted_on() {
-		$time_string = '<time class="entry-date published updated">%2$s</time>';
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'M j, Y' ) ),
 			esc_html( get_the_date( 'M j, Y' ) )
 		);
 		$byline      = sprintf(

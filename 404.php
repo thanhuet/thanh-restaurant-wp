@@ -19,7 +19,7 @@
             <h1>Page not <span class="important-word">Found</span></h1>
         </div><!-- .page-content -->
         <div class="page-404-detail">
-            <p>Hehe, Page not Found because Page not Found. We’re so sorry about it.</p>
+            <p>Hehe, Page not Found because Page not Found. We&#39re so sorry about it.</p>
         </div><!-- .page-content -->
     </div>
 </section><!-- .error-404 -->

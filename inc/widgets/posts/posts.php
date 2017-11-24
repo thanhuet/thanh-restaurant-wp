@@ -13,7 +13,7 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 			"1" => esc_html__( 'All categories', 'restaurant-wp' )
 		);
 		foreach ( $list_cate as $item ) {
-			array_push( $list_cate_option, esc_html__( $item->name, 'restaurant-wp' ) );
+			array_push( $list_cate_option, esc_html( $item->name ) );
 		}
 
 		parent::__construct(
@@ -35,7 +35,7 @@ class Thim_Posts_Widget extends SiteOrigin_Widget {
 				'description' => array(
 					'type'    => 'text',
 					'label'   => esc_html__( 'Description', 'restaurant-wp' ),
-					'default' => 'To enrich knowledge, we’re lucky to get certified from several famous institutions in our locality. Here we enlisted my top certifications.'
+					'default' => 'To enrich knowledge, we\'re lucky to get certified from several famous institutions in our locality. Here we enlisted my top certifications.'
 				),
 
 				'column' => array(
