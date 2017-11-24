@@ -6,10 +6,9 @@ class Thim_RateDemo_Widget extends SiteOrigin_Widget {
 			'rate-demo',
 			esc_html__( 'Thim: Rating Demo', 'restaurant-wp' ),
 			array(
-				'description' => esc_html__( '', 'restaurant-wp' )
+				'description' => ''
 			),
 			array(),
-
 			array(
 				'list_rate' => array(
 					'type'      => 'repeater',
