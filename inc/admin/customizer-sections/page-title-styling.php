@@ -9,7 +9,7 @@ thim_customizer()->add_section(
 	array(
 		'id'       => 'page_title_styling',
 		'panel'    => 'page_title_bar',
-		'title'    => esc_html__( 'Title', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Title', 'restaurant-wp' ),
 		'priority' => 12,
 	)
 );
@@ -19,8 +19,8 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'page_title_background_image',
 		'type'     => 'image',
-		'label'    => esc_html__( 'Background Image', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'You can upload image make to background image for page title on heading top. ', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Background Image', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'You can upload image make to background image for page title on heading top. ', 'restaurant-wp' ),
 		'section'  => 'page_title_styling',
 		'priority' => 30,
 		'js_vars'  => array(
@@ -39,8 +39,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'page_title_background_color',
 		'type'      => 'color',
-		'label'     => esc_html__( 'Background Color', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'If you do not use background image, then can use background color for page title on heading top. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Background Color', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'If you do not use background image, then can use background color for page title on heading top. ', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'default'   => '#222222',
 		'priority'  => 35,
@@ -61,7 +61,7 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'page_title_background_opacity',
 		'type'      => 'text',
-		'label'     => esc_html__( 'Background Color Opacity', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Background Color Opacity', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'default'   => '0.5',
 		'priority'  => 35,
@@ -82,8 +82,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'page_title_height',
 		'type'      => 'dimension',
-		'label'     => esc_html__( 'Height', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'You can choose numbers to height for page title. Example: 100px, 30em, 48%, 90vh etc.', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Height', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'You can choose numbers to height for page title. Example: 100px, 30em, 48%, 90vh etc.', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'default'   => '300px',
 		'priority'  => 40,
@@ -108,8 +108,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'page_title_padding_top',
 		'type'      => 'dimension',
-		'label'     => esc_html__( 'Padding Top', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'You can choose padding top from page title to menu in header overlay layout. Example: 10px, 3em, 48%, 90vh etc.', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Padding Top', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'You can choose padding top from page title to menu in header overlay layout. Example: 10px, 3em, 48%, 90vh etc.', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'default'   => '0',
 		'priority'  => 45,
@@ -129,8 +129,8 @@ thim_customizer()->add_field(
 	array(
 			'id'        => 'font_page_title',
 		'type'      => 'typography',
-		'label'     => esc_html__( 'Title Styling', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Allows you can select fonts property for page title. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Title Styling', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Allows you can select fonts property for page title. ', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'priority'  => 50,
 		'default'   => array(
@@ -166,8 +166,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'font_page_title_description',
 		'type'      => 'typography',
-		'label'     => esc_html__( ' Description Styling', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Allows you can select fonts property for page title description. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( ' Description Styling', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Allows you can select fonts property for page title description. ', 'restaurant-wp' ),
 		'section'   => 'page_title_styling',
 		'priority'  => 60,
 		'default'   => array(

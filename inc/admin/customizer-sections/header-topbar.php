@@ -6,7 +6,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'       => 'header_topbar',
-		'title'    => esc_html__( 'Top bar', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Top bar', 'restaurant-wp' ),
 		'panel'    => 'header',
 		'priority' => 20,
 	)
@@ -17,14 +17,14 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'header_topbar_display',
 		'type'     => 'switch',
-		'label'    => esc_html__( 'Show Topbar', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Allows you to enable or disable Top bar.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Show Topbar', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Allows you to enable or disable Top bar.', 'restaurant-wp' ),
 		'section'  => 'header_topbar',
 		'default'  => true,
 		'priority' => 10,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -34,14 +34,14 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'show_line_after_topbar',
 		'type'     => 'switch',
-		'label'    => esc_html__( 'Show Line After Topbar', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Allows you to show or hide line between topbar and main menu.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Show Line After Topbar', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Allows you to show or hide line between topbar and main menu.', 'restaurant-wp' ),
 		'section'  => 'header_topbar',
 		'default'  => true,
 		'priority' => 11,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -50,8 +50,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'font_topbar',
 		'type'      => 'typography',
-		'label'     => esc_html__( 'Topbar Fonts', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Allows you to select font properties for topbar. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Topbar Fonts', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Allows you to select font properties for topbar. ', 'restaurant-wp' ),
 		'section'   => 'header_topbar',
 		'priority'  => 20,
 		'default'   => array(
@@ -93,8 +93,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'topbar_background_color',
 		'type'        => 'color',
-		'label'       => esc_html__( 'Background Color', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you to choose a background color for widget on topbar. ', 'thim-starter-theme' ),
+		'label'       => esc_html__( 'Background Color', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to choose a background color for widget on topbar. ', 'restaurant-wp' ),
 		'section'     => 'header_topbar',
 		'default'     => '#333333',
 		'priority'    => 30,

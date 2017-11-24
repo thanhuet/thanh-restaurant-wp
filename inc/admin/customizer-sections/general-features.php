@@ -10,7 +10,7 @@ thim_customizer()->add_section(
 		'id'       => 'advanced',
 		'panel'    => 'general',
 		'priority' => 90,
-		'title'    => esc_html__( 'Extra Features', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Extra Features', 'restaurant-wp' ),
 	)
 );
 
@@ -19,13 +19,13 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'feature_rtl_support',
-		'label'    => esc_html__( 'RTL Support', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'RTL Support', 'restaurant-wp' ),
 		'section'  => 'advanced',
 		'default'  => false,
 		'priority' => 10,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	) 
 );
@@ -35,14 +35,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'feature_smoothscroll',
-		'label'    => esc_html__( 'Smooth Scrolling', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to enable smooth scrolling.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Smooth Scrolling', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to enable smooth scrolling.', 'restaurant-wp' ),
 		'section'  => 'advanced',
 		'default'  => false,
 		'priority' => 20,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	) 
 );
@@ -52,14 +52,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'feature_open_graph_meta',
-		'label'    => esc_html__( 'Open Graph Meta Tags', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to enable open graph meta tags which is mainly used when sharing pages on social networking sites like Facebook.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Open Graph Meta Tags', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to enable open graph meta tags which is mainly used when sharing pages on social networking sites like Facebook.', 'restaurant-wp' ),
 		'section'  => 'advanced',
 		'default'  => true,
 		'priority' => 30,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	) 
 );
@@ -69,14 +69,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'feature_backtotop',
-		'label'    => esc_html__( 'Back To Top', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to enable the Back To Top script which adds the scrolling to top functionality.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Back To Top', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to enable the Back To Top script which adds the scrolling to top functionality.', 'restaurant-wp' ),
 		'section'  => 'advanced',
 		'default'  => true,
 		'priority' => 40,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	) 
 );
@@ -86,14 +86,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'feature_google_theme',
-		'label'    => esc_html__( 'Google Theme', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to set the toolbar color in Chrome for Android.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Google Theme', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to set the toolbar color in Chrome for Android.', 'restaurant-wp' ),
 		'section'  => 'advanced',
 		'default'  => false,
 		'priority' => 50,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	) 
 );
@@ -103,7 +103,7 @@ thim_customizer()->add_field(
 	array(
 		'type'            => 'color',
 		'id'              => 'feature_google_theme_color',
-		'label'           => esc_html__( 'Google Theme Color', 'thim-starter-theme' ),
+		'label'           => esc_html__( 'Google Theme Color', 'restaurant-wp' ),
 		'section'         => 'advanced',
 		'default'         => '#333333',
 		'priority'        => 60,
@@ -123,7 +123,7 @@ thim_customizer()->add_field( array(
 	'type'     => 'radio-image',
 	'id'       => 'theme_feature_preloading',
 	'section'  => 'advanced',
-	'label'    => esc_html__( 'Preloading', 'thim-starter-theme' ),
+	'label'    => esc_html__( 'Preloading', 'restaurant-wp' ),
 	'default'  => 'off',
 	'priority' => 70,
 	'choices'  => array(
@@ -147,7 +147,7 @@ thim_customizer()->add_field( array(
 thim_customizer()->add_field( array(
 	'type'            => 'kirki-image',
 	'id'              => 'theme_feature_preloading_custom_image',
-	'label'           => esc_html__( 'Preloading Custom Image', 'thim-starter-theme' ),
+	'label'           => esc_html__( 'Preloading Custom Image', 'restaurant-wp' ),
 	'section'         => 'advanced',
 	'priority'        => 80,
 	'active_callback' => array(
@@ -163,12 +163,12 @@ thim_customizer()->add_field( array(
 thim_customizer()->add_field( array(
 	'type'      => 'multicolor',
 	'id'        => 'theme_feature_preloading_style',
-	'label'     => esc_html__( 'Preloading Color', 'thim-starter-theme' ),
+	'label'     => esc_html__( 'Preloading Color', 'restaurant-wp' ),
 	'section'   => 'advanced',
 	'priority'  => 90,
 	'choices'   => array(
-		'background' => esc_html__( 'Background color', 'thim-starter-theme' ),
-		'color'      => esc_html__( 'Icon color', 'thim-starter-theme' ),
+		'background' => esc_html__( 'Background color', 'restaurant-wp' ),
+		'color'      => esc_html__( 'Icon color', 'restaurant-wp' ),
 	),
 	'default'   => array(
 		'background' => '#ffffff',

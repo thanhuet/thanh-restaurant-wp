@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'       => 'sidebar',
-		'title'    => esc_html__( 'Sidebars', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Sidebars', 'restaurant-wp' ),
 		'priority' => 50,
 		'icon'     => 'dashicons-admin-settings'
 	)
@@ -19,8 +19,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'sidebar_widget_title',
 		'type'      => 'typography',
-		'label'     => esc_html__( 'Sidebar Title Fonts', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Allows you can select fonts property for sidebars title. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Sidebar Title Fonts', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Allows you can select fonts property for sidebars title. ', 'restaurant-wp' ),
 		'section'   => 'sidebar',
 		'priority'  => 20,
 		'default'   => array(
@@ -48,8 +48,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'sidebar_widget_margin_bottom',
 		'type'      => 'dimension',
-		'label'     => esc_html__( 'Widget Margin Bottom', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Choose the number of words you want to space between widgets on sidebars. Example: 10px, 3em, 48%, 90vh etc.', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Widget Margin Bottom', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Choose the number of words you want to space between widgets on sidebars. Example: 10px, 3em, 48%, 90vh etc.', 'restaurant-wp' ),
 		'section'   => 'sidebar',
 		'default'   => '45px',
 		'priority'  => 50,

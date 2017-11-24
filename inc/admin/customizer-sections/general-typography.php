@@ -10,7 +10,7 @@ thim_customizer()->add_section(
         'id'       => 'typography',
         'panel'    => 'general',
         'priority' => 60,
-        'title'    => esc_html__( 'Typography', 'thim-starter-theme' ),
+        'title'    => esc_html__( 'Typography', 'restaurant-wp' ),
     )
 );
 
@@ -22,12 +22,12 @@ thim_customizer()->add_group( array(
     'groups'   => array(
         array(
             'id'     => 'body_group',
-            'label'  => esc_html__( 'Body', 'thim-starter-theme' ),
+            'label'  => esc_html__( 'Body', 'restaurant-wp' ),
             'fields' => array(
                 array(
                     'id'        => 'font_body',
-                    'label'     => esc_html__( 'Body Font', 'thim-starter-theme' ),
-                    'tooltip'  => esc_html__( 'Allows you to select all font properties of body tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Body Font', 'restaurant-wp' ),
+                    'tooltip'  => esc_html__( 'Allows you to select all font properties of body tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'    => 10,
                     'default'     => array(

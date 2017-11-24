@@ -22,7 +22,7 @@ function thim_entry_meta_author() {
  */
 function thim_get_entry_meta_author() {
 	$html = '<span class="author vcard">';
-	$html .= esc_html__( 'by ', 'thim-starter-theme' ) . sprintf( '<a href="%1$s" rel="author">%2$s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), esc_html( get_the_author() ) ) . '';
+	$html .= esc_html__( 'by ', 'restaurant-wp' ) . sprintf( '<a href="%1$s" rel="author">%2$s</a>', esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ), esc_html( get_the_author() ) ) . '';
 	$html .= '</span>';
 
 	return $html;
@@ -67,7 +67,7 @@ function thim_entry_meta_category() {
 function thim_get_entry_meta_category() {
 	if  ( is_single() ){
 		$html = '<span class="meta-category">';
-		$html .= '<span>' . esc_html__( 'Categories: ', 'thim-starter-theme' ) . '</span>';
+		$html .= '<span>' . esc_html__( 'Categories: ', 'restaurant-wp' ) . '</span>';
 		$categories = get_the_category();
 		if ( ! empty( $categories ) ) {
 			$html .= '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
@@ -94,9 +94,9 @@ function thim_entry_meta_tags() {
  * @return string
  */
 function thim_get_entry_meta_tags() {
-	$tags_list = get_the_tag_list( '', esc_html__( ', ', 'thim-starter-theme' ) );
+	$tags_list = get_the_tag_list( '', esc_html__( ', ', 'restaurant-wp' ) );
 	if ( $tags_list ) {
-		return sprintf( '<span class="tags-links">' . esc_html__( 'Tag: %1$s', 'thim-starter-theme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+		return sprintf( '<span class="tags-links">' . esc_html__( 'Tag: %1$s', 'restaurant-wp' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 	}
 
 	return '';
@@ -210,7 +210,7 @@ function thim_render_social_link( $social_name ) {
 
 		case 'pinterest':
 			echo '<li class="pinterest">
-				<a data-pin-do="buttonBookmark"  href="' . esc_url( "//www.pinterest.com/pin/create/button/" ) . '"><img src="' . esc_url( "//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" ) . '" alt="' . esc_html__( 'Pinterest', 'thim-starter-theme' ) . '"/></a>
+				<a data-pin-do="buttonBookmark"  href="' . esc_url( "//www.pinterest.com/pin/create/button/" ) . '"><img src="' . esc_url( "//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" ) . '" alt="' . esc_html__( 'Pinterest', 'restaurant-wp' ) . '"/></a>
 				<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 			</li>';
 			break;
@@ -345,9 +345,9 @@ if ( ! function_exists( 'thim_new_comment_fields' ) ) {
 		$aria_req  = ( $req ? 'aria-required=true' : '' );
 
 		$fields = array(
-			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'thim-starter-theme' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'thim-starter-theme' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'restaurant-wp' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'restaurant-wp' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'restaurant-wp' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 		);
 
 		return $fields;
@@ -384,7 +384,7 @@ if ( ! function_exists( 'thim_comment' ) ) {
 <!--				<span class="comment-extra-info">-->
 <!--					--><?php
 //					printf( get_comment_date() );
-//					echo esc_html__( ' at ', 'thim-starter-theme' );
+//					echo esc_html__( ' at ', 'restaurant-wp' );
 //					printf( get_comment_time() ) ?>
 <!--				</span>-->
 				<span>
@@ -394,11 +394,11 @@ if ( ! function_exists( 'thim_comment' ) ) {
 						'max_depth' => $args['max_depth'],
                         'reply_text' => 'REPLY'
 					) ) ) ?>
-					<?php edit_comment_link( esc_html__( 'Edit', 'thim-starter-theme' ), '', '' ); ?>
+					<?php edit_comment_link( esc_html__( 'Edit', 'restaurant-wp' ), '', '' ); ?>
 				</span>
 			</div>
 			<?php if ( $comment->comment_approved == '0' ) : ?>
-				<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'thim-starter-theme' ) ?></em>
+				<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'restaurant-wp' ) ?></em>
 			<?php endif; ?>
 			<div class="message">
 				<?php comment_text() ?>
@@ -501,47 +501,47 @@ function thim_get_list_group_chat() {
 if ( ! function_exists( 'thim_archive_title' ) ) :
 	function thim_archive_title( $before = '', $after = '' ) {
 		if ( is_category() ) {
-			$title = sprintf( esc_html__( '%s', 'thim-starter-theme' ), single_cat_title( '', false ) );
+			$title = sprintf( esc_html__( '%s', 'restaurant-wp' ), single_cat_title( '', false ) );
 		} elseif ( is_tag() ) {
-			$title = sprintf( esc_html__( '%s', 'thim-starter-theme' ), single_tag_title( '', false ) );
+			$title = sprintf( esc_html__( '%s', 'restaurant-wp' ), single_tag_title( '', false ) );
 		} elseif ( is_author() ) {
-			$title = sprintf( esc_html__( '%s', 'thim-starter-theme' ), '<span class="vcard">' . get_the_author() . '</span>' );
+			$title = sprintf( esc_html__( '%s', 'restaurant-wp' ), '<span class="vcard">' . get_the_author() . '</span>' );
 		} elseif ( is_year() ) {
-			$title = sprintf( esc_html__( 'Year: %s', 'thim-starter-theme' ), get_the_date( _x( 'Y', 'yearly archives date format', 'thim-starter-theme' ) ) );
+			$title = sprintf( esc_html__( 'Year: %s', 'restaurant-wp' ), get_the_date( _x( 'Y', 'yearly archives date format', 'restaurant-wp' ) ) );
 		} elseif ( is_month() ) {
-			$title = sprintf( esc_html__( 'Month: %s', 'thim-starter-theme' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'thim-starter-theme' ) ) );
+			$title = sprintf( esc_html__( 'Month: %s', 'restaurant-wp' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'restaurant-wp' ) ) );
 		} elseif ( is_day() ) {
-			$title = sprintf( esc_html__( 'Day: %s', 'thim-starter-theme' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'thim-starter-theme' ) ) );
+			$title = sprintf( esc_html__( 'Day: %s', 'restaurant-wp' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'restaurant-wp' ) ) );
 		} elseif ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = _x( 'Asides', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Asides', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = _x( 'Galleries', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Galleries', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = _x( 'Images', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Images', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = _x( 'Videos', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Videos', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = _x( 'Quotes', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Quotes', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = _x( 'Links', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Links', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = _x( 'Statuses', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Statuses', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = _x( 'Audio', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Audio', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = _x( 'Chats', 'post format archive title', 'thim-starter-theme' );
+			$title = _x( 'Chats', 'post format archive title', 'restaurant-wp' );
 		} elseif ( is_post_type_archive() ) {
-			$title = sprintf( esc_html__( '%s', 'thim-starter-theme' ), post_type_archive_title( '', false ) );
+			$title = sprintf( esc_html__( '%s', 'restaurant-wp' ), post_type_archive_title( '', false ) );
 		} elseif ( is_tax() ) {
 			$tax = get_taxonomy( get_queried_object()->taxonomy );
 			/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-			$title = sprintf( esc_html__( '%1$s: %2$s', 'thim-starter-theme' ), $tax->labels->singular_name, single_term_title( '', false ) );
+			$title = sprintf( esc_html__( '%1$s: %2$s', 'restaurant-wp' ), $tax->labels->singular_name, single_term_title( '', false ) );
 		} elseif ( is_404() ) {
-			$title = esc_html__( '404 Page', 'thim-starter-theme' );
+			$title = esc_html__( '404 Page', 'restaurant-wp' );
 		} elseif ( is_search() ) {
-			$title = esc_html__( 'Search Results Page', 'thim-starter-theme' );
+			$title = esc_html__( 'Search Results Page', 'restaurant-wp' );
 		} else {
-			$title = esc_html__( 'Archives', 'thim-starter-theme' );
+			$title = esc_html__( 'Archives', 'restaurant-wp' );
 		}
 		/**
 		 * Filter the archive title.

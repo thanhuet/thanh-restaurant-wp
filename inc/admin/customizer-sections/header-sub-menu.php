@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
     array(
         'id'             => 'header_sub_menu',
-        'title'          => esc_html__( 'Sub Menu', 'thim-starter-theme' ),
+        'title'          => esc_html__( 'Sub Menu', 'restaurant-wp' ),
         'panel'			 => 'header',
         'priority'       => 50,
     )
@@ -19,8 +19,8 @@ thim_customizer()->add_field(
     array(
         'id'          => 'sub_menu_background_color',
         'type'        => 'color',
-        'label'       => esc_html__( 'Background Color', 'thim-starter-theme' ),
-        'tooltip'     => esc_html__( 'Allows you can select a color make background color sub menu on header  . ', 'thim-starter-theme' ),
+        'label'       => esc_html__( 'Background Color', 'restaurant-wp' ),
+        'tooltip'     => esc_html__( 'Allows you can select a color make background color sub menu on header  . ', 'restaurant-wp' ),
         'section'     => 'header_sub_menu',
         'default'     => '#ffffff',
         'priority'    => 16,
@@ -41,8 +41,8 @@ thim_customizer()->add_field(
     array(
         'id'          => 'sub_menu_text_color',
         'type'        => 'color',
-        'label'       => esc_html__( 'Text Color', 'thim-starter-theme' ),
-        'tooltip'     => esc_html__( 'Allows you can select a color make text color sub menu on header. ', 'thim-starter-theme' ),
+        'label'       => esc_html__( 'Text Color', 'restaurant-wp' ),
+        'tooltip'     => esc_html__( 'Allows you can select a color make text color sub menu on header. ', 'restaurant-wp' ),
         'section'     => 'header_sub_menu',
         'default'     => '#333333',
         'priority'    => 17,
@@ -64,8 +64,8 @@ thim_customizer()->add_field(
     array(
         'id'          => 'sub_menu_text_color_hover',
         'type'        => 'color',
-        'label'       => esc_html__( 'Text Hover Color', 'thim-starter-theme' ),
-        'tooltip'     => esc_html__( 'Allows you can select color for text link when hover text link sub menu on header. ', 'thim-starter-theme' ),
+        'label'       => esc_html__( 'Text Hover Color', 'restaurant-wp' ),
+        'tooltip'     => esc_html__( 'Allows you can select color for text link when hover text link sub menu on header. ', 'restaurant-wp' ),
         'section'     => 'header_sub_menu',
         'default'     => '#439fdf',
         'priority'    => 18,

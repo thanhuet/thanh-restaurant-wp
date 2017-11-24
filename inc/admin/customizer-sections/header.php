@@ -10,7 +10,7 @@ thim_customizer()->add_panel(
 	array(
 		'id'       => 'header',
 		'priority' => 20,
-		'title'    => esc_html__( 'Header', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Header', 'restaurant-wp' ),
 		'icon'     => 'dashicons-editor-table'
 	)
 );

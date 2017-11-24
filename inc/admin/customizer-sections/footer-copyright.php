@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'       => 'copyright',
-		'title'    => esc_html__( 'Copyright', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Copyright', 'restaurant-wp' ),
 		'panel'    => 'footer',
 		'priority' => 50,
 	)
@@ -19,14 +19,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'copyright_bar',
-		'label'    => esc_html__( 'Show Copyright Text', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to display the copyright bar.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Show Copyright Text', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to display the copyright bar.', 'restaurant-wp' ),
 		'section'  => 'copyright',
 		'default'  => true,
 		'priority' => 10,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -37,14 +37,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'copyright_menu',
-		'label'    => esc_html__( 'Show Menu', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to display the footer menu.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Show Menu', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to display the footer menu.', 'restaurant-wp' ),
 		'section'  => 'copyright',
 		'default'  => true,
 		'priority' => 12,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -54,8 +54,8 @@ thim_customizer()->add_field(
 	array(
 		'id'        => 'copyright_background_color',
 		'type'      => 'color',
-		'label'     => esc_html__( 'Background Color', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Allows you to choose background color for your copyright area. ', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Background Color', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Allows you to choose background color for your copyright area. ', 'restaurant-wp' ),
 		'section'   => 'copyright',
 		'default'   => '#333333',
 		'priority'  => 15,
@@ -76,13 +76,13 @@ thim_customizer()->add_field(
 	array(
 		'type'      => 'multicolor',
 		'id'        => 'font_copyright_color',
-		'label'     => esc_html__( 'Colors', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Colors', 'restaurant-wp' ),
 		'section'   => 'copyright',
 		'priority'  => 20,
 		'choices'   => array(
-			'text'  => esc_html__( 'Text', 'thim-starter-theme' ),
-			'link'  => esc_html__( 'Link', 'thim-starter-theme' ),
-			'hover' => esc_html__( 'Hover', 'thim-starter-theme' ),
+			'text'  => esc_html__( 'Text', 'restaurant-wp' ),
+			'link'  => esc_html__( 'Link', 'restaurant-wp' ),
+			'hover' => esc_html__( 'Hover', 'restaurant-wp' ),
 		),
 		'default'   => array(
 			'text'  => '#ffffff',
@@ -117,8 +117,8 @@ thim_customizer()->add_field(
 	array(
 		'type'      => 'textarea',
 		'id'        => 'copyright_text',
-		'label'     => esc_html__( 'Copyright Text', 'thim-starter-theme' ),
-		'tooltip'   => esc_html__( 'Enter the text that displays in the copyright bar. HTML markup can be used.', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Copyright Text', 'restaurant-wp' ),
+		'tooltip'   => esc_html__( 'Enter the text that displays in the copyright bar. HTML markup can be used.', 'restaurant-wp' ),
 		'section'   => 'copyright',
 		'default'   => sprintf( 'Designed by <a href="$1$s">ThimPress</a>. Powered by WordPress.', esc_url( $link ) ),
 		'priority'  => 100,

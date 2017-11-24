@@ -2,10 +2,10 @@
 $cateSelect       = $instance['choose_cate'];
 $list_cate        = get_categories( $args );
 $list_cate_option = array(
-	"1" => esc_html__( 'All categories', 'thim-starter-theme' )
+	"1" => esc_html__( 'All categories', 'restaurant-wp' )
 );
 foreach ( $list_cate as $item ) {
-	array_push( $list_cate_option, esc_html__( $item->name, 'thim-starter-theme' ) );
+	array_push( $list_cate_option, esc_html__( $item->name, 'restaurant-wp' ) );
 }
 $cateName = $cateSelect != 1 ? $list_cate_option[ $cateSelect ] : '';
 $cateID   = get_cat_ID( $cateName );
@@ -65,10 +65,10 @@ $posts = new WP_Query( $news_args );
 								<?php if ( comments_open() ) {
 									echo '<span class="related-post-reply"></span>';
 									comments_popup_link(
-										__( 'No comments', 'thim-starter-theme' ),
-										__( '1 comment', 'thim-starter-theme' ),
-										__( '% comments', 'thim-starter-theme' ),
-										__( 'Read all comments', 'thim-starter-theme' )
+										__( 'No comments', 'restaurant-wp' ),
+										__( '1 comment', 'restaurant-wp' ),
+										__( '% comments', 'restaurant-wp' ),
+										__( 'Read all comments', 'restaurant-wp' )
 									);
 								} ?>
                             </div>
@@ -93,11 +93,11 @@ $posts = new WP_Query( $news_args );
     <div class="readmore" style="text-align: center">
         <div id="load-more-content">
             <div id="icon-load-more-post" class="loading-pulse"></div>
-            <div id="text-loading"><?php echo esc_html__('Loading','thim-starter-theme')?>...</div>
+            <div id="text-loading"><?php echo esc_html__('Loading','restaurant-wp')?>...</div>
         </div>
         <a id="btn-load-more-post" class="btn-food-list" data-page="1"
            data-offset-page="<?php echo $instance['posts_per_page']; ?>" data-categoryid="<?php echo $cateID; ?>">
-            <span><?php echo esc_html__('VIEW MORE','thim-starter-theme')?></span>
+            <span><?php echo esc_html__('VIEW MORE','restaurant-wp')?></span>
         </a>
     </div><!-- .read-more -->
     <!--	<div class="text-center botton-category">

@@ -13,12 +13,12 @@ thim_customizer()->add_group( array(
     'groups'   => array(
         array(
             'id'     => 'heading_group',
-            'label'  => esc_html__( 'Headings', 'thim-starter-theme' ),
+            'label'  => esc_html__( 'Headings', 'restaurant-wp' ),
             'fields' => array(
                 array(
                     'id'        => 'font_title',
-                    'label'     => esc_html__( 'Heading Font-Family', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select font-family for headings (h1, h2, h3, h4, h5, h6)', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading Font-Family', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select font-family for headings (h1, h2, h3, h4, h5, h6)', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 10,
                     'default'   => array(
@@ -54,8 +54,8 @@ thim_customizer()->add_group( array(
                 // H1  Fonts
                 array(
                     'id'        => 'font_h1',
-                    'label'     => esc_html__( 'Heading 1', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H1 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 1', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H1 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 10,
                     'default'   => array(
@@ -85,8 +85,8 @@ thim_customizer()->add_group( array(
                 // H2  Fonts
                 array(
                     'id'        => 'font_h2',
-                    'label'     => esc_html__( 'Heading 2', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H2 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 2', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H2 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 20,
                     'default'   => array(
@@ -116,8 +116,8 @@ thim_customizer()->add_group( array(
                 // H3 Fonts
                 array(
                     'id'        => 'font_h3',
-                    'label'     => esc_html__( 'Heading 3', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H3 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 3', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H3 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 30,
                     'default'   => array(
@@ -147,8 +147,8 @@ thim_customizer()->add_group( array(
                 // H4 Fonts
                 array(
                     'id'        => 'font_h4',
-                    'label'     => esc_html__( 'Heading 4', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H4 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 4', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H4 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 40,
                     'default'   => array(
@@ -178,8 +178,8 @@ thim_customizer()->add_group( array(
                 // H5 Fonts
                 array(
                     'id'        => 'font_h5',
-                    'label'     => esc_html__( 'Heading 5', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H5 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 5', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H5 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 50,
                     'default'   => array(
@@ -209,8 +209,8 @@ thim_customizer()->add_group( array(
                 // H6 Fonts
                 array(
                     'id'        => 'font_h6',
-                    'label'     => esc_html__( 'Heading 6', 'thim-starter-theme' ),
-                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H6 tag for your site', 'thim-starter-theme' ),
+                    'label'     => esc_html__( 'Heading 6', 'restaurant-wp' ),
+                    'tooltip'   => esc_html__( 'Allows you to select all font properties of H6 tag for your site', 'restaurant-wp' ),
                     'type'      => 'typography',
                     'priority'  => 60,
                     'default'   => array(

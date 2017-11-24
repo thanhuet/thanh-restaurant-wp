@@ -376,7 +376,7 @@ class Tax_Meta_Class {
         }else{
           echo 'http://i.imgur.com/g8Duj.png';
         }
-        echo '" alt="'.__('Remove','tax-meta').'" title="'.__('Remove','tax-meta').'" id="remove-'.$field['id'].'"></div>';
+        echo '" alt="'.__('Remove','restaurant-wp').'" title="'.__('Remove','restaurant-wp').'" id="remove-'.$field['id'].'"></div>';
         $c = $c + 1;
         
         }
@@ -389,7 +389,7 @@ class Tax_Meta_Class {
     }else{
       echo 'http://i.imgur.com/w5Tuc.png';
     }
-    echo '" alt="'.__('Add','tax-meta').'" title="'.__('Add','tax-meta').'" id="add-'.$field['id'].'"><br/></div>';
+    echo '" alt="'.__('Add','restaurant-wp').'" title="'.__('Add','restaurant-wp').'" id="add-'.$field['id'].'"><br/></div>';
     
     //create all fields once more for js function and catch with object buffer
     ob_start();
@@ -423,7 +423,7 @@ class Tax_Meta_Class {
     }else{
       echo 'http://i.imgur.com/g8Duj.png';
     }
-    echo '" alt="'.__('Remove','tax-meta').'" title="'.__('Remove','tax-meta').'" id="remove-'.$field['id'].'"></div>';
+    echo '" alt="'.__('Remove','restaurant-wp').'" title="'.__('Remove','restaurant-wp').'" id="remove-'.$field['id'].'"></div>';
     $counter = 'countadd_'.$field['id'];
     $js_code = ob_get_clean ();
     $js_code = str_replace("\n","",$js_code);
@@ -722,9 +722,9 @@ class Tax_Meta_Class {
     echo "<input type='hidden' name='{$name}[id]' value='{$value['id']}'/>";
     echo "<input type='hidden' name='{$name}[url]' value='{$value['url']}'/>";
     if ($has_image)
-    echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='".__('Remove Image')."' type='button'/>";
+    echo "<input class='{$multiple} button  simplePanelimageUploadclear' id='{$id}' value='".__('Remove Image','restaurant-wp')."' type='button'/>";
     else
-    echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='".__('Upload Image')."' type='button'/>";
+    echo "<input class='{$multiple} button simplePanelimageUpload' id='{$id}' value='".__('Upload Image','restaurant-wp')."' type='button'/>";
     $this->show_field_end( $field, $meta );
   }
   

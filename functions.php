@@ -24,7 +24,7 @@ if ( ! function_exists( 'thim_setup' ) ) :
 		 * If you're building a theme based on this theme, use a find and replace
 		 * to change 'thim-starter-theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'thim-starter-theme', THIM_DIR . '/languages' );
+		load_theme_textdomain( 'restaurant-wp', THIM_DIR . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -51,13 +51,13 @@ if ( ! function_exists( 'thim_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary Menu', 'thim-starter-theme' ),
-			'footer_menu'=>esc_html__('Footer Menu', 'thim-starter-theme'),
+			'primary' => esc_html__( 'Primary Menu', 'restaurant-wp' ),
+			'footer_menu'=>esc_html__('Footer Menu', 'restaurant-wp'),
 		) );
 
 		if ( get_theme_mod( 'copyright_menu', true ) ) {
 			register_nav_menus( array(
-				'copyright_menu' => esc_html__( 'Copyright Menu', 'thim-starter-theme' ),
+				'copyright_menu' => esc_html__( 'Copyright Menu', 'restaurant-wp' ),
 			) );
 		}
 
@@ -123,18 +123,18 @@ function thim_widgets_init() {
 	 */
 	if ( get_theme_mod( 'header_topbar_display', true ) ) {
 		register_sidebar( array(
-			'name'          => esc_html__( 'Topbar Left', 'thim-starter-theme' ),
+			'name'          => esc_html__( 'Topbar Left', 'restaurant-wp' ),
 			'id'            => 'topbar_left',
-			'description'   => esc_html__( 'Display in topbar left.', 'thim-starter-theme' ),
+			'description'   => esc_html__( 'Display in topbar left.', 'restaurant-wp' ),
 			'before_widget' => '<li id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</li>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		) );
 		register_sidebar( array(
-			'name'          => esc_html__( 'Topbar Right', 'thim-starter-theme' ),
+			'name'          => esc_html__( 'Topbar Right', 'restaurant-wp' ),
 			'id'            => 'topbar_right',
-			'description'   => esc_html__( 'Display in topbar right.', 'thim-starter-theme' ),
+			'description'   => esc_html__( 'Display in topbar right.', 'restaurant-wp' ),
 			'before_widget' => '<li id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</li>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -143,27 +143,27 @@ function thim_widgets_init() {
 	}
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'thim-starter-theme' ),
+		'name'          => esc_html__( 'Sidebar', 'restaurant-wp' ),
 		'id'            => 'sidebar',
-		'description'   => esc_html__( 'Appears in the Sidebar section of the site.', 'thim-starter-theme' ),
+		'description'   => esc_html__( 'Appears in the Sidebar section of the site.', 'restaurant-wp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Thim: Bottombar', 'thim-starter-theme' ),
+		'name'          => esc_html__( 'Thim: Bottombar', 'restaurant-wp' ),
 		'id'            => 'bottom_bar',
-		'description'   => esc_html__( 'Site links.', 'thim-starter-theme' ),
+		'description'   => esc_html__( 'Site links.', 'restaurant-wp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s col col-xl-3 col-md-6 col-sm-6 col-12">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Thim: Topbar Center', 'thim-starter-theme' ),
+		'name'          => esc_html__( 'Thim: Topbar Center', 'restaurant-wp' ),
 		'id'            => 'topbar_center',
-		'description'   => esc_html__( 'Display in topbar center.', 'thim-starter-theme' ),
+		'description'   => esc_html__( 'Display in topbar center.', 'restaurant-wp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s col-4 col-xl-4">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
@@ -175,7 +175,7 @@ function thim_widgets_init() {
 			register_sidebar( array(
 				'name'          => sprintf( 'Footer Sidebar %s', $i ),
 				'id'            => 'footer-sidebar-' . $i,
-				'description'   => esc_html__( 'Sidebar display widgets.', 'thim-starter-theme' ),
+				'description'   => esc_html__( 'Sidebar display widgets.', 'restaurant-wp' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -331,7 +331,7 @@ require THIM_DIR . 'inc/widgets/widgets.php';
 //pannel Widget Group
 //function thim_widget_group( $tabs ) {
 //	$tabs[] = array(
-//		'title'  => esc_html__( 'Thim Widgets', 'thimpress' ),
+//		'title'  => esc_html__( 'Thim Widgets', 'restaurant-wp' ),
 //		'filter' => array(
 //			'groups' => array( 'thim_widget_group' )
 //		)

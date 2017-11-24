@@ -10,7 +10,7 @@ $related_columns = thim_get_related_columns_class( 'col-sm-6' );
 if ( $related->have_posts() ) {
 	?>
 	<section class="related-archive">
-		<h3 class="related-title"><?php esc_html_e( 'Your Might Also Like', 'thim-starter-theme' ); ?></h3>
+		<h3 class="related-title"><?php esc_html_e( 'Your Might Also Like', 'restaurant-wp' ); ?></h3>
 		<?php
 		echo '<ul class="archived-posts row">';
 		while ( $related->have_posts() ) {

@@ -11,7 +11,7 @@ if ( is_admin() ) {
 
 //	$config   = array(
 //		'id'             => 'category_meta_box',
-//		'title'          => esc_html__( 'Category Style', 'thimpress' ),
+//		'title'          => esc_html__( 'Category Style', 'restaurant-wp' ),
 //		'pages'          => array( 'product_cat' ),
 //		'context'        => 'normal',
 //		'fields'         => array(),
@@ -23,9 +23,9 @@ if ( is_admin() ) {
 //	$thim_tps->addSelect(
 //		$prefix . 'woo_cat_style',
 //		array(
-//			'style-1'=> esc_html__('Style 1','thimpress'),
-//			'style-2'=> esc_html__('Style 2','thimpress'),
-//			'style-3'=> esc_html__('Style 3','thimpress'),
+//			'style-1'=> esc_html__('Style 1','restaurant-wp'),
+//			'style-2'=> esc_html__('Style 2','restaurant-wp'),
+//			'style-3'=> esc_html__('Style 3','restaurant-wp'),
 //		),
 //		array(
 //			'name'=> 'Category style',

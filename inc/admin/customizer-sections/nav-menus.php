@@ -9,7 +9,7 @@ thim_customizer()->add_panel(
 	array(
 		'id'       => 'nav_menus',
 		'priority' => 90,
-		'title'    => esc_html__( 'Menus', 'mag-wp' ),
+		'title'    => esc_html__( 'Menus', 'restaurant-wp' ),
 		'icon'     => 'dashicons-menu'
 	)
 );

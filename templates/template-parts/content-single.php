@@ -39,7 +39,7 @@
 
 				wp_link_pages(
 					array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'thim-starter-theme' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'restaurant-wp' ),
 						'after'  => '</div>',
 					)
 				);
@@ -60,8 +60,8 @@
 
     <div class="nav-single">
         <div class="nav-wrapper">
-            <h3 class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . esc_html__('Previous ', 'thim-starter-theme') . '</span> %title'); ?></h3>
-            <h3 class="nav-next"><?php next_post_link('%link', '<span class="meta-nav">' . esc_html__('Next', 'thim-starter-theme') . '</span> %title'); ?></h3>
+            <h3 class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . esc_html__('Previous ', 'restaurant-wp') . '</span> %title'); ?></h3>
+            <h3 class="nav-next"><?php next_post_link('%link', '<span class="meta-nav">' . esc_html__('Next', 'restaurant-wp') . '</span> %title'); ?></h3>
         </div>
     </div>
 

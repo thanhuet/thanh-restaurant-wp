@@ -24,14 +24,14 @@ if ( post_password_required() ) {
 		<div class="list-comments">
 			<?php if ( have_comments() ) { ?>
 				<h3 class="comments-title">
-					<?php echo esc_html__( 'Comments', 'thim-starter-theme' ); ?>
+					<?php echo esc_html__( 'Comments', 'restaurant-wp' ); ?>
 				</h3>
 
 				<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through  ?>
 					<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-						<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'thim-starter-theme' ); ?></h1>
-						<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'thim-starter-theme' ) ); ?></div>
-						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'thim-starter-theme' ) ); ?></div>
+						<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'restaurant-wp' ); ?></h1>
+						<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'restaurant-wp' ) ); ?></div>
+						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'restaurant-wp' ) ); ?></div>
 					</nav><!-- #comment-nav-above -->
 				<?php endif; // check for comment navigation  ?>
 
@@ -41,24 +41,24 @@ if ( post_password_required() ) {
 
 				<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through  ?>
 					<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-						<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'thim-starter-theme' ); ?></h1>
-						<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'thim-starter-theme' ) ); ?></div>
-						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'thim-starter-theme' ) ); ?></div>
+						<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'restaurant-wp' ); ?></h1>
+						<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'restaurant-wp' ) ); ?></div>
+						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'restaurant-wp' ) ); ?></div>
 					</nav><!-- #comment-nav-below -->
 				<?php endif; // check for comment navigation  ?>
 
 			<?php } else {
-				echo esc_html__('No comments yet! You be the first to comment.','thim-starter-theme');
+				echo esc_html__('No comments yet! You be the first to comment.','restaurant-wp');
 			} // have_comments() ?>
 			<?php if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'thim-starter-theme' ); ?></p>
+				<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'restaurant-wp' ); ?></p>
 			<?php endif; ?>
 		</div>
 
 		<div class="form-comment">
 			<?php comment_form( array(
                 'label_submit' => 'SUBMIT',
-				'comment_field' => '<p class="comment-form-comment"><textarea placeholder="' . esc_attr__( 'Message...', 'thim-starter-theme' ) . '" id="comment" name="comment" cols="45" rows="8" aria-required="true">' . '</textarea></p>'
+				'comment_field' => '<p class="comment-form-comment"><textarea placeholder="' . esc_attr__( 'Message...', 'restaurant-wp' ) . '" id="comment" name="comment" cols="45" rows="8" aria-required="true">' . '</textarea></p>'
 			) ); ?>
 		</div>
 	</div><!-- #comments -->

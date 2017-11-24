@@ -143,7 +143,7 @@ function thim_get_single_page_title_content() {
 	if ( get_post_type( $post_id ) == 'post' ) {
 		$categories = get_the_category();
 	} elseif ( get_post_type( $post_id ) == 'attachment' ) {
-		echo '<h2 class="title">' . esc_html__( 'Attachment', 'thim-starter-theme' ) . '</h2>';
+		echo '<h2 class="title">' . esc_html__( 'Attachment', 'restaurant-wp' ) . '</h2>';
 
 		return;
 	} else {// Custom post type
@@ -161,11 +161,11 @@ function thim_get_single_page_title_content() {
  */
 function thim_get_page_title_date() {
 	if ( is_year() ) {
-		echo '<h2 class="title">' . esc_html__( 'Year', 'thim-starter-theme' ) . '</h2>';
+		echo '<h2 class="title">' . esc_html__( 'Year', 'restaurant-wp' ) . '</h2>';
 	} elseif ( is_month() ) {
-		echo '<h2 class="title">' . esc_html__( 'Month', 'thim-starter-theme' ) . '</h2>';
+		echo '<h2 class="title">' . esc_html__( 'Month', 'restaurant-wp' ) . '</h2>';
 	} elseif ( is_day() ) {
-		echo '<h2 class="title">' . esc_html__( 'Day', 'thim-starter-theme' ) . '</h2>';
+		echo '<h2 class="title">' . esc_html__( 'Day', 'restaurant-wp' ) . '</h2>';
 	}
 
 	$date  = '';
@@ -208,26 +208,26 @@ if ( ! function_exists( 'thim_page_title_content' ) ) {
 			echo '<h2 class="title">' . get_bloginfo( 'name' ) . '</h2>';
 			echo '<div class="description">' . get_bloginfo( 'description' ) . '</div>';
 		} elseif ( is_home() ) {// Post page
-			echo '<h2 class="title">' . esc_html__( 'Blog', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Blog', 'restaurant-wp' ) . '</h2>';
 			echo '<div class="description">' . get_bloginfo( 'description' ) . '</div>';
 		} elseif ( is_page() ) {// Page
 			echo '<h2 class="title">' . get_the_title() . '</h2>';
 		} elseif ( is_single() ) {// Single
 			thim_get_single_page_title_content();
 		} elseif ( is_author() ) {// Author
-			echo '<h2 class="title">' . esc_html__( 'Author', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Author', 'restaurant-wp' ) . '</h2>';
 			echo '<div class="description">' . get_the_author() . '</div>';
 		} elseif ( is_search() ) {// Search
-			echo '<h2 class="title">' . esc_html__( 'Search', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Search', 'restaurant-wp' ) . '</h2>';
 			echo '<div class="description">' . get_search_query() . '</div>';
 		} elseif ( is_tag() ) {// Tag
-			echo '<h2 class="title">' . esc_html__( 'Tag', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Tag', 'restaurant-wp' ) . '</h2>';
 			echo '<div class="description">' . single_tag_title( '', false ) . '</div>';
 		} elseif ( is_category() ) {// Archive
-			echo '<h2 class="title">' . esc_html__( 'Category', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Category', 'restaurant-wp' ) . '</h2>';
 			echo '<div class="description">' . single_cat_title( '', false ) . '</div>';
 		} elseif ( is_404() ) {
-			echo '<h2 class="title">' . esc_html__( 'Page Not Found!', 'thim-starter-theme' ) . '</h2>';
+			echo '<h2 class="title">' . esc_html__( 'Page Not Found!', 'restaurant-wp' ) . '</h2>';
 		} elseif ( is_date() ) {
 			thim_get_page_title_date();
 		}
@@ -248,21 +248,21 @@ function thim_get_breadcrumb_items_other() {
 		return;
 	}
 	if ( is_home() ) {
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_title() ) . '">' . esc_html__( 'Blog', 'thim-starter-theme' ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_title() ) . '">' . esc_html__( 'Blog', 'restaurant-wp' ) . '</span></li>';
 	} else if ( is_category() ) { // Category page
 		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">' . esc_html( $categories[0]->cat_name ) . '</span></li>';
 	} else if ( is_tag() ) {
 		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( single_term_title( '', false ) ) . '">' . esc_html( single_term_title( '', false ) ) . '</span></li>';
 	} else if ( is_year() ) {
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'Y' ) ) . '">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></li>';
 	} else if ( is_author() ) { // Auhor archive
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( $userdata->display_name ) . '">' . esc_attr__( 'Author', 'thim-starter-theme' ) . ' ' . esc_html( $userdata->display_name ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( $userdata->display_name ) . '">' . esc_attr__( 'Author', 'restaurant-wp' ) . ' ' . esc_html( $userdata->display_name ) . '</span></li>';
 	} else if ( get_query_var( 'paged' ) ) {
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( 'Page', 'thim-starter-theme' ) . ' ' . get_query_var( 'paged' ) . '">' . esc_html__( 'Page', 'thim-starter-theme' ) . ' ' . esc_html( get_query_var( 'paged' ) ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( 'Page', 'restaurant-wp' ) . ' ' . get_query_var( 'paged' ) . '">' . esc_html__( 'Page', 'restaurant-wp' ) . ' ' . esc_html( get_query_var( 'paged' ) ) . '</span></li>';
 	} else if ( is_search() ) {
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( 'Search results for:', 'thim-starter-theme' ) . ' ' . esc_attr( get_search_query() ) . '">' . esc_html__( 'Search results for:', 'thim-starter-theme' ) . ' ' . esc_html( get_search_query() ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( 'Search results for:', 'restaurant-wp' ) . ' ' . esc_attr( get_search_query() ) . '">' . esc_html__( 'Search results for:', 'restaurant-wp' ) . ' ' . esc_html( get_search_query() ) . '</span></li>';
 	} elseif ( is_404() ) {
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( '404 Page', 'thim-starter-theme' ) . '">' . esc_html__( '404 Page', 'thim-starter-theme' ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr__( '404 Page', 'restaurant-wp' ) . '">' . esc_html__( '404 Page', 'restaurant-wp' ) . '</span></li>';
 	}
 }
 
@@ -285,7 +285,7 @@ if ( ! function_exists( 'thim_breadcrumbs' ) ) {
 		}
 		// Build the breadcrums
 		echo '<ul itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs" class="breadcrumbs">';
-		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( home_url() ) . '" title="' . esc_attr__( 'Home', 'thim-starter-theme' ) . '"><span itemprop="name">' . esc_html__( 'Home', 'thim-starter-theme' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
+		echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( home_url() ) . '" title="' . esc_attr__( 'Home', 'restaurant-wp' ) . '"><span itemprop="name">' . esc_html__( 'Home', 'restaurant-wp' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
 		if ( is_single() ) { // Single post (Only display the first category)
 			if ( isset( $categories[0] ) ) {
 				echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '" title="' . esc_attr( $categories[0]->cat_name ) . '"><span itemprop="name">' . esc_html( $categories[0]->cat_name ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
@@ -305,16 +305,16 @@ if ( ! function_exists( 'thim_breadcrumbs' ) ) {
 			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( get_the_title() ) . '</span></li>';
 		} elseif ( is_day() ) {// Day archive
 			// Year link
-			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
+			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
 			// Month link
-			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
+			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ) . '" title="' . esc_attr( get_the_time( 'M' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
 			// Day display
-			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'jS' ) ) . '"> ' . esc_html( get_the_time( 'jS' ) ) . ' ' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></li>';
+			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'jS' ) ) . '"> ' . esc_html( get_the_time( 'jS' ) ) . ' ' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></li>';
 
 		} else if ( is_month() ) {
 			// Year link
-			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
-			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'thim-starter-theme' ) . '</span></li>';
+			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_year_link( get_the_time( 'Y' ) ) ) . '" title="' . esc_attr( get_the_time( 'Y' ) ) . '"><span itemprop="name">' . esc_html( get_the_time( 'Y' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></a><span class="breadcrum-icon">' . ent2ncr( $icon ) . '</span></li>';
+			echo '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name" title="' . esc_attr( get_the_time( 'M' ) ) . '">' . esc_html( get_the_time( 'M' ) ) . ' ' . esc_html__( 'Archives', 'restaurant-wp' ) . '</span></li>';
 		}
 		thim_get_breadcrumb_items_other();
 		echo '</ul>';
@@ -331,7 +331,7 @@ if ( ! function_exists( 'thim_get_list_sidebar' ) ) {
 		$sidebar_array = array();
 		$dp_sidebars   = $wp_registered_sidebars;
 
-		$sidebar_array[''] = esc_attr__( '-- Select Sidebar --', 'thim-starter-theme' );
+		$sidebar_array[''] = esc_attr__( '-- Select Sidebar --', 'restaurant-wp' );
 
 		foreach ( $dp_sidebars as $sidebar ) {
 			$sidebar_array[ $sidebar['name'] ] = $sidebar['name'];
@@ -820,13 +820,13 @@ if ( ! function_exists( 'thim_posted_on' ) ) :
 		);
 		$byline      = sprintf(
 		/* translators: %s: post author. */
-			esc_html_x( '%s', 'post author', 'thim-starter-theme' ),
+			esc_html_x( '%s', 'post author', 'restaurant-wp' ),
 			'<span class="author vcard"><a class="url fn n" title="Posted by ' . get_the_author() . '" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
 		$posted_on = sprintf(
 		/* translators: %s: post date. */
-			esc_html_x( '%s', 'post date', 'thim-starter-theme' ),
+			esc_html_x( '%s', 'post date', 'restaurant-wp' ),
 			'<a>' . $time_string . '</a>'
 		);
 
@@ -904,10 +904,10 @@ if ( ! function_exists( 'thim_load_more_post' ) ) {
 							<?php if ( comments_open() ) {
 								echo '<span class="related-post-reply">';
 								comments_popup_link(
-									__( 'No comments', 'thim-starter-theme' ),
-									__( '1 comment', 'thim-starter-theme' ),
-									__( '% comments', 'thim-starter-theme' ),
-									__( 'Read all comments', 'thim-starter-theme' )
+									__( 'No comments', 'restaurant-wp' ),
+									__( '1 comment', 'restaurant-wp' ),
+									__( '% comments', 'restaurant-wp' ),
+									__( 'Read all comments', 'restaurant-wp' )
 								);
 							} ?>
                         </div>

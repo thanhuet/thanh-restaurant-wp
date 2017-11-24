@@ -9,7 +9,7 @@ thim_customizer()->add_section(
     array(
         'id'             => 'blog_general',
         'panel'			 => 'blog',
-        'title'          => esc_html__( 'Settings', 'hairsalon' ),
+        'title'          => esc_html__( 'Settings', 'restaurant-wp' ),
         'priority'       => 10,
     )
 );
@@ -22,30 +22,30 @@ thim_customizer()->add_group( array(
     'groups'   => array(
         array(
             'id'     => 'blog_archive_page_group',
-            'label'  => esc_html__( 'Archive Page', 'hairsalon' ),
+            'label'  => esc_html__( 'Archive Page', 'restaurant-wp' ),
             'fields' => array(
                 //Blog Columns
                 array(
                     'type'        => 'select',
                     'id'          => 'archive_post_column',
-                    'label'       => esc_html__( 'Blog Columns', 'hairsalon' ),
-                    'tooltip'     => esc_html__( 'Choose the number of columns for archive post.', 'hairsalon' ),
+                    'label'       => esc_html__( 'Blog Columns', 'restaurant-wp' ),
+                    'tooltip'     => esc_html__( 'Choose the number of columns for archive post.', 'restaurant-wp' ),
                     'default'     => '1',
                     'priority'    => 10,
                     'multiple'    => 0,
                     'choices'     => array(
-                        '1' => esc_html__( '1', 'hairsalon' ),
-                        '2' => esc_html__( '2', 'hairsalon' ),
-                        '3' => esc_html__( '3', 'hairsalon' ),
-                        '4' => esc_html__( '4', 'hairsalon' ),
+                        '1' => esc_html__( '1', 'restaurant-wp' ),
+                        '2' => esc_html__( '2', 'restaurant-wp' ),
+                        '3' => esc_html__( '3', 'restaurant-wp' ),
+                        '4' => esc_html__( '4', 'restaurant-wp' ),
                     ),
                 ),
                 // Excerpt Content
                 array(
                     'id'          => 'excerpt_archive_content',
                     'type'        => 'slider',
-                    'label'       => esc_html__( 'Excerpt Length', 'hairsalon' ),
-                    'tooltip'     => esc_html__( 'Choose the number of words you want to cut from the content to be the excerpt of search and archive', 'hairsalon' ),
+                    'label'       => esc_html__( 'Excerpt Length', 'restaurant-wp' ),
+                    'tooltip'     => esc_html__( 'Choose the number of words you want to cut from the content to be the excerpt of search and archive', 'restaurant-wp' ),
                     'priority'    => 20,
                     'default'     => 20,
                     'choices'     => array(
@@ -67,52 +67,52 @@ thim_customizer()->add_group( array(
     'groups'   => array(
         array(
             'id'     => 'blog_single_page_group',
-            'label'  => esc_html__( 'Single Page', 'hairsalon' ),
+            'label'  => esc_html__( 'Single Page', 'restaurant-wp' ),
             'fields' => array(
                 // Show Feature Image
                 array(
                     'type'     => 'switch',
                     'id'       => 'blog_single_feature_image',
-                    'label'    => esc_html__( 'Featured Image', 'hairsalon' ),
-                    'tooltip'  => esc_html__( 'Turn on to display featured images on single blog posts..', 'hairsalon' ),
+                    'label'    => esc_html__( 'Featured Image', 'restaurant-wp' ),
+                    'tooltip'  => esc_html__( 'Turn on to display featured images on single blog posts..', 'restaurant-wp' ),
                     'default'  => true,
                     'priority' => 10,
                     'choices'  => array(
-                        true  => esc_html__( 'On', 'hairsalon' ),
-                        false => esc_html__( 'Off', 'hairsalon' ),
+                        true  => esc_html__( 'On', 'restaurant-wp' ),
+                        false => esc_html__( 'Off', 'restaurant-wp' ),
                     ),
                 ),
                 // Turn On Comments
                 array(
                     'type'     => 'switch',
                     'id'       => 'blog_single_comment',
-                    'label'    => esc_html__( 'Comments', 'hairsalon' ),
-                    'tooltip'  => esc_html__( 'Turn on to display comments.', 'hairsalon' ),
+                    'label'    => esc_html__( 'Comments', 'restaurant-wp' ),
+                    'tooltip'  => esc_html__( 'Turn on to display comments.', 'restaurant-wp' ),
                     'default'  => true,
                     'priority' => 20,
                     'choices'  => array(
-                        true  => esc_html__( 'On', 'hairsalon' ),
-                        false => esc_html__( 'Off', 'hairsalon' ),
+                        true  => esc_html__( 'On', 'restaurant-wp' ),
+                        false => esc_html__( 'Off', 'restaurant-wp' ),
                     ),
                 ),
                 // Turn On Related Post
                 array(
                     'type'     => 'switch',
                     'id'       => 'blog_single_related_post',
-                    'label'    => esc_html__( 'Related Posts', 'hairsalon' ),
-                    'tooltip'  => esc_html__( 'Turn on to display related posts.', 'hairsalon' ),
+                    'label'    => esc_html__( 'Related Posts', 'restaurant-wp' ),
+                    'tooltip'  => esc_html__( 'Turn on to display related posts.', 'restaurant-wp' ),
                     'default'  => true,
                     'priority' => 30,
                     'choices'  => array(
-                        true  => esc_html__( 'On', 'hairsalon' ),
-                        false => esc_html__( 'Off', 'hairsalon' ),
+                        true  => esc_html__( 'On', 'restaurant-wp' ),
+                        false => esc_html__( 'Off', 'restaurant-wp' ),
                     ),
                 ),
                 // Select Post Numbers For Related Post
                 array(
                     'type'            => 'slider',
                     'id'              => 'blog_single_related_post_number',
-                    'label'           => esc_html__( 'Numbers of Related Post', 'hairsalon' ),
+                    'label'           => esc_html__( 'Numbers of Related Post', 'restaurant-wp' ),
                     'default'         => 3,
                     'priority'        => 40,
                     'choices'         => array(
@@ -132,7 +132,7 @@ thim_customizer()->add_group( array(
                 array(
                     'type'            => 'slider',
                     'id'              => 'blog_single_related_post_column',
-                    'label'           => esc_html__( 'Columns of Related Post', 'hairsalon' ),
+                    'label'           => esc_html__( 'Columns of Related Post', 'restaurant-wp' ),
                     'default'         => 3,
                     'priority'        => 50,
                     'choices'         => array(

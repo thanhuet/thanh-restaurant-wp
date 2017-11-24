@@ -9,7 +9,7 @@ thim_customizer()->add_section(
 	array(
 		'id'       => 'custom_css',
 		'panel'    => 'general',
-		'title'    => esc_html__( 'Custom CSS', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Custom CSS', 'restaurant-wp' ),
 		'priority' => 100,
 	)
 );
@@ -17,7 +17,7 @@ thim_customizer()->add_section(
 thim_customizer()->add_field( array(
 	'type'     => 'code',
 	'id'       => 'custom_css_field',
-	'description'    => esc_html__( 'Just want to do some quick CSS changes? Enter theme here, they will be applied to the theme.', 'thim-starter-theme' ),
+	'description'    => esc_html__( 'Just want to do some quick CSS changes? Enter theme here, they will be applied to the theme.', 'restaurant-wp' ),
 	'section'  => 'custom_css',
 	'default'  => '.test-class{ color: red; }',
 	'priority' => 10,

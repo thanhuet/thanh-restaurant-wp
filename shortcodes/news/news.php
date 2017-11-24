@@ -30,8 +30,8 @@ if ( ! class_exists( 'Thim_SC_News' ) ) {
 		public function __construct() {
 
 			//======================== CONFIG ========================
-			$this->name        = esc_attr__( 'Thim News', 'mag-wp' );
-			$this->description = esc_attr__( 'Display News', 'mag-wp' );
+			$this->name        = esc_attr__( 'Thim News', 'restaurant-wp' );
+			$this->description = esc_attr__( 'Display News', 'restaurant-wp' );
 			$this->base        = 'news';
 			//====================== END: CONFIG =====================
 
@@ -47,7 +47,7 @@ if ( ! class_exists( 'Thim_SC_News' ) ) {
 			vc_map( array(
 				'name'        => $this->name,
 				'base'        => 'thim-' . $this->base,
-				'category'    => esc_attr__( 'Thim Shortcodes', 'mag-wp' ),
+				'category'    => esc_attr__( 'Thim Shortcodes', 'restaurant-wp' ),
 				'description' => $this->description,
 				'params'      => array(/**
 				 *
@@ -103,7 +103,7 @@ if ( ! class_exists( 'Thim_SC_News' ) ) {
 			$categories_array = array();
 			$categories       = get_categories();
 
-			$categories_array[0] = esc_attr__( 'All Category', 'mag-wp' );
+			$categories_array[0] = esc_attr__( 'All Category', 'restaurant-wp' );
 
 			foreach ( $categories as $category ) {
 				$categories_array[ html_entity_decode( $category->name ) ] = $category->slug;

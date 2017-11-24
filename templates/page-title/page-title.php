@@ -155,11 +155,11 @@ $parallax    = get_theme_mod( 'enable_parallax_page_title', true ) ? ' data-stel
 							}
 
 							if ( get_post_type() == "our_team" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Our Team', 'thim-starter-theme' );
+								echo '<' . $typography . '>' . esc_html__( 'Our Team', 'restaurant-wp' );
 								echo '</' . $typography . '>';
 							}
 							if ( get_post_type() == "testimonials" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'thim-starter-theme' );
+								echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'restaurant-wp' );
 								echo '</' . $typography . '>';
 							}
 						} else {
@@ -170,7 +170,7 @@ $parallax    = get_theme_mod( 'enable_parallax_page_title', true ) ? ' data-stel
 						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 					} elseif ( is_front_page() || is_home() ) {
 						echo '<h1>';
-						echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'thim-starter-theme' );
+						echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
 						echo '</h1>';
 						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 					}

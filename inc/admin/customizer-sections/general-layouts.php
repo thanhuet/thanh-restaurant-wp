@@ -9,7 +9,7 @@ thim_customizer()->add_section(
 	array(
 		'id'       => 'content_layout',
 		'panel'    => 'general',
-		'title'    => esc_html__( 'Layouts', 'hairsalon' ),
+		'title'    => esc_html__( 'Layouts', 'restaurant-wp' ),
 		'priority' => 20,
 	)
 );
@@ -21,8 +21,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'box_content_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Site Layouts', 'hairsalon' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all contents on your site.', 'hairsalon' ),
+		'label'         => esc_html__( 'Site Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all contents on your site.', 'restaurant-wp' ),
 		'section'       => 'content_layout',
 		'priority'      => 10,
 		'default'       => 'wide',
@@ -40,8 +40,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'archive_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Archive Layouts', 'hairsalon' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all archive pages on your site.', 'hairsalon' ),
+		'label'         => esc_html__( 'Archive Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all archive pages on your site.', 'restaurant-wp' ),
 		'section'       => 'content_layout',
 		'priority'      => 12,
 		'choices'       => array(
@@ -58,8 +58,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'archive_layout_sidebar_left',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Left For Archive Layout ', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on archive layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Left For Archive Layout ', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on archive layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 13,
 		'multiple'    => 1,
@@ -79,8 +79,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'archive_layout_sidebar_right',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Right For Archive Layout', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on archive layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Right For Archive Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on archive layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 14,
 		'multiple'    => 1,
@@ -102,8 +102,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'single_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Single Layouts', 'hairsalon' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for single pages on your site.', 'hairsalon' ),
+		'label'         => esc_html__( 'Single Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for single pages on your site.', 'restaurant-wp' ),
 		'section'       => 'content_layout',
 		'priority'      => 20,
 		'choices'       => array(
@@ -120,8 +120,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'single_layout_sidebar_left',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Left For Post Layout', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on single layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Left For Post Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on single layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 21,
 		'multiple'    => 1,
@@ -141,8 +141,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'single_layout_sidebar_right',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Right For Post Layout', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on single layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Right For Post Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on single layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 22,
 		'multiple'    => 1,
@@ -164,8 +164,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'page_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Page Layouts', 'hairsalon' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all pages on your site.', 'hairsalon' ),
+		'label'         => esc_html__( 'Page Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all pages on your site.', 'restaurant-wp' ),
 		'section'       => 'content_layout',
 		'priority'      => 66,
 		'choices'       => array(
@@ -182,8 +182,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'page_layout_sidebar_left',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Left For Page Layout', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on page layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Left For Page Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on page layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 67,
 		'multiple'    => 1,
@@ -203,8 +203,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'page_layout_sidebar_right',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Right For Page Layout', 'hairsalon' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on page layouts.', 'hairsalon' ),
+		'label'       => esc_html__( 'Sidebar Right For Page Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on page layouts.', 'restaurant-wp' ),
 		'section'     => 'content_layout',
 		'priority'    => 68,
 		'multiple'    => 1,

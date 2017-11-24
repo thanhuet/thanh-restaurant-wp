@@ -9,7 +9,7 @@ thim_customizer()->add_panel(
     array(
         'id'       => 'blog',
         'priority' => 42,
-        'title'    => esc_html__( 'Blog', 'thim-starter-theme' ),
+        'title'    => esc_html__( 'Blog', 'restaurant-wp' ),
         'icon'     => 'dashicons-edit',
     )
 );

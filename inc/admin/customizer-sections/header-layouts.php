@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'             => 'header_layout',
-		'title'          => esc_html__( 'Layouts', 'thim-starter-theme' ),
+		'title'          => esc_html__( 'Layouts', 'restaurant-wp' ),
 		'panel'			 => 'header',
 		'priority'       => 20,
 	)
@@ -19,8 +19,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'header_style',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Header Layouts', 'thim-starter-theme' ),
-		'tooltip'     	=> esc_html__( 'Allows you can select header layout for header on your site. ', 'thim-starter-theme' ),
+		'label'         => esc_html__( 'Header Layouts', 'restaurant-wp' ),
+		'tooltip'     	=> esc_html__( 'Allows you can select header layout for header on your site. ', 'restaurant-wp' ),
 		'section'       => 'header_layout',
 		'default'       => 'header_v1',
 		'priority'      => 10,
@@ -37,15 +37,15 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'header_position',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Header Positions', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you can select position layout for header layout. ', 'thim-starter-theme' ),
+		'label'       => esc_html__( 'Header Positions', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you can select position layout for header layout. ', 'restaurant-wp' ),
 		'section'     => 'header_layout',
 		'priority'    => 20,
 		'multiple'    => 0,
 		'default'     => 'default',
 		'choices'     => array(
-			'default' => esc_html__( 'Default', 'thim-starter-theme' ),
-			'overlay' => esc_html__( 'Overlay', 'thim-starter-theme' ),
+			'default' => esc_html__( 'Default', 'restaurant-wp' ),
+			'overlay' => esc_html__( 'Overlay', 'restaurant-wp' ),
 		),
 	)
 );
@@ -56,8 +56,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'header_background_color',
 		'type'        => 'color',
-		'label'       => esc_html__( 'Background Color', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you can choose background color for your header. ', 'thim-starter-theme' ),
+		'label'       => esc_html__( 'Background Color', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you can choose background color for your header. ', 'restaurant-wp' ),
 		'section'     => 'header_layout',
 		'default'     => '#439fdf',
 		'priority'    => 30,

@@ -10,25 +10,25 @@ class Thim_Top_Blog_Detail_Widget extends SiteOrigin_Widget {
 
         parent::__construct(
             'top_blog_detail',
-            esc_html__( 'Top blog detail', 'thim-starter-theme' ),
+            esc_html__( 'Top blog detail', 'restaurant-wp' ),
             array(
-                'description'   => esc_html__( 'Ad info person', 'thim-starter-theme' ),
+                'description'   => esc_html__( 'Ad info person', 'restaurant-wp' ),
             ),
             array(),
             array(
                 'image' => array(
                     'type' => 'media',
-                    'label' => esc_html__( 'Add Image', 'thimpess')
+                    'label' => esc_html__( 'Add Image', 'restaurant-wp')
                 ),
                 'title' => array(
                     'type'    => 'text',
-                    'label'   => esc_html__( 'Title', 'thimpress' ),
+                    'label'   => esc_html__( 'Title', 'restaurant-wp' ),
                     'default' => ''
                 ),
 
                 'description' => array(
                     'type'    => 'text',
-                    'label'   => esc_html__( 'Description', 'thimpress' ),
+                    'label'   => esc_html__( 'Description', 'restaurant-wp' ),
                     'default' => ''
                 ),
 

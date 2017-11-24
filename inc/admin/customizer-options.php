@@ -31,7 +31,7 @@ class Thim_Customize_Options {
 		$wp_customize->remove_section( 'static_front_page' );
 		// Rename existing section
 		$wp_customize->add_section( 'title_tagline', array(
-			'title'    => esc_html__( 'Logo', 'thim-starter-theme' ),
+			'title'    => esc_html__( 'Logo', 'restaurant-wp' ),
 			'panel'    => 'general',
 			'priority' => 20,
 		) );

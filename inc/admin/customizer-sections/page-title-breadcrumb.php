@@ -9,7 +9,7 @@ thim_customizer()->add_section(
     array(
         'id'       => 'breadcrumb',
         'panel'    => 'page_title_bar',
-        'title'    => esc_html__( 'Breadcrumbs', 'thim-starter-theme' ),
+        'title'    => esc_html__( 'Breadcrumbs', 'restaurant-wp' ),
         'priority' => 20,
     )
 );
@@ -19,14 +19,14 @@ thim_customizer()->add_field(
     array(
         'id'          => 'disable_breadcrumb',
         'type'        => 'switch',
-        'label'       => esc_html__( 'Hide Breadcrumb', 'thim-starter-theme' ),
-        'tooltip'     => esc_html__( 'Allows you can HIDE breadcrumb on page title bar. ', 'thim-starter-theme' ),
+        'label'       => esc_html__( 'Hide Breadcrumb', 'restaurant-wp' ),
+        'tooltip'     => esc_html__( 'Allows you can HIDE breadcrumb on page title bar. ', 'restaurant-wp' ),
         'section'     => 'breadcrumb',
         'default'     => false,
         'priority'    => 10,
         'choices'     => array(
-            true  	  => esc_html__( 'On', 'thim-starter-theme' ),
-            false	  => esc_html__( 'Off', 'thim-starter-theme' ),
+            true  	  => esc_html__( 'On', 'restaurant-wp' ),
+            false	  => esc_html__( 'Off', 'restaurant-wp' ),
         ),
     )
 );
@@ -38,8 +38,8 @@ thim_customizer()->add_field(
     array(
         'id'          => 'breadcrumb_icon',
         'type'        => 'text',
-        'label'       => esc_html__( 'Breadcrumb Icon', 'thim-starter-theme' ),
-        'description' => sprintf('Enter any one character from the keyboard or <a href="' . esc_url($link_icon) . '" target="_blank" >FontAwesome</a> icon name. For example: 	&lt;i class="fa fa-angle-right"&gt; &lt;&#47i&gt; ,...','thim-starter-theme'),
+        'label'       => esc_html__( 'Breadcrumb Icon', 'restaurant-wp' ),
+        'description' => sprintf('Enter any one character from the keyboard or <a href="' . esc_url($link_icon) . '" target="_blank" >FontAwesome</a> icon name. For example: 	&lt;i class="fa fa-angle-right"&gt; &lt;&#47i&gt; ,...','restaurant-wp'),
         'section'     => 'breadcrumb',
         'default'     => '/',
         'priority'    => 20,
@@ -50,8 +50,8 @@ thim_customizer()->add_field(
     array(
         'id'        => 'font_breadcrumb',
         'type'      => 'typography',
-        'label'     => esc_html__( 'Breadcrumb Fonts', 'thim-starter-theme' ),
-        'tooltip'   => esc_html__( 'Allows you can select fonts property for breadcrumb. ', 'thim-starter-theme' ),
+        'label'     => esc_html__( 'Breadcrumb Fonts', 'restaurant-wp' ),
+        'tooltip'   => esc_html__( 'Allows you can select fonts property for breadcrumb. ', 'restaurant-wp' ),
         'section'   => 'breadcrumb',
         'priority'    => 30,
         'default'   => array(

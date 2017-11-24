@@ -4,7 +4,7 @@ class Thim_OpeningHours_Widget extends SiteOrigin_Widget {
 	function __construct() {
 		parent::__construct(
 			'opening-hours-footer',
-			esc_html__( 'Thim: Opening Hours For Footer', 'thim-starter-theme' ),
+			esc_html__( 'Thim: Opening Hours For Footer', 'restaurant-wp' ),
 			array(
 				'description' => 'About opening hours detail restaurant',
 			),
@@ -12,12 +12,12 @@ class Thim_OpeningHours_Widget extends SiteOrigin_Widget {
 			array(
 				'title'            => array(
 					'type'  => 'text',
-					'label' => esc_html__( 'Title', 'thim-starter-theme' )
+					'label' => esc_html__( 'Title', 'restaurant-wp' )
 				),
 				'repeater-content' => array(
 					'type'       => 'repeater',
-					'label'      => esc_html__( 'List Information', 'thim-starter-theme' ),
-					'item_name'  => esc_html__( 'Item Information', 'thim-starter-theme' ),
+					'label'      => esc_html__( 'List Information', 'restaurant-wp' ),
+					'item_name'  => esc_html__( 'Item Information', 'restaurant-wp' ),
 					'item_label' => array(
 						'selector'     => "[id*='repeat_day']",
 						'update_event' => 'change',
@@ -26,11 +26,11 @@ class Thim_OpeningHours_Widget extends SiteOrigin_Widget {
 					'fields'     => array(
 						'repeat_day'   => array(
 							'type'  => 'text',
-							'label' => esc_html__( 'Day of week', 'thim-starter-theme' )
+							'label' => esc_html__( 'Day of week', 'restaurant-wp' )
 						),
 						'repeat_hours' => array(
 							'type'  => 'text',
-							'label' => esc_html__( 'Opening hours', 'thim-starter-theme' )
+							'label' => esc_html__( 'Opening hours', 'restaurant-wp' )
 						)
 					)
 				)

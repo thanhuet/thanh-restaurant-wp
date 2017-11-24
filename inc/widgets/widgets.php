@@ -65,7 +65,7 @@ class Thim_Widget_Attributes {
 			<?php printf(
 				'<label for="%s">%s</label>',
 				esc_attr( $widget->get_field_id( 'widget-class' ) ),
-				esc_html__( 'Extra Class', 'thim-starter-theme' )
+				esc_html__( 'Extra Class', 'restaurant-wp' )
 			) ?>
 			<?php printf(
 				'<input type="text" class="widefat" id="%s" name="%s" value="%s" />',

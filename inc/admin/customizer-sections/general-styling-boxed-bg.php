@@ -13,25 +13,25 @@ thim_customizer()->add_group( array(
 	'groups'   => array(
 		array(
 			'id'     => 'boxed_background_group',
-			'label'  => esc_html__( 'Boxed Background', ' thim-starter-theme' ),
+			'label'  => esc_html__( 'Boxed Background', 'restaurant-wp' ),
 			'fields' => array(
 				array(
 					'type'     => 'radio-buttonset',
 					'id'       => 'background_boxed_type',
-					'label'    => esc_html__( 'Select Background Type', ' thim-starter-theme' ),
-					'tooltip'  => esc_html__( 'Allows you to select a background for body content when you selected box layout in General Layouts', ' thim-starter-theme' ),
+					'label'    => esc_html__( 'Select Background Type', 'restaurant-wp' ),
+					'tooltip'  => esc_html__( 'Allows you to select a background for body content when you selected box layout in General Layouts', 'restaurant-wp' ),
 					'default'  => 'color',
 					'priority' => 10,
 					'choices'  => array(
-						'color'   => esc_html__( 'Color', ' thim-starter-theme' ),
-						'image'   => esc_html__( 'Image', ' thim-starter-theme' ),
-						'pattern' => esc_html__( 'Pattern', ' thim-starter-theme' ),
+						'color'   => esc_html__( 'Color', 'restaurant-wp' ),
+						'image'   => esc_html__( 'Image', 'restaurant-wp' ),
+						'pattern' => esc_html__( 'Pattern', 'restaurant-wp' ),
 					),
 				),
 				array(
 					'type'            => 'color',
 					'id'              => 'background_boxed_color',
-					'label'           => esc_html__( 'Background Color', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Background Color', 'restaurant-wp' ),
 					'default'         => '#FFFFFF',
 					'priority'        => 15,
 					'alpha'           => true,
@@ -54,7 +54,7 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'kirki-image',
 					'id'              => 'background_boxed_image',
-					'label'           => esc_html__( 'Background image', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Background image', 'restaurant-wp' ),
 					'priority'        => 30,
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -75,14 +75,14 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_repeat',
-					'label'           => esc_html__( 'Background Repeat', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Background Repeat', 'restaurant-wp' ),
 					'default'         => 'no-repeat',
 					'priority'        => 40,
 					'choices'         => array(
-						'repeat'    => esc_html__( 'Tile', ' thim-starter-theme' ),
-						'repeat-x'  => esc_html__( 'Tile Horizontally', ' thim-starter-theme' ),
-						'repeat-y'  => esc_html__( 'Tile Vertically', ' thim-starter-theme' ),
-						'no-repeat' => esc_html__( 'No Repeat', ' thim-starter-theme' ),
+						'repeat'    => esc_html__( 'Tile', 'restaurant-wp' ),
+						'repeat-x'  => esc_html__( 'Tile Horizontally', 'restaurant-wp' ),
+						'repeat-y'  => esc_html__( 'Tile Vertically', 'restaurant-wp' ),
+						'no-repeat' => esc_html__( 'No Repeat', 'restaurant-wp' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -103,13 +103,13 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_position',
-					'label'           => esc_html__( 'Background Position', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Background Position', 'restaurant-wp' ),
 					'default'         => 'center',
 					'priority'        => 50,
 					'choices'         => array(
-						'left'   => esc_html__( 'Left', ' thim-starter-theme' ),
-						'center' => esc_html__( 'Center', ' thim-starter-theme' ),
-						'right'  => esc_html__( 'Right', ' thim-starter-theme' ),
+						'left'   => esc_html__( 'Left', 'restaurant-wp' ),
+						'center' => esc_html__( 'Center', 'restaurant-wp' ),
+						'right'  => esc_html__( 'Right', 'restaurant-wp' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -130,12 +130,12 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'select',
 					'id'              => 'background_boxed_image_attachment',
-					'label'           => esc_html__( 'Background Attachment', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Background Attachment', 'restaurant-wp' ),
 					'default'         => 'fixed',
 					'priority'        => 60,
 					'choices'         => array(
-						'scroll' => esc_html__( 'Scroll', ' thim-starter-theme' ),
-						'fixed'  => esc_html__( 'Fixed', ' thim-starter-theme' ),
+						'scroll' => esc_html__( 'Scroll', 'restaurant-wp' ),
+						'fixed'  => esc_html__( 'Fixed', 'restaurant-wp' ),
 					),
 					'transport'       => 'postMessage',
 					'js_vars'         => array(
@@ -156,7 +156,7 @@ thim_customizer()->add_group( array(
 				array(
 					'type'            => 'radio-image',
 					'id'              => 'background_boxed_pattern_image',
-					'label'           => esc_html__( 'Select a Background Pattern', ' thim-starter-theme' ),
+					'label'           => esc_html__( 'Select a Background Pattern', 'restaurant-wp' ),
 					'section'         => 'background',
 					'default'         => THIM_URI . 'assets/images/patterns/pattern1.png',
 					'priority'        => 70,
@@ -202,13 +202,13 @@ thim_customizer()->add_group( array(
 				array(
 					'id'          => 'enable_box_shadow',
 					'type'        => 'switch',
-					'label'       => esc_html__( 'Boxed Layouts Box Shadow', ' thim-starter-theme' ),
-					'tooltip'     => esc_html__( 'Allows you to enable or disable box shadow at body tag when you selected boxed layout. ', ' thim-starter-theme' ),
+					'label'       => esc_html__( 'Boxed Layouts Box Shadow', 'restaurant-wp' ),
+					'tooltip'     => esc_html__( 'Allows you to enable or disable box shadow at body tag when you selected boxed layout. ', 'restaurant-wp' ),
 					'default'     => true,
 					'priority'    => 80,
 					'choices'     => array(
-						true  	  => esc_html__( 'On', ' thim-starter-theme' ),
-						false	  => esc_html__( 'Off', ' thim-starter-theme' ),
+						true  	  => esc_html__( 'On', 'restaurant-wp' ),
+						false	  => esc_html__( 'Off', 'restaurant-wp' ),
 					),
 				)
 			),

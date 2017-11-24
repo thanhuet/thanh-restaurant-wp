@@ -49,7 +49,7 @@ function thim_notify_install_plugins() {
 		<p>
 			Install theme success. <a
 				href="<?php echo esc_url( admin_url( '?thim-install-plugin-require=1' ) ); ?>">
-				<?php _e( 'Install and active ThimPress Core to start now!', 'mag-wp' ); ?>
+				<?php _e( 'Install and active ThimPress Core to start now!', 'restaurant-wp' ); ?>
 			</a>
 		</p>
 		<p>

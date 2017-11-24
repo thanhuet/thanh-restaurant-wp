@@ -3,23 +3,23 @@
 		function __construct() {
 			parent::__construct(
 				'intro-site',
-				esc_html__('Thim: Introduce Site','thim-starter-theme'),
+				esc_html__('Thim: Introduce Site','restaurant-wp'),
 				array(
-					'description'=>esc_html__('Information about this site','thim-starter-theme')
+					'description'=>esc_html__('Information about this site','restaurant-wp')
 				),
 				array(),
 				array(
 					'title' => array(
 						'type'  => 'text',
-						'label' => esc_html__( 'Title', 'thim-starter-theme' )
+						'label' => esc_html__( 'Title', 'restaurant-wp' )
 					),
 					'information' => array(
 						'type'  => 'text',
-						'label' => esc_html__( 'Information', 'thim-starter-theme' )
+						'label' => esc_html__( 'Information', 'restaurant-wp' )
 					),
 					'detail' => array(
 						'type'  => 'text',
-						'label' => esc_html__( 'Detail', 'thim-starter-theme' )
+						'label' => esc_html__( 'Detail', 'restaurant-wp' )
 					)
 
 				)

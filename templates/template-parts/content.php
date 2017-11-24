@@ -46,7 +46,7 @@ if ( isset( $_GET['column'] ) ) {
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'hairsalon' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 
 			<?php } elseif ( has_post_format( 'quote' ) && thim_meta( 'thim_quote_author_url' ) ) {
@@ -73,7 +73,7 @@ if ( isset( $_GET['column'] ) ) {
 					<?php } ?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'hairsalon' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 				<?php
 			} elseif ( has_post_format( 'audio' ) ) { ?>
@@ -89,7 +89,7 @@ if ( isset( $_GET['column'] ) ) {
 					?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'hairsalon' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 
 			<?php } elseif ( has_post_format( 'chat' ) ) { ?>
@@ -103,7 +103,7 @@ if ( isset( $_GET['column'] ) ) {
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'hairsalon' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 
 			<?php } else { ?>
@@ -120,7 +120,7 @@ if ( isset( $_GET['column'] ) ) {
 					?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'hairsalon' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
 				</div>
 			<?php }
 			?>

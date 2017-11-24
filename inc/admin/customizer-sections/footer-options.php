@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'       => 'footer_options',
-		'title'    => esc_html__( 'Settings', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Settings', 'restaurant-wp' ),
 		'panel'    => 'footer',
 		'priority' => 10,
 	)
@@ -20,14 +20,14 @@ thim_customizer()->add_field(
 	array(
 		'type'     => 'switch',
 		'id'       => 'footer_widgets',
-		'label'    => esc_html__( 'Show Footer Widgets', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to display footer widgets.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Show Footer Widgets', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to display footer widgets.', 'restaurant-wp' ),
 		'section'  => 'footer_options',
 		'default'  => true,
 		'priority' => 20,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -37,8 +37,8 @@ thim_customizer()->add_field(
 	array(
 		'type'            => 'slider',
 		'id'              => 'footer_columns',
-		'label'           => esc_html__( 'Sidebar Number', 'thim-starter-theme' ),
-		'tooltip'         => esc_html__( 'Controls the number of columns in the footer.', 'thim-starter-theme' ),
+		'label'           => esc_html__( 'Sidebar Number', 'restaurant-wp' ),
+		'tooltip'         => esc_html__( 'Controls the number of columns in the footer.', 'restaurant-wp' ),
 		'section'         => 'footer_options',
 		'default'         => 4,
 		'priority' 		  => 30,
@@ -62,7 +62,7 @@ thim_customizer()->add_field(
 	array(
 		'type'      => 'color',
 		'id'        => 'footer_background_color',
-		'label'     => esc_html__( 'Background Color', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Background Color', 'restaurant-wp' ),
 		'section'   => 'footer_options',
 		'default'   => '#FFFFFF',
 		'priority'  => 40,
@@ -83,14 +83,14 @@ thim_customizer()->add_field(
 	array(
 		'type'      => 'multicolor',
 		'id'        => 'footer_color',
-		'label'     => esc_html__( 'Colors', 'thim-starter-theme' ),
+		'label'     => esc_html__( 'Colors', 'restaurant-wp' ),
 		'section'   => 'footer_options',
 		'priority'  => 50,
 		'choices'   => array(
-			'title' => esc_html__( 'Title', 'thim-starter-theme' ),
-			'text'  => esc_html__( 'Text', 'thim-starter-theme' ),
-			'link'  => esc_html__( 'Link', 'thim-starter-theme' ),
-			'hover' => esc_html__( 'Hover', 'thim-starter-theme' ),
+			'title' => esc_html__( 'Title', 'restaurant-wp' ),
+			'text'  => esc_html__( 'Text', 'restaurant-wp' ),
+			'link'  => esc_html__( 'Link', 'restaurant-wp' ),
+			'hover' => esc_html__( 'Hover', 'restaurant-wp' ),
 		),
 		'default'   => array(
 			'title' => '#333333',

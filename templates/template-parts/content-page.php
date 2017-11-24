@@ -13,7 +13,7 @@
 		<?php
 		the_content();
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'thim-starter-theme' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'restaurant-wp' ),
 			'after'  => '</div>',
 		) );
 		?>

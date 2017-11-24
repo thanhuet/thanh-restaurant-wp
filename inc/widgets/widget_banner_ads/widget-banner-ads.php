@@ -10,25 +10,25 @@ class Thim_Banner_Ads_Widget extends SiteOrigin_Widget {
 
         parent::__construct(
             'banner_ads',
-            esc_html__( 'Display Banner Ads', 'thim-starter-theme' ),
+            esc_html__( 'Display Banner Ads', 'restaurant-wp' ),
             array(
-                'description'   => esc_html__( 'Display banner ads', 'thim-starter-theme' ),
+                'description'   => esc_html__( 'Display banner ads', 'restaurant-wp' ),
             ),
             array(),
             array(
                 'banner_image' => array(
                     'type' => 'media',
-                    'label' => esc_html__( 'Add Image', 'thimpess')
+                    'label' => esc_html__( 'Add Image', 'restaurant-wp')
                 ),
                 'title' => array(
                     'type'    => 'text',
-                    'label'   => esc_html__( 'Title', 'thimpress' ),
+                    'label'   => esc_html__( 'Title', 'restaurant-wp' ),
                     'default' => ''
                 ),
 
                 'description' => array(
                     'type'    => 'text',
-                    'label'   => esc_html__( 'Description', 'thimpress' ),
+                    'label'   => esc_html__( 'Description', 'restaurant-wp' ),
                     'default' => ''
                 ),
             )

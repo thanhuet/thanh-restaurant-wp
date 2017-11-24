@@ -9,7 +9,7 @@ thim_customizer()->add_section(
 	array(
 		'id'       => 'page_title',
 		'panel'    => 'page_title_bar',
-		'title'    => esc_html__( 'Settings', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Settings', 'restaurant-wp' ),
 		'priority' => 10,
 	)
 );
@@ -19,14 +19,14 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'hide_page_title',
 		'type'     => 'switch',
-		'label'    => esc_html__( 'Hidden Page Title', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Allows you can hidden or show page title on heading top. ', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Hidden Page Title', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Allows you can hidden or show page title on heading top. ', 'restaurant-wp' ),
 		'section'  => 'page_title',
 		'default'  => false,
 		'priority' => 10,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -36,14 +36,14 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'enable_parallax_page_title',
 		'type'     => 'switch',
-		'label'    => esc_html__( 'Turn On/Off Parallax', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Allows you can enable or disable parallax in page title.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Turn On/Off Parallax', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Allows you can enable or disable parallax in page title.', 'restaurant-wp' ),
 		'section'  => 'page_title',
 		'default'  => true,
 		'priority' => 20,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );

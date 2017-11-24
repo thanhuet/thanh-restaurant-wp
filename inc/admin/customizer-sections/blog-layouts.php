@@ -9,7 +9,7 @@ thim_customizer()->add_section(
 	array(
 		'id'             => 'blog_layout',
 		'panel'			 => 'blog',
-		'title'          => esc_html__( 'Layouts', 'thim-starter-theme' ),
+		'title'          => esc_html__( 'Layouts', 'restaurant-wp' ),
 		'priority'       => 10,
 	)
 );
@@ -21,8 +21,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'blog_archive_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Blog Archive Layouts', 'thim-starter-theme' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all blog archive, blog category page on your site.', ' thim-starter-theme' ),
+		'label'         => esc_html__( 'Blog Archive Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for all blog archive, blog category page on your site.', 'restaurant-wp' ),
 		'section'       => 'blog_layout',
 		'priority'      => 12,
 		'choices'       => array(
@@ -39,8 +39,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'blog_archive_layout_sidebar_left',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Left For Blog Archive Layout ', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Blog archive layout.', ' thim-starter-theme' ),
+		'label'       => esc_html__( 'Sidebar Left For Blog Archive Layout ', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Blog archive layout.', 'restaurant-wp' ),
 		'section'     => 'blog_layout',
 		'priority'    => 13,
 		'multiple'    => 1,
@@ -61,8 +61,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'blog_archive_layout_sidebar_right',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Right For Blog Archive Layout', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Archive layout.', ' thim-starter-theme' ),
+		'label'       => esc_html__( 'Sidebar Right For Blog Archive Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Archive layout.', 'restaurant-wp' ),
 		'section'     => 'blog_layout',
 		'priority'    => 14,
 		'multiple'    => 1,
@@ -85,8 +85,8 @@ thim_customizer()->add_field(
 	array(
 		'id'            => 'blog_single_layout',
 		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Blog Single Layouts', 'thim-starter-theme' ),
-		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for only blog single page on your site.', 'thim-starter-theme' ),
+		'label'         => esc_html__( 'Blog Single Layouts', 'restaurant-wp' ),
+		'tooltip'       => esc_html__( 'Allows you to choose a layout to display for only blog single page on your site.', 'restaurant-wp' ),
 		'section'       => 'blog_layout',
 		'priority'      => 20,
 		'choices'       => array(
@@ -103,8 +103,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'blog_single_layout_sidebar_left',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Left For Post Layout', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Post layout.', 'thim-starter-theme' ),
+		'label'       => esc_html__( 'Sidebar Left For Post Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Post layout.', 'restaurant-wp' ),
 		'section'     => 'blog_layout',
 		'priority'    => 21,
 		'multiple'    => 1,
@@ -124,8 +124,8 @@ thim_customizer()->add_field(
 	array(
 		'id'          => 'blog_single_layout_sidebar_right',
 		'type'        => 'select',
-		'label'       => esc_html__( 'Sidebar Right For Post Layout', 'thim-starter-theme' ),
-		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Post layout.', 'thim-starter-theme' ),
+		'label'       => esc_html__( 'Sidebar Right For Post Layout', 'restaurant-wp' ),
+		'tooltip'     => esc_html__( 'Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Post layout.', 'restaurant-wp' ),
 		'section'     => 'blog_layout',
 		'priority'    => 22,
 		'multiple'    => 1,

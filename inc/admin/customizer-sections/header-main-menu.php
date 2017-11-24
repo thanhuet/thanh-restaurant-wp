@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
     array(
         'id'       => 'header_main_menu',
-        'title'    => esc_html__( 'Main Menu', 'hairsalon' ),
+        'title'    => esc_html__( 'Main Menu', 'restaurant-wp' ),
         'panel'    => 'header',
         'priority' => 30,
     )
@@ -19,15 +19,15 @@ thim_customizer()->add_field(
     array(
         'id'       => 'main_menu_font_family',
         'type'     => 'select',
-        'label'    => esc_html__( 'Font Family', 'hairsalon' ),
-        'tooltip'  => esc_html__( 'Allows you to select font title or body. ', 'hairsalon' ),
+        'label'    => esc_html__( 'Font Family', 'restaurant-wp' ),
+        'tooltip'  => esc_html__( 'Allows you to select font title or body. ', 'restaurant-wp' ),
         'section'  => 'header_main_menu',
         'default'  => 'body',
         'priority' => 10,
         'multiple' => 0,
         'choices'  => array(
-            'body'  => esc_html__( 'Body Font', 'hairsalon' ),
-            'title' => esc_html__( 'Title Font', 'hairsalon' )
+            'body'  => esc_html__( 'Body Font', 'restaurant-wp' ),
+            'title' => esc_html__( 'Title Font', 'restaurant-wp' )
         ),
     )
 );
@@ -37,8 +37,8 @@ thim_customizer()->add_field(
     array(
         'id'        => 'main_menu',
         'type'      => 'typography',
-        'label'     => esc_html__( 'Fonts', 'hairsalon' ),
-        'tooltip'   => esc_html__( 'Allows you to select all font font properties for header. ', 'hairsalon' ),
+        'label'     => esc_html__( 'Fonts', 'restaurant-wp' ),
+        'tooltip'   => esc_html__( 'Allows you to select all font font properties for header. ', 'restaurant-wp' ),
         'section'   => 'header_main_menu',
         'priority'  => 10,
         'default'   => array(
@@ -90,8 +90,8 @@ thim_customizer()->add_field(
     array(
         'id'        => 'main_menu_hover_color',
         'type'      => 'color',
-        'label'     => esc_html__( 'Text Color Hover', 'hairsalon' ),
-        'tooltip'   => esc_html__( 'Allows you to select color for text link when hover text link . ', 'hairsalon' ),
+        'label'     => esc_html__( 'Text Color Hover', 'restaurant-wp' ),
+        'tooltip'   => esc_html__( 'Allows you to select color for text link when hover text link . ', 'restaurant-wp' ),
         'section'   => 'header_main_menu',
         'default'   => '#439fdf',
         'priority'  => 16,

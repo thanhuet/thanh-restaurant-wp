@@ -8,7 +8,7 @@
 thim_customizer()->add_section(
 	array(
 		'id'       => 'responsive',
-		'title'    => esc_html__( 'Responsive', 'thim-starter-theme' ),
+		'title'    => esc_html__( 'Responsive', 'restaurant-wp' ),
 		'priority' => 70,
 		'icon'     => 'dashicons-smartphone',
 	)
@@ -19,14 +19,14 @@ thim_customizer()->add_field(
 	array(
 		'id'       => 'enable_responsive',
 		'type'     => 'switch',
-		'label'    => esc_html__( 'Responsive', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Turn on to enable responsive on your site.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Responsive', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Turn on to enable responsive on your site.', 'restaurant-wp' ),
 		'section'  => 'responsive',
 		'default'  => true,
 		'priority' => 10,
 		'choices'  => array(
-			true  => esc_html__( 'On', 'thim-starter-theme' ),
-			false => esc_html__( 'Off', 'thim-starter-theme' ),
+			true  => esc_html__( 'On', 'restaurant-wp' ),
+			false => esc_html__( 'Off', 'restaurant-wp' ),
 		),
 	)
 );
@@ -37,8 +37,8 @@ thim_customizer()->add_field(
 		'id'       => 'mobile_logo',
 		'type'     => 'kirki-image',
 		'section'  => 'responsive',
-		'label'    => esc_html__( 'Mobile Logo', 'thim-starter-theme' ),
-		'tooltip'  => esc_html__( 'Allows you to add, remove, change mobile logo on your site.', 'thim-starter-theme' ),
+		'label'    => esc_html__( 'Mobile Logo', 'restaurant-wp' ),
+		'tooltip'  => esc_html__( 'Allows you to add, remove, change mobile logo on your site.', 'restaurant-wp' ),
 		'priority' => 12,
 		'default'  => THIM_URI . "assets/images/logo.png",
 	)
@@ -52,20 +52,20 @@ thim_customizer()->add_group( array(
 	'groups'   => array(
 		array(
 			'id'     => 'mobile_menu_group',
-			'label'  => esc_html__( 'Mobile Menu', 'thim-starter-theme' ),
+			'label'  => esc_html__( 'Mobile Menu', 'restaurant-wp' ),
 			'fields' => array(
 				array(
 					'id'              => 'mobile_menu_position',
 					'type'            => 'select',
-					'label'           => esc_html__( 'Position', 'thim-starter-theme' ),
-					'tooltip'         => esc_html__( 'Allows you to select a mobile menu effect position for header on mobile.', 'thim-starter-theme' ),
+					'label'           => esc_html__( 'Position', 'restaurant-wp' ),
+					'tooltip'         => esc_html__( 'Allows you to select a mobile menu effect position for header on mobile.', 'restaurant-wp' ),
 					'section'         => 'responsive_group',
 					'priority'        => 12,
 					'multiple'        => 0,
 					'default'         => 'creative-left',
 					'choices'         => array(
-						'creative-left'  => esc_html__( 'Left', 'thim-starter-theme' ),
-						'creative-right' => esc_html__( 'Right', 'thim-starter-theme' ),
+						'creative-left'  => esc_html__( 'Left', 'restaurant-wp' ),
+						'creative-right' => esc_html__( 'Right', 'restaurant-wp' ),
 					),
 					'active_callback' => array(
 						array(
@@ -78,8 +78,8 @@ thim_customizer()->add_group( array(
 				array(
 					'id'              => 'mobile_menu_background_color',
 					'type'            => 'color',
-					'label'           => esc_html__( 'Background Color', 'thim-starter-theme' ),
-					'tooltip'         => esc_html__( 'Allows you to select a color make background color for header on mobile. ', 'thim-starter-theme' ),
+					'label'           => esc_html__( 'Background Color', 'restaurant-wp' ),
+					'tooltip'         => esc_html__( 'Allows you to select a color make background color for header on mobile. ', 'restaurant-wp' ),
 					'section'         => 'responsive_group',
 					'default'         => '#222222',
 					'priority'        => 16,
@@ -103,8 +103,8 @@ thim_customizer()->add_group( array(
 				array(
 					'id'              => 'text_color_header_mobile',
 					'type'            => 'color',
-					'label'           => esc_html__( 'Text Color', 'thim-starter-theme' ),
-					'tooltip'         => esc_html__( 'Allows you to select a color make color of header text on mobile.', 'thim-starter-theme' ),
+					'label'           => esc_html__( 'Text Color', 'restaurant-wp' ),
+					'tooltip'         => esc_html__( 'Allows you to select a color make color of header text on mobile.', 'restaurant-wp' ),
 					'section'         => 'responsive_group',
 					'default'         => '#ffffff',
 					'priority'        => 17,
@@ -129,8 +129,8 @@ thim_customizer()->add_group( array(
 				array(
 					'id'              => 'text_color_hover_header_mobile',
 					'type'            => 'color',
-					'label'           => esc_html__( 'Text Hover Color', 'thim-starter-theme' ),
-					'tooltip'         => esc_html__( 'Allows you to select color for text link when hover text link on mobile.', 'thim-starter-theme' ),
+					'label'           => esc_html__( 'Text Hover Color', 'restaurant-wp' ),
+					'tooltip'         => esc_html__( 'Allows you to select color for text link when hover text link on mobile.', 'restaurant-wp' ),
 					'section'         => 'responsive_group',
 					'default'         => '#439fdf',
 					'priority'        => 18,
