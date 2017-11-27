@@ -1,0 +1,1725 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: b\n"
+"POT-Creation-Date: 2017-11-24 17:40+0700\n"
+"PO-Revision-Date: 2017-11-24 17:29+0700\n"
+"Last-Translator: \n"
+"Language-Team: n\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_attr__;_e;_n;_x;_ex;_nx;esc_attr_e;esc_attr_x;esc_html_e;esc_html_x;_n_noop;_nx_noop\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: thimpress-projects/sources/restaurant-wp/languages\n"
+"X-Poedit-SearchPath-1: restaurant-wp\n"
+
+#: restaurant-wp/comments.php:27
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:89
+msgid "Comments"
+msgstr ""
+
+#: restaurant-wp/comments.php:32 restaurant-wp/comments.php:44
+msgid "Comment navigation"
+msgstr ""
+
+#: restaurant-wp/comments.php:33 restaurant-wp/comments.php:45
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: restaurant-wp/comments.php:34 restaurant-wp/comments.php:46
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: restaurant-wp/comments.php:51
+msgid "No comments yet! You be the first to comment."
+msgstr ""
+
+#: restaurant-wp/comments.php:54
+msgid "Comments are closed."
+msgstr ""
+
+#: restaurant-wp/comments.php:61
+msgid "Message..."
+msgstr ""
+
+#: restaurant-wp/functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: restaurant-wp/functions.php:55
+msgid "Footer Menu"
+msgstr ""
+
+#: restaurant-wp/functions.php:60
+msgid "Copyright Menu"
+msgstr ""
+
+#: restaurant-wp/functions.php:126
+msgid "Topbar Left"
+msgstr ""
+
+#: restaurant-wp/functions.php:128
+msgid "Display in topbar left."
+msgstr ""
+
+#: restaurant-wp/functions.php:135
+msgid "Topbar Right"
+msgstr ""
+
+#: restaurant-wp/functions.php:137
+msgid "Display in topbar right."
+msgstr ""
+
+#: restaurant-wp/functions.php:146
+msgid "Sidebar"
+msgstr ""
+
+#: restaurant-wp/functions.php:148
+msgid "Appears in the Sidebar section of the site."
+msgstr ""
+
+#: restaurant-wp/functions.php:155
+msgid "Thim: Bottombar"
+msgstr ""
+
+#: restaurant-wp/functions.php:157
+msgid "Site links."
+msgstr ""
+
+#: restaurant-wp/functions.php:164
+msgid "Thim: Topbar Center"
+msgstr ""
+
+#: restaurant-wp/functions.php:166
+msgid "Display in topbar center."
+msgstr ""
+
+#: restaurant-wp/functions.php:178
+msgid "Sidebar display widgets."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-options.php:34
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:13
+#: restaurant-wp/inc/widgets/logo/logo.php:14
+msgid "Logo"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:12
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:11
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:12
+msgid "Settings"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:25
+msgid "Archive Page"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:31
+msgid "Blog Columns"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:32
+msgid "Choose the number of columns for archive post."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:37
+#: restaurant-wp/inc/widgets/posts/posts.php:45
+msgid "1"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:38
+#: restaurant-wp/inc/widgets/posts/posts.php:46
+msgid "2"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:39
+#: restaurant-wp/inc/widgets/posts/posts.php:47
+msgid "3"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:40
+#: restaurant-wp/inc/widgets/posts/posts.php:48
+msgid "4"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:47
+msgid "Excerpt Length"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:48
+msgid "Choose the number of words you want to cut from the content to be the excerpt of search and archive"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:70
+msgid "Single Page"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:76
+msgid "Featured Image"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:77
+msgid "Turn on to display featured images on single blog posts.."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:81
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:94
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:107
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:28
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:46
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:29
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:27
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:44
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:61
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:78
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:95
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:210
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:28
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:26
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:43
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:28
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:28
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:45
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:28
+msgid "On"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:82
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:95
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:108
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:29
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:47
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:30
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:28
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:45
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:62
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:79
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:96
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:211
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:29
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:27
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:44
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:29
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:29
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:46
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:29
+msgid "Off"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:90
+msgid "Turn on to display comments."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:102
+msgid "Related Posts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:103
+msgid "Turn on to display related posts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:115
+msgid "Numbers of Related Post"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-general.php:135
+msgid "Columns of Related Post"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:12
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:12
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:11
+msgid "Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:24
+msgid "Blog Archive Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:25
+msgid "Allows you to choose a layout to display for all blog archive, blog category page on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:42
+msgid "Sidebar Left For Blog Archive Layout "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:43
+msgid "Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Blog archive layout."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:64
+msgid "Sidebar Right For Blog Archive Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:65
+msgid "Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Archive layout."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:88
+msgid "Blog Single Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:89
+msgid "Allows you to choose a layout to display for only blog single page on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:106
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:123
+msgid "Sidebar Left For Post Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:107
+msgid "Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on Post layout."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:127
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:144
+msgid "Sidebar Right For Post Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-layouts.php:128
+msgid "Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on Post layout."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:12
+msgid "Meta Tags"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:22
+msgid "Show Author"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:23
+msgid "Allows you to show author meta tags to display at all blog page."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:28
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:45
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:62
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:79
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:96
+msgid "Show"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:29
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:46
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:63
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:80
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:97
+msgid "Hide"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:39
+msgid "Show Date"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:40
+msgid "Allows you to show date meta tags to display at all blog page."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:56
+msgid "Show Category"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:57
+msgid "Allows you to show category meta tags to display at single post page."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:73
+msgid "Show Tags"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:74
+msgid "Allows you to show tags meta tags to display at single post page."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:90
+msgid "Show Comment Number"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-meta.php:91
+msgid "Allows you to show comment meta tags to display at single post page."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:12
+msgid "Social Share"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:22
+msgid "Sortable Buttons Sharing"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:23
+msgid "Click on eye icons to show or hide buttons. Use drag and drop to change the position of social share icons.."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:34
+msgid "Facebook"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:35
+msgid "Twitter"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:36
+#: restaurant-wp/inc/template-tags.php:213
+msgid "Pinterest"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:37
+msgid "Google Plus"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog-sharing.php:38
+msgid "Fancy"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/blog.php:12
+#: restaurant-wp/inc/custom-functions.php:211
+#: restaurant-wp/inc/custom-functions.php:251
+#: restaurant-wp/templates/page-title/page-title.php:173
+msgid "Blog"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:11
+msgid "Copyright"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:22
+msgid "Show Copyright Text"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:23
+msgid "Turn on to display the copyright bar."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:40
+msgid "Show Menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:41
+msgid "Turn on to display the footer menu."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:57
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:65
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:34
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:99
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:59
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:57
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:22
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:96
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:42
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:81
+msgid "Background Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:58
+msgid "Allows you to choose background color for your copyright area. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:79
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:86
+msgid "Colors"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:83
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:91
+msgid "Text"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:84
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:92
+msgid "Link"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:85
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:93
+msgid "Hover"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:120
+msgid "Copyright Text"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-copyright.php:121
+msgid "Enter the text that displays in the copyright bar. HTML markup can be used."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:23
+msgid "Show Footer Widgets"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:24
+msgid "Turn on to display footer widgets."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:40
+msgid "Sidebar Number"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:41
+msgid "Controls the number of columns in the footer."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer-options.php:90
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:12
+#: restaurant-wp/inc/widgets/food-list/food-list.php:15
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:15
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:29
+#: restaurant-wp/inc/widgets/information/information.php:15
+#: restaurant-wp/inc/widgets/introduce-site/introduce-site.php:14
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:15
+#: restaurant-wp/inc/widgets/posts/posts.php:31
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:21
+#: restaurant-wp/inc/widgets/widget_banner_ads/widget-banner-ads.php:25
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/top-blog-detail.php:25
+msgid "Title"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/footer.php:12
+msgid "Footer"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-custom-css.php:12
+msgid "Custom CSS"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-custom-css.php:20
+msgid "Just want to do some quick CSS changes? Enter theme here, they will be applied to the theme."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:13
+msgid "Extra Features"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:22
+msgid "RTL Support"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:38
+msgid "Smooth Scrolling"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:39
+msgid "Turn on to enable smooth scrolling."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:55
+msgid "Open Graph Meta Tags"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:56
+msgid "Turn on to enable open graph meta tags which is mainly used when sharing pages on social networking sites like Facebook."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:72
+msgid "Back To Top"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:73
+msgid "Turn on to enable the Back To Top script which adds the scrolling to top functionality."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:89
+msgid "Google Theme"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:90
+msgid "Turn on to set the toolbar color in Chrome for Android."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:106
+msgid "Google Theme Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:126
+msgid "Preloading"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:150
+msgid "Preloading Custom Image"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:166
+msgid "Preloading Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:170
+msgid "Background color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-features.php:171
+msgid "Icon color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:24
+msgid "Site Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:25
+msgid "Allows you to choose a layout to display for all contents on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:43
+msgid "Archive Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:44
+msgid "Allows you to choose a layout to display for all archive pages on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:61
+msgid "Sidebar Left For Archive Layout "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:62
+msgid "Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on archive layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:82
+msgid "Sidebar Right For Archive Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:83
+msgid "Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on archive layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:105
+msgid "Single Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:106
+msgid "Allows you to choose a layout to display for single pages on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:124
+msgid "Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on single layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:145
+msgid "Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on single layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:167
+msgid "Page Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:168
+msgid "Allows you to choose a layout to display for all pages on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:185
+msgid "Sidebar Left For Page Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:186
+msgid "Allows you to select a sidebar to display in sidebar left when you used Full sidebar layout on page layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:206
+msgid "Sidebar Right For Page Layout"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-layouts.php:207
+msgid "Allows you to select a sidebar to display in sidebar right when you used Full sidebar layout on page layouts."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:14
+msgid "Allows you to add, remove, change logo on your site. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:26
+msgid "Sticky Logo"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:27
+msgid "Allows you to add, remove, change sticky logo on your site. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:39
+msgid "Retina Logo"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:40
+msgid "Select an image file for the retina version of the logo. It should be exactly 2x the size of the logo."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:50
+msgid "Logo width"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-logo.php:51
+msgid "Allows you to assign a value for logo width. Example: 10px, 3em, 48%, 90vh etc."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:16
+msgid "Boxed Background"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:21
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:85
+msgid "Select Background Type"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:22
+msgid "Allows you to select a background for body content when you selected box layout in General Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:26
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:90
+msgid "Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:27
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:91
+#: restaurant-wp/inc/widgets/food-card/food-card.php:18
+#: restaurant-wp/inc/widgets/home-image-content/home-image-content.php:15
+msgid "Image"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:28
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:92
+msgid "Pattern"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:57
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:122
+msgid "Background image"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:78
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:143
+msgid "Background Repeat"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:82
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:147
+msgid "Tile"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:83
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:148
+msgid "Tile Horizontally"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:84
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:149
+msgid "Tile Vertically"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:85
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:150
+msgid "No Repeat"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:106
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:171
+msgid "Background Position"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:110
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:175
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:67
+msgid "Left"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:111
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:176
+msgid "Center"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:112
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:177
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:68
+msgid "Right"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:133
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:198
+msgid "Background Attachment"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:137
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:202
+msgid "Scroll"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:138
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:203
+msgid "Fixed"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:159
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:224
+msgid "Select a Background Pattern"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:205
+msgid "Boxed Layouts Box Shadow"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling-boxed-bg.php:206
+msgid "Allows you to enable or disable box shadow at body tag when you selected boxed layout. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:12
+msgid "Styling"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:22
+msgid "Primary Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:23
+msgid "Allows you to choose a primary color for your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:80
+msgid "Main Content Background"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-styling.php:86
+msgid "Allows you to select a background for body tag content on your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:16
+msgid "Headings"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:20
+msgid "Heading Font-Family"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:21
+msgid "Allows you to select font-family for headings (h1, h2, h3, h4, h5, h6)"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:57
+msgid "Heading 1"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:58
+msgid "Allows you to select all font properties of H1 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:88
+msgid "Heading 2"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:89
+msgid "Allows you to select all font properties of H2 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:119
+msgid "Heading 3"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:120
+msgid "Allows you to select all font properties of H3 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:150
+msgid "Heading 4"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:151
+msgid "Allows you to select all font properties of H4 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:181
+msgid "Heading 5"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:182
+msgid "Allows you to select all font properties of H5 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:212
+msgid "Heading 6"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography-heading.php:213
+msgid "Allows you to select all font properties of H6 tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography.php:13
+msgid "Typography"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography.php:25
+msgid "Body"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography.php:29
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:29
+msgid "Body Font"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general-typography.php:30
+msgid "Allows you to select all font properties of body tag for your site"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/general.php:12
+msgid "General"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:22
+msgid "Header Layouts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:23
+msgid "Allows you can select header layout for header on your site. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:40
+msgid "Header Positions"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:41
+msgid "Allows you can select position layout for header layout. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:47
+msgid "Default"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:48
+msgid "Overlay"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-layouts.php:60
+msgid "Allows you can choose background color for your header. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:11
+msgid "Main Menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:22
+msgid "Font Family"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:23
+msgid "Allows you to select font title or body. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:30
+msgid "Title Font"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:40
+msgid "Fonts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:41
+msgid "Allows you to select all font font properties for header. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:93
+msgid "Text Color Hover"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-main-menu.php:94
+msgid "Allows you to select color for text link when hover text link . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:11
+msgid "Sticky Menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:22
+msgid "Sticky On Scroll"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:23
+msgid "Allows you can show or hide sticky header menu on your site . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:39
+msgid "Select style"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:40
+msgid "Allows you can select sticky menu style for your header . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:46
+msgid "The same with main menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:47
+msgid "Custom"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:58
+msgid "Allows you can select a color make background color for header sticky menu . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:86
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:44
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:106
+msgid "Text Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:87
+msgid "Allows you can select a color make text color on header sticky menu . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:116
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:67
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:132
+msgid "Text Hover Color"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sticky-menu.php:117
+msgid "Allows you can select color for text link when hover text link on header sticky menu. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:11
+msgid "Sub Menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:23
+msgid "Allows you can select a color make background color sub menu on header  . "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:45
+msgid "Allows you can select a color make text color sub menu on header. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-sub-menu.php:68
+msgid "Allows you can select color for text link when hover text link sub menu on header. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:9
+msgid "Top bar"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:20
+msgid "Show Topbar"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:21
+msgid "Allows you to enable or disable Top bar."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:37
+msgid "Show Line After Topbar"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:38
+msgid "Allows you to show or hide line between topbar and main menu."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:53
+msgid "Topbar Fonts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:54
+msgid "Allows you to select font properties for topbar. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header-topbar.php:97
+msgid "Allows you to choose a background color for widget on topbar. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/header.php:13
+msgid "Header"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/nav-menus.php:12
+msgid "Menus"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-bar.php:11
+msgid "Page Title"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:12
+msgid "Breadcrumbs"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:22
+msgid "Hide Breadcrumb"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:23
+msgid "Allows you can HIDE breadcrumb on page title bar. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:41
+msgid "Breadcrumb Icon"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:53
+msgid "Breadcrumb Fonts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-breadcrumb.php:54
+msgid "Allows you can select fonts property for breadcrumb. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:22
+msgid "Background Image"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:23
+msgid "You can upload image make to background image for page title on heading top. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:43
+msgid "If you do not use background image, then can use background color for page title on heading top. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:64
+msgid "Background Color Opacity"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:85
+msgid "Height"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:86
+msgid "You can choose numbers to height for page title. Example: 100px, 30em, 48%, 90vh etc."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:111
+msgid "Padding Top"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:112
+msgid "You can choose padding top from page title to menu in header overlay layout. Example: 10px, 3em, 48%, 90vh etc."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:132
+msgid "Title Styling"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:133
+msgid "Allows you can select fonts property for page title. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:169
+msgid " Description Styling"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title-styling.php:170
+msgid "Allows you can select fonts property for page title description. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:22
+msgid "Hidden Page Title"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:23
+msgid "Allows you can hidden or show page title on heading top. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:39
+msgid "Turn On/Off Parallax"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/page-title.php:40
+msgid "Allows you can enable or disable parallax in page title."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:11
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:22
+msgid "Responsive"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:23
+msgid "Turn on to enable responsive on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:40
+msgid "Mobile Logo"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:41
+msgid "Allows you to add, remove, change mobile logo on your site."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:55
+msgid "Mobile Menu"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:60
+msgid "Position"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:61
+msgid "Allows you to select a mobile menu effect position for header on mobile."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:82
+msgid "Allows you to select a color make background color for header on mobile. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:107
+msgid "Allows you to select a color make color of header text on mobile."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/responsive.php:133
+msgid "Allows you to select color for text link when hover text link on mobile."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/sidebars.php:11
+msgid "Sidebars"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/sidebars.php:22
+msgid "Sidebar Title Fonts"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/sidebars.php:23
+msgid "Allows you can select fonts property for sidebars title. "
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/sidebars.php:51
+msgid "Widget Margin Bottom"
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/sidebars.php:52
+msgid "Choose the number of words you want to space between widgets on sidebars. Example: 10px, 3em, 48%, 90vh etc."
+msgstr ""
+
+#: restaurant-wp/inc/admin/customizer-sections/widgets.php:12
+msgid "Widgets"
+msgstr ""
+
+#: restaurant-wp/inc/admin/require-thim-core.php:52
+msgid "Install and active ThimPress Core to start now!"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:146
+msgid "Attachment"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:164
+msgid "Year"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:166
+msgid "Month"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:168
+msgid "Day"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:218
+#: restaurant-wp/inc/custom-functions.php:259
+msgid "Author"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:221
+msgid "Search"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:224
+msgid "Tag"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:227
+msgid "Category"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:230
+msgid "Page Not Found!"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:257
+#: restaurant-wp/inc/custom-functions.php:308
+#: restaurant-wp/inc/custom-functions.php:310
+#: restaurant-wp/inc/custom-functions.php:312
+#: restaurant-wp/inc/custom-functions.php:316
+#: restaurant-wp/inc/custom-functions.php:317
+#: restaurant-wp/inc/template-tags.php:544
+msgid "Archives"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:261
+msgid "Page"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:263
+msgid "Search results for:"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:265
+#: restaurant-wp/inc/template-tags.php:540
+msgid "404 Page"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:288
+msgid "Home"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:334
+msgid "-- Select Sidebar --"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:824
+#: restaurant-wp/inc/custom-functions.php:830
+#: restaurant-wp/inc/template-tags.php:504
+#: restaurant-wp/inc/template-tags.php:506
+#: restaurant-wp/inc/template-tags.php:508
+#: restaurant-wp/inc/template-tags.php:534
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:908
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:68
+msgid "No comments"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:909
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:69
+msgid "1 comment"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:910
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:70
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: restaurant-wp/inc/custom-functions.php:911
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:71
+msgid "Read all comments"
+msgstr ""
+
+#: restaurant-wp/inc/data/demos.php:4
+msgid "Demo 01"
+msgstr ""
+
+#: restaurant-wp/inc/data/demos.php:17
+msgid "Demo 02"
+msgstr ""
+
+#: restaurant-wp/inc/data/demos.php:25
+msgid "Demo 03"
+msgstr ""
+
+#: restaurant-wp/inc/libs/tax-meta-class/Tax-meta-class.php:379
+#: restaurant-wp/inc/libs/tax-meta-class/Tax-meta-class.php:426
+msgid "Remove"
+msgstr ""
+
+#: restaurant-wp/inc/libs/tax-meta-class/Tax-meta-class.php:392
+msgid "Add"
+msgstr ""
+
+#: restaurant-wp/inc/libs/tax-meta-class/Tax-meta-class.php:725
+msgid "Remove Image"
+msgstr ""
+
+#: restaurant-wp/inc/libs/tax-meta-class/Tax-meta-class.php:727
+msgid "Upload Image"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:25
+msgid "by "
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:70
+msgid "Categories: "
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:97
+msgid ", "
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:99
+#, php-format
+msgid "Tag: %1$s"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:348
+msgid "Name..."
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:349
+msgid "Email..."
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:350
+msgid "Website"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:397
+msgid "Edit"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:401
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:510
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:510
+msgid "Y"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:512
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:512
+msgid "F Y"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:514
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:514
+msgid "F j, Y"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:516
+msgid "Asides"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:518
+msgid "Galleries"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:520
+msgid "Images"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:522
+msgid "Videos"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:524
+msgid "Quotes"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:526
+msgid "Links"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:528
+msgid "Statuses"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:530
+msgid "Audio"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:532
+msgid "Chats"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:538
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: restaurant-wp/inc/template-tags.php:542
+msgid "Search Results Page"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-card/food-card.php:6
+msgid "Thim: Food Card"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-card/food-card.php:8
+msgid "Include image, name, description"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-card/food-card.php:14
+#: restaurant-wp/inc/widgets/food-list/food-list.php:28
+msgid "Name"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-card/food-card.php:22
+#: restaurant-wp/inc/widgets/food-list/food-list.php:19
+#: restaurant-wp/inc/widgets/logo/logo.php:18
+#: restaurant-wp/inc/widgets/posts/posts.php:37
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:27
+#: restaurant-wp/inc/widgets/widget_banner_ads/widget-banner-ads.php:31
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/top-blog-detail.php:31
+msgid "Description"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-card/tpl/default.php:10
+msgid "Food Image"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/food-list.php:7
+msgid "Thim: Food List"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/food-list.php:9
+msgid "Food list and price"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/food-list.php:23
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:16
+msgid "List"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/food-list.php:24
+msgid "Food Detail"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/food-list.php:32
+msgid "Price"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/food-list/tpl/default.php:28
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:101
+msgid "VIEW MORE"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/home-image-content/home-image-content.php:7
+msgid "Thim: Home Page Image"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/home-image-content/home-image-content.php:9
+msgid "Select Image For Home Page"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:7
+msgid "Thim: Information For Footer"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:19
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:19
+msgid "List Information"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:20
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:20
+msgid "Item Information"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:33
+msgid "Content"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information-footer/information-footer.php:39
+msgid "Display Title For Information"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information/information.php:7
+msgid "Thim: Information Restaurant"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information/information.php:19
+#: restaurant-wp/inc/widgets/introduce-site/introduce-site.php:18
+msgid "Information"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information/information.php:23
+#: restaurant-wp/inc/widgets/introduce-site/introduce-site.php:22
+msgid "Detail"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/information/information.php:27
+msgid "Icon"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/introduce-site/introduce-site.php:6
+msgid "Thim: Introduce Site"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/introduce-site/introduce-site.php:8
+msgid "Information about this site"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/logo/logo.php:6
+msgid "Thim: Logo Restaurant"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/logo/logo.php:19
+msgid "The Restara theme used to be greater than simply an area to get a hairstyle or cut; it was a center"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/logo/logo.php:23
+msgid "Display description"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:7
+msgid "Thim: Opening Hours For Footer"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:29
+msgid "Day of week"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/opening-hours-detail/opening-hours-detail.php:33
+msgid "Opening hours"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:13
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:5
+msgid "All categories"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:21
+msgid "Thim: Posts"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:23
+msgid "Display posts"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:43
+msgid "Column"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:54
+msgid "Choose category"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:60
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:33
+msgid "Posts Per Page"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/posts.php:62
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:35
+msgid "Set max limit for items or enter -1 to display all (limited to 1000)."
+msgstr ""
+
+#: restaurant-wp/inc/widgets/posts/tpl/default.php:97
+msgid "Loading"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:7
+msgid "Thim: Rating Demo"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:17
+msgid "Customer"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:21
+msgid "Image Profile"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:25
+msgid "Comment"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/rating-demo/rating-demo.php:29
+msgid "Customer Name"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:13
+msgid "Recent Posts Image"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:15
+msgid "Display recent posts"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:41
+msgid "Thumbnail size"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/recent_posts/recent_posts.php:43
+msgid "Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height)."
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_banner_ads/tpl/default.php:6
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/tpl/default.php:6
+msgid "Image For Site"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_banner_ads/widget-banner-ads.php:13
+msgid "Display Banner Ads"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_banner_ads/widget-banner-ads.php:15
+msgid "Display banner ads"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_banner_ads/widget-banner-ads.php:21
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/top-blog-detail.php:21
+msgid "Add Image"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/top-blog-detail.php:13
+msgid "Top blog detail"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widget_top_blog_detail/top-blog-detail.php:15
+msgid "Ad info person"
+msgstr ""
+
+#: restaurant-wp/inc/widgets/widgets.php:68
+msgid "Extra Class"
+msgstr ""
+
+#: restaurant-wp/templates/features/preloading/custom-image.php:10
+msgid "Loading..."
+msgstr ""
+
+#: restaurant-wp/templates/page-title/page-title.php:158
+msgid "Our Team"
+msgstr ""
+
+#: restaurant-wp/templates/page-title/page-title.php:162
+msgid "Testimonials"
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-none.php:19
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-page.php:16
+#: restaurant-wp/templates/template-parts/content-single.php:42
+msgid "Pages:"
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-single.php:63
+msgid "Previous "
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content-single.php:64
+msgid "Next"
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/content.php:49
+#: restaurant-wp/templates/template-parts/content.php:76
+#: restaurant-wp/templates/template-parts/content.php:92
+#: restaurant-wp/templates/template-parts/content.php:106
+#: restaurant-wp/templates/template-parts/content.php:123
+msgid "Read More"
+msgstr ""
+
+#: restaurant-wp/templates/template-parts/related-single.php:13
+msgid "Your Might Also Like"
+msgstr ""
