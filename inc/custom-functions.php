@@ -816,7 +816,7 @@ if ( ! function_exists( 'thim_posted_on' ) ) :
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf( $time_string,
-			esc_attr( get_the_date( 'm j Y' ) ),
+			esc_attr( get_the_date( 'Y-m-j' ) ),
 			esc_html( get_the_date( 'M j, Y' ) )
 		);
 		$byline      = sprintf(
