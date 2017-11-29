@@ -1,5 +1,5 @@
-/*!
-Theme Name: Restaurant WP
+/*! 
+Theme Name: Starter Theme
 Theme URI: http://thim-startertheme.thimpress.com/
 Author: ThimPress
 Author URI: http://thimpress.com
@@ -8,7 +8,7 @@ Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
-Text Domain: restaurant-wp
+Text Domain: thim-starter-theme
 Domain Path: /languages/
 */
 /*!--------------------------------------------------------------
@@ -70,12 +70,10 @@ Domain Path: /languages/
 @import "header/header";
 @import "header/main-menu";
 @import "header/mega-menu";
-@import "header/primary-menu";
 /*!--------------------------------------------------------------
 7.0 - breadcrumb
 ----------------------------------------------------------------*/
 @import "breadcrumb/breadcrumb";
-
 /*!--------------------------------------------------------------
 8.0 - Blog
 ----------------------------------------------------------------*/
@@ -105,10 +103,34 @@ Domain Path: /languages/
 ----------------------------------------------------------------*/
 @import "general-style/general-style";
 
-//@import "/inc/widgets/posts/assets/sass/posts";
+.demo-css{
+	color: chartreuse;
+}
 
-/*!--------------------------------------------------------------
-14.0 - widget
-----------------------------------------------------------------*/
-@import "widgets/widgets";
-@import "elements/owlcarousel";
+.thim-sc-posts {
+	//padding-top: 30px;
+	padding-bottom: 30px;
+	.thim-sc-heading {
+		//margin-bottom: 50px;
+	}
+	.botton-category {
+		margin-top: 66px;
+	}
+	&.blog-content {
+		article {
+			.entry-top {
+				margin-bottom: 25px;
+			}
+			.entry-summary {
+				margin-top: 25px;
+				margin-bottom: 27px;
+			}
+		}
+	}
+	.readmore {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 26px;
+		text-transform: uppercase;
+	}
+}

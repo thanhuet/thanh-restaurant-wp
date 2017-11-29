@@ -483,7 +483,6 @@
 			overflow: auto;
 			.entry-meta{
 				.author {
-					//margin-right:0px !important;
 					a {
 						font-weight: bold;
 					}
@@ -493,10 +492,12 @@
 	}
 
 	#secondary{
+		padding-left:35px;
 		.widget-title{
 			position: relative;
-			padding-bottom:13px;
+			padding-bottom:18px;
 			font-weight:600;
+			font-size: 22px;
 		}
 		.widget-title:after{
 			position: absolute;
@@ -507,12 +508,23 @@
 			bottom:0;
 			left: 0;
 		}
+		ul{
+			li{
+				a{
+					font-size:18px;
+					font-weight:bold;
+					color: #666666;
+				}
+			}
+		}
+		// instagram
+		.widget_text{
+			.sb_instagram_header,#sbi_load{
+				display: none;
+			}
+		}
+
 	}
 }
-// instagram
-.widget_text{
-	.sb_instagram_header,#sbi_load{
-		display: none;
-	}
-}
+
 
