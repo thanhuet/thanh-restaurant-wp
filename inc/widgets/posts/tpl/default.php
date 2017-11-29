@@ -26,8 +26,8 @@ $posts = new WP_Query( $news_args );
 
 <div class="thim-sc-posts blog-content">
     <div class="thim-sc-heading">
-        <h1 class="title"><?php echo esc_attr( $instance['title'] ) ?></h1>
-        <h1 class="description"><?php echo $instance['description']; ?></h1>
+        <h2 class="title"><?php echo esc_attr( $instance['title'] ) ?></h2>
+        <h2 class="description"><?php echo $instance['description']; ?></h2>
     </div>
 
 	<?php
@@ -48,13 +48,11 @@ $posts = new WP_Query( $news_args );
                     <div class="content-inner row">
                         <div class="entry-top col-sm-12 col-md-6">
 							<?php
-							//if ( $column === '1' ) {
-							//do_action( 'thim_entry_top', 'full' );
-							//} else {
-							thim_thumbnail( get_the_ID(), 'full' );
-
-							//}
+                            $urlImage=get_the_post_thumbnail_url();
+                            $imageCrop=thim_aq_resize($urlImage,560,360,1);
 							?>
+                            <img src="<?php echo esc_url($imageCrop);?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+                            <a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"></a>
                         </div><!-- .entry-top -->
                         <div class="entry-content col-sm-12 col-md-6">
                             <header class="entry-header">

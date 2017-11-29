@@ -3,7 +3,7 @@ $attachment = wp_get_attachment_image_src( $instance['icon'],'full' );
 $icon_url   = $attachment[0];
 ?>
 <div class="icon-title-info">
-    <img src="<?php echo $icon_url; ?>" alt="">
+    <img src="<?php echo $icon_url; ?>" alt="<?php esc_html__('icon','restaurant-wp')?>">
     <div class="title-info">
 	    <?php echo $instance['title']; ?>
     </div>

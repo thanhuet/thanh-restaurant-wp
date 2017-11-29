@@ -15,22 +15,6 @@ thim_customizer()->add_section(
 );
 
 // Select Header Layout
-thim_customizer()->add_field(
-	array(
-		'id'            => 'header_style',
-		'type'          => 'radio-image',
-		'label'         => esc_html__( 'Header Layouts', 'restaurant-wp' ),
-		'tooltip'     	=> esc_html__( 'Allows you can select header layout for header on your site. ', 'restaurant-wp' ),
-		'section'       => 'header_layout',
-		'default'       => 'header_v1',
-		'priority'      => 10,
-		'choices'       => array(
-			'header_v1'     => THIM_URI . 'assets/images/header/classic.png',
-			'header_v2'     => THIM_URI . 'assets/images/header/stack-center.png',
-			'header_v3'     => THIM_URI . 'assets/images/header/magazine.png',
-		),
-	)
-);
 
 // Select Header Position
 thim_customizer()->add_field(

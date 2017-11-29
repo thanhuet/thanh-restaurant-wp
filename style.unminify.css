@@ -10237,15 +10237,16 @@ input[type="submit"],
     .widget_food-list .content-food-list-widget .main-food-list {
       padding-top: 120px;
       padding-bottom: 120px; }
-      .widget_food-list .content-food-list-widget .main-food-list .title-food-list h1 {
+      .widget_food-list .content-food-list-widget .main-food-list .title-food-list h2 {
         margin: 0;
+        line-height: 20px;
         font-family: "Great Vibes", sans-serif;
         font-weight: inherit; }
       .widget_food-list .content-food-list-widget .main-food-list .desc-food-list {
         font-size: 40px;
         font-weight: bolder;
         margin-bottom: 45px; }
-        .widget_food-list .content-food-list-widget .main-food-list .desc-food-list h1 {
+        .widget_food-list .content-food-list-widget .main-food-list .desc-food-list h2 {
           margin: 0; }
       .widget_food-list .content-food-list-widget .main-food-list .detail-food-list {
         letter-spacing: 0px;
@@ -10303,8 +10304,9 @@ input[type="submit"],
 /*introduce-site-widget*/
 .intro-site-container {
   margin-left: 0;
-  margin-top: 120px; }
-  .intro-site-container .intro-title h1 {
+  margin-top: 100px; }
+  .intro-site-container .intro-title h2 {
+    line-height: 20px;
     margin: 0;
     font-family: 'Great Vibes', sans-serif;
     font-weight: inherit; }
@@ -10315,16 +10317,22 @@ input[type="submit"],
       margin: 0; }
   .intro-site-container .intro-detail {
     max-width: 642px;
-    margin-top: 40px;
+    margin-top: 60px;
     letter-spacing: 0px;
     line-height: 28px; }
 
 /*introduce-site-widget*/
-.intro-site-widget-contact-form .intro-title h1, .intro-site-widget-contact-form .intro-info h1, .intro-site-widget-about-us .intro-title h1, .intro-site-widget-about-us .intro-info h1 {
+.intro-site-widget-contact-form .intro-title h2, .intro-site-widget-contact-form .intro-info h2, .intro-site-widget-about-us .intro-title h2, .intro-site-widget-about-us .intro-info h2 {
   color: white; }
 
 .important-word {
   line-height: 65px; }
+
+.intro-site-widget-contact-form .intro-site-container {
+  margin-top: 77px; }
+
+.intro-site-widget-about-us .intro-site-container {
+  margin-top: 151px; }
 
 /*post-widget*/
 .thim-sc-posts {
@@ -10332,6 +10340,7 @@ input[type="submit"],
   .thim-sc-posts .thim-sc-heading {
     margin-bottom: 55px; }
     .thim-sc-posts .thim-sc-heading .title {
+      line-height: 20px;
       font-weight: inherit;
       margin: 0;
       text-align: center;
@@ -10369,6 +10378,7 @@ input[type="submit"],
           letter-spacing: 0; }
         .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on:after {
           content: " -";
+          letter-spacing: 9px;
           width: auto; }
         .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author a {
           text-transform: capitalize;
@@ -10377,6 +10387,7 @@ input[type="submit"],
           letter-spacing: 0; }
         .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author:after {
           content: " -";
+          letter-spacing: 9px;
           width: auto; }
         .thim-sc-posts .row .content-inner .entry-content .meta-entry .related-post-reply a {
           color: #999;
@@ -10485,7 +10496,7 @@ input[type="submit"],
     content: " ";
     position: absolute;
     top: 0;
-    background: black;
+    background: #212121;
     opacity: 0.8;
     bottom: 0;
     right: 0;

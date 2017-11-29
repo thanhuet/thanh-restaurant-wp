@@ -888,8 +888,11 @@ if ( ! function_exists( 'thim_load_more_post' ) ) {
 						} else {
 							echo '<div class="entry-top col-sm-12 col-md-6">';
 						}
-						thim_thumbnail( get_the_ID(), 'full' );
-						?>
+                            $urlImage=get_the_post_thumbnail_url();
+                            $imageCrop=thim_aq_resize($urlImage,560,360,1);
+							?>
+                        <img src="<?php echo esc_url($imageCrop);?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+                        <a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"></a>
                     </div><!-- .entry-top -->
 	                <?php if ( $offset_paged % 2 != 0 ) {
 		                echo '<div class="entry-content col-sm-12 col-md-6" style=" margin-left: 0" >';
@@ -929,3 +932,12 @@ if ( ! function_exists( 'thim_load_more_post' ) ) {
 }
 add_action( 'wp_ajax_thim_load_more_post', 'thim_load_more_post' );
 add_action( 'wp_ajax_nopriv_thim_load_more_post', 'thim_load_more_post' );
+/**
+ * Theme id.
+ */
+if ( ! function_exists( 'thim_my_theme_item_id' ) ) {
+	function thim_my_theme_item_id() {
+		return '450s';
+	}
+}
+add_filter( 'thim_core_my_theme_id', 'thim_my_theme_item_id' );

@@ -7,10 +7,11 @@ if ( ! empty( $instance['list_rate'] ) ) {
 	<?php foreach ( $repeater_items as $index => $repeater_item ) {
 		$attachment = wp_get_attachment_image_src( $repeater_item['image_profile'], 'full' );
 		$image_url  = $attachment[0];
+		$imageCrop=thim_aq_resize($image_url,200,200,1);
 		?>
         <div class="customer-rate-demo row">
             <div itemprop="customer" itemscope itemtype="http://schema.org/Person" class="image-profile col-12 col-sm-3">
-                <img itemprop="image" src="<?php echo $image_url; ?>" alt="">
+                <img itemprop="image" src="<?php echo esc_url($imageCrop); ?>" alt="">
             </div>
             <div itemprop="review" itemscope itemtype="http://schema.org/Review" class="info-rate col-12 col-sm-9">
                 <div itemprop="description" class="customer-feedback">

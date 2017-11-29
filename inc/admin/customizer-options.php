@@ -49,7 +49,6 @@ class Thim_Customize_Options {
 
 		require_once $customize_path . 'blog.php';
 		require_once $customize_path . 'blog-general.php';
-		require_once $customize_path . 'blog-layouts.php';
 		require_once $customize_path . 'blog-meta.php';
 		require_once $customize_path . 'blog-sharing.php';
 		require_once $customize_path . 'footer.php';
@@ -58,7 +57,6 @@ class Thim_Customize_Options {
 		require_once $customize_path . 'general.php';
 		require_once $customize_path . 'general-custom-css.php';
 		require_once $customize_path . 'general-features.php';
-		require_once $customize_path . 'general-layouts.php';
 		require_once $customize_path . 'general-logo.php';
 		require_once $customize_path . 'general-styling.php';
 		require_once $customize_path . 'general-styling-boxed-bg.php';

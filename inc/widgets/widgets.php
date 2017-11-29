@@ -20,6 +20,8 @@ include_once( THIM_DIR . '/inc/widgets/introduce-site/introduce-site.php' );
 include_once( THIM_DIR . '/inc/widgets/food-list/food-list.php' );
 include_once( THIM_DIR . '/inc/widgets/rating-demo/rating-demo.php' );
 include_once( THIM_DIR . '/inc/widgets/opening-hours-detail/opening-hours-detail.php' );
+include_once( THIM_DIR . '/inc/widgets/image-baner-homepage/image-baner-homepage.php' );
+
 /* Widget for homepage*/
 
 /**

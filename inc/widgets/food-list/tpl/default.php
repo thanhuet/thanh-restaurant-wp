@@ -6,10 +6,10 @@ if ( ! empty( $instance['listFood'] ) ) {
 <div class="content-food-list-widget">
     <div class="main-food-list">
         <div class="title-food-list">
-            <h1><?php echo $instance['title']; ?></h1>
+            <h2><?php echo $instance['title']; ?></h2>
         </div>
         <div class="desc-food-list">
-            <h1><?php echo $instance['description']; ?></h1>
+            <h2><?php echo $instance['description']; ?></h2>
         </div>
         <div itemscope itemtype="http://schema.org/Restaurant" class="detail-food-list">
 			<?php
