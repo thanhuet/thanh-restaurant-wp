@@ -8,6 +8,7 @@
 
 define( 'THIM_DIR', trailingslashit( get_template_directory() ) );
 define( 'THIM_URI', trailingslashit( get_template_directory_uri() ) );
+define( 'SAVEQUERIES', true );
 
 if ( ! function_exists( 'thim_setup' ) ) :
 	/**

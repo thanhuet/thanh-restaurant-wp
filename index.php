@@ -14,6 +14,7 @@
 
 <?php
 if ( have_posts() ) :?>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
 	<div class="blog-content blog-list archive_switch">
 		<?php
 		/* Start the Loop */

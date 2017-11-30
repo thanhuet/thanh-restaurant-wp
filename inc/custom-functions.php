@@ -11,6 +11,7 @@
  *
  * @return bool
  */
+
 function thim_plugin_active( $plugin_dir, $plugin_file = null ) {
 	$plugin_file            = $plugin_file ? $plugin_file : ( $plugin_dir . '.php' );
 	$plugin                 = $plugin_dir . '/' . $plugin_file;
