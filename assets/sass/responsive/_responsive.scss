@@ -161,7 +161,7 @@ body {
             }
           }
           .main-content {
-            padding-right: 0px;
+            padding-right: 0;
           }
         }
       }
@@ -624,7 +624,27 @@ body {
         }
       }
       /**404 Page**/
+      .form-comment{
+        text-align: center;
+      }
+      #comments {
+        .form-comment {
+          .comment-form {
+            text-align: center;
+            > p {
+              &.comment-form-author{
+                padding: 0;
+                width: 100%;
+              }
+              &.comment-form-email {
+                width: 100%;
+                padding: 0;
+              }
+            }
 
+          }
+        }
+      }
     }
     @media (max-width: 575px) {
       header {
@@ -787,6 +807,27 @@ body {
         }
       }
       /**404 Page**/
+      .form-comment{
+        text-align: center;
+      }
+      #comments {
+        .form-comment {
+          .comment-form {
+            text-align: center;
+            > p {
+              &.comment-form-author{
+                padding: 0;
+                width: 100%;
+              }
+              &.comment-form-email {
+                width: 100%;
+                padding: 0;
+              }
+            }
+
+          }
+        }
+      }
     }
     @media (max-width: 480px) {
       .intro-site-container {

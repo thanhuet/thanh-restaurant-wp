@@ -184,6 +184,7 @@
 					background: #FFFFFF;
 					border: 1px solid #CCCCCC;
 					padding:17px 48px;
+					transition: all 0.3s linear;
 					//&:before, &:after {
 					//	content: '';
 					//	position: absolute;
@@ -201,6 +202,10 @@
 					}
 					&:hover:before {
 						@include scale(1, 1);
+					}
+					&:hover{
+						color: white!important;
+						border-color: white;
 					}
 				}
 			}
