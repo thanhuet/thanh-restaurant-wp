@@ -7858,7 +7858,7 @@ header#masthead {
   .col-sm-6.aligncenter .blog-content h2.entry-title {
     font-size: 26px; }
   .blog-content article {
-    margin-bottom: 37px;
+    margin-bottom: 50px;
     padding-bottom: 50px;
     position: relative;
     overflow: auto; }
@@ -7910,9 +7910,6 @@ header#masthead {
           -moz-transform: scale(1, 1);
           -ms-transform: scale(1, 1);
           -o-transform: scale(1, 1); }
-        .blog-content article .content-inner .readmore a:hover {
-          color: white !important;
-          border-color: white; }
     .blog-content article:hover .thumbnail img {
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
