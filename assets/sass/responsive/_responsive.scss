@@ -1039,12 +1039,12 @@ body {
                   margin-bottom:20px !important;
                   span{
                     .comment-reply-link{
-                      margin-top:0px !important;
+                      margin-top:0 !important;
                     }
                   }
                 }
                 .message{
-                  padding-left:0px !important;
+                  padding-left:0 !important;
                 }
               }
             }
@@ -1268,7 +1268,7 @@ body {
           }
           .entry-meta {
             font-size: 13px;
-            margin-top:0px;
+            margin-top:0;
             margin-bottom: 10px;
 
           }
@@ -1360,7 +1360,7 @@ body {
               .share-click {
                 ul {
                   li {
-                    margin-top: 0px;
+                    margin-top: 0;
                   }
                 }
               }
@@ -1434,7 +1434,7 @@ body {
         .entry-content {
           float: none !important;
           width: 100% !important;
-          padding-top:0px;
+          padding-top:0;
           .entry-header {
             margin-bottom: 10px;
             .entry-title {
