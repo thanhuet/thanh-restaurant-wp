@@ -43,27 +43,3 @@ thim_customizer()->add_field(
 );
 
 // Logo width
-thim_customizer()->add_field(
-	array(
-		'id'        => 'width_logo',
-		'type'      => 'dimension',
-		'label'     => esc_html__( 'Logo width', 'restaurant-wp' ),
-		'tooltip'   => esc_html__( 'Allows you to assign a value for logo width. Example: 10px, 3em, 48%, 90vh etc.', 'restaurant-wp' ),
-		'section'   => 'title_tagline',
-		'default'   => '200px',
-		'priority'  => 40,
-		'choices'   => array(
-			'min'  => 100,
-			'max'  => 500,
-			'step' => 10,
-		),
-		'transport' => 'postMessage',
-		'js_vars'   => array(
-			array(
-				'choice'   => 'width',
-				'element'  => 'header#masthead .width-logo',
-				'property' => 'width',
-			)
-		)
-	)
-);

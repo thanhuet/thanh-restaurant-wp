@@ -22,7 +22,7 @@
 
 <?php wp_footer(); ?>
 
-<?php /*do_action( 'thim_space_body' ); */?>
+<?php do_action( 'thim_space_body' ); ?>
 
 </body>
 </html>
