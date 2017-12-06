@@ -10381,98 +10381,99 @@ input[type="submit"],
   margin-top: 92px; }
 
 /*post-widget*/
-.thim-sc-posts {
-  margin-bottom: 100px; }
-  .thim-sc-posts .thim-sc-heading {
-    margin-bottom: 55px; }
-    .thim-sc-posts .thim-sc-heading .title {
-      line-height: 20px;
-      font-weight: inherit;
-      margin: 0;
-      text-align: center;
-      font-family: 'Great Vibes', sans-serif; }
-    .thim-sc-posts .thim-sc-heading .description {
-      margin: 0;
-      text-align: center; }
-  .thim-sc-posts #thim-post-container article {
-    margin-bottom: 40px;
-    padding-bottom: 0;
-    overflow: hidden; }
-    .thim-sc-posts #thim-post-container article::after {
-      display: none; }
-  .thim-sc-posts .row .content-inner {
-    padding: inherit; }
-    .thim-sc-posts .row .content-inner .entry-top {
-      flex-shrink: 0;
-      max-width: 560px;
-      padding-left: 0;
-      padding-right: 0; }
-    .thim-sc-posts .row .content-inner .entry-content {
-      margin-left: 50px;
-      max-width: 560px;
-      padding-top: 30px;
-      padding-right: 0;
-      padding-left: 0; }
-      .thim-sc-posts .row .content-inner .entry-content .meta-entry {
-        letter-spacing: 0;
-        line-height: 25px;
-        margin-bottom: 25px;
-        margin-top: 23px; }
-        .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on a {
-          color: #999;
-          font-size: 14px;
-          letter-spacing: 0; }
-        .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on:after {
-          content: " -";
-          letter-spacing: 9px;
-          width: auto; }
-        .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author a {
-          text-transform: capitalize;
-          font-weight: bolder;
-          font-size: 14px;
-          letter-spacing: 0; }
-        .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author:after {
-          content: " -";
-          letter-spacing: 9px;
-          width: auto; }
-        .thim-sc-posts .row .content-inner .entry-content .meta-entry .related-post-reply a {
-          color: #999;
-          font-size: 14px;
-          letter-spacing: 0; }
-      .thim-sc-posts .row .content-inner .entry-content .entry-header .entry-title {
-        letter-spacing: 0;
-        line-height: 38px; }
-        .thim-sc-posts .row .content-inner .entry-content .entry-header .entry-title a {
-          font-weight: bolder; }
-      .thim-sc-posts .row .content-inner .entry-content .entry-summary {
-        letter-spacing: 0;
-        line-height: 28px; }
-  .thim-sc-posts .readmore {
+.thim-sc-posts .thim-sc-heading {
+  margin-bottom: 55px; }
+  .thim-sc-posts .thim-sc-heading .title {
+    line-height: 20px;
+    font-weight: inherit;
+    margin: 0;
     text-align: center;
-    margin-top: 40px; }
-    .thim-sc-posts .readmore #load-more-content {
-      display: flex;
-      text-align: center; }
-      .thim-sc-posts .readmore #load-more-content #icon-load-more-post {
-        margin: auto;
-        margin-right: 0;
-        font-size: 40px;
-        transition: all 1.4s linear; }
-      .thim-sc-posts .readmore #load-more-content #text-loading {
-        margin: auto;
-        margin-left: 20px;
-        font-size: 16px;
-        transition: all 1.4s linear; }
-    .thim-sc-posts .readmore a {
-      transition: all 0.4s linear;
-      background: #FFFFFF;
-      cursor: pointer;
-      border: 1px solid #CCCCCC;
-      padding: 20px 50px;
-      font-weight: bolder; }
-      .thim-sc-posts .readmore a:hover {
-        color: white;
-        border-color: white; }
+    font-family: 'Great Vibes', sans-serif; }
+  .thim-sc-posts .thim-sc-heading .description {
+    margin: 0;
+    text-align: center; }
+
+.thim-sc-posts #thim-post-container article {
+  margin-bottom: 40px;
+  padding-bottom: 0;
+  overflow: hidden; }
+  .thim-sc-posts #thim-post-container article::after {
+    display: none; }
+
+.thim-sc-posts .row .content-inner {
+  padding: inherit; }
+  .thim-sc-posts .row .content-inner .entry-top {
+    flex-shrink: 0;
+    max-width: 560px;
+    padding-left: 0;
+    padding-right: 0; }
+  .thim-sc-posts .row .content-inner .entry-content {
+    margin-left: 50px;
+    max-width: 560px;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 0; }
+    .thim-sc-posts .row .content-inner .entry-content .meta-entry {
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-bottom: 25px;
+      margin-top: 23px; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on a {
+        color: #999;
+        font-size: 14px;
+        letter-spacing: 0; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .posted-on:after {
+        content: " -";
+        letter-spacing: 9px;
+        width: auto; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author a {
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-size: 14px;
+        letter-spacing: 0; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .byline .author:after {
+        content: " -";
+        letter-spacing: 9px;
+        width: auto; }
+      .thim-sc-posts .row .content-inner .entry-content .meta-entry .related-post-reply a {
+        color: #999;
+        font-size: 14px;
+        letter-spacing: 0; }
+    .thim-sc-posts .row .content-inner .entry-content .entry-header .entry-title {
+      letter-spacing: 0;
+      line-height: 38px; }
+      .thim-sc-posts .row .content-inner .entry-content .entry-header .entry-title a {
+        font-weight: bolder; }
+    .thim-sc-posts .row .content-inner .entry-content .entry-summary {
+      letter-spacing: 0;
+      line-height: 28px; }
+
+.thim-sc-posts .readmore {
+  text-align: center;
+  margin-top: 40px; }
+  .thim-sc-posts .readmore #load-more-content {
+    display: flex;
+    text-align: center; }
+    .thim-sc-posts .readmore #load-more-content #icon-load-more-post {
+      margin: auto;
+      margin-right: 0;
+      font-size: 40px;
+      transition: all 1.4s linear; }
+    .thim-sc-posts .readmore #load-more-content #text-loading {
+      margin: auto;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: all 1.4s linear; }
+  .thim-sc-posts .readmore a {
+    transition: all 0.4s linear;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #CCCCCC;
+    padding: 20px 50px;
+    font-weight: bolder; }
+    .thim-sc-posts .readmore a:hover {
+      color: white;
+      border-color: white; }
 
 @keyframes spin {
   0% {
