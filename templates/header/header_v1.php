@@ -28,7 +28,7 @@
     </div>
 </div>
 <div class="navigation menu-main">
-    <div class="container">
+    <div class="container menu-main-navigation">
         <nav class="width-navigation table-cell table-right main-navigation">
             <div class="inner-navigation">
 				<?php get_template_part( 'templates/header/main-menu' ); ?>

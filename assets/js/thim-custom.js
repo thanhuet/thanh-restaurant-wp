@@ -165,19 +165,20 @@
                 $header_v1 = $('#masthead.sticky-header .header-v1 '),
                 off_Top = ( $('#wrapper-container').length > 0 ) ? $('#wrapper-container').offset().top : 0,
                 $topbar = $('#masthead.sticky-header .menu-main'),
+                $menu_main_navigation = $('#masthead.sticky-header .menu-main .menu-main-navigation'),
                 $primary_menu = $('#masthead.sticky-header .menu-main .container .width-navigation .inner-navigation .navbar'),
                 menuH = $header.outerHeight(),
                 latestScroll = 0,
                 startFixed = 2,
                 header_v1_height = $header_v1.outerHeight();
-
+                $topbar.height($menu_main_navigation.outerHeight(true));
             if ($topbar.length) {
                 if ($topbar.hasClass('style-overlay')) {
                     $header.css({
-                        // top: $topbar.outerHeight() + 'px'
+                        'position': 'inherit'
                     });
                 }
-                startFixed = $header_v1.outerHeight() + $topbar.outerHeight();
+                startFixed = $header_v1.outerHeight(true) + $menu_main_navigation.outerHeight(true);
             }
 
             $(window).scroll(function () {
@@ -188,17 +189,17 @@
                     $header.css({});
                 } else {
                     $header.addClass('no-transition');
-                    if (current < startFixed + $topbar.outerHeight()) {
-                        $topbar.css({
-                            'position': 'inherit',
-                            top:0
+                    if (current = $header_v1.outerHeight(true)-$menu_main_navigation.outerHeight(true)) {
+                        $menu_main_navigation.css({
+                            top:0,
+                            'position': 'absolute'
                         });
                     }
                     if (screen.width < 769) {
-                        if (current < $header_v1.outerHeight(true) * 2) {
+                        if (current < $header_v1.outerHeight(true)+50) {
                             $header.css({
-                                'position': 'inherit',
-                                top:0
+                                top:0,
+                                'position': 'inherit'
                             });
                         }
                     }
@@ -222,9 +223,10 @@
                         $header.css({
                             // top: off_Top
                         });
-                        $topbar.css({
-                            // 'position': 'inherit',
-                            top: -($topbar.outerHeight()) + 'px'
+                        $menu_main_navigation.css({
+                            'position': 'absolute',
+                            top:0
+                            // top: -($topbar.outerHeight()) + 'px'
                         });
                         if (screen.width < 769) {
                             $header.css({
@@ -239,7 +241,7 @@
                         $header.css({
                             // top: off_Top
                         });
-                        $topbar.css({
+                        $menu_main_navigation.css({
                             'position': 'fixed',
                             top: off_Top
                         });

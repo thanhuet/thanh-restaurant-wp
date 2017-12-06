@@ -1,9 +1,15 @@
 header{
   &#masthead{
+    transition: all 0.3s linear;
     padding: 0;
     .menu-main{
+      position: relative;
       width: 100%;
-      .container{
+      .menu-main-navigation{
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s ease-out;
         .width-navigation{
           display: flex;
           float:none;
@@ -16,9 +22,10 @@ header{
             .navbar {
               display: flex;
               flex-direction: row;
-              margin:0;
+              margin:auto;
               height: 80px;
-              width: 63%;
+              width: 100%;
+              padding: 0 350px;
               li {
                 margin: auto;
                 &.current-menu-item {

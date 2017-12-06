@@ -8,6 +8,21 @@ body {
   &.responsive {
 
     @media (max-width: 1200px) {
+      header{
+        &#masthead{
+          .menu-main{
+            .menu-main-navigation{
+              .width-navigation{
+                .inner-navigation {
+                  .navbar {
+                    padding: 0 150px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       /**homepage+header+footer**/
       .topbar-center {
         .widget_info-rest {
