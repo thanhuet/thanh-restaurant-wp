@@ -301,11 +301,6 @@ require THIM_DIR . 'inc/custom-functions.php';
 require THIM_DIR . 'inc/customizer.php';
 
 
-if ( is_admin() && current_user_can( 'manage_options' ) ) {
-	require THIM_DIR . 'inc/admin/require-thim-core.php';
-	require THIM_DIR . 'inc/data/plugins-require.php';
-}
-
 /**
  * WooCommerce.
  */
@@ -329,16 +324,8 @@ if ( file_exists( THIM_DIR . 'shortcodes/thim-startertheme.php' ) && ( ! class_e
  */
 require THIM_DIR . 'inc/widgets/widgets.php';
 
-//pannel Widget Group
-//function thim_widget_group( $tabs ) {
-//	$tabs[] = array(
-//		'title'  => esc_html__( 'Thim Widgets', 'restaurant-wp' ),
-//		'filter' => array(
-//			'groups' => array( 'thim_widget_group' )
-//		)
-//	);
-//
-//	return $tabs;
-//}
-//
-//add_filter( 'siteorigin_panels_widget_dialog_tabs', 'thim_widget_group', 19 );
+if ( is_admin() && current_user_can( 'manage_options' ) ) {
+	include_once THIM_DIR . 'inc/admin/installer/installer.php';
+	include_once THIM_DIR . 'inc/admin/plugins-require.php';
+	include_once THIM_DIR . 'inc/admin/require-thim-core.php';
+}

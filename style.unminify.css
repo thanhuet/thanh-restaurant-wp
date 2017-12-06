@@ -7195,6 +7195,7 @@ header#masthead {
     header#masthead .header-v1 .row .col-sm-12 .tm-table {
       position: static; }
       header#masthead .header-v1 .row .col-sm-12 .tm-table .width-logo {
+        width: 200px;
         position: absolute;
         left: 0;
         right: 0;
@@ -10213,7 +10214,7 @@ input[type="submit"],
         .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea::placeholder {
           color: white; }
       .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
-        height: auto; }
+        height: 130px; }
     .wpcf7-form .content-contact-form .contact-submit .wpcf7-submit {
       font-size: 14px;
       padding: 15px 30px;
@@ -10367,7 +10368,7 @@ input[type="submit"],
   margin-top: 77px; }
 
 .intro-site-widget-about-us .intro-site-container {
-  margin-top: 151px; }
+  margin-top: 92px; }
 
 /*post-widget*/
 .thim-sc-posts {
