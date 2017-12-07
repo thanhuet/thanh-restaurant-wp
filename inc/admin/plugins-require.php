@@ -19,6 +19,11 @@ function thim_get_all_plugins_require( $plugins ) {
 		array(
 			'name'=>'Instagram Feed',
 			'slug'=>'instagram-feed',
+		),
+		array(
+			'name' => 'Restaurant WP Demo Data',
+			'slug' => 'restaurantwp-demo-data',
+			'premium' => true,
 		)
 	);
 }
