@@ -32,7 +32,7 @@ if ( ! function_exists( 'thim_setup' ) ) :
 
 		// Add support Woocommerce
 		add_theme_support( 'woocommerce' );
-		add_theme_support('restaurant-wp');
+		add_theme_support('restaurantwp-demo-data');
 		add_theme_support( 'thim-core' );
 		add_theme_support( 'thim-core-lite' );
 
