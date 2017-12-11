@@ -27,12 +27,16 @@ if ( isset( $_GET['column'] ) ) {
             <?php thim_entry_meta(); ?>
             <!-- .entry-meta -->
 			<?php
-			if ( $column === '1' ) {
-				do_action( 'thim_entry_top', 'full' );
-			} else {
-				thim_feature_image( 420, 420, 'full' );
-			}
+//			if ( $column === '1' ) {
+//				do_action( 'thim_entry_top', 'full' );
+//			} else {
+//				thim_feature_image( 420, 420, 'full' );
+//			}
+			$urlImage=get_the_post_thumbnail_url();
+			$imageCrop=thim_aq_resize($urlImage,560,360,1);
 			?>
+            <img src="<?php echo esc_url($imageCrop);?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+            <a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"></a>
 		</div><!-- .entry-top -->
 
 		<div class="entry-content">

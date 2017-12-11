@@ -3801,7 +3801,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
                 header_v1_height = $header_v1.outerHeight();
                 $topbar.height($menu_main_navigation.outerHeight(true));
             if ($topbar.length) {
-                if ($topbar.hasClass('style-overlay')) {
+                if ($topbar.hasClass('style-overlay')) { 
                     $header.css({
                         'position': 'inherit'
                     });
