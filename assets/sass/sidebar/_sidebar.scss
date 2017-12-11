@@ -4,6 +4,7 @@
 
 .search-form {
   position: relative;
+  max-width:330px;
   line-height: 42px;
   border: none;
   background: rgba(255,255,255,0.40);
@@ -26,10 +27,13 @@
     font-weight: 400;
     margin: 0;
   }
+  .screen-reader-text{
+    font-size:14px;
+  }
   .search-field {
     line-height: 40px;
     background: #fff;
-    height: 42px;
+    height: 50px;
     padding: 0 60px 0 15px;
     font-size: 14px;
     width: 100%;

@@ -162,11 +162,13 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 		if ( $wrapper_class_col != 'col-sm-12 full-width' && $wrapper_class_col != 'col-sm-6 flex-unordered' ) {
 			if ( get_post_type() == "product" ) {
 				get_sidebar( 'shop' );
-			} else {
-				if(is_single()){
-                    get_sidebar();
-                }
 			}
+			elseif(is_single()) {
+                get_sidebar();
+			}
+			elseif(is_home()){
+			    get_sidebar();
+            }
 		}
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
 			if ( is_page() ) {

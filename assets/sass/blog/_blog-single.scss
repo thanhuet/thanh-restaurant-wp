@@ -442,15 +442,21 @@
 // full width main
 .blog {
   #main {
-    flex-basis: 100%;
-    max-width: 100%;
+    flex-basis: 70%;
     article {
       .content-inner {
         .entry-top {
-          width: 48%;
+          .post-formats-wrapper{
+            .post-image{
+              img{
+                max-width: 770px;
+                max-height: 450px;
+              }
+            }
+          }
         }
         .entry-content {
-          width: 48%;
+          width: 100%;
         }
       }
       .entry-meta {
@@ -459,24 +465,6 @@
           a {
             font-weight: bold;
           }
-        }
-      }
-    }
-    article:nth-child(2n+1) {
-      .content-inner {
-        .entry-top {
-          float: left;
-        }
-        .entry-content {
-          float: right;
-          margin-top: 20px;
-        }
-      }
-    }
-    article:nth-child(2n) {
-      .content-inner {
-        .entry-top {
-          float: right;
         }
       }
     }

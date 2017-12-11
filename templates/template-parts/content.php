@@ -19,6 +19,13 @@ if ( isset( $_GET['column'] ) ) {
 <article id="post-<?php the_ID(); ?>" <?php post_class( $class ); ?>>
 	<div class="content-inner">
 		<div class="entry-top">
+            <header class="entry-header">
+                <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+            </header>
+            <!-- .entry-header -->
+
+            <?php thim_entry_meta(); ?>
+            <!-- .entry-meta -->
 			<?php
 			if ( $column === '1' ) {
 				do_action( 'thim_entry_top', 'full' );
@@ -46,7 +53,7 @@ if ( isset( $_GET['column'] ) ) {
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read ', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 
 			<?php } elseif ( has_post_format( 'quote' ) && thim_meta( 'thim_quote_author_url' ) ) {
@@ -73,7 +80,7 @@ if ( isset( $_GET['column'] ) ) {
 					<?php } ?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read ', 'restaurant-wp' ); ?></a>
 				</div><!-- .read-more -->
 				<?php
 			} elseif ( has_post_format( 'audio' ) ) { ?>
@@ -107,12 +114,6 @@ if ( isset( $_GET['column'] ) ) {
 				</div><!-- .read-more -->
 
 			<?php } else { ?>
-				<header class="entry-header">
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-				</header>
-				<!-- .entry-header -->
-
-				<?php thim_entry_meta(); ?>
 
 				<div class="entry-summary">
 					<?php
@@ -120,7 +121,7 @@ if ( isset( $_GET['column'] ) ) {
 					?>
 				</div><!-- .entry-summary -->
 				<div class="readmore">
-					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'Read More', 'restaurant-wp' ); ?></a>
+					<a href="<?php echo esc_url( get_permalink() ); ?>"><?php echo esc_html__( 'KEEP READING', 'restaurant-wp' ); ?></a>
 				</div>
 			<?php }
 			?>
