@@ -30,8 +30,36 @@ class Thim_FoodList_Widget extends SiteOrigin_Widget {
 						'repeat_price' => array(
 							'type'  => 'text',
 							'label' => esc_html__( 'Price', 'restaurant-wp' )
-						),
-
+						)
+					)
+				),
+				'style_item'     => array(
+					'type'          => 'radio',
+					'label'         => esc_html__( 'Choose style for item', 'restaurant-wp' ),
+					'options'       => array(
+						'1' => 'Style 1',
+						'2' => 'Style 2'
+					),
+					'default'       => '1',
+					'state_emitter' => array(
+						'callback' => 'select',
+						'args'     => array( 'style_item' )
+					),
+				),
+				'style_icon'     => array(
+					'type'          => 'media',
+					'label'         => esc_html__( 'Choose icon for title', 'restaurant-wp' ),
+					'state_handler' => array(
+						'style_item[1]' => array( 'hide' ),
+						'style_item[2]' => array( 'show' ),
+					)
+				),
+				'display_button' => array(
+					'type'  => 'checkbox',
+					'label' => esc_html__( 'Display Button For Item', 'restaurant-wp' ),
+					'state_handler' => array(
+						'style_item[2]' => array( 'hide' ),
+						'style_item[1]' => array( 'show' ),
 					)
 				)
 			)

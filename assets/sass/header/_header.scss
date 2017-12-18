@@ -299,9 +299,16 @@ header#masthead {
     .icon-title-info {
       padding-left: 90px;
       display: flex;
-      font-family: 'Great Vibes', sans-serif;
-      font-size: 26px;
       color: #212121;
+      &.style-1{
+        font-family: 'Great Vibes', sans-serif;
+        font-size: 26px;
+      }
+      &.style-2{
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+      }
       img {
         height: 33px;
       }
@@ -362,13 +369,14 @@ header {
           .tm-table {
             position: static;
             .width-logo {
+              text-align: center;
               width:200px;
               position: absolute;
               left: 0;
               right: 0;
               margin-left: auto;
               margin-right: auto;
-              bottom: 60px;
+              bottom: 50px;
             }
           }
         }

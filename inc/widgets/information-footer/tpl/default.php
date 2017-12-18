@@ -4,7 +4,7 @@ if ( ! empty( $instance['repeater-content'] ) ) {
 }
 ?>
 <div class="title-info-footer">
-    <p><?php echo $instance['title']; ?></p>
+    <h6><?php echo $instance['title']; ?></h6>
 </div>
 <?php
 foreach ( $repeater_items as $index => $repeater_item ) {

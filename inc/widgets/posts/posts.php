@@ -7,8 +7,34 @@
 class Thim_Posts_Widget extends SiteOrigin_Widget {
 
 	function __construct() {
+		$my_query = new WP_Query();
 
-		$list_cate        = get_categories();
+		$my_query->query( array(
+			'post_type'   => 'post',
+			'post_status' => 'publish',
+			'tax_query'   => array(
+				array(
+					'taxonomy' => 'post_format',
+					'field'    => 'slug',
+					'terms'    => array( 'post-format-gallery' ),
+					'operator' => 'NOT IN'
+				)
+			)
+		) );
+		$list_cate = array();
+		if ( $my_query->have_posts() ) {
+			while ( $my_query->have_posts() ) {
+				$my_query->the_post();
+				foreach ( ( get_the_category() ) as $category ) {
+					if ( ! in_array( $category->cat_ID, $list_cate ) ) {
+						$list_cate[] = $category->cat_ID;
+					}
+				}
+			}
+		}
+		$list_cate        = get_categories( array(
+			'exclude' => get_cat_ID( 'Gallery' )
+		) );
 		$list_cate_option = array(
 			"1" => esc_html__( 'All categories', 'restaurant-wp' )
 		);

@@ -13,6 +13,14 @@ $cateID   = get_cat_ID( $cateName );
 $news_args = $instance['choose_cate'] == 1 ? array(
 	'posts_per_page'      => $instance['posts_per_page'],
 	'ignore_sticky_posts' => true,
+	'tax_query'   => array(
+		array(
+			'taxonomy' => 'post_format',
+			'field'    => 'slug',
+			'terms'    => array( 'post-format-gallery' ),
+			'operator' => 'NOT IN'
+		)
+	)
 ) : array(
 	'posts_per_page'      => $instance['posts_per_page'],
 	'ignore_sticky_posts' => true,
