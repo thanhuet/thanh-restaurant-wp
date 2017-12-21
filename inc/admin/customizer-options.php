@@ -76,8 +76,7 @@ class Thim_Customize_Options {
 		require_once $customize_path . 'sidebars.php';
 		require_once $customize_path . 'nav-menus.php';
 		require_once $customize_path . 'widgets.php';
-
-
+		require_once $customize_path . 'general-404-style.php';
     }
 }
 

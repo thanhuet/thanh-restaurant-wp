@@ -24,10 +24,29 @@
 }
 
 //404
-.content-error-404{
-  .page-content{
-    p{
-      color:$thim_font_title_color;
+
+.error-404 {
+  &.style-1{
+    .content-error-404{
+      .page-content{
+        p{
+          color:$thim_font_title_color;
+        }
+      }
+    }
+  }
+  &.style-2{
+    background-image: url($thim_404_background_image);
+    .content-error-404{
+      .page-header{
+        .page-title{
+          color:$thim_body_primary_color;
+        }
+      }
+      .page-content{
+        h1{
+        }
+      }
     }
   }
 }

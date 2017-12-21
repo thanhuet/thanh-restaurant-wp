@@ -10207,21 +10207,40 @@ input[type="submit"],
 .error-404 .search-form {
   max-width: 50%; }
 
-.error-404 .img-error-404 {
+.error-404.style-1 .img-error-404 {
   text-align: center; }
 
-.error-404 .content-error-404 {
+.error-404.style-1 .content-error-404 {
   margin-top: 90px; }
-  .error-404 .content-error-404 .page-header .page-title {
+  .error-404.style-1 .content-error-404 .page-header .page-title {
     font-family: "Great Vibes", sans-serif;
     font-size: 40px; }
-  .error-404 .content-error-404 .page-content {
+  .error-404.style-1 .content-error-404 .page-content {
+    padding-top: 20px;
     margin-top: -25px;
     font-size: 40px;
     font-weight: bolder; }
-  .error-404 .content-error-404 .page-404-detail {
+  .error-404.style-1 .content-error-404 .page-404-detail {
     font-size: 16px;
     margin-top: 50px; }
+
+.error-404.style-2 {
+  margin-bottom: -2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .error-404.style-2 .content-error-404 {
+    margin-left: 25%;
+    margin-top: 269px;
+    margin-bottom: 304px; }
+    .error-404.style-2 .content-error-404 .page-header .page-title {
+      font-size: 40px;
+      letter-spacing: 0;
+      margin: 0; }
+    .error-404.style-2 .content-error-404 .page-content h1 {
+      margin: 0;
+      font-size: 26px;
+      color: white; }
 
 .wpcf7-form {
   margin-bottom: 75px; }
@@ -10249,9 +10268,6 @@ input[type="submit"],
       background: #FFFFFF;
       border: 1px solid #FFFFFF;
       color: #616161; }
-
-.content-error-404 .page-content {
-  padding-top: 20px; }
 
 /*!--------------------------------------------------------------
 14.0 - widget
@@ -10761,6 +10777,38 @@ input[type="submit"],
       bottom: 0;
       height: 3px;
       border-bottom: 1px solid #212121; }
+
+.so-widget-thim-gallery .thim-gallery-header {
+  text-align: center;
+  margin-bottom: 50px; }
+  .so-widget-thim-gallery .thim-gallery-header .thim-gallery-title h3 {
+    font-size: 20px;
+    font-weight: inherit;
+    margin: 0; }
+  .so-widget-thim-gallery .thim-gallery-header .thim-gallery-info h4 {
+    margin: 0;
+    font-size: 26px; }
+  .so-widget-thim-gallery .thim-gallery-header .icon-thim-gallery {
+    position: relative;
+    display: inline;
+    padding: 0 10px; }
+    .so-widget-thim-gallery .thim-gallery-header .icon-thim-gallery::before {
+      content: " ";
+      width: 61px;
+      position: absolute;
+      left: 100%;
+      bottom: 30%;
+      height: 3px; }
+    .so-widget-thim-gallery .thim-gallery-header .icon-thim-gallery::after {
+      content: " ";
+      width: 61px;
+      position: absolute;
+      right: 100%;
+      bottom: 30%;
+      height: 3px; }
+
+.so-widget-thim-gallery .content-gallery .img-widget-gallery {
+  padding: 0; }
 
 /*
  *  Owl Carousel - Core

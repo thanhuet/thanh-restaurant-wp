@@ -159,3 +159,17 @@
     }
   }
 }
+.so-widget-thim-gallery {
+  .thim-gallery-header {
+    .icon-thim-gallery{
+      &::before {
+        background-color:$thim_body_primary_color;
+        border: 1px solid $thim_body_primary_color;
+      }
+      &::after {
+        background-color:$thim_body_primary_color;
+        border: 1px solid $thim_body_primary_color;
+      }
+    }
+  }
+}

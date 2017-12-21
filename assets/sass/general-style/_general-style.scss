@@ -1,22 +1,22 @@
 /*
  * Include common style for theme */
 // style widget categories
-.widget_categories{
-  margin-bottom:35px !important;
+.widget_categories {
+  margin-bottom: 35px !important;
 }
 
 // style widget recent posts
-.widget_recent_posts{
-  margin-bottom:30px !important;
+.widget_recent_posts {
+  margin-bottom: 30px !important;
 }
 
 // style widget top blog detail
-.widget_top_blog_detail{
-  margin-bottom:60px !important;
+.widget_top_blog_detail {
+  margin-bottom: 60px !important;
 }
 
 // style widget search
-.widget_search{
+.widget_search {
   .search-form {
     &:after {
       height: 50px;
@@ -24,75 +24,76 @@
     }
   }
 }
-.widget-top-blog-detail{
-  margin-top:25px;
+
+.widget-top-blog-detail {
+  margin-top: 25px;
   text-align: center;
-  img{
+  img {
     border-radius: 100%;
-    margin-bottom:25px;
+    margin-bottom: 25px;
   }
-  .widget-title-blog-detail{
-    font-size:22px;
+  .widget-title-blog-detail {
+    font-size: 22px;
     position: relative;
-    font-weight:600;
-    p{
-      padding-bottom:15px;
+    font-weight: 600;
+    p {
+      padding-bottom: 15px;
     }
   }
-  .widget-title-blog-detail:after{
+  .widget-title-blog-detail:after {
     position: absolute;
     background: #E6AE69;
-    width:50px;
-    height:2px;
+    width: 50px;
+    height: 2px;
     content: '';
-    left:50%;
+    left: 50%;
     margin-left: -25px;
   }
-  .widget-description-blog-detail{
-    margin-top:20px;
-    font-size:16px;
+  .widget-description-blog-detail {
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 
 // style recent post in blog detail
-.list-rencent-post{
-  li{
+.list-rencent-post {
+  li {
     clear: both;
     display: inline-table;
-    padding-right:0px !important;
+    padding-right: 0px !important;
     .recent-post-thumbnail {
       float: left;
-      margin-right:20px;
+      margin-right: 20px;
     }
     .recent-post-title-thumbnail {
     }
-    }
+  }
 }
 
 //style banner ads
-.banner-ads{
-  .banner-image{
+.banner-ads {
+  .banner-image {
     position: relative;
-    img{
-      width:300px;
+    img {
+      width: 300px;
       height: 250px;
-      left:50%;
-      margin-left:-150px;
+      left: 50%;
+      margin-left: -150px;
       position: relative;
     }
   }
-  .banner-title{
-    width:70%;
-    height:40%;
-    top:30%;
-    left:15%;
+  .banner-title {
+    width: 70%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
     text-align: center;
     opacity: 0.6;
     background: #FFFFFF;
     position: absolute;
     overflow: auto;
-    .banner-title-detail{
-      padding-top:12px;
+    .banner-title-detail {
+      padding-top: 12px;
       p {
         font-family: Andada-Bold;
         font-size: 24px;
@@ -100,8 +101,8 @@
         color: #212121;
       }
     }
-    .banner-title-description{
-      p{
+    .banner-title-description {
+      p {
         font-family: Roboto-Regular;
         font-size: 20px;
         color: #464646;
@@ -109,6 +110,7 @@
     }
   }
 }
+
 // Site content
 .site-content {
   padding-top: 100px;
@@ -190,25 +192,53 @@
 }
 
 .error-404 {
-  .img-error-404{
-    text-align: center;
-  }
-  .content-error-404 {
-    margin-top: 90px;
-    .page-header {
-      .page-title {
-        font-family: "Great Vibes", sans-serif;
+  &.style-1 {
+    .img-error-404 {
+      text-align: center;
+    }
+    .content-error-404 {
+      margin-top: 90px;
+      .page-header {
+        .page-title {
+          font-family: "Great Vibes", sans-serif;
+          font-size: 40px;
+        }
+      }
+      .page-content {
+        padding-top:20px ;
+        margin-top: -25px;
         font-size: 40px;
+        font-weight: bolder;
+      }
+      .page-404-detail {
+        font-size: 16px;
+        margin-top: 50px;
       }
     }
-    .page-content {
-      margin-top: -25px;
-      font-size: 40px;
-      font-weight: bolder;
-    }
-    .page-404-detail {
-      font-size: 16px;
-      margin-top: 50px;
+  }
+  &.style-2 {
+    margin-bottom: -2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .content-error-404 {
+      margin-left: 25%;
+      margin-top: 269px;
+      margin-bottom: 304px;
+      .page-header {
+        .page-title {
+          font-size: 40px;
+          letter-spacing: 0;
+          margin: 0;
+        }
+      }
+      .page-content {
+        h1 {
+          margin: 0;
+          font-size: 26px;
+          color: white;
+        }
+      }
     }
   }
 }
@@ -257,10 +287,3 @@
 }
 
 //404
-.content-error-404{
-  .page-content{
-    padding-top: 20px;
-    p{
-    }
-  }
-}

@@ -9,6 +9,7 @@
  *
  * @return string
  */
+
 if ( ! function_exists( 'thim_wrapper_layout' ) ) :
 	function thim_wrapper_layout() {
 		global $wp_query;
@@ -109,7 +110,15 @@ if ( ! function_exists( 'thim_wrapper_loop_start' ) ) :
 		if ( is_404() ) {
 			$wrapper_class_col = 'col-sm-12 full-width';
 		}
-		echo '<div class="container site-content ' . $class_no_padding . '"><div class="row">';
+		$style404 = get_theme_mod( '404_style', false );
+		if ($style404=="style_2"){
+			if(is_404()){
+				echo '<div style="padding:0;margin:0;width:100%" class="container site-content ' . $class_no_padding . '"><div class="row" style="padding:0;margin:0;width:100%">';
+			}
+		}
+		else{
+			echo '<div class="container site-content ' . $class_no_padding . '"><div class="row">';
+		}
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
 			$postid = get_the_ID();
 			if ( is_page() ) {
@@ -162,13 +171,11 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 		if ( $wrapper_class_col != 'col-sm-12 full-width' && $wrapper_class_col != 'col-sm-6 flex-unordered' ) {
 			if ( get_post_type() == "product" ) {
 				get_sidebar( 'shop' );
+			} elseif ( is_single() ) {
+				get_sidebar();
+			} elseif ( is_home() ) {
+				get_sidebar();
 			}
-			elseif(is_single()) {
-                get_sidebar();
-			}
-			elseif(is_home()){
-			    get_sidebar();
-            }
 		}
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
 			if ( is_page() ) {
@@ -188,9 +195,9 @@ if ( ! function_exists( 'thim_wrapper_loop_end' ) ) :
 			} else {
 				$get_sidebar_right = get_theme_mod( '' . $prefix . 'archive_layout_sidebar_right' );
 			}
-                echo '<aside id="secondary-right" class="widget-area col-sm-4 sticky-sidebar">';
-                dynamic_sidebar($get_sidebar_right);
-                echo '</aside>';
+			echo '<aside id="secondary-right" class="widget-area col-sm-4 sticky-sidebar">';
+			dynamic_sidebar( $get_sidebar_right );
+			echo '</aside>';
 		}
 		echo '</div></div>';
 	}

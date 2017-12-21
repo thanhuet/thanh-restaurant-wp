@@ -705,3 +705,49 @@ $pulse-duration: 750ms;
     }
   }
 }
+
+.so-widget-thim-gallery {
+  .thim-gallery-header {
+    text-align: center;
+    margin-bottom: 50px;
+    .thim-gallery-title {
+        h3{
+          font-size:20px;
+          font-weight: inherit;
+          margin: 0;
+        }
+    }
+    .thim-gallery-info{
+      h4{
+        margin: 0;
+        font-size: 26px;
+      }
+    }
+    .icon-thim-gallery{
+      position: relative;
+      display: inline;
+      padding: 0 10px;
+      &::before {
+        content: " ";
+        width: 61px;
+        position: absolute;
+        left: 100%;
+        bottom: 30%;
+        height: 3px;
+      }
+      &::after {
+        content: " ";
+        width: 61px;
+        position: absolute;
+        right: 100%;
+        bottom: 30%;
+        height: 3px;
+      }
+    }
+  }
+  .content-gallery{
+    .img-widget-gallery{
+      padding: 0;
+    }
+  }
+}

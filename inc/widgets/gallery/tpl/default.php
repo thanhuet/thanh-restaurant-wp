@@ -8,6 +8,9 @@ $col      = $instance['column'];
 $colIndex = 12 / $col;
 $colStyle = 'col-md-' . (string) $colIndex;
 
+$limitPost  = $instance['number_image'];
+$numberPost = 0;
+
 $args_query = array(
 	'post_type' => 'post',
 	'tax_query' => array(
@@ -20,28 +23,50 @@ $args_query = array(
 );
 
 ?>
-    <div class="thim-gallery-header">
-        <div class="thim-gallery-title">
-            <h3><?php echo $instance['title']; ?></h3>
-        </div>
-        <div class="thim-gallery-info">
-            <h4>
-				<?php echo $instance['description']; ?>
-            </h4>
-        </div>
-        <div class="icon-thim-gallery">
-            <img src="<?php echo $iconCrop ?>">
-        </div>
+<div class="thim-gallery-header">
+    <div class="thim-gallery-title">
+        <h3><?php echo $instance['title']; ?></h3>
     </div>
+    <div class="thim-gallery-info">
+        <h4>
+			<?php echo $instance['description']; ?>
+        </h4>
+    </div>
+    <div class="icon-thim-gallery">
+        <img src="<?php echo $iconCrop ?>">
+    </div>
+</div>
 <?php
 $query = new WP_Query( $args_query );
-while ( $query->have_posts() ) {
-
-        $images = thim_post_meta( 'thim_gallery', array(
-		'type'   => 'image',
-		'single' => 'false',
-		'size'   => $image_size
-	) );
-}
-
 ?>
+<div class="content-gallery row">
+	<?php
+	while ( $query->have_posts() ) {
+		$query->the_post();
+		$temp          = array();
+		$data          = array();
+		$attachment_id = get_post_meta( get_post()->ID, 'thim_gallery', false );
+		foreach ( $attachment_id as $k => $v ) {
+			$image_attributes = wp_get_attachment_image_src( $v, $args['size'] );
+			$temp['url']      = $image_attributes[0];
+			$data[]           = $temp;
+		}
+		for ( $i = 0; $i < count( $data ); $i ++ ) {
+			if ( $numberPost > $limitPost ) {
+				break;
+			} else {
+				$imageUrl  = $data[ $i ]['url'];
+				$sizeImage = getimagesize( $imageUrl );
+				$imageCrop = $sizeImage[0] > 400 && $sizeImage[1] > 500 ? thim_aq_resize( $imageUrl, 400, 500, 1 ) : $imageUrl;
+				?>
+                <div class="img-widget-gallery <?php echo $colStyle ?> ">
+                    <img src="<?php echo $imageCrop ?>" alt="<?php echo get_post()->post_name ?>">
+                </div>
+				<?php
+				$numberPost ++;
+//			var_dump( $sizeImage );
+			}
+		}
+	}
+	?>
+</div>
