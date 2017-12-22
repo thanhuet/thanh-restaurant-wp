@@ -50,3 +50,15 @@
     }
   }
 }
+
+//contact-form-hairsalon
+.content-contact-form-hairsalon{
+
+  .contact-submit {
+    .wpcf7-submit {
+      &:hover{
+        background:$thim_body_primary_color;
+      }
+    }
+  }
+}

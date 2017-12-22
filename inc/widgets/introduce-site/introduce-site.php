@@ -27,7 +27,7 @@ class Thim_IntroSite_Widget extends SiteOrigin_Widget {
 					'label'         => esc_html__( 'Choose style for item', 'restaurant-wp' ),
 					'options'       => array(
 						'1' => 'Style 1',
-						'2' => 'Style 2'
+						'2' => 'Style 2',
 					),
 					'default'       => '1',
 					'state_emitter' => array(
@@ -43,14 +43,31 @@ class Thim_IntroSite_Widget extends SiteOrigin_Widget {
 						'style_item[2]' => array( 'show' ),
 					)
 				),
-				'display_button' => array(
-					'type'  => 'checkbox',
-					'label' => esc_html__( 'Display Button For Item', 'restaurant-wp' ),
+				'image_detail'     => array(
+					'type'          => 'media',
+					'label'         => esc_html__( 'Choose Image For Item', 'restaurant-wp' ),
 					'state_handler' => array(
 						'style_item[1]' => array( 'hide' ),
 						'style_item[2]' => array( 'show' ),
 					)
-				)
+				),
+				'display_image' => array(
+					'type'          => 'checkbox',
+					'label'         => esc_html__( 'Display Image For Item', 'restaurant-wp' ),
+					'state_handler' => array(
+						'style_item[1]' => array( 'hide' ),
+						'style_item[2]' => array( 'show' ),
+					)
+				),
+				'display_button' => array(
+					'type'          => 'checkbox',
+					'label'         => esc_html__( 'Display Button For Item', 'restaurant-wp' ),
+					'state_handler' => array(
+						'style_item[1]' => array( 'hide' ),
+						'style_item[2]' => array( 'show' ),
+					)
+				),
+
 			)
 		);
 	}

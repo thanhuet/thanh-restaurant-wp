@@ -30,7 +30,22 @@ thim_customizer()->add_field(
         ),
     )
 );
-
+thim_customizer()->add_field(
+	array(
+		'id'          => 'breadcrumb_style',
+		'type'    => 'select',
+		'label'   => esc_html__( 'Style', 'restaurant-wp' ),
+		'tooltip' => esc_html__( 'Style for breadcrumb.', 'restaurant-wp' ),
+		'section' => 'breadcrumb',
+		'default' => 'style_1',
+		'priority' => 10,
+		'multiple' => 0,
+		'choices' => array(
+			'style_1' => esc_html__( 'Style 1', 'restaurant-wp' ),
+			'style_2' => esc_html__( 'Style 2', 'restaurant-wp' ),
+		),
+	)
+);
 // Enter Icon To Show In Breadcrumb
 $link_icon = 'http://fontawesome.io/icons/';
 

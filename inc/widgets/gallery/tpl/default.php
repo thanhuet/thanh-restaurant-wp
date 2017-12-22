@@ -60,7 +60,9 @@ $query = new WP_Query( $args_query );
 				$imageCrop = $sizeImage[0] > 400 && $sizeImage[1] > 500 ? thim_aq_resize( $imageUrl, 400, 500, 1 ) : $imageUrl;
 				?>
                 <div class="img-widget-gallery <?php echo $colStyle ?> ">
-                    <img src="<?php echo $imageCrop ?>" alt="<?php echo get_post()->post_name ?>">
+                    <a href="<?php echo get_post_permalink(get_post()->ID)?>">
+                        <img src="<?php echo $imageCrop ?>" title="<?php echo get_post()->post_name ?>" alt="<?php echo get_post()->post_name ?>">
+                    </a>
                 </div>
 				<?php
 				$numberPost ++;

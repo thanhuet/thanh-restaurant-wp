@@ -302,7 +302,7 @@
     }
   }
   &.style-2 {
-    padding: 94px 100px 0;
+    margin-top: 94px;
     text-align: center;
     .intro-title {
       h2 {
@@ -319,6 +319,7 @@
       }
     }
     .intro-detail {
+      padding: 0 100px;
       margin-top: 43px;
       letter-spacing: 0;
       line-height: 25px;
@@ -344,6 +345,9 @@
         bottom: 30%;
         height: 3px;
       }
+    }
+    .image-intro-site{
+      margin-top: 50px;
     }
   }
   .btn-intro-site {

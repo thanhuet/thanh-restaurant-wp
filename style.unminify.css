@@ -7631,29 +7631,58 @@ header#masthead {
       font-weight: 300;
       text-align: inherit; }
 
-#breadcrumbs {
+.breadcrumb-content.style-1 #breadcrumbs {
   padding: 13px 0;
   margin: 0;
   border-bottom: none; }
-  #breadcrumbs li {
+  .breadcrumb-content.style-1 #breadcrumbs li {
     line-height: 25px;
     display: inline-block;
     list-style: none; }
-    #breadcrumbs li a {
+    .breadcrumb-content.style-1 #breadcrumbs li a {
       line-height: 25px;
       display: inline-block; }
-    #breadcrumbs li span.breadcrum-icon {
-      margin: 0 10px;
-      filter: alpha(opacity=50);
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-      -webkit-opacity: 0.5;
-      -khtml-opacity: 0.5;
-      -moz-opacity: 0.5;
-      -ms-opacity: 0.5;
-      -o-opacity: 0.5;
-      opacity: 0.5; }
-    #breadcrumbs li:last-child:after {
+    .breadcrumb-content.style-1 #breadcrumbs li span.breadcrum-icon {
+      margin: 0 10px; }
+    .breadcrumb-content.style-1 #breadcrumbs li:last-child:after {
       display: none; }
+
+.breadcrumb-content.style-2 {
+  text-align: center; }
+  .breadcrumb-content.style-2 #breadcrumbs {
+    padding: 22px 0 0;
+    margin: 0;
+    border-bottom: none; }
+    .breadcrumb-content.style-2 #breadcrumbs li {
+      line-height: 25px;
+      display: inline-block;
+      list-style: none; }
+      .breadcrumb-content.style-2 #breadcrumbs li a {
+        line-height: 25px;
+        display: inline-block; }
+      .breadcrumb-content.style-2 #breadcrumbs li span.breadcrum-icon {
+        position: relative;
+        margin: 10px 22px; }
+        .breadcrumb-content.style-2 #breadcrumbs li span.breadcrum-icon i {
+          position: absolute;
+          bottom: 5px; }
+      .breadcrumb-content.style-2 #breadcrumbs li:last-child:after {
+        display: none; }
+  .breadcrumb-content.style-2 .under-line {
+    display: inline-block;
+    position: relative;
+    clear: both;
+    width: 470px;
+    margin: 0;
+    height: 2px; }
+    .breadcrumb-content.style-2 .under-line::after {
+      content: " ";
+      width: 470px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      border: 1px solid #979797; }
 
 /*!--------------------------------------------------------------
 8.0 - Blog
@@ -10242,32 +10271,64 @@ input[type="submit"],
       font-size: 26px;
       color: white; }
 
-.wpcf7-form {
-  margin-bottom: 75px; }
-  .wpcf7-form .content-contact-form {
-    max-width: 570px; }
-    .wpcf7-form .content-contact-form .wpcf7-form-control-wrap {
-      margin-bottom: 30px;
-      display: inline-block;
-      width: 100%; }
-      .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
-        color: white;
-        height: 45px;
-        padding: 14px 0 15px 20px;
-        background: none;
-        border: 1px solid #fff;
-        width: 100%;
-        font-size: 14px; }
-        .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea::placeholder {
-          color: white; }
-      .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
-        height: 130px; }
-    .wpcf7-form .content-contact-form .contact-submit .wpcf7-submit {
-      font-size: 14px;
-      padding: 15px 30px;
+.wpcf7-form .content-contact-form {
+  margin-bottom: 75px;
+  max-width: 570px; }
+  .wpcf7-form .content-contact-form .wpcf7-form-control-wrap {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%; }
+    .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
+      color: white;
+      height: 45px;
+      padding: 14px 0 15px 20px;
+      background: none;
+      border: 1px solid #fff;
+      width: 100%;
+      font-size: 14px; }
+      .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-text::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-emai::placeholder, .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea::placeholder {
+        color: white; }
+    .wpcf7-form .content-contact-form .wpcf7-form-control-wrap .wpcf7-textarea {
+      height: 130px; }
+  .wpcf7-form .content-contact-form .contact-submit .wpcf7-submit {
+    font-size: 14px;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #616161; }
+
+.wpcf7-form .content-contact-form-hairsalon {
+  max-width: 770px;
+  margin: auto;
+  margin-bottom: 100px; }
+  .wpcf7-form .content-contact-form-hairsalon .wpcf7-form-control-wrap {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%; }
+    .wpcf7-form .content-contact-form-hairsalon .wpcf7-form-control-wrap .wpcf7-text, .wpcf7-form .content-contact-form-hairsalon .wpcf7-form-control-wrap .wpcf7-emai, .wpcf7-form .content-contact-form-hairsalon .wpcf7-form-control-wrap .wpcf7-textarea {
+      color: #999;
+      height: 45px;
+      padding: 14px 0 15px 20px;
       background: #FFFFFF;
-      border: 1px solid #FFFFFF;
-      color: #616161; }
+      border: 1px solid #CCCCCC;
+      width: 100%;
+      font-size: 14px; }
+    .wpcf7-form .content-contact-form-hairsalon .wpcf7-form-control-wrap .wpcf7-textarea {
+      height: 186px; }
+  .wpcf7-form .content-contact-form-hairsalon .contact-submit .wpcf7-submit {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 18px 50px;
+    border: 1px solid #C68143;
+    background: #fff;
+    color: #424242;
+    transition: all .3s linear; }
+    .wpcf7-form .content-contact-form-hairsalon .contact-submit .wpcf7-submit:hover {
+      color: white; }
+
+.fa-1 {
+  color: #272E35;
+  font-size: 6px; }
 
 /*!--------------------------------------------------------------
 14.0 - widget
@@ -10497,7 +10558,7 @@ input[type="submit"],
     line-height: 28px; }
 
 .intro-site-container.style-2 {
-  padding: 94px 100px 0;
+  margin-top: 94px;
   text-align: center; }
   .intro-site-container.style-2 .intro-title h2 {
     font-size: 20px;
@@ -10508,6 +10569,7 @@ input[type="submit"],
     margin: 0;
     font-size: 26px; }
   .intro-site-container.style-2 .intro-detail {
+    padding: 0 100px;
     margin-top: 43px;
     letter-spacing: 0;
     line-height: 25px;
@@ -10530,6 +10592,8 @@ input[type="submit"],
       right: 100%;
       bottom: 30%;
       height: 3px; }
+  .intro-site-container.style-2 .image-intro-site {
+    margin-top: 50px; }
 
 .intro-site-container .btn-intro-site {
   transition: all .3s linear;

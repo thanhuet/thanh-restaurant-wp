@@ -11,6 +11,7 @@ $hide_breadcrumb      = $hide_title = 0;
 $bg_opacity           = 1;
 $style404             = get_theme_mod( '404_style', false );
 $cat_obj              = $wp_query->get_queried_object();
+$styleBreadcrumb      = get_theme_mod( 'breadcrumb_style' ,false);
 if ( isset( $cat_obj->term_id ) ) {
 	$cat_ID = $cat_obj->term_id;
 } else {
@@ -123,188 +124,217 @@ $parallax          = get_theme_mod( 'enable_parallax_page_title', true ) ? ' dat
 
 <?php
 if ( $style404 == "style_2" ) {
-	if ( is_404() ) {
-		?>
-        <div class="page-title" style="display: none">
+if ( is_404() ) {
+?>
+<div class="page-title" style="display: none">
+	<?php
+	} else {
+	?>
+    <div class="page-title">
 		<?php
+		}
+		?>
+		<?php if ( $hide_title != '1' ) : ?>
+            <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
+                <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
+				<?php if ( $hide_title != '1' ) : ?>
+                    <div class="content container "
+                         style="text-align: <?php echo $style_page_title['text-align'] ?>">
+						<?php
+						if ( is_single() ) {
+							$typography = 'h2 ' . $title_css;
+						} else {
+							$typography = 'h1 ' . $title_css;
+						}
+						if ( ( is_category() || is_archive() || is_search() || is_404() ) ) {
+							echo '<' . $typography . '>';
+							echo thim_archive_title();
+							echo '</' . $typography . '>';
+							if ( category_description( $cat_ID ) != '' ) {
+							} else {
+								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+							}
+						} elseif ( is_page() || is_single() ) {
+							if ( is_single() ) {
+								if ( get_post_type() == "post" ) {
+									if ( $custom_title ) {
+										$single_title = $custom_title;
+									} else {
+										$category     = get_the_category();
+										$category_id  = get_cat_ID( $category[0]->cat_name );
+										$single_title = get_category_parents( $category_id, false, " " );
+									}
+									echo '<' . $typography . '>' . $single_title;
+									echo '</' . $typography . '>';
+								}
+
+								if ( get_post_type() == "our_team" ) {
+									echo '<' . $typography . '>' . esc_html__( 'Our Team', 'restaurant-wp' );
+									echo '</' . $typography . '>';
+								}
+								if ( get_post_type() == "testimonials" ) {
+									echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'restaurant-wp' );
+									echo '</' . $typography . '>';
+								}
+							} else {
+								echo '<' . $typography . '>';
+								echo ( $custom_title != '' ) ? $custom_title : get_the_title( get_the_ID() );
+								echo '</' . $typography . '>';
+							}
+							echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+						} elseif ( is_front_page() || is_home() ) {
+							echo '<h1>';
+							echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
+							echo '</h1>';
+							echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+						}
+						?>
+						<?php
+						if ( $hide_breadcrumb != '1' && $styleBreadcrumb == 'style_1' ) :?>
+                            <div class="breadcrumb-content" <?php echo $c_css_breadcrumb ?>>
+								<?php
+								if ( ! is_front_page() || ! is_home() ) { ?>
+                                    <div class="breadcrumbs-wrapper">
+                                        <div class="container">
+											<?php
+											if ( get_post_type() == 'product' ) {
+												woocommerce_breadcrumb();
+											} else {
+												thim_breadcrumbs();
+											}
+											?>
+                                        </div><!-- .container -->
+                                    </div><!-- .breadcrumbs-wrapper -->
+								<?php }
+								?>
+                            </div><!-- .breadcrumb-content -->
+							<?php
+						endif;
+						?>
+                    </div>
+				<?php endif; ?>
+            </div><!-- .main-top -->
+		<?php endif; ?>
+
+
+    </div><!-- .page-title -->
+	<?php
 	} else {
 		?>
         <div class="page-title">
+			<?php if ( $hide_title != '1' ) : ?>
+                <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
+                    <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
+					<?php if ( $hide_title != '1' ) : ?>
+                        <div class="content container "
+                             style="text-align: <?php echo $style_page_title['text-align'] ?>">
+							<?php
+							if ( is_single() ) {
+								$typography = 'h2 ' . $title_css;
+							} else {
+								$typography = 'h1 ' . $title_css;
+							}
+							if ( ( is_category() || is_archive() || is_search() || is_404() ) ) {
+								echo '<' . $typography . '>';
+								echo thim_archive_title();
+								echo '</' . $typography . '>';
+								if ( category_description( $cat_ID ) != '' ) {
+								} else {
+									echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+								}
+							} elseif ( is_page() || is_single() ) {
+								if ( is_single() ) {
+									if ( get_post_type() == "post" ) {
+										if ( $custom_title ) {
+											$single_title = $custom_title;
+										} else {
+											$category     = get_the_category();
+											$category_id  = get_cat_ID( $category[0]->cat_name );
+											$single_title = get_category_parents( $category_id, false, " " );
+										}
+										echo '<' . $typography . '>' . $single_title;
+										echo '</' . $typography . '>';
+									}
+
+									if ( get_post_type() == "our_team" ) {
+										echo '<' . $typography . '>' . esc_html__( 'Our Team', 'restaurant-wp' );
+										echo '</' . $typography . '>';
+									}
+									if ( get_post_type() == "testimonials" ) {
+										echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'restaurant-wp' );
+										echo '</' . $typography . '>';
+									}
+								} else {
+									echo '<' . $typography . '>';
+									echo ( $custom_title != '' ) ? $custom_title : get_the_title( get_the_ID() );
+									echo '</' . $typography . '>';
+								}
+								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+							} elseif ( is_front_page() || is_home() ) {
+								echo '<h1>';
+								echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
+								echo '</h1>';
+								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
+							}
+							?>
+							<?php
+							if ( $hide_breadcrumb != '1' && $styleBreadcrumb == 'style_1' ) :?>
+                                <?php ?>
+                                <div class="breadcrumb-content style-1" <?php echo $c_css_breadcrumb ?>>
+									<?php
+									if ( ! is_front_page() || ! is_home() ) { ?>
+                                        <div class="breadcrumbs-wrapper">
+                                            <div class="container">
+												<?php
+												if ( get_post_type() == 'product' ) {
+													woocommerce_breadcrumb();
+												} else {
+													thim_breadcrumbs();
+												}
+												?>
+                                            </div><!-- .container -->
+                                        </div><!-- .breadcrumbs-wrapper -->
+									<?php }
+									?>
+                                </div><!-- .breadcrumb-content -->
+								<?php
+							endif;
+							?>
+                        </div>
+					<?php endif; ?>
+                </div><!-- .main-top -->
+			<?php endif; ?>
+
+
+        </div><!-- .page-title -->
 		<?php
 	}
-	?>
-	<?php if ( $hide_title != '1' ) : ?>
-        <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
-            <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
-			<?php if ( $hide_title != '1' ) : ?>
-                <div class="content container "
-                     style="text-align: <?php echo $style_page_title['text-align'] ?>">
-					<?php
-					if ( is_single() ) {
-						$typography = 'h2 ' . $title_css;
-					} else {
-						$typography = 'h1 ' . $title_css;
-					}
-					if ( ( is_category() || is_archive() || is_search() || is_404() ) ) {
-						echo '<' . $typography . '>';
-						echo thim_archive_title();
-						echo '</' . $typography . '>';
-						if ( category_description( $cat_ID ) != '' ) {
-						} else {
-							echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-						}
-					} elseif ( is_page() || is_single() ) {
-						if ( is_single() ) {
-							if ( get_post_type() == "post" ) {
-								if ( $custom_title ) {
-									$single_title = $custom_title;
-								} else {
-									$category     = get_the_category();
-									$category_id  = get_cat_ID( $category[0]->cat_name );
-									$single_title = get_category_parents( $category_id, false, " " );
-								}
-								echo '<' . $typography . '>' . $single_title;
-								echo '</' . $typography . '>';
-							}
-
-							if ( get_post_type() == "our_team" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Our Team', 'restaurant-wp' );
-								echo '</' . $typography . '>';
-							}
-							if ( get_post_type() == "testimonials" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'restaurant-wp' );
-								echo '</' . $typography . '>';
-							}
-						} else {
-							echo '<' . $typography . '>';
-							echo ( $custom_title != '' ) ? $custom_title : get_the_title( get_the_ID() );
-							echo '</' . $typography . '>';
-						}
-						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-					} elseif ( is_front_page() || is_home() ) {
-						echo '<h1>';
-						echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
-						echo '</h1>';
-						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-					}
-					?>
-					<?php
-					if ( $hide_breadcrumb != '1' ) :?>
-                        <div class="breadcrumb-content" <?php echo $c_css_breadcrumb ?>>
+	if($hide_title!='1'){
+		if ( $hide_breadcrumb != '1' && $styleBreadcrumb == 'style_2' ) {
+		    if(!is_404()){
+			?>
+            <div class="breadcrumb-content style-2" <?php echo $c_css_breadcrumb ?>>
+				<?php
+				if ( ! is_front_page() || ! is_home() ) { ?>
+                    <div class="breadcrumbs-wrapper">
+                        <div class="container">
 							<?php
-							if ( ! is_front_page() || ! is_home() ) { ?>
-                                <div class="breadcrumbs-wrapper">
-                                    <div class="container">
-										<?php
-										if ( get_post_type() == 'product' ) {
-											woocommerce_breadcrumb();
-										} else {
-											thim_breadcrumbs();
-										}
-										?>
-                                    </div><!-- .container -->
-                                </div><!-- .breadcrumbs-wrapper -->
-							<?php }
+							if ( get_post_type() == 'product' ) {
+								woocommerce_breadcrumb();
+							} else {
+								thim_breadcrumbs();
+							}
 							?>
-                        </div><!-- .breadcrumb-content -->
-						<?php
-					endif;
-					?>
-                </div>
-			<?php endif; ?>
-        </div><!-- .main-top -->
-	<?php endif; ?>
+                        </div><!-- .container -->
+                    </div><!-- .breadcrumbs-wrapper -->
+				<?php }
+				?>
+                <div class="under-line"></div>
+            </div><!-- .breadcrumb-content -->
+			<?php
+		    }
+		}
+    }
 
-
-    </div><!-- .page-title -->
-	<?php
-} else {
 	?>
-    <div class="page-title">
-        <?php if ( $hide_title != '1' ) : ?>
-        <div class="main-top" <?php echo ent2ncr( $c_css ); ?>  <?php echo ent2ncr( $parallax ); ?> >
-            <span class="overlay-top-header" <?php echo ent2ncr( $overlay_css ); ?>></span>
-			<?php if ( $hide_title != '1' ) : ?>
-                <div class="content container "
-                     style="text-align: <?php echo $style_page_title['text-align'] ?>">
-					<?php
-					if ( is_single() ) {
-						$typography = 'h2 ' . $title_css;
-					} else {
-						$typography = 'h1 ' . $title_css;
-					}
-					if ( ( is_category() || is_archive() || is_search() || is_404() ) ) {
-						echo '<' . $typography . '>';
-						echo thim_archive_title();
-						echo '</' . $typography . '>';
-						if ( category_description( $cat_ID ) != '' ) {
-						} else {
-							echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-						}
-					} elseif ( is_page() || is_single() ) {
-						if ( is_single() ) {
-							if ( get_post_type() == "post" ) {
-								if ( $custom_title ) {
-									$single_title = $custom_title;
-								} else {
-									$category     = get_the_category();
-									$category_id  = get_cat_ID( $category[0]->cat_name );
-									$single_title = get_category_parents( $category_id, false, " " );
-								}
-								echo '<' . $typography . '>' . $single_title;
-								echo '</' . $typography . '>';
-							}
 
-							if ( get_post_type() == "our_team" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Our Team', 'restaurant-wp' );
-								echo '</' . $typography . '>';
-							}
-							if ( get_post_type() == "testimonials" ) {
-								echo '<' . $typography . '>' . esc_html__( 'Testimonials', 'restaurant-wp' );
-								echo '</' . $typography . '>';
-							}
-						} else {
-							echo '<' . $typography . '>';
-							echo ( $custom_title != '' ) ? $custom_title : get_the_title( get_the_ID() );
-							echo '</' . $typography . '>';
-						}
-						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-					} elseif ( is_front_page() || is_home() ) {
-						echo '<h1>';
-						echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
-						echo '</h1>';
-						echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
-					}
-					?>
-					<?php
-					if ( $hide_breadcrumb != '1' ) :?>
-                        <div class="breadcrumb-content" <?php echo $c_css_breadcrumb ?>>
-							<?php
-							if ( ! is_front_page() || ! is_home() ) { ?>
-                                <div class="breadcrumbs-wrapper">
-                                    <div class="container">
-										<?php
-										if ( get_post_type() == 'product' ) {
-											woocommerce_breadcrumb();
-										} else {
-											thim_breadcrumbs();
-										}
-										?>
-                                    </div><!-- .container -->
-                                </div><!-- .breadcrumbs-wrapper -->
-							<?php }
-							?>
-                        </div><!-- .breadcrumb-content -->
-						<?php
-					endif;
-					?>
-                </div>
-			<?php endif; ?>
-        </div><!-- .main-top -->
-	<?php endif; ?>
-
-
-    </div><!-- .page-title -->
-	<?php
-}
-?>

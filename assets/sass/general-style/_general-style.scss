@@ -245,8 +245,8 @@
 
 // Style Contact Form Resta
 .wpcf7-form {
-  margin-bottom: 75px;
   .content-contact-form {
+    margin-bottom: 75px;
     max-width: 570px;
     .wpcf7-form-control-wrap {
       margin-bottom: 30px;
@@ -284,6 +284,53 @@
       }
     }
   }
+  .content-contact-form-hairsalon{
+    max-width: 770px;
+    margin: auto;
+    margin-bottom: 100px;
+    .wpcf7-form-control-wrap {
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 100%;
+      .wpcf7-text {
+        color:#999;
+        height: 45px;
+        padding: 14px 0 15px 20px;
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder {
+        }
+      }
+      .wpcf7-emai {
+        @extend .wpcf7-text;
+
+      }
+      .wpcf7-textarea {
+        @extend .wpcf7-text;
+        height: 186px;
+      }
+    }
+    .contact-submit {
+      .wpcf7-submit {
+        cursor:pointer;
+        font-size: 14px;
+        padding: 18px 50px;
+        border: 1px solid #C68143;
+        background: #fff ;
+        color: #424242;
+        transition: all .3s linear;
+        &:hover{
+          color:white;
+        }
+      }
+    }
+  }
 }
 
 //404
+.fa-1{
+  color: #272E35;
+  font-size:6px;
+}
