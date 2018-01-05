@@ -4,7 +4,8 @@
 // Common style blog for archive and single
 .blog {
 	#main{
-		max-width: 800px;
+		max-width:770px;
+		box-sizing: content-box;
 	}
 	.blog-content,
 	.page-content {
@@ -14,6 +15,7 @@
 			margin-bottom: 40px;
 			.entry-title {
 				margin-bottom: 8px;
+
 				line-height: 1.4em;
 			}
 			.entry-meta {
@@ -136,7 +138,6 @@
 	}
 	// Style for archive page
 	.blog-content {
-		width: 100% !important;
 		.col-sm-6.aligncenter & {
 			h2.entry-title {
 				font-size: 26px;
@@ -272,7 +273,7 @@
 		}
 	}
 	#secondary{
-		max-width: 330px;
+		max-width:360px;
 		margin-left:20px;
 		.widget-title {
 			position: relative;

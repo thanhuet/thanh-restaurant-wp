@@ -1355,14 +1355,26 @@ body {
     }
     @media (min-width: 1024px){
       .site-content{
-        width:1190px;
-        .content-inner {
-          .entry-content {
-            .entry-header {
-              .entry-title {
-                font-size:32px;
+        width:1180px;
+        padding-left:15px;
+        padding-right:15px;
+        #main{
+          .blog-content{
+            padding-right:10px;
+            .content-inner {
+              .entry-content {
+                .entry-header {
+                  .entry-title {
+                    font-size:32px;
+                  }
+                }
               }
             }
+          }
+        }
+        #secondary{
+          .theiaStickySidebar{
+            padding-left:10px;
           }
         }
       }
