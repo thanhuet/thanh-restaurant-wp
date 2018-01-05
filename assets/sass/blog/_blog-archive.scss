@@ -15,8 +15,11 @@
 			margin-bottom: 40px;
 			.entry-title {
 				margin-bottom: 8px;
-
+				font-size:26px;
 				line-height: 1.4em;
+				a{
+					color: #333 !important;
+				}
 			}
 			.entry-meta {
 				color: #999999;
@@ -26,12 +29,12 @@
 					position: relative;
 				}
 				.entry-date {
-					color: #666666;
-					font-weight: bold;
+					color: #999;
 				}
 				.author {
 					a {
-						color: #666666;
+						color: #999;
+						font-weight: 500 !important;
 					}
 				}
 				.comment-total {
@@ -50,7 +53,16 @@
 			}
 			.entry-summary {
 				font-size: 16px;
+				color: #666;
 			}
+			.readmore{
+				a{
+					font-size:14px;
+					font-weight: bold;
+					color: #C68143 !important;
+				}
+			}
+
 			.flexslider .flex-direction-nav a:before {
 				color: #fff;
 			}
@@ -164,9 +176,7 @@
 						}
 					}
 				}
-				.entry-title {
-					font-size: 32px;
-				}
+
 				.entry-content {
 					padding: 15px 0px 40px;
 					padding-top: 29px;
@@ -179,9 +189,7 @@
 
 				.readmore {
 					margin-top: 20px;
-					font-size: 16px;
 					a {
-
 						&:before {
 							z-index: 2;
 							@include scale(0, 1);
