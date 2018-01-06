@@ -49,6 +49,7 @@
 						//font-style: italic;
 					}
 				}
+
 			}
 			.entry-summary {
 				font-size: 16px;
@@ -89,6 +90,12 @@
 					margin-bottom: 10px;
 				}
 			}
+          &:last-child{
+            .entry-content{
+              border-bottom:solid 1px #979797;
+              padding-bottom: 63px !important;
+            }
+          }
 		}
 	}
 	.blog-content {
@@ -229,9 +236,10 @@
 
 	// Panagation
 	.loop-pagination {
-		text-align: center;
-		margin: 0;
-		font-size: 16px;
+      text-align: center;
+      margin: 0;
+      font-size: 16px;
+      margin-top:20px;
 		li {
 			display: inline-block;
 			list-style: none;
