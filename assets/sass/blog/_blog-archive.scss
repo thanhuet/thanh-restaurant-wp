@@ -12,7 +12,6 @@
 		article {
 			padding-left:0px;
 			padding-right:0px;
-			margin-bottom: 40px;
 			.entry-title {
 				margin-bottom: 8px;
 				font-size:26px;
@@ -56,10 +55,21 @@
 				color: #666;
 			}
 			.readmore{
+				margin-top: 31px;
+				position: relative;
 				a{
 					font-size:14px;
 					font-weight: bold;
 					color: #C68143 !important;
+				}
+				&:after{
+					position: absolute;
+					content: '';
+					width:50px;
+					height:2px;
+					background: #C68143;
+					bottom:-4px;
+					left:0;
 				}
 			}
 
@@ -160,8 +170,6 @@
 
 		}
 		article {
-			margin-bottom: 50px;
-			padding-bottom: 50px;
 			position: relative;
 			overflow: auto;
 			.content-inner {
@@ -178,7 +186,7 @@
 				}
 
 				.entry-content {
-					padding: 15px 0px 40px;
+					padding: 15px 0px 79px;
 					padding-top: 29px;
 					.entry-meta {
 						.comment-total {
@@ -188,7 +196,6 @@
 				}
 
 				.readmore {
-					margin-top: 20px;
 					a {
 						&:before {
 							z-index: 2;
@@ -217,16 +224,6 @@
 					}
 				}
 			}
-		}
-		article:after {
-			width: 500px;
-			height: 2px;
-			background: #CCCCCC;
-			position: absolute;
-			bottom: 0;
-			content: '';
-			left: 50%;
-			margin-left: -250px;
 		}
 	}
 
