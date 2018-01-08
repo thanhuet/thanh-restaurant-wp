@@ -390,7 +390,19 @@
 /*post-widget*/
 .thim-sc-posts {
   //margin-bottom: 100px;
+  .row{
+    margin-left:0;
+    margin-right: 0;
+    margin-bottom: 24px;
+    .list-rencent-post{
+      margin-left:0;
+      margin-top:0;
+    }
+  }
   .thim-sc-heading {
+    .widget-title{
+      margin-bottom: 34px;
+    }
     .title {
       line-height: 20px;
       font-weight: inherit;

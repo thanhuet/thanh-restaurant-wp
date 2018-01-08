@@ -7,7 +7,11 @@
 
 // style widget recent posts
 .widget_recent_posts {
-  margin-bottom: 30px !important;
+  margin-bottom: 0 !important;
+}
+
+.widget_banner_ads{
+  margin-bottom: 52px !important;
 }
 
 // style widget top blog detail
@@ -17,6 +21,7 @@
 
 // style widget search
 .widget_search {
+  margin-bottom:52px !important;
   .search-form {
     &:after {
       height: 50px;
@@ -62,7 +67,7 @@
     clear: both;
     display: inline-table;
     padding-right: 0px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 30px !important;
     overflow: auto;
     .recent-post-thumbnail {
       float: left;

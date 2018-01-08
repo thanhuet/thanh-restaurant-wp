@@ -238,13 +238,13 @@
 	.loop-pagination {
       text-align: center;
       margin: 0;
-      font-size: 16px;
+      font-size: 20px;
       margin-top:20px;
 		li {
 			display: inline-block;
 			list-style: none;
 			.page-numbers {
-				font-weight: 900;
+				font-weight: 400;
 				display: inline-block;
 				width: 35px;
 				text-align: center;
@@ -252,6 +252,7 @@
 				line-height: 35px;
 				margin-right: 10px;
 				border: 1px solid transparent;
+				color: #455A64;
 				&.next, &.prev {
 					font-size: 0;
 					&:before {
@@ -268,7 +269,7 @@
 				}
 			}
 			.current {
-				color: #E6AE69 !important;
+				color: #C68143 !important;
 			}
 		}
 	}
