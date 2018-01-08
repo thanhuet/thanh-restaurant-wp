@@ -31,10 +31,14 @@
     font-size:14px;
   }
   .search-field {
+    &::placeholder{
+      font-size: 14px;
+      color: #999;
+    }
     line-height: 40px;
     background: #fff;
     height: 50px;
-    padding: 0 60px 0 15px;
+    padding: 0 60px 0 20px;
     font-size: 14px;
     width: 100%;
     border: 1px solid #eee;
@@ -60,9 +64,14 @@
 
 .widget-area .widget {
   position: relative;
+  ul{
+    li{
+      margin-bottom: 3px !important;
+    }
+  }
   .widget-title, .rsswidget {
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-weight: normal;
     margin-top: 0;
   }

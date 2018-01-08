@@ -314,6 +314,21 @@
 		}
 		// instagram
 		.widget_text {
+			.widget-title {
+				margin-bottom: 40px;
+			}
+			#sbi_images{
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0px !important;
+				justify-content: space-between;
+				.sbi_item{
+					width: 100px;
+					margin-bottom: 15px !important;
+
+				}
+			}
+
 			.sb_instagram_header, #sbi_load {
 				display: none;
 			}
