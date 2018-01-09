@@ -63,6 +63,7 @@
         color: #C68143 !important;
       }
       &:after{
+        transition: width .2s;
         position: absolute;
         content: '';
         width:50px;
@@ -70,6 +71,11 @@
         background: #C68143;
         bottom:-4px;
         left:0;
+      }
+      &:hover{
+        &:after{
+          width: 95px;
+        }
       }
     }
 
@@ -179,7 +185,6 @@
             @include scale(1, 1);
           }
           &:hover {
-            color: white !important;
             border-color: white;
           }
 
