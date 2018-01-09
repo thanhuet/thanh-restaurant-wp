@@ -345,8 +345,8 @@ if ( ! function_exists( 'thim_new_comment_fields' ) ) {
 		$aria_req  = ( $req ? 'aria-required=true' : '' );
 
 		$fields = array(
-			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'restaurant-wp' ) . ( $req ? ' *' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
-			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'restaurant-wp' ) . ( $req ? ' *' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'author' => '<p class="comment-form-author">' . '<input placeholder="' . esc_attr__( 'Name...', 'restaurant-wp' ) . ( $req ? ' ' : '' ) . '" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . ' /></p>',
+			'email'  => '<p class="comment-form-email">' . '<input placeholder="' . esc_attr__( 'Email...', 'restaurant-wp' ) . ( $req ? ' ' : '' ) . '" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30" ' . $aria_req . ' /></p>',
 //			'url'    => '<p class="comment-form-url">' . '<input placeholder="' . esc_attr__( 'Website', 'restaurant-wp' ) . '" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 		);
 
