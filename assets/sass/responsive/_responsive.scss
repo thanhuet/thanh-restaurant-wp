@@ -159,10 +159,45 @@ body {
       }
       /**homepage+header+footer**/
     }
+    @media  (max-width: 1366px){
+      .site-content{
+
+      }
+    }
     @media (max-width: 1024px){
-      .entry-meta{
-        margin-top:-20px;
-        margin-bottom:10px;
+      .site-content{
+        #main{
+          max-width: 66.66667%;
+          box-sizing: border-box;
+        }
+        #secondary {
+          width: 33.33333%;
+          margin-left: 0px;
+          .widget_banner_ads {
+            .theiaStickySidebar {
+              .widget_banner_ads {
+                .so-widget-banner_ads {
+                  .banner-ads {
+                    left: 0px;
+                    margin-left: 0px;
+                    width: 100%;
+                    .banner-title {
+                      transform: translate(-50%, -50%);
+                      left: 50%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .widget_text{
+            .textwidget{
+              .sbi_item {
+                width: 90px !important;
+              }
+            }
+          }
+        }
       }
     }
     @media (max-width: 992px) {
@@ -1336,7 +1371,6 @@ body {
     }
     @media (min-width: 667px){
       .site-content{
-        width:670px;
         .content-inner {
           .entry-content {
             .entry-header {
@@ -1350,10 +1384,9 @@ body {
     }
     @media (min-width: 736px ){
       .site-content{
-        width: 725px;
       }
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1200px){
       .site-content{
         width:1180px;
         padding-left:15px;
