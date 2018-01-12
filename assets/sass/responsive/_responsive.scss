@@ -557,6 +557,20 @@ body {
     @media(max-width: 736px){
       .site-content{
         width: 100%;
+        #main{
+          margin-bottom: 80px;
+          .comments-area{
+            .form-comment{
+              .comment-form{
+                .form-submit{
+                  position: relative;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
+            }
+          }
+        }
         #secondary{
           .widget_banner_ads{
             .so-widget-banner_ads {
