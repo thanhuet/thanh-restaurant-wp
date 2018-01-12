@@ -1141,14 +1141,6 @@ body {
       }
       /**homepage+header+footer**/
     }
-    @media (max-width: 375px){
-      .banner-ads{
-        .banner-title{
-          width:70% !important;
-          left:15% !important;
-        }
-      }
-    }
     @media (max-width: 320px){
       .comments-area{
         .list-comments{
@@ -1449,7 +1441,7 @@ body {
         }
       }
     }
-
+    //body.responsive .site-content #secondary .widget_categories ul
     @media (max-width: 414px) {
       .site-content{
         #secondary{
@@ -1457,6 +1449,40 @@ body {
             .banner-ads{
               transform: translateX(0);
               height: 240px;
+            }
+          }
+          .widget_categories{
+            ul{
+              column-count: 1;
+            }
+          }
+        }
+      }
+    }
+    //body.responsive .site-content #main .page-content .comments-area .form-comment .comment-form .comment-form-author
+    @media (max-width: 375px) {
+      .site-content{
+        #main{
+          .page-content{
+            .comments-area{
+              .form-comment{
+                .comment-form{
+                  .comment-form-author, .comment-form-email{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        #secondary{
+          .widget_banner_ads{
+            .so-widget-banner_ads{
+              .banner-ads{
+                .banner-title{
+
+                }
+              }
             }
           }
         }
