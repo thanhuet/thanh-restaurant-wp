@@ -2,9 +2,11 @@
  * Style sidebar blog
  */
 //style together for blog_archive and blog_detail
-#main{
-  max-width:770px;
-  box-sizing: content-box;
+.blog, .single {
+  #main {
+    max-width: 770px;
+    box-sizing: content-box;
+  }
 }
 .blog-content,
 .page-content {

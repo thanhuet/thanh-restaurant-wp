@@ -20,7 +20,7 @@ thim_customizer()->add_field(
 		'label'   => esc_html__( 'Style', 'restaurant-wp' ),
 		'tooltip' => esc_html__( 'Style for 404 page.', 'restaurant-wp' ),
 		'section' => 'general_404_style',
-		'default' => 'style_1',
+		'default' => 'style_2',
 		'priority' => 10,
 		'multiple' => 0,
 		'choices' => array(
@@ -48,8 +48,9 @@ thim_customizer()->add_field(
 			array(
 				'setting'  => '404_style',
 				'operator' => '===',
-				'value'    => 'style_2',
+				'value'    => 'style_1',
 			),
 		),
 	)
 );
+

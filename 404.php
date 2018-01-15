@@ -10,10 +10,10 @@ $style = get_theme_mod( '404_style', false );
 ?>
 
 <?php
-if ( $style == 'style_1' ){
+if ( $style == 'style_2' ){
 ?>
 <div class="container ">
-    <section class="error-404 not-found row style-1">
+    <section class="error-404 not-found row style-2">
         <div class="img-error-404 col-12 col-md-6">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/06_404.png' ); ?>">
         </div>
@@ -21,7 +21,7 @@ if ( $style == 'style_1' ){
 		} else {
 		?>
         <div class="container " style="padding:0;margin:0;width:100%;">
-            <div class="error-404 not-found row style-2">
+            <div class="error-404 not-found row style-1">
 				<?php
 				}
 				?>
@@ -32,7 +32,7 @@ if ( $style == 'style_1' ){
                     <div class="page-content">
                         <h1>Hair Not Found!</h1>
                     </div><!-- .page-content -->
-					<?php if ( $style == 'style_1' ) {
+					<?php if ( $style == 'style_2' ) {
 						?>
                         <div class="page-content">
                             <h1>Page not <span class="important-word">Found</span></h1>
