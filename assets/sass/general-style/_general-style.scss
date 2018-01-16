@@ -214,7 +214,6 @@
       text-align: center;
     }
     .content-error-404 {
-      margin-top: 90px;
       .page-header {
         .page-title {
           font-family: "Great Vibes", sans-serif;
@@ -261,6 +260,18 @@
 }
 
 // Style Contact Form Resta
+.intro-site-container {
+  .intro-detail {
+    min-height: 125px;
+    p {
+      position: absolute;
+      width: 770px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .wpcf7-form {
   .content-contact-form {
     margin-bottom: 75px;
@@ -301,21 +312,45 @@
       }
     }
   }
+
   .content-contact-form-hairsalon{
+    display: flex;
+    justify-content: space-between;
+    div{
+      padding:0;
+      &:nth-child(1), &:nth-child(2){
+        max-width: 370px;
+        height: 45px;
+        margin-bottom: 30px;
+      }
+      &:nth-child(3){
+        width: 100%;
+        height: 186px;
+        margin-bottom: 31px;
+        .wpcf7-form-control{
+          width: 770px;
+        }
+      }
+      &:nth-child(4){
+        input{
+          width: 148px;
+          height: 50px;
+        }
+      }
+    }
     max-width: 770px;
     margin: auto;
     margin-bottom: 100px;
     .wpcf7-form-control-wrap {
       margin-bottom: 30px;
       display: inline-block;
-      width: 100%;
       .wpcf7-text {
         color:#999;
         height: 45px;
         padding: 14px 0 15px 20px;
         background: #FFFFFF;
         border: 1px solid #CCCCCC;
-        width: 100%;
+        width: 370px;
         font-size: 14px;
         &::placeholder {
         }
@@ -333,7 +368,6 @@
       .wpcf7-submit {
         cursor:pointer;
         font-size: 14px;
-        padding: 18px 50px;
         border: 1px solid #C68143;
         background: #fff ;
         color: #424242;
@@ -350,4 +384,64 @@
 .fa-1{
   color: #272E35;
   font-size:6px;
+}
+
+// style home page
+#main-content {
+  .home-content {
+    .panel-grid {
+      &:nth-child(3), &:nth-child(4) {
+        .panel-grid-cell {
+          width: 50%;
+          .intro-detail{
+            position: relative;
+            p{
+              width: 600px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// style 404
+
+.error404{
+  #main-content{
+    .page-title{
+      display: none;
+    }
+    .site-content{
+      width: 100%;
+      padding-bottom: 47px;
+      padding-top: 0px;
+      .error-404{
+        position: relative;
+        height: 680px;
+        .content-error-404{
+          position: absolute;
+          left:25%;
+          top: 50%;
+          transform: translateY(-50%);
+          .page-title{
+            font-family: Roboto;
+            color: #C68143;
+            display: block;
+          }
+          .page-content{
+            h1 {
+              font-size: 26px;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-bar{
+    border: none;
+    padding-top:0;
+  }
 }
