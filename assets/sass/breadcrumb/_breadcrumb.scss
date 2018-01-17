@@ -39,15 +39,11 @@
 .breadcrumb-content {
 	&.style-1{
 		#breadcrumbs {
-			padding: 13px 0;
 			margin: 0;
-			border-bottom: none;
 			li {
-				line-height: 25px;
 				display: inline-block;
 				list-style: none;
 				a {
-					line-height: 25px;
 					display: inline-block;
 				}
 				span.breadcrum-icon {

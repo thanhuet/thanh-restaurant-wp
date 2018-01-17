@@ -130,13 +130,12 @@
 
 // Site content
 .site-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   &.no-padding {
     padding: 0;
   }
 }
-
 // Slider style
 .flexslider {
   ul {
@@ -316,6 +315,9 @@
   .content-contact-form-hairsalon{
     display: flex;
     justify-content: space-between;
+    width: 770px;
+    margin: auto;
+    margin-bottom: 100px;
     div{
       padding:0;
       &:nth-child(1), &:nth-child(2){
@@ -338,9 +340,6 @@
         }
       }
     }
-    max-width: 770px;
-    margin: auto;
-    margin-bottom: 100px;
     .wpcf7-form-control-wrap {
       margin-bottom: 30px;
       display: inline-block;
@@ -391,17 +390,19 @@
   .home-content {
     .panel-grid {
       &:nth-child(3), &:nth-child(4) {
-        .panel-grid-cell {
-          width: 50%;
-          .intro-detail{
-            position: relative;
-            p{
-              width: 600px;
+        .siteorigin-panels-stretch {
+          background: #F8F8F8;
+          .panel-grid-cell {
+            width: 50%;
+            .intro-detail {
+              position: relative;
+              p {
+                width: 600px;
+              }
             }
           }
         }
       }
-
     }
   }
 }
@@ -443,5 +444,28 @@
   .bottom-bar{
     border: none;
     padding-top:0;
+  }
+}
+
+.breadcrumb-content{
+  margin-bottom: 93px;
+  .breadcrumbs-wrapper{
+    .breadcrumbs{
+      width: 470px;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 60px;
+      padding:0;
+      border-bottom: 1px solid #979797;
+      li{
+        line-height: 60px;
+        a{
+          font-size: 14px;
+          color: #263238;
+        }
+      }
+    }
   }
 }

@@ -3,9 +3,11 @@
  */
 //style together for blog_archive and blog_detail
 .blog, .single {
-  #main {
-    max-width: 770px;
-    box-sizing: content-box;
+  .site-content {
+    #main {
+      max-width: 770px;
+      box-sizing: content-box;
+    }
   }
 }
 .blog-content,

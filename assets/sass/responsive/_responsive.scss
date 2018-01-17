@@ -1,8 +1,9 @@
 /*
  * Style responsive for theme
  */
+@import "responsive-customer";
 
-body {
+.blog, .single {
 
   overflow-x: hidden;
   &.responsive {
@@ -164,19 +165,19 @@ body {
 
       }
     }
-    @media (max-width: 1024px){
-      .site-content{
-        #main{
+    @media (max-width: 1024px) {
+      .site-content {
+        #main {
           max-width: 66.66667%;
           box-sizing: border-box;
-          .page-content{
-            .comments-area{
-              .form-comment{
-                .comment-form{
+          .page-content {
+            .comments-area {
+              .form-comment {
+                .comment-form {
                   justify-content: space-between;
-                  .comment-form-author,.comment-form-email{
+                  .comment-form-author, .comment-form-email {
                     width: calc(50% - 5px);
-                    input{
+                    input {
                       width: 100% !important;
                     }
                   }
@@ -201,7 +202,7 @@ body {
               }
             }
           }
-          .widget_text{
+          .widget_text {
             #sb_instagram {
               #sbi_images {
                 .sbi_item {
@@ -1562,3 +1563,4 @@ body {
   }
 
 }
+

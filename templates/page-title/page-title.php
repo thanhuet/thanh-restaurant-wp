@@ -189,28 +189,6 @@ if ( is_404() ) {
 							echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 						}
 						?>
-						<?php
-						if ( $hide_breadcrumb != '1' && $styleBreadcrumb == 'style_1' ) :?>
-                            <div class="breadcrumb-content" <?php echo $c_css_breadcrumb ?>>
-								<?php
-								if ( ! is_front_page() || ! is_home() ) { ?>
-                                    <div class="breadcrumbs-wrapper">
-                                        <div class="container">
-											<?php
-											if ( get_post_type() == 'product' ) {
-												woocommerce_breadcrumb();
-											} else {
-												thim_breadcrumbs();
-											}
-											?>
-                                        </div><!-- .container -->
-                                    </div><!-- .breadcrumbs-wrapper -->
-								<?php }
-								?>
-                            </div><!-- .breadcrumb-content -->
-							<?php
-						endif;
-						?>
                     </div>
 				<?php endif; ?>
             </div><!-- .main-top -->
@@ -277,29 +255,7 @@ if ( is_404() ) {
 								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 							}
 							?>
-							<?php
-							if ( $hide_breadcrumb != '1' && $styleBreadcrumb == 'style_1' ) :?>
-                                <?php ?>
-                                <div class="breadcrumb-content style-1" <?php echo $c_css_breadcrumb ?>>
-									<?php
-									if ( ! is_front_page() || ! is_home() ) { ?>
-                                        <div class="breadcrumbs-wrapper">
-                                            <div class="container">
-												<?php
-												if ( get_post_type() == 'product' ) {
-													woocommerce_breadcrumb();
-												} else {
-													thim_breadcrumbs();
-												}
-												?>
-                                            </div><!-- .container -->
-                                        </div><!-- .breadcrumbs-wrapper -->
-									<?php }
-									?>
-                                </div><!-- .breadcrumb-content -->
-								<?php
-							endif;
-							?>
+
                         </div>
 					<?php endif; ?>
                 </div><!-- .main-top -->
