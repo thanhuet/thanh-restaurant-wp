@@ -148,5 +148,101 @@ body{
         }
       }
     }
+
+    @media (max-width: 736px){
+      .home-content {
+        width: 100%;
+        .panel-grid {
+          .so-widget-intro-employ{
+            .intro-em-body{
+              .content-intro-em{
+                width: 33.33%;
+              }
+            }
+          }
+          .content-gallery{
+            .img-widget-gallery{
+              width: 25%;
+            }
+          }
+        }
+      }
+      .site-content{
+        width: 100%;
+        .entry-content{
+          width: 100%;
+          .panel-grid {
+            .so-widget-intro-employ{
+              .intro-em-body{
+                .content-intro-em{
+                  width: 33.33%;
+                }
+              }
+            }
+            .content-gallery{
+              .img-widget-gallery{
+                width: 25%;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    @media (max-width: 414px){
+      #main-content {
+        .home-content {
+          .panel-grid {
+            &:nth-child(2) {
+              .panel-grid-cell {
+                width: 100%;
+                .inverted-content{
+                  img{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            &:nth-child(5){
+              .panel-grid-cell{
+                .so-widget-intro-employ{
+                  .content-intro-em{
+                    width: 100%;
+                    margin-bottom: 20px;
+                  }
+                }
+              }
+            }
+            &:nth-child(6){
+              .img-widget-gallery{
+                width: 50%;
+              }
+            }
+          }
+        }
+        .site-content {
+          .panel-grid {
+            .panel-grid-cell {
+              .so-widget-intro-employ {
+                .content-intro-em {
+                  width: 100%;
+                  margin-bottom: 20px;
+                }
+              }
+              .so-widget-intro-site{
+                .intro-site-container{
+                  .intro-detail{
+                    p{
+                      position: relative;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
