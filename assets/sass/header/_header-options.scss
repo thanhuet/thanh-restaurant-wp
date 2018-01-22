@@ -125,12 +125,11 @@ header {
       background-color: $thim_header_background_color;
     }
     .menu-main {
-      background-color:$thim_header_background_color ;
       .container {
         .width-navigation {
           .inner-navigation {
+            background-color:$thim_header_background_color ;
             .navbar {
-              background-color:$thim_header_background_color ;
               li {
                 &.current-menu-item {
                   a {

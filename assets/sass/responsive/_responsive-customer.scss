@@ -1,6 +1,16 @@
 body{
   &.responsive {
     @media (max-width: 1024px) {
+      #masthead{
+        .navigation{
+          .inner-navigation {
+            #primary-menu {
+              width: 649px;
+              padding: 0;
+            }
+          }
+        }
+      }
       #main-content {
         .home-content {
           .panel-grid {
@@ -28,6 +38,112 @@ body{
         .intro-site-container {
           .intro-detail {
             padding:0;
+          }
+        }
+      }
+      .error-404{
+        background-size: contain;
+      }
+    }
+    @media (max-width: 768px){
+      #masthead{
+        .header-v1{
+          margin-top: 0px;
+          .topbar-center{
+            padding:0;
+            border:none;
+            padding: 20px 0px;
+            .widget_info-rest{
+              display: none;
+            }
+            .widget_logo-rest{
+              max-width: 100%;
+              flex: 100%;
+              img{
+                width: 120px;
+              }
+            }
+          }
+        }
+        .menu-main{
+          display: none;
+        }
+      }
+      #main-content {
+        .home-content {
+          .panel-grid {
+            &:nth-child(2) {
+              flex-direction: row;
+              flex-wrap: wrap;
+              .panel-grid-cell{
+                width: 50%;
+              }
+            }
+            //.wpcf7-form .content-contact-form-hairsalon div:nth-child(1)
+            &:nth-child(3), &:nth-child(4) {
+              padding-bottom: 30px;
+              .siteorigin-panels-stretch {
+                .panel-grid-cell {
+                  width: 100%;
+                  .intro-site-container {
+                    margin-bottom: 30px;
+                    .btn-intro-site {
+                      display: inline-block;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(5){
+              .panel-grid-cell{
+                .so-widget-intro-employ{
+                  .content-intro-em{
+                    .employee-info{
+                      padding:0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .wpcf7-form{
+          .content-contact-form-hairsalon {
+            width: 100%;
+            div {
+              &:nth-child(1), &:nth-child(2) {
+                max-width: calc(50% - 5px);
+                .wpcf7-form-control {
+                  width: 100%;
+                }
+              }
+              &:nth-child(3){
+                width: 100%;
+                .wpcf7-form-control-wrap{
+                  width: 100%;
+                  .wpcf7-form-control{
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .intro-site-container{
+          .intro-detail{
+            position: relative;
+            p{
+              width: 100%;
+            }
+          }
+        }
+        .so-widget-intro-employ{
+          .intro-em-body{
+            .content-intro-em{
+              .employee-info{
+                padding:0;
+              }
+            }
           }
         }
       }

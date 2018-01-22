@@ -10,7 +10,6 @@
  * Feature: Back to top
  * Custom select.
  */
-
 (function ($) {
     "use strict";
     $(document).ready(function () {
