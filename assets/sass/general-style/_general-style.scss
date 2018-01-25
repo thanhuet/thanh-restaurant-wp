@@ -469,3 +469,38 @@
     }
   }
 }
+
+.site-footer{
+  .bottom-bar{
+    .widget_opening-hours-footer, .widget_info-footer{
+      .title-info-footer {
+        position: relative;
+        &:after {
+          position: absolute;
+          border-bottom: 2px solid;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+        }
+      }
+    }
+    .widget_nav_menu{
+      .widget-title{
+        position: relative;
+        &:after{
+          position: absolute;
+          border-bottom: 2px solid;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+        }
+      }
+      .menu-food-container{
+        #menu-food-2{
+          list-style-type: none;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

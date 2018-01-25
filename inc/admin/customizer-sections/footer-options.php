@@ -93,7 +93,7 @@ thim_customizer()->add_field(
 			'hover' => esc_html__( 'Hover', 'restaurant-wp' ),
 		),
 		'default'   => array(
-			'title' => '#333333',
+			'title' => '#212121',
 			'text'  => '#666666',
 			'link'  => '#333333',
 			'hover' => '#c48981',
