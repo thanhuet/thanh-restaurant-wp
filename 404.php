@@ -21,6 +21,7 @@ if ( $style == 'style_2' ){
 		} else {
 		?>
         <div class="container " style="padding:0;margin:0;width:100%;">
+            <img src="<?php echo esc_url( get_theme_mod('404_background_image')); ?>" class="image-404">
             <div class="error-404 not-found row style-1">
 				<?php
 				}
@@ -44,5 +45,6 @@ if ( $style == 'style_2' ){
 					}
 					?>
                 </div>
+            </div>
     </section><!-- .error-404 -->
 </div>

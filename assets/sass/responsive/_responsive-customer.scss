@@ -50,8 +50,11 @@ body{
           }
         }
       }
-      .error-404{
-        background-size: contain;
+
+      &.error404{
+        #main{
+          padding:0;
+        }
       }
     }
     @media (max-width: 768px){
@@ -277,6 +280,19 @@ body{
               }
             }
           }
+          .error-404{
+            .content-error-404{
+              left:10%;
+              .page-title{
+                font-size: 30px;
+              }
+              .page-content{
+                h1{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
         }
       }
       .site-footer{
@@ -288,6 +304,7 @@ body{
           }
         }
       }
+
     }
 
     @media (max-width: 375px){
