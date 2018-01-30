@@ -42,7 +42,7 @@
         load: function () {
             this.header_menu_mobile();
             this.parallax();
-            this.thim_post_gallery();
+            // this.thim_post_gallery();
             this.thim_testimonial_owl();
         },
 

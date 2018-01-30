@@ -6,45 +6,28 @@
  *
  */
 
-$style = get_theme_mod( '404_style', false );
 ?>
-
 <?php
-if ( $style == 'style_2' ){
+if ($style == 'style_2'){
+    ?>
+    <?php
+} else {
 ?>
-<div class="container ">
-    <section class="error-404 not-found row style-2">
-        <div class="img-error-404 col-12 col-md-6">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/06_404.png' ); ?>">
-        </div>
-		<?php
-		} else {
-		?>
-        <div class="container " style="padding:0;margin:0;width:100%;">
-            <img src="<?php echo esc_url( get_theme_mod('404_background_image')); ?>" class="image-404">
-            <div class="error-404 not-found row style-1">
-				<?php
-				}
-				?>
-                <div class="content-error-404 col-12 col-md-6">
-                    <header class="page-header">
-                        <h1 class="page-title">404</h1>
-                    </header><!-- .page-header -->
-                    <div class="page-content">
-                        <h1>Hair Not Found!</h1>
-                    </div><!-- .page-content -->
-					<?php if ( $style == 'style_2' ) {
-						?>
-                        <div class="page-content">
-                            <h1>Page not <span class="important-word">Found</span></h1>
-                        </div><!-- .page-content -->
-                        <div class="page-404-detail">
-                            <p>Hehe, Page not Found because Page not Found. We&#39re so sorry about it.</p>
-                        </div><!-- .page-content -->
-						<?php
-					}
-					?>
-                </div>
+<section>
+    <div class="container " style="padding:0;margin:0;width:100%;">
+        <img class="xxx" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/04_404-min.png'); ?>">
+        <div class="error-404 not-found row style-1">
+            <?php
+            }
+            ?>
+            <div class="content-error-404 col-12 col-md-6">
+                <header class="page-header">
+                    <h1 class="page-title">404</h1>
+                </header><!-- .page-header -->
+                <div class="page-content">
+                    <h1>Hair Not Found!</h1>
+                </div><!-- .page-content -->
             </div>
-    </section><!-- .error-404 -->
-</div>
+        </div>
+    </div>
+</section><!-- .error-404 -->
