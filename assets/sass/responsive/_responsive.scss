@@ -4,7 +4,9 @@
 @import "responsive-customer";
 
 .blog, .single {
-
+  .breadcrumb-content{
+    margin-bottom: 93px;
+  }
   overflow-x: hidden;
   &.responsive {
 
