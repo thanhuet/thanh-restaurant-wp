@@ -48,6 +48,15 @@
 				}
 				span.breadcrum-icon {
 					margin: 0 10px;
+					&::before{
+						content: "\f111";
+						font-family: FontAwesome;
+						font-size: 6px;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						margin-left: -2px;
+					}
 				}
 
 				&:last-child:after {
@@ -76,6 +85,15 @@
 					i{
 						position: absolute;
 						bottom: 5px;
+					}
+					&::before{
+						content: "\f111";
+						font-family: FontAwesome;
+						font-size: 6px;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						margin-left: -2px;
 					}
 				}
 				&:last-child:after {
