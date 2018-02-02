@@ -42,7 +42,7 @@
         load: function () {
             this.header_menu_mobile();
             this.parallax();
-            this.thim_post_gallery();
+            // this.thim_post_gallery();
             this.thim_testimonial_owl();
         },
 
@@ -71,7 +71,7 @@
                 $('.responsive #wrapper-container').toggleClass('mobile-menu-open');
             });
 
-            $(document).on('click', '.mobile-menu-open #main-content', function () {
+            $(document).on('click', '.overlay-close-menu', function () {
                 $('.responsive #wrapper-container.mobile-menu-open').removeClass('mobile-menu-open');
             });
 

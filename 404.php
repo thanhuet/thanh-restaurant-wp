@@ -15,7 +15,7 @@ if ($style == 'style_2'){
 ?>
 <section>
     <div class="container " style="padding:0;margin:0;width:100%;">
-        <img class="xxx" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/04_404-min.png'); ?>">
+        <img class="" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/04_404-min.png'); ?>">
         <div class="error-404 not-found row style-1">
             <?php
             }

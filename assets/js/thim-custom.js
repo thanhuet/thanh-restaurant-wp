@@ -71,7 +71,7 @@
                 $('.responsive #wrapper-container').toggleClass('mobile-menu-open');
             });
 
-            $(document).on('click', '.mobile-menu-open #main-content', function () {
+            $(document).on('click', '.overlay-close-menu', function () {
                 $('.responsive #wrapper-container.mobile-menu-open').removeClass('mobile-menu-open');
             });
 

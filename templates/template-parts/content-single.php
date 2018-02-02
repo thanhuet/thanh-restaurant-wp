@@ -24,7 +24,13 @@
 
 		<div class="entry-top">
 			<?php if ( get_theme_mod( 'blog_single_feature_image', true ) ) :
-				do_action( 'thim_entry_top', 'full' );
+//				do_action( 'thim_entry_top', 'full' );
+                $urlImage=get_the_post_thumbnail_url();
+                $imageCrop=thim_aq_resize($urlImage,770,450,1);
+            ?>
+            <img src="<?php echo esc_url($imageCrop);?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+            <a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"></a>
+            <?php
             endif; ?>
 		</div><!-- .entry-top -->
 		<div class="entry-content">

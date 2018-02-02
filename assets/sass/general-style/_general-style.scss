@@ -502,3 +502,21 @@
     }
   }
 }
+
+.mobile-menu-open{
+  .overlay-close-menu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 99999;
+    transition: all .2s ease-in-out 0s;
+    opacity: .5;
+  }
+}
+
+.overlay-close-menu{
+}
+

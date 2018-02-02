@@ -25,6 +25,8 @@
 
 <div id="wrapper-container" <?php thim_wrapper_container_class(); ?>>
 
+    <div class="overlay-close-menu"></div>
+
     <header id="masthead" class="site-header affix-top<?php thim_header_layout_class(); ?>">
 		<?php get_template_part( 'templates/header/header_v1' ); ?>
     </header>

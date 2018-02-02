@@ -112,7 +112,7 @@ if ( ! function_exists( 'thim_wrapper_loop_start' ) ) :
 		}
 //		$style404 = get_theme_mod( '404_style', false );
 
-        echo '<div class="container site-content xxx' . $class_no_padding . '"><div class="row">';
+        echo '<div class="container site-content' . $class_no_padding . '"><div class="row">';
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
 			$postid = get_the_ID();
 			if ( is_page() ) {
