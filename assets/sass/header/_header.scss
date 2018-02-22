@@ -285,7 +285,6 @@ header#masthead {
   border-bottom: 1px solid #999;
   margin: auto;
   font-size: 14px;
-  color: #424242;
   .widget_info-rest {
     text-align: center;
     padding-top: 20px;
@@ -299,7 +298,7 @@ header#masthead {
       position: relative;
       display: flex;
       justify-content: center;
-      color: #212121;
+      //color: #212121;
       &.style-1{
         font-size: 18px;
         font-weight: 700;

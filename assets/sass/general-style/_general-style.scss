@@ -261,12 +261,7 @@
 // Style Contact Form Resta
 .intro-site-container {
   .intro-detail {
-    min-height: 125px;
     p {
-      position: absolute;
-      width: 770px;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
 }
@@ -397,7 +392,7 @@
             .intro-detail {
               position: relative;
               p {
-                width: 600px;
+                margin-bottom: 43px;
               }
             }
           }

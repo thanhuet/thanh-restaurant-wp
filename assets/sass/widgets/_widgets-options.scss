@@ -13,26 +13,26 @@
 
 //intro-site
 .intro-site-container {
-  &.style-2{
+  &.style-2 {
     .intro-title {
-      h2{
+      h2 {
         color: $thim_font_body_color;
       }
     }
-    .icon-intro-site{
-      &::before{
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+    .icon-intro-site {
+      &::before {
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
-      &::after{
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+      &::after {
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
     }
-    .btn-intro-site{
+    .btn-intro-site {
       border: 1px solid $thim_body_primary_color;
-      &:hover{
-        color:white;
+      &:hover {
+        color: white;
         background-color: $thim_body_primary_color;
       }
     }
@@ -40,54 +40,54 @@
 }
 
 //menu-food
-.widget_food-list {
-  .content-food-list-widget {
-    &.style-1{
-      .main-food-list {
-        .title-food-list {
-          color: $thim_font_title_color;
-        }
-        .desc-food-list {
-          color: $thim_font_title_color;
-        }
-        .detail-food-list {
-        }
-        .btn-food-list {
-          &:hover{
-            background-color: $thim_body_primary_color;
-            //border-color: $thim_body_primary_color;
-          }
-        }
-        .dots-background {
-          //background: repeating-radial-gradient($thim_font_body_color 60%,transparent 2.2px, transparent 100%);
-          background-image: linear-gradient(to right, $thim_font_body_color 50%, rgba(255, 255, 255, 0) 0%);
-        }
-      }
-    }
-    &.style-2{
-      .main-food-list {
-        .title-food-list {
+.content-food-list-widget {
+  &.style-2 {
+    .main-food-list {
+      .title-food-list {
+        h2{
           color: $thim_font_body_color;
         }
-        .desc-food-list {
-          color: $thim_font_title_color;
+      }
+      .desc-food-list {
+        color: $thim_font_title_color;
+      }
+      .detail-food-list {
+      }
+      .btn-food-list {
+        &:hover {
+          background-color: $thim_body_primary_color;
+          //border-color: $thim_body_primary_color;
         }
-        .detail-food-list {
+      }
+      .dots-background {
+        //background: repeating-radial-gradient($thim_font_body_color 60%,transparent 2.2px, transparent 100%);
+        background-image: linear-gradient(to right, $thim_font_body_color 50%, rgba(255, 255, 255, 0) 0%);
+      }
+    }
+  }
+  &.style-2 {
+    .main-food-list {
+      .title-food-list {
+        color: $thim_font_body_color;
+      }
+      .desc-food-list {
+        color: $thim_font_title_color;
+      }
+      .detail-food-list {
+      }
+      .icon-list-menu {
+        &::before {
+          background-color: $thim_body_primary_color;
+          border-top: 1px solid $thim_body_primary_color;
         }
-        .icon-list-menu{
-          &::before{
-            background-color:$thim_body_primary_color;
-            border: 1px solid $thim_body_primary_color;
-          }
-          &::after{
-            background-color:$thim_body_primary_color;
-            border: 1px solid $thim_body_primary_color;
-          }
+        &::after {
+          background-color: $thim_body_primary_color;
+          border-top: 1px solid $thim_body_primary_color;
         }
-        .dots-background {
-          //background: repeating-radial-gradient($thim_font_body_color 60%,transparent 2.2px, transparent 100%);
-          background-image: linear-gradient(to right, $thim_font_body_color 50%, rgba(255, 255, 255, 0) 0%);
-        }
+      }
+      .dots-background {
+        //background: repeating-radial-gradient($thim_font_body_color 60%,transparent 2.2px, transparent 100%);
+        background-image: linear-gradient(to right, $thim_font_body_color 50%, rgba(255, 255, 255, 0) 0%);
       }
     }
   }
@@ -138,37 +138,48 @@
   .readmore {
     font-size: $thim_font_body_font_size;
     a {
-      &:hover{
+      &:hover {
         background-color: $thim_body_primary_color;
       }
     }
   }
 }
 
-.widget_intro-employ{
-  .intro-em-header{
-    .icon-intro-em{
+.widget_intro-employ {
+  .intro-em-header {
+    .intro-em-title{
+      h3{
+        color: $thim_font_body_color
+      }
+    }
+    .icon-intro-em {
       &::before {
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
       &::after {
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
     }
   }
 }
+
 .so-widget-thim-gallery {
   .thim-gallery-header {
-    .icon-thim-gallery{
+    .thim-gallery-title{
+      h3{
+        color: $thim_font_body_color
+      }
+    }
+    .icon-thim-gallery {
       &::before {
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
       &::after {
-        background-color:$thim_body_primary_color;
-        border: 1px solid $thim_body_primary_color;
+        background-color: $thim_body_primary_color;
+        border-top: 1px solid $thim_body_primary_color;
       }
     }
   }

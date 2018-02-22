@@ -23,9 +23,10 @@ header{
               display: flex;
               flex-direction: row;
               margin:auto;
+              margin-bottom: 3px;
               height: 60px;
               width: 100%;
-              padding: 0 350px;
+              padding: 0 326px;
               li {
                 margin: auto;
                 &.current-menu-item {

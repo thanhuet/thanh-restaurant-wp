@@ -5,9 +5,9 @@ footer#colophon {
 	background-color: $thim_footer_background_color;
 	color: $thim_footer_color_text;
 	a {
-		color: $thim_footer_color_link;
+		color: $thim_font_body_color;
 		&:hover {
-			color: $thim_footer_color_hover;
+			color: $thim_body_primary_color;
 		}
 	}
 	h1, h2, h3, h4, h5, h6 {
@@ -28,7 +28,7 @@ footer#colophon {
 	}
 }
 .title-info-footer,.title-content-footer{
-	color: $thim_font_title_color;
+	//color: $thim_font_title_color;
 }
 .bottom-bar {
 	font-size: $thim_font_body_font_size;

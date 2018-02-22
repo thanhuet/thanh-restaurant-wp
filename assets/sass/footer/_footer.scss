@@ -3,6 +3,13 @@
  */
 
 footer#colophon {
+  #nav_menu-2{
+    ul{
+      li{
+        margin-bottom: 7px;
+      }
+    }
+  }
   .site-footer {
 
     padding: 25px 0;
@@ -48,7 +55,7 @@ footer#colophon {
 .bottom-bar {
   border-top: 1px solid #999999;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 44px;
   padding-bottom: 70px;
   text-align: center;
   .logo-rest{
