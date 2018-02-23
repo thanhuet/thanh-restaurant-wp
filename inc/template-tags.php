@@ -363,7 +363,6 @@ add_filter( 'comment_form_default_fields', 'thim_new_comment_fields' );
 if ( ! function_exists( 'thim_comment' ) ) {
 	function thim_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
-		//extract( $args, EXTR_SKIP );
 		if ( 'div' == $args['style'] ) {
 			$tag       = 'div';
 			$add_below = 'comment';
@@ -381,12 +380,6 @@ if ( ! function_exists( 'thim_comment' ) ) {
 		<div class="content-comment">
 			<div class="author">
 				<?php printf( '<span class="author-name">%s</span>', get_comment_author_link() ) ?>
-<!--				<span class="comment-extra-info">-->
-<!--					--><?php
-//					printf( get_comment_date() );
-//					echo esc_html__( ' at ', 'restaurant-wp' );
-//					printf( get_comment_time() ) ?>
-<!--				</span>-->
 				<span>
 					<?php comment_reply_link( array_merge( $args, array(
 						'add_below' => $add_below,
@@ -401,7 +394,7 @@ if ( ! function_exists( 'thim_comment' ) ) {
 				<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'restaurant-wp' ) ?></em>
 			<?php endif; ?>
 			<div class="message">
-				<?php comment_text() ?>
+				<?php comment_text(); ?>
 			</div>
 		</div>
 		<div class="clear"></div>

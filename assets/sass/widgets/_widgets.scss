@@ -764,6 +764,11 @@ $pulse-duration: 750ms;
   .content-gallery{
     .img-widget-gallery{
       padding: 0;
+      a{
+        img{
+          height: 431px;
+        }
+      }
     }
   }
 }

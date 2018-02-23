@@ -44,7 +44,7 @@ footer#colophon {
 		.title-info-footer{
 			color: $thim_font_title_color;
 			&::after {
-				border-bottom: 1px solid $thim_font_title_color;
+				border-bottom: 2px solid $thim_body_primary_color;
 			}
 		}
 		.content-opening-hours{
@@ -65,7 +65,7 @@ footer#colophon {
 		.title-info-footer {
 			color: $thim_font_title_color;
 			&::after {
-				border-bottom: 1px solid $thim_font_title_color;
+				border-bottom: 2px solid $thim_body_primary_color;
 			}
 		}
 		.title-content-footer {
@@ -80,7 +80,7 @@ footer#colophon {
 			font-size: $thim_font_body_font_size;
 			color: $thim_font_title_color;
 			&::after {
-				border-bottom: 1px solid $thim_font_title_color;
+				border-bottom: 2px solid $thim_body_primary_color;
 			}
 		}
 		.menu-menu-footer-container {

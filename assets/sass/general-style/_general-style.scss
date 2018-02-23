@@ -259,9 +259,15 @@
 }
 
 // Style Contact Form Resta
-.intro-site-container {
-  .intro-detail {
-    p {
+.entry-content {
+  .intro-site-container {
+    .intro-detail {
+      p {
+        position: relative;
+        width: 770px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -365,7 +371,7 @@
         border: 1px solid #C68143;
         background: #fff ;
         color: #424242;
-        transition: all .3s linear;
+        transition: all .1s linear;
         &:hover{
           color:white;
         }
@@ -470,7 +476,6 @@
         position: relative;
         &:after {
           position: absolute;
-          border-bottom: 2px solid;
           left: 50%;
           transform: translateX(-50%);
           bottom: -16px;
@@ -482,7 +487,6 @@
         position: relative;
         &:after{
           position: absolute;
-          border-bottom: 2px solid;
           left: 50%;
           transform: translateX(-50%);
           bottom: -16px;
