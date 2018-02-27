@@ -224,11 +224,19 @@
 
 #comments {
   .list-comments {
+    &:after{
+      position: absolute;
+      content: '';
+      width: 770px;
+      height: 1px;
+      background: #979797;
+      z-index: 5;
+      bottom: 56px;
+    }
+    position: relative;
     background-color: #fff;
     padding: 20px 0px;
     padding-top: 44px;
-    margin-bottom: 43px;
-    border-bottom: 1px solid #979797;
     .comments-title {
       font-size: 24px;
     }
@@ -329,7 +337,10 @@
   }
 
   .form-comment {
+    position: relative;
     background-color: #fff;
+    padding-top: 59px;
+    margin-top: -72px;
     .comment-form {
       p {
         input {

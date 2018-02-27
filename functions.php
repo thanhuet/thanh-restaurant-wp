@@ -244,7 +244,7 @@ function thim_scripts() {
     wp_enqueue_script( 'jquery', THIM_URI . 'assets/js/libs/jquey.flexslider-min.min.js', array( ), '', true );
     wp_enqueue_script( 'owl', THIM_URI . 'assets/js/libs/owl.carousel.js', array( ), '', true );
     wp_enqueue_script( 'select2', THIM_URI . 'assets/js/libs/select2.min.js', array( ), '', true );
-	wp_enqueue_script( 'smoothscroll', THIM_URI . 'assets/js/smoothscroll.min.js', array( ), '', true );
+	wp_enqueue_script( 'smoothscroll', THIM_URI . 'assets/js/libs/smoothscroll.min.js', array( ), '', true );
     wp_enqueue_script( 'stellar', THIM_URI . 'assets/js/libs/stellar.min.js', array( ), '', true );
     wp_enqueue_script( 'theia', THIM_URI . 'assets/js/libs/theia-sticky-sidebar.js', array( ), '', true );
     wp_enqueue_script( 'thim-custom', THIM_URI . 'assets/js/thim-custom.js', array( ), '', true );
