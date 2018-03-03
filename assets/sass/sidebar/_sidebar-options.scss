@@ -2,7 +2,7 @@
 .search-form {
   .search-field {
     &:focus {
-      border-color: $thim_body_primary_color;
+      border: 1px solid $thim_body_primary_color;
     }
   }
 }

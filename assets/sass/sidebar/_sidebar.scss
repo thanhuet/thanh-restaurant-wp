@@ -21,7 +21,6 @@
       font-size: 26px;
       line-height: 1.4em;
       a {
-        color: #333 !important;
       }
     }
     .entry-meta {
@@ -54,6 +53,15 @@
         }
       }
 
+    }
+    .img-content{
+      overflow: hidden;
+      img{
+        &:hover{
+          transform: scale(1.1);
+          transition: all 1s;
+        }
+      }
     }
     .entry-summary, .entry-description {
       font-size: 16px;
@@ -145,6 +153,7 @@
 
 // Style for archive page
 .blog-content {
+
   .col-sm-6.aligncenter & {
     h2.entry-title {
       font-size: 26px;
@@ -270,7 +279,7 @@
   margin-left: 20px;
   .widget-title {
     position: relative;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     font-weight: 700;
     font-size: 22px;
   }
@@ -288,7 +297,6 @@
       a {
         font-size: 18px;
         font-weight: bold;
-        color: #666666;
       }
     }
   }
@@ -306,6 +314,23 @@
         .sbi_item {
           width: 100px;
           margin-bottom: 15px !important;
+          position: relative;
+          &:after{
+            content: "";
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            background: rgba(0,0,0,.5);
+            transition: all .5s;
+          }
+          &:hover{
+            &:after{
+              opacity:1;
+            }
+          }
         }
       }
     }
@@ -322,7 +347,6 @@
   line-height: 42px;
   border: none;
   background: rgba(255, 255, 255, 0.40);
-  border: 1px solid #263238;
   &:after {
     content: "\f002";
     font: normal normal normal 14px/1 FontAwesome;
@@ -330,11 +354,10 @@
     right: 0;
     top: 0;
     width: 40px;
-    height: 42px;
     text-align: center;
-    line-height: 42px;
+    cursor: pointer;
+    z-index: 2;
   }
-
   label {
     width: 100%;
     display: inline-block;
@@ -355,7 +378,7 @@
     padding: 0 60px 0 20px;
     font-size: 14px;
     width: 100%;
-    border: 1px solid #eee;
+    border: 1px solid #263238;
     @include transition(all .3s ease-in-out);
   }
   .search-submit {
@@ -381,6 +404,9 @@
   ul {
     li {
       margin-bottom: 3px !important;
+      a{
+        color: #666;
+      }
     }
   }
   .widget-title, .rsswidget {
@@ -407,14 +433,16 @@
         }
       }
       a {
+        position: relative;
+        margin-left: 20px;
         &:before {
+          position: absolute;
           color: #E6AE69;
           content: "\f111";
           font-size: 8px;
           font-family: FontAwesome;
-          margin-right: 10px;
-          //opacity:1;
           @include opacity(1);
+          left: -15px;
         }
       }
     }
@@ -448,6 +476,11 @@
 .widget_media_video {
   .widget-title {
     margin-bottom: 40px;
+  }
+  .wp-video{
+    .mejs-container{
+      height: 210px !important;
+    }
   }
 }
 

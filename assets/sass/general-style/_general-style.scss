@@ -11,7 +11,7 @@
 }
 
 .widget_banner_ads{
-  margin-bottom: 52px !important;
+  margin-bottom: 45px !important;
 }
 
 // style widget top blog detail
@@ -21,7 +21,7 @@
 
 // style widget search
 .widget_search {
-  margin-bottom:52px !important;
+  margin-bottom:47px !important;
   .search-form {
     &:after {
       height: 50px;
@@ -67,13 +67,23 @@
     clear: both;
     display: inline-table;
     padding-right: 0px !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 22px !important;
     overflow: auto;
     .recent-post-thumbnail {
       float: left;
       margin-right: 20px;
+      p{
+        overflow: hidden;
+        img{
+          &:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+          }
+        }
+      }
     }
     .recent-post-title-thumbnail {
+      margin-top: -6px;
     }
   }
 }
@@ -263,10 +273,8 @@
   .intro-site-container {
     .intro-detail {
       p {
-        position: relative;
+        margin:auto;
         width: 770px;
-        left: 50%;
-        transform: translateX(-50%);
       }
     }
   }
