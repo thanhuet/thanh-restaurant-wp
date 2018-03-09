@@ -224,16 +224,6 @@
 
 #comments {
   .list-comments {
-    &:after{
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 1px;
-      background: #979797;
-      z-index: 5;
-      bottom: 56px;
-    }
-    position: relative;
     background-color: #fff;
     padding: 20px 0px;
     padding-top: 44px;
@@ -342,8 +332,8 @@
   .form-comment {
     position: relative;
     background-color: #fff;
-    padding-top: 59px;
-    margin-top: -72px;
+    border-top: 1px solid #979797;
+    padding-top: 43px;
     .comment-form {
       p {
         input {

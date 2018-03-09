@@ -57,9 +57,9 @@
           overflow: hidden;
           .food-card-img {
             padding: 10px;
+            box-sizing: content-box;
             &:hover {
-              transform: scale(1.1);
-              transition: all 1s;
+
             }
           }
         }
@@ -702,9 +702,9 @@ $pulse-duration: 750ms;
     .content-intro-em-img{
       overflow: hidden;
       img{
+        transition: all 1s;
         &:hover{
           transform: scale(1.1);
-          transition: all 1s;
         }
       }
     }
@@ -783,10 +783,27 @@ $pulse-duration: 750ms;
       a {
         img {
           width: 100%;
+          transition: all 1s;
           &:hover{
             transform: scale(1.1);
-            transition: all 1s;
+
           }
+        }
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        background: rgba(0,0,0,.5);
+        transition: all .5s;
+      }
+      &:hover{
+        &:after{
+          opacity: 0;
         }
       }
     }

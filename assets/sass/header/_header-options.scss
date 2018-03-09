@@ -87,6 +87,7 @@ header#masthead {
     .widget_info-rest{
       .icon-title-info{
         color: $thim_font_title_color;
+        font-family: $thim_font_title_font_family;
       }
     }
   }
@@ -142,7 +143,6 @@ header {
               li {
                 &.current-menu-item {
                   a {
-                    font-family: $thim_font_title_font_family;
                     color: $thim_body_primary_color;
                   }
                 }

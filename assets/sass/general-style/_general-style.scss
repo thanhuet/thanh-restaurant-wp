@@ -75,9 +75,10 @@
       p{
         overflow: hidden;
         img{
+          transition: all 1s;
           &:hover{
             transform: scale(1.1);
-            transition: all 1s;
+
           }
         }
       }
@@ -97,12 +98,10 @@
   margin-left: -150px;
   .banner-image {
     height:100%;
-    .banner-image{
-      height:100%;
-    }
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
   .banner-title {
@@ -119,7 +118,7 @@
     position: absolute;
     overflow: auto;
     .banner-title-detail {
-      padding-top: 26px;
+      padding-top: 25px;
       p {
         font-family: Andada-Bold;
         font-size: 24px;
@@ -128,7 +127,7 @@
       }
     }
     .banner-title-description {
-      padding-bottom: 26px;
+      padding-bottom: 25px;
       p {
         font-family: Roboto-Regular;
         font-size: 20px;
@@ -307,6 +306,11 @@
       .wpcf7-textarea {
         @extend .wpcf7-text;
         height: 130px;
+      }
+      span{
+        input{
+          font-family: "Roboto Slab";
+        }
       }
     }
 
