@@ -18,13 +18,13 @@ if (isset($_GET['column'])) {
 //hoho hihi rename test stash
 // ad commit in thanh_uet
 <article id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
-    <div class="content-inner">
+    <div class="content-inner"
+	<?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+	</header>
+	<!-- .entry-header -->
+	>
         <div class="entry-top">
             <header class="entry-header">
-                <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-            </header>
-            <!-- .entry-header -->
-
             <?php thim_entry_meta(); ?>
             <!-- .entry-meta -->
             <?php
