@@ -16,6 +16,7 @@ if (isset($_GET['column'])) {
 }
 ?>
 // master test conflic
+// ad commit
 <article id="post-<?php the_ID(); ?>" <?php post_class( $class ); ?>>
 	<div class="content-inner">
 		<div class="entry-top">
