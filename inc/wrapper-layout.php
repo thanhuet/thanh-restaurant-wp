@@ -110,15 +110,9 @@ if ( ! function_exists( 'thim_wrapper_loop_start' ) ) :
 		if ( is_404() ) {
 			$wrapper_class_col = 'col-sm-12 full-width';
 		}
-		$style404 = get_theme_mod( '404_style', false );
-		if ($style404=="style_2"){
-			if(is_404()){
-				echo '<div style="padding:0;margin:0;width:100%" class="container site-content ' . $class_no_padding . '"><div class="row" style="padding:0;margin:0;width:100%">';
-			}
-		}
-		else{
-			echo '<div class="container site-content ' . $class_no_padding . '"><div class="row">';
-		}
+//		$style404 = get_theme_mod( '404_style', false );
+
+        echo '<div class="container site-content' . $class_no_padding . '"><div class="row">';
 		if ( $wrapper_class_col == 'col-sm-6 flex-unordered' ) {
 			$postid = get_the_ID();
 			if ( is_page() ) {

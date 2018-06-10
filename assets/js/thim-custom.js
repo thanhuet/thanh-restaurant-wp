@@ -10,7 +10,6 @@
  * Feature: Back to top
  * Custom select.
  */
-
 (function ($) {
     "use strict";
     $(document).ready(function () {
@@ -43,7 +42,7 @@
         load: function () {
             this.header_menu_mobile();
             this.parallax();
-            this.thim_post_gallery();
+            // this.thim_post_gallery();
             this.thim_testimonial_owl();
         },
 
@@ -72,7 +71,7 @@
                 $('.responsive #wrapper-container').toggleClass('mobile-menu-open');
             });
 
-            $(document).on('click', '.mobile-menu-open #main-content', function () {
+            $(document).on('click', '.overlay-close-menu', function () {
                 $('.responsive #wrapper-container.mobile-menu-open').removeClass('mobile-menu-open');
             });
 
@@ -163,98 +162,55 @@
         header_menu: function () {
             var $header = $('#masthead.sticky-header'),
                 $header_v1 = $('#masthead.sticky-header .header-v1 '),
+                $main = $('#main-content'),
                 off_Top = ( $('#wrapper-container').length > 0 ) ? $('#wrapper-container').offset().top : 0,
                 $topbar = $('#masthead.sticky-header .menu-main'),
                 $menu_main_navigation = $('#masthead.sticky-header .menu-main .menu-main-navigation'),
                 $primary_menu = $('#masthead.sticky-header .menu-main .container .width-navigation .inner-navigation .navbar'),
                 menuH = $header.outerHeight(),
                 latestScroll = 0,
-                startFixed = 2,
+                startFixed = 1,
                 header_v1_height = $header_v1.outerHeight();
                 $topbar.height($menu_main_navigation.outerHeight(true));
             if ($topbar.length) {
                 if ($topbar.hasClass('style-overlay')) {
                     $header.css({
-                        'position': 'inherit'
                     });
                 }
                 startFixed = $header_v1.outerHeight(true) + $menu_main_navigation.outerHeight(true);
             }
 
             $(window).scroll(function () {
-                var current = $(this).scrollTop();
-                if (current > startFixed) {
-                    $header.removeClass('no-transition');
-                    // $header.removeClass('affix-top').addClass('affix');
-                    $header.css({});
-                } else {
-                    $header.addClass('no-transition');
-                    if (current = $header_v1.outerHeight(true)-$menu_main_navigation.outerHeight(true)) {
-                        $menu_main_navigation.css({
-                            top:0,
-                            'position': 'absolute'
-                        });
+                if($(window).width()<800) {
+                    var current = $(this).scrollTop();
+                    if (current > 1) {
+                        $header.removeClass('no-transition');
+                        $header.removeClass('sticky-header-top');
+                        $header.css({});
+                    } else {
+                        $header.addClass('no-transition');
+                        $header.removeClass('sticky-header');
+                        $header.removeClass('menu-show');
                     }
-                    if (screen.width < 769) {
-                        if (current < $header_v1.outerHeight(true)+50) {
-                            $header.css({
-                                top:0,
-                                'position': 'inherit'
-                            });
-                        }
-                    }
-                    // $header.removeClass('affix').addClass('affix-top');
-                    if ($topbar.length > 0) {
-                        if ($topbar.hasClass('style-overlay')) {
-                            $header.css({
-                                // top: $topbar.outerHeight() + 'px'
-                            });
-                        } else {
-                            $header.css({
-                                top: 0
-                            });
-                        }
-                    }
-                }
 
-                if (current > latestScroll && current > menuH + off_Top) {
-                    if (!$header.hasClass('menu-hidden')) {
-                        $header.addClass('menu-hidden');
-                        $header.css({
-                            // top: off_Top
-                        });
-                        $menu_main_navigation.css({
-                            'position': 'absolute',
-                            top:0
-                            // top: -($topbar.outerHeight()) + 'px'
-                        });
-                        if (screen.width < 769) {
-                            $header.css({
-                                'position':'inherit',
-                                top: -($header_v1.outerHeight(true)) + 'px'
-                            });
-                        }
-                    }
-                } else {
-                    if ($header.hasClass('menu-hidden')) {
-                        $header.removeClass('menu-hidden');
-                        $header.css({
-                            // top: off_Top
-                        });
-                        $menu_main_navigation.css({
-                            'position': 'fixed',
-                            top: off_Top
-                        });
-                        if (screen.width < 769) {
-                            $header.css({
-                                'position': 'fixed',
-                                top: off_Top
-                            });
-                        }
-                    }
-                }
+                    if (current > latestScroll && current > 1) {
+                        if (!$header.hasClass('menu-hidden')) {
+                            $header.addClass('menu-hidden');
+                            $header.removeClass('menu-show');
 
-                latestScroll = current;
+
+                        }
+
+                    }
+                    else {
+                        if ($header.hasClass('menu-hidden')) {
+                            $header.removeClass('menu-hidden');
+                            $header.addClass('menu-show');
+
+                        }
+                    }
+                    latestScroll = current;
+                }
             });
 
         },

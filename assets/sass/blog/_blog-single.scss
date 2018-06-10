@@ -5,41 +5,14 @@
   article {
     .content-inner {
       border-bottom: 1px solid #979797;
-      margin-bottom: 26px;
+      margin-bottom: 24px;
       .post-formats-wrapper iframe {
         width: 100%;
       }
-      .entry-title {
-        font-size: 32px;
-      }
       .entry-content {
-        padding: 58px 0px 45px;
-        .entry-header {
-          margin-bottom: 0;
-          margin-top: 20px;
-          .entry-title {
-            margin-top: 0;
-            margin-bottom: 8px;
-          }
-        }
-
-        .entry-meta {
-          margin-bottom: 35px;
-          span.comment-total {
-            margin-right: 0;
-            //margin-left: 20px;
-          }
-          .entry-date {
-            color: #666666;
-            &:after {
-              content: " - ";
-              width: auto;
-              //font-family:$thim_date_font_family;
-            }
-          }
-        }
+        padding: 29px 0px 45px;
         .entry-description {
-          margin-bottom: 92px;
+          margin-bottom: 42px;
           font-size: 16px;
         }
         .entry-tag-share {
@@ -87,6 +60,7 @@
               color: #666666;
               display: block;
               font-size: 16px;
+              margin-bottom: 6px;
             }
           }
         }
@@ -251,17 +225,27 @@
 #comments {
   .list-comments {
     background-color: #fff;
-    padding: 20px 30px;
-    margin-bottom: 30px;
+    padding: 20px 0px;
+    padding-top: 44px;
     .comments-title {
-      font-size: 24px;
+      font-size: 16px;
+      color: #666;
     }
-    .comment-list {
+    .comment-list{
+      .depth-1{
+        &:last-child{
+          .message{
+            //border-bottom: none;
+          }
+        }
+      }
+    }
+    .comment-list, ul {
+      margin: 0;
       margin: 0;
       li {
         list-style: none;
         padding: 20px 0;
-        border-top: 1px solid $border-color;
         > &:last-child {
           border-bottom: 1px solid $border-color;
         }
@@ -280,15 +264,16 @@
           width: auto;
           margin-top: -8px;
           .author {
-            font-size: 13px;
-            margin-bottom: 15px;
+            font-size: 16px;
+            margin-bottom: 8px;
             .comment-extra-info {
               font-size: 14px;
               margin-left: 30px;
               font-weight: 400;
             }
             .author-name {
-
+              font-size: 16px;
+              color: #333;
             }
             span {
               .comment-reply-link {
@@ -313,8 +298,13 @@
             }
           }
           .message {
+            margin-left: 60px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 32px;
+            color: #666;
+          }
+          .message {
             @media (min-width: 991px) {
-              padding-left: 60px;
             }
             img.emoji {
               float: none;
@@ -325,12 +315,14 @@
           border-top-color: transparent;
         }
         .children {
-          @media (min-width: 991px) {
+          @media (min-width: 568px) {
             padding-top: 30px;
             padding-left: 50px;
           }
+          @media (max-width: 414px){
+            padding-left: 30px;
+          }
           li {
-            border-top-color: $border-color;
           }
         }
       }
@@ -338,20 +330,68 @@
   }
 
   .form-comment {
+    position: relative;
     background-color: #fff;
-    padding: 20px 30px 50px;
+    border-top: 1px solid #979797;
+    padding-top: 43px;
     .comment-form {
+      p {
+        input {
+          font-family: Roboto;
+        }
+      }
+      display: flex;
+      flex-wrap: wrap;
+      .comment-notes, .comment-form-comment {
+        width: 100%;
+      }
+      .comment-form-comment {
+        margin-bottom: 30px;
+      }
+      .comment-notes {
+        margin-bottom: 26px;
+      }
+      .comment-form-author, .comment-form-email {
+        width: 50%;
+        margin-bottom: 30px;
+        #author, #email {
+          width: 370px;
+          height: 45px;
+          box-sizing: border-box;
+        }
+        #email {
+          float: right;
+        }
+      }
+
       .form-submit {
+        width: 148px;
+        height: 50px;
+        margin-bottom: 100px;
         .submit {
           background: #FFFFFF;
-          width: 148px;
-          height: 50px;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          font-size: 14px;
+          color: #424242;
+          font-weight: 700;
+          border: 1px solid #C68143;
+          transition: all .2s;
+        }
+        .submit {
+          &:hover {
+            background: #df963d;
+            color: #fff;
+            border: none;
+          }
         }
       }
     }
     #reply-title {
       margin-bottom: 0;
-      font-size: 24px;
+      font-size: 16px;
+      color: #666;
     }
     .comment-form {
       .logged-in-as a {
@@ -360,24 +400,10 @@
         }
       }
       > p {
-        width: 33%;
-        display: inline-block;
-        margin-right: 0;
-        &.comment-form-author {
-          padding-right: 15px;
-          float: left;
-          width: 50%
-        }
-        &.comment-form-email {
-          padding-left: 15px;
-          float: right;
-          width: 50%;
-        }
 
         &.comment-notes,
         &.comment-form-comment,
         &.form-submit {
-          width: 100%;
           display: block;
         }
         input[type="text"],
@@ -398,12 +424,15 @@
       input[type="email"], input[type="text"] {
         outline: none;
         box-shadow: none;
-        padding: 10px 20px;
-        font-size: 13px;
+        font-size: 14px;
         color: #999;
+        padding-left: 20px;
       }
       textarea {
         width: 100%;
+        height: 186px;
+        box-sizing: border-box;
+        padding-top: 14px;
       }
 
       input,
@@ -442,13 +471,12 @@
 // full width main
 .blog {
   #main {
-    flex-basis: 70%;
     article {
       .content-inner {
         .entry-top {
-          .post-formats-wrapper{
-            .post-image{
-              img{
+          .post-formats-wrapper {
+            .post-image {
+              img {
                 max-width: 770px;
                 max-height: 450px;
               }
@@ -474,7 +502,6 @@
 
 .single-post {
   #main {
-    max-width: 70%;
     article {
       overflow: auto;
       .entry-meta {
@@ -487,40 +514,6 @@
     }
   }
 
-  #secondary {
-    padding-left: 35px;
-    .widget-title {
-      position: relative;
-      padding-bottom: 18px;
-      font-weight: 600;
-      font-size: 22px;
-    }
-    .widget-title:after {
-      position: absolute;
-      background: #E6AE69;
-      width: 50px;
-      height: 2px;
-      content: '';
-      bottom: 0;
-      left: 0;
-    }
-    ul {
-      li {
-        a {
-          font-size: 18px;
-          font-weight: bold;
-          color: #666666;
-        }
-      }
-    }
-    // instagram
-    .widget_text {
-      .sb_instagram_header, #sbi_load {
-        display: none;
-      }
-    }
-
-  }
 }
 
 

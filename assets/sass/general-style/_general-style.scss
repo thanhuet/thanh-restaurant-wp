@@ -7,7 +7,11 @@
 
 // style widget recent posts
 .widget_recent_posts {
-  margin-bottom: 30px !important;
+  margin-bottom: 0 !important;
+}
+
+.widget_banner_ads{
+  margin-bottom: 45px !important;
 }
 
 // style widget top blog detail
@@ -17,6 +21,7 @@
 
 // style widget search
 .widget_search {
+  margin-bottom:47px !important;
   .search-form {
     &:after {
       height: 50px;
@@ -26,7 +31,6 @@
 }
 
 .widget-top-blog-detail {
-  margin-top: 25px;
   text-align: center;
   img {
     border-radius: 100%;
@@ -35,7 +39,8 @@
   .widget-title-blog-detail {
     font-size: 22px;
     position: relative;
-    font-weight: 600;
+    font-weight: 700;
+    color: #333;
     p {
       padding-bottom: 15px;
     }
@@ -52,6 +57,7 @@
   .widget-description-blog-detail {
     margin-top: 20px;
     font-size: 16px;
+    color: #666;
   }
 }
 
@@ -61,39 +67,58 @@
     clear: both;
     display: inline-table;
     padding-right: 0px !important;
+    margin-bottom: 22px !important;
+    overflow: auto;
     .recent-post-thumbnail {
       float: left;
       margin-right: 20px;
+      p{
+        overflow: hidden;
+        img{
+          transition: all 1s;
+          &:hover{
+            transform: scale(1.1);
+
+          }
+        }
+      }
     }
     .recent-post-title-thumbnail {
+      margin-top: -6px;
     }
   }
 }
 
 //style banner ads
 .banner-ads {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  left: 50%;
+  margin-left: -150px;
   .banner-image {
-    position: relative;
+    height:100%;
     img {
-      width: 300px;
-      height: 250px;
-      left: 50%;
-      margin-left: -150px;
-      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .banner-title {
-    width: 70%;
-    height: 40%;
-    top: 30%;
+    width:210px;
+    min-height:100px;
+    //width: 70%;
+    //height: 40%;
+    top: 50%;
     left: 15%;
+    transform: translateY(-50%);
     text-align: center;
     opacity: 0.6;
     background: #FFFFFF;
     position: absolute;
     overflow: auto;
     .banner-title-detail {
-      padding-top: 12px;
+      padding-top: 25px;
       p {
         font-family: Andada-Bold;
         font-size: 24px;
@@ -102,6 +127,7 @@
       }
     }
     .banner-title-description {
+      padding-bottom: 25px;
       p {
         font-family: Roboto-Regular;
         font-size: 20px;
@@ -113,13 +139,12 @@
 
 // Site content
 .site-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   &.no-padding {
     padding: 0;
   }
 }
-
 // Slider style
 .flexslider {
   ul {
@@ -197,7 +222,6 @@
       text-align: center;
     }
     .content-error-404 {
-      margin-top: 90px;
       .page-header {
         .page-title {
           font-family: "Great Vibes", sans-serif;
@@ -244,6 +268,18 @@
 }
 
 // Style Contact Form Resta
+.entry-content {
+  .intro-site-container {
+    .intro-detail {
+      p {
+        margin:auto;
+        width: 770px;
+        max-width:100%;
+      }
+    }
+  }
+}
+
 .wpcf7-form {
   .content-contact-form {
     margin-bottom: 75px;
@@ -272,6 +308,11 @@
         @extend .wpcf7-text;
         height: 130px;
       }
+      span{
+        input{
+          font-family: "Roboto Slab";
+        }
+      }
     }
 
     .contact-submit {
@@ -284,21 +325,45 @@
       }
     }
   }
+
   .content-contact-form-hairsalon{
-    max-width: 770px;
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
     margin: auto;
     margin-bottom: 100px;
+    div{
+      padding:0;
+      &:nth-child(1), &:nth-child(2){
+        max-width: 370px;
+        height: 45px;
+        margin-bottom: 30px;
+      }
+      &:nth-child(3){
+        width: 100%;
+        height: 186px;
+        margin-bottom: 31px;
+        .wpcf7-form-control{
+          width: 770px;
+        }
+      }
+      &:nth-child(4){
+        input{
+          width: 148px;
+          height: 50px;
+        }
+      }
+    }
     .wpcf7-form-control-wrap {
       margin-bottom: 30px;
       display: inline-block;
-      width: 100%;
       .wpcf7-text {
         color:#999;
         height: 45px;
         padding: 14px 0 15px 20px;
         background: #FFFFFF;
         border: 1px solid #CCCCCC;
-        width: 100%;
+        width: 370px;
         font-size: 14px;
         &::placeholder {
         }
@@ -316,11 +381,10 @@
       .wpcf7-submit {
         cursor:pointer;
         font-size: 14px;
-        padding: 18px 50px;
         border: 1px solid #C68143;
         background: #fff ;
         color: #424242;
-        transition: all .3s linear;
+        transition: all .1s linear;
         &:hover{
           color:white;
         }
@@ -334,3 +398,137 @@
   color: #272E35;
   font-size:6px;
 }
+
+// style home page
+#main-content {
+  .home-content {
+    .panel-grid {
+      &:nth-child(3), &:nth-child(4) {
+        .siteorigin-panels-stretch {
+          background: #F8F8F8;
+          .panel-grid-cell {
+            width: 50%;
+            .intro-detail {
+              position: relative;
+              p {
+                margin-bottom: 43px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// style 404
+
+.error404{
+  #main-content{
+    .page-title{
+      display: none;
+    }
+    .site-content{
+      width: 100%;
+      padding-bottom: 47px;
+      padding-top: 0px;
+      .error-404{
+        .content-error-404{
+          position: absolute;
+          left:25%;
+          top: 50%;
+          transform: translateY(-50%);
+          .page-title{
+            font-family: Roboto;
+            color: #C68143;
+            display: block;
+          }
+          .page-content{
+            h1 {
+              font-size: 26px;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-bar{
+    border: none;
+    padding-top:0;
+  }
+}
+
+.breadcrumb-content{
+  margin-bottom: 43px;
+  .breadcrumbs-wrapper{
+    .breadcrumbs{
+      width: 470px;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 60px;
+      padding:0;
+      border-bottom: 1px solid #979797;
+      li{
+        line-height: 60px;
+        a{
+          font-size: 14px;
+          color: #263238;
+        }
+      }
+    }
+  }
+}
+
+.site-footer{
+  .bottom-bar{
+    .widget_opening-hours-footer, .widget_info-footer{
+      .title-info-footer {
+        position: relative;
+        &:after {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+        }
+      }
+    }
+    .widget_nav_menu{
+      .widget-title{
+        position: relative;
+        &:after{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -16px;
+        }
+      }
+      .menu-food-container{
+        #menu-food-2{
+          list-style-type: none;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu-open{
+  .overlay-close-menu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 99999;
+    transition: all .2s ease-in-out 0s;
+    opacity: .5;
+  }
+}
+
+.overlay-close-menu{
+}
+

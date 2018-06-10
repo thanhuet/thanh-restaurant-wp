@@ -13,7 +13,7 @@
         <header class="entry-header">
             <?php
             if ( is_single() ) {
-                the_title( '<h1 class="entry-title">', '</h1>' );
+                the_title( '<h2 class="entry-title">', '</h2>' );
             } else {
                 the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
             }
@@ -24,7 +24,13 @@
 
 		<div class="entry-top">
 			<?php if ( get_theme_mod( 'blog_single_feature_image', true ) ) :
-				do_action( 'thim_entry_top', 'full' );
+//				do_action( 'thim_entry_top', 'full' );
+                $urlImage=get_the_post_thumbnail_url();
+                $imageCrop=thim_aq_resize($urlImage,770,450,1);
+            ?>
+            <img src="<?php echo esc_url($imageCrop);?>" alt="<?php echo esc_attr( get_the_title() ); ?>">
+            <a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"></a>
+            <?php
             endif; ?>
 		</div><!-- .entry-top -->
 		<div class="entry-content">

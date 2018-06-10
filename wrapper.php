@@ -4,26 +4,27 @@
  *
  */
 
-if ( is_page_template( 'templates/home-page.php' ) ) {
-	$file = thim_template_path();
-	include $file;
+if (is_page_template('templates/home-page.php')) {
+    $file = thim_template_path();
+    include $file;
 
-	return;
+    return;
 } else {
-	$file = thim_template_path();
-	get_header();
-	?>
-	<section class="content-area">
-		<?php
-		get_template_part( 'templates/page-title/page-title', 'title' );
+    $file = thim_template_path();
+    get_header();
+    ?>
+    <section class="content-area">
+        <?php
+        get_template_part('templates/page-title/page-title', 'title');
+        get_template_part('templates/breadcrumb/breadcrumb');
 
-		do_action( 'thim_wrapper_loop_start' );
-		include $file;
-		do_action( 'thim_wrapper_loop_end' );
+        do_action('thim_wrapper_loop_start');
+        include $file;
+        do_action('thim_wrapper_loop_end');
 
-		?>
-	</section>
-	<?php
-	get_footer();
+        ?>
+    </section>
+    <?php
+    get_footer();
 }
 ?>

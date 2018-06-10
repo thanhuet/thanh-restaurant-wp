@@ -1,5 +1,5 @@
 <?php
-$attachment = wp_get_attachment_image_src($instance['banner_image']);
+$attachment = wp_get_attachment_image_src($instance['banner_image'],array('300','250'));
 $url_image = $attachment['0'];
 ?>
 <div class="banner-ads">

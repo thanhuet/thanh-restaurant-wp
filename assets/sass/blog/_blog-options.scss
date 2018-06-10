@@ -6,7 +6,6 @@
 
 		}
 		&:hover{
-			background-color:$thim_body_primary_color;
 		}
 	}
 	.page-content {
@@ -33,6 +32,17 @@
 					.rel-post-text .entry-title a {
 						color: $thim_font_title_color;
 						&:hover {
+							color: $thim_body_primary_color;
+						}
+					}
+				}
+			}
+		}
+		.nav-single{
+			.nav-wrapper{
+				.nav-previous, .nav-next{
+					a{
+						&:hover{
 							color: $thim_body_primary_color;
 						}
 					}
@@ -167,5 +177,11 @@
 .entry-meta > span {
 	&:after {
 		//color: $thim_font_body_color;
+	}
+}
+
+.widget_top_blog_detail{
+	.widget-title-blog-detail{
+		font-family: $thim_font_title_font_family;
 	}
 }

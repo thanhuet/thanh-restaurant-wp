@@ -82,6 +82,16 @@ header#masthead {
       }
     }
   }
+  //.topbar-center .widget_info-rest .icon-title-info
+  .topbar-center{
+    .widget_info-rest{
+      .icon-title-info{
+        color: $thim_font_title_color;
+        font-family: $thim_font_title_font_family;
+      }
+    }
+  }
+
 
 }
 
@@ -125,16 +135,14 @@ header {
       background-color: $thim_header_background_color;
     }
     .menu-main {
-      background-color:$thim_header_background_color ;
       .container {
         .width-navigation {
           .inner-navigation {
+            background-color:$thim_header_background_color ;
             .navbar {
-              background-color:$thim_header_background_color ;
               li {
                 &.current-menu-item {
                   a {
-                    font-family: $thim_font_title_font_family;
                     color: $thim_body_primary_color;
                   }
                 }

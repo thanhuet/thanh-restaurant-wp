@@ -52,9 +52,16 @@
       }
       .inverted-content {
         text-align: center;
-        .food-card-img {
+        .card-img {
           border: 1px solid #212121;
-          padding: 10px;
+          overflow: hidden;
+          .food-card-img {
+            padding: 10px;
+            box-sizing: content-box;
+            &:hover {
+
+            }
+          }
         }
         .food-card-name {
           margin-top: 34px;
@@ -65,14 +72,15 @@
           letter-spacing: 0;
           line-height: 25px;
           padding: 0 20px 32px 20px;
+          margin-bottom: 0;
         }
         .under-line {
-          display: inline-block;
           position: relative;
-          clear: both;
           width: 61px;
           margin: 0;
-          height: 3px;
+          left: 50%;
+          height: 1px;
+          transform: translateX(-50%);
           &::after {
             content: " ";
             width: 61px;
@@ -169,7 +177,7 @@
     }
     &.style-2 {
       .main-food-list {
-        padding: 94px 227px 0;
+        padding: 70px 165px 0;
         .title-food-list {
           h2 {
             margin: 0;
@@ -232,7 +240,7 @@
             position: absolute;
             left: 100%;
             bottom: 30%;
-            height: 3px;
+            height: 1px;
           }
           &::after {
             content: " ";
@@ -240,7 +248,7 @@
             position: absolute;
             right: 100%;
             bottom: 30%;
-            height: 3px;
+            height: 1px;
           }
         }
       }
@@ -295,15 +303,15 @@
       font-weight: bolder;
     }
     .intro-detail {
-      max-width: 642px;
+      padding: 0;
       margin-top: 60px;
       letter-spacing: 0;
       line-height: 28px;
     }
   }
   &.style-2 {
-    margin-top: 94px;
     text-align: center;
+    margin-top: 50px;
     .intro-title {
       h2 {
         font-size: 20px;
@@ -319,11 +327,10 @@
       }
     }
     .intro-detail {
-      padding: 0 100px;
+      padding: 0 43px;
       margin-top: 43px;
       letter-spacing: 0;
       line-height: 25px;
-      margin-bottom: 60px;
     }
     .icon-intro-site {
       position: relative;
@@ -335,7 +342,7 @@
         position: absolute;
         left: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
       &::after {
         content: " ";
@@ -343,21 +350,22 @@
         position: absolute;
         right: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
     }
-    .image-intro-site{
+    .image-intro-site {
       margin-top: 50px;
     }
   }
   .btn-intro-site {
     transition: all .3s linear;
-    padding: 17px 40px;
+    padding: 15px 40px;
     color: #424242;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 14px;
     cursor: pointer;
+    display: inline-block;
   }
 }
 
@@ -383,15 +391,25 @@
 
 .intro-site-widget-about-us {
   .intro-site-container {
-    margin-top: 92px;
   }
 }
 
 /*post-widget*/
 .thim-sc-posts {
   //margin-bottom: 100px;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    .list-rencent-post {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
   .thim-sc-heading {
-    margin-bottom: 55px;
+    .widget-title {
+      margin-bottom: 28px;
+    }
     .title {
       line-height: 20px;
       font-weight: inherit;
@@ -667,7 +685,7 @@ $pulse-duration: 750ms;
         position: absolute;
         left: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
       &::after {
         content: " ";
@@ -675,12 +693,21 @@ $pulse-duration: 750ms;
         position: absolute;
         right: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
     }
   }
   .content-intro-em {
     text-align: center;
+    .content-intro-em-img{
+      overflow: hidden;
+      img{
+        transition: all 1s;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
     .employee-name {
       font-size: 18px;
       margin: 34px 0 19px;
@@ -715,19 +742,19 @@ $pulse-duration: 750ms;
     text-align: center;
     margin-bottom: 50px;
     .thim-gallery-title {
-        h3{
-          font-size:20px;
-          font-weight: inherit;
-          margin: 0;
-        }
+      h3 {
+        font-size: 20px;
+        font-weight: inherit;
+        margin: 0;
+      }
     }
-    .thim-gallery-info{
-      h4{
+    .thim-gallery-info {
+      h4 {
         margin: 0;
         font-size: 26px;
       }
     }
-    .icon-thim-gallery{
+    .icon-thim-gallery {
       position: relative;
       display: inline;
       padding: 0 10px;
@@ -737,7 +764,7 @@ $pulse-duration: 750ms;
         position: absolute;
         left: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
       &::after {
         content: " ";
@@ -745,13 +772,40 @@ $pulse-duration: 750ms;
         position: absolute;
         right: 100%;
         bottom: 30%;
-        height: 3px;
+        height: 1px;
       }
     }
   }
-  .content-gallery{
-    .img-widget-gallery{
+  .content-gallery {
+    .img-widget-gallery {
       padding: 0;
+      overflow: hidden;
+      a {
+        img {
+          width: 100%;
+          transition: all 1s;
+          &:hover{
+            transform: scale(1.1);
+
+          }
+        }
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        background: rgba(0,0,0,.5);
+        transition: all .5s;
+      }
+      &:hover{
+        &:after{
+          opacity: 0;
+        }
+      }
     }
   }
 }
