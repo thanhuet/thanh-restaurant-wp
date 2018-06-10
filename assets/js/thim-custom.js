@@ -197,16 +197,8 @@
                         if (!$header.hasClass('menu-hidden')) {
                             $header.addClass('menu-hidden');
                             $header.removeClass('menu-show');
-                            $menu_main_navigation.css({
-                                // top:0
-                                // top: -($topbar.outerHeight()) + 'px'
-                            });
-                            if (screen.width < 769) {
-                                $header.css({
-                                    // top: -($header_v1.outerHeight(true)) + 'px'
-                                    // top: 0
-                                });
-                            }
+
+
                         }
 
                     }

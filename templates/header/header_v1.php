@@ -7,6 +7,10 @@
 ?>
 
 <div class="header-v1 container">
+    <?php
+    $thanh = new Aq_Exception();
+    var_dump($sitepress);
+    ?>
     <div class="row">
         <div class="navigation col-sm-12">
             <div class="tm-table">

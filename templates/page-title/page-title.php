@@ -250,7 +250,7 @@ if ( is_404() ) {
 								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 							} elseif ( is_front_page() || is_home() ) {
 								echo '<h1>';
-								echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blog', 'restaurant-wp' );
+								echo ( $front_title != '' ) ? $front_title : esc_html__( 'Blogggg', 'restaurant-wp' );
 								echo '</h1>';
 								echo ( $subtitle != '' ) ? '<div class="banner-description" ' . $c_css_sub_color . '><p>' . $subtitle . '</p></div>' : '';
 							}

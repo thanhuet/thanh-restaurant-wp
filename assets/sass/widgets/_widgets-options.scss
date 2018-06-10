@@ -145,6 +145,19 @@
     }
   }
 }
+.widget_intro-site{
+  .so-widget-intro-site{
+    .wpcf7-form{
+      .content-contact-form-hairsalon{
+        input, textarea{
+          &:focus{
+            border:1px solid $thim_body_primary_color;
+          }
+        }
+      }
+    }
+  }
+}
 
 .widget_intro-employ {
   .intro-em-header {

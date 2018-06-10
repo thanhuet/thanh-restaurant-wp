@@ -158,7 +158,7 @@ if ( ! function_exists( 'thim_social_share' ) ) {
 
 		echo '<div class="share-click">';
 		echo '<ul class="thim-social-share row">';
-		do_action( 'thim_before_social_list' );
+//		do_action( 'thim_before_social_list' );
 
 		if ( isset( $thim_options['group_sharing'] ) ) {
 			$socials = get_theme_mod( 'group_sharing' );
@@ -360,6 +360,7 @@ add_filter( 'comment_form_default_fields', 'thim_new_comment_fields' );
  *
  * @return string
  */
+
 if ( ! function_exists( 'thim_comment' ) ) {
 	function thim_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
