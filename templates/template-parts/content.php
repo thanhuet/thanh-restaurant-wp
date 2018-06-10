@@ -15,7 +15,7 @@ if (isset($_GET['column'])) {
     $class = 'col-md-' . (12 / ($_GET['column']));
 }
 ?>
-//hoho hihi rename
+//hoho hihi rename test stash
 <article id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
     <div class="content-inner">
         <div class="entry-top">
