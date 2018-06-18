@@ -124,7 +124,7 @@ thim_customizer()->add_group( array(
                         array(
                             'setting'  => 'blog_single_related_post',
                             'operator' => '==',
-                            'value'    => true,
+                            'value'    =>  true,
                         ),
                     ),
                 ),
