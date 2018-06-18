@@ -128,7 +128,7 @@ thim_customizer()->add_group( array(
                         ),
                     ),
                 ),
-                // Select Post Column Numbers For Related Post dfd
+                // Select Post Column Numbers For Related Post dfd sfdsadf
                 array(
                     'type'            => 'slider',
                     'id'              => 'blog_single_related_post_column',
