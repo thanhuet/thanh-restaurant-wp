@@ -95,7 +95,7 @@ thim_customizer()->add_group( array(
                         false => esc_html__( 'Off', 'restaurant-wp' ),
                     ),
                 ),
-                // Turn On Related Post
+                // Turn On Related Post dfsdf
                 array(
                     'type'     => 'switch',
                     'id'       => 'blog_single_related_post',
